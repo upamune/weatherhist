@@ -10,6 +10,7 @@ import (
 	"context"
 	"io"
 	"encoding/json"
+	"path"
 )
 
 type Client struct {
@@ -43,8 +44,20 @@ func NewClient(urlStrp *string, logger *log.Logger) (*Client, error) {
 	}, nil
 }
 
-func newRequest(ctx context.Context, method, spath string, body io.Reader) (*http.Request, error) {
-	return nil, nil
+func (c *Client)newRequest(ctx context.Context, method, spath string, body io.Reader) (*http.Request, error) {
+	req, err := http.NewRequest(method, c.getFullURL(spath), body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+
+	return req, nil
+}
+
+func (c *Client) getFullURL(spath string) string {
+	u := *c.URL
+	u.Path = path.Join(c.URL.Path, spath)
+	return u.String()
 }
 
 func decodeBody(resp *http.Response, out interface{}) error {
