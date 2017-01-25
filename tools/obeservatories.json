@@ -1,0 +1,8124 @@
+{
+  "obeservatories": [
+    {
+      "obeservatory_name": "沓形",
+      "group_id": "11",
+      "obeservatory_id": "2"
+    },
+    {
+      "obeservatory_name": "浜頓別",
+      "group_id": "11",
+      "obeservatory_id": "3"
+    },
+    {
+      "obeservatory_name": "歌登",
+      "group_id": "11",
+      "obeservatory_id": "5"
+    },
+    {
+      "obeservatory_name": "中頓別",
+      "group_id": "11",
+      "obeservatory_id": "1051"
+    },
+    {
+      "obeservatory_name": "豊富",
+      "group_id": "11",
+      "obeservatory_id": "1054"
+    },
+    {
+      "obeservatory_name": "沼川",
+      "group_id": "11",
+      "obeservatory_id": "1203"
+    },
+    {
+      "obeservatory_name": "船泊",
+      "group_id": "11",
+      "obeservatory_id": "1207"
+    },
+    {
+      "obeservatory_name": "宗谷岬",
+      "group_id": "11",
+      "obeservatory_id": "1284"
+    },
+    {
+      "obeservatory_name": "浜鬼志別",
+      "group_id": "11",
+      "obeservatory_id": "1285"
+    },
+    {
+      "obeservatory_name": "本泊",
+      "group_id": "11",
+      "obeservatory_id": "1512"
+    },
+    {
+      "obeservatory_name": "声問",
+      "group_id": "11",
+      "obeservatory_id": "1528"
+    },
+    {
+      "obeservatory_name": "礼文",
+      "group_id": "11",
+      "obeservatory_id": "1546"
+    },
+    {
+      "obeservatory_name": "幌延",
+      "group_id": "11",
+      "obeservatory_id": "1573"
+    },
+    {
+      "obeservatory_name": "幌泊",
+      "group_id": "11",
+      "obeservatory_id": "1593"
+    },
+    {
+      "obeservatory_name": "稚内",
+      "group_id": "11",
+      "obeservatory_id": "47401"
+    },
+    {
+      "obeservatory_name": "北見枝幸",
+      "group_id": "11",
+      "obeservatory_id": "47402"
+    },
+    {
+      "obeservatory_name": "美深",
+      "group_id": "12",
+      "obeservatory_id": "6"
+    },
+    {
+      "obeservatory_name": "ピヤシリ山",
+      "group_id": "12",
+      "obeservatory_id": "7"
+    },
+    {
+      "obeservatory_name": "名寄",
+      "group_id": "12",
+      "obeservatory_id": "8"
+    },
+    {
+      "obeservatory_name": "西風連",
+      "group_id": "12",
+      "obeservatory_id": "9"
+    },
+    {
+      "obeservatory_name": "下川",
+      "group_id": "12",
+      "obeservatory_id": "10"
+    },
+    {
+      "obeservatory_name": "士別",
+      "group_id": "12",
+      "obeservatory_id": "11"
+    },
+    {
+      "obeservatory_name": "犬牛別峠",
+      "group_id": "12",
+      "obeservatory_id": "12"
+    },
+    {
+      "obeservatory_name": "雄鷹峰",
+      "group_id": "12",
+      "obeservatory_id": "13"
+    },
+    {
+      "obeservatory_name": "蓬莱山",
+      "group_id": "12",
+      "obeservatory_id": "14"
+    },
+    {
+      "obeservatory_name": "上川",
+      "group_id": "12",
+      "obeservatory_id": "15"
+    },
+    {
+      "obeservatory_name": "瑞穂",
+      "group_id": "12",
+      "obeservatory_id": "17"
+    },
+    {
+      "obeservatory_name": "終沢",
+      "group_id": "12",
+      "obeservatory_id": "18"
+    },
+    {
+      "obeservatory_name": "旭岳",
+      "group_id": "12",
+      "obeservatory_id": "19"
+    },
+    {
+      "obeservatory_name": "白金",
+      "group_id": "12",
+      "obeservatory_id": "20"
+    },
+    {
+      "obeservatory_name": "富良野",
+      "group_id": "12",
+      "obeservatory_id": "21"
+    },
+    {
+      "obeservatory_name": "前富良野岳",
+      "group_id": "12",
+      "obeservatory_id": "22"
+    },
+    {
+      "obeservatory_name": "前時雨山",
+      "group_id": "12",
+      "obeservatory_id": "23"
+    },
+    {
+      "obeservatory_name": "朝日",
+      "group_id": "12",
+      "obeservatory_id": "1047"
+    },
+    {
+      "obeservatory_name": "比布",
+      "group_id": "12",
+      "obeservatory_id": "1048"
+    },
+    {
+      "obeservatory_name": "層雲峡",
+      "group_id": "12",
+      "obeservatory_id": "1049"
+    },
+    {
+      "obeservatory_name": "美瑛",
+      "group_id": "12",
+      "obeservatory_id": "1052"
+    },
+    {
+      "obeservatory_name": "幌加内",
+      "group_id": "12",
+      "obeservatory_id": "1053"
+    },
+    {
+      "obeservatory_name": "和寒",
+      "group_id": "12",
+      "obeservatory_id": "1055"
+    },
+    {
+      "obeservatory_name": "東川",
+      "group_id": "12",
+      "obeservatory_id": "1184"
+    },
+    {
+      "obeservatory_name": "志比内",
+      "group_id": "12",
+      "obeservatory_id": "1185"
+    },
+    {
+      "obeservatory_name": "幾寅",
+      "group_id": "12",
+      "obeservatory_id": "1188"
+    },
+    {
+      "obeservatory_name": "占冠",
+      "group_id": "12",
+      "obeservatory_id": "1189"
+    },
+    {
+      "obeservatory_name": "上富良野",
+      "group_id": "12",
+      "obeservatory_id": "1190"
+    },
+    {
+      "obeservatory_name": "江丹別",
+      "group_id": "12",
+      "obeservatory_id": "1191"
+    },
+    {
+      "obeservatory_name": "音威子府",
+      "group_id": "12",
+      "obeservatory_id": "1197"
+    },
+    {
+      "obeservatory_name": "中川",
+      "group_id": "12",
+      "obeservatory_id": "1201"
+    },
+    {
+      "obeservatory_name": "朱鞠内",
+      "group_id": "12",
+      "obeservatory_id": "1279"
+    },
+    {
+      "obeservatory_name": "麓郷",
+      "group_id": "12",
+      "obeservatory_id": "1280"
+    },
+    {
+      "obeservatory_name": "東神楽",
+      "group_id": "12",
+      "obeservatory_id": "1458"
+    },
+    {
+      "obeservatory_name": "小車",
+      "group_id": "12",
+      "obeservatory_id": "1570"
+    },
+    {
+      "obeservatory_name": "剣淵",
+      "group_id": "12",
+      "obeservatory_id": "1572"
+    },
+    {
+      "obeservatory_name": "金山",
+      "group_id": "12",
+      "obeservatory_id": "1574"
+    },
+    {
+      "obeservatory_name": "旭川",
+      "group_id": "12",
+      "obeservatory_id": "47407"
+    },
+    {
+      "obeservatory_name": "天塩",
+      "group_id": "13",
+      "obeservatory_id": "24"
+    },
+    {
+      "obeservatory_name": "遠別",
+      "group_id": "13",
+      "obeservatory_id": "25"
+    },
+    {
+      "obeservatory_name": "増毛",
+      "group_id": "13",
+      "obeservatory_id": "28"
+    },
+    {
+      "obeservatory_name": "古丹別",
+      "group_id": "13",
+      "obeservatory_id": "1112"
+    },
+    {
+      "obeservatory_name": "焼尻",
+      "group_id": "13",
+      "obeservatory_id": "1213"
+    },
+    {
+      "obeservatory_name": "初山別",
+      "group_id": "13",
+      "obeservatory_id": "1216"
+    },
+    {
+      "obeservatory_name": "達布",
+      "group_id": "13",
+      "obeservatory_id": "1217"
+    },
+    {
+      "obeservatory_name": "幌糠",
+      "group_id": "13",
+      "obeservatory_id": "1218"
+    },
+    {
+      "obeservatory_name": "羽幌",
+      "group_id": "13",
+      "obeservatory_id": "47404"
+    },
+    {
+      "obeservatory_name": "留萌",
+      "group_id": "13",
+      "obeservatory_id": "47406"
+    },
+    {
+      "obeservatory_name": "阿曽岩",
+      "group_id": "14",
+      "obeservatory_id": "29"
+    },
+    {
+      "obeservatory_name": "新篠津",
+      "group_id": "14",
+      "obeservatory_id": "30"
+    },
+    {
+      "obeservatory_name": "山口",
+      "group_id": "14",
+      "obeservatory_id": "31"
+    },
+    {
+      "obeservatory_name": "手稲山",
+      "group_id": "14",
+      "obeservatory_id": "32"
+    },
+    {
+      "obeservatory_name": "小金湯",
+      "group_id": "14",
+      "obeservatory_id": "34"
+    },
+    {
+      "obeservatory_name": "恵庭島松",
+      "group_id": "14",
+      "obeservatory_id": "35"
+    },
+    {
+      "obeservatory_name": "島松山",
+      "group_id": "14",
+      "obeservatory_id": "36"
+    },
+    {
+      "obeservatory_name": "支笏湖畔",
+      "group_id": "14",
+      "obeservatory_id": "37"
+    },
+    {
+      "obeservatory_name": "西野幌",
+      "group_id": "14",
+      "obeservatory_id": "1076"
+    },
+    {
+      "obeservatory_name": "石狩",
+      "group_id": "14",
+      "obeservatory_id": "1085"
+    },
+    {
+      "obeservatory_name": "浜益",
+      "group_id": "14",
+      "obeservatory_id": "1193"
+    },
+    {
+      "obeservatory_name": "厚田",
+      "group_id": "14",
+      "obeservatory_id": "1194"
+    },
+    {
+      "obeservatory_name": "千歳",
+      "group_id": "14",
+      "obeservatory_id": "1459"
+    },
+    {
+      "obeservatory_name": "江別",
+      "group_id": "14",
+      "obeservatory_id": "1507"
+    },
+    {
+      "obeservatory_name": "札幌",
+      "group_id": "14",
+      "obeservatory_id": "47412"
+    },
+    {
+      "obeservatory_name": "石狩沼田",
+      "group_id": "15",
+      "obeservatory_id": "38"
+    },
+    {
+      "obeservatory_name": "深川",
+      "group_id": "15",
+      "obeservatory_id": "39"
+    },
+    {
+      "obeservatory_name": "常盤山",
+      "group_id": "15",
+      "obeservatory_id": "40"
+    },
+    {
+      "obeservatory_name": "滝川",
+      "group_id": "15",
+      "obeservatory_id": "41"
+    },
+    {
+      "obeservatory_name": "神威岳",
+      "group_id": "15",
+      "obeservatory_id": "42"
+    },
+    {
+      "obeservatory_name": "芦別",
+      "group_id": "15",
+      "obeservatory_id": "43"
+    },
+    {
+      "obeservatory_name": "美唄",
+      "group_id": "15",
+      "obeservatory_id": "44"
+    },
+    {
+      "obeservatory_name": "下桂沢",
+      "group_id": "15",
+      "obeservatory_id": "46"
+    },
+    {
+      "obeservatory_name": "長沼",
+      "group_id": "15",
+      "obeservatory_id": "47"
+    },
+    {
+      "obeservatory_name": "丁未山",
+      "group_id": "15",
+      "obeservatory_id": "48"
+    },
+    {
+      "obeservatory_name": "夕張",
+      "group_id": "15",
+      "obeservatory_id": "49"
+    },
+    {
+      "obeservatory_name": "登川山",
+      "group_id": "15",
+      "obeservatory_id": "50"
+    },
+    {
+      "obeservatory_name": "月形",
+      "group_id": "15",
+      "obeservatory_id": "999"
+    },
+    {
+      "obeservatory_name": "栗沢",
+      "group_id": "15",
+      "obeservatory_id": "1068"
+    },
+    {
+      "obeservatory_name": "晩生内",
+      "group_id": "15",
+      "obeservatory_id": "1270"
+    },
+    {
+      "obeservatory_name": "桜山",
+      "group_id": "15",
+      "obeservatory_id": "1271"
+    },
+    {
+      "obeservatory_name": "空知吉野",
+      "group_id": "15",
+      "obeservatory_id": "1287"
+    },
+    {
+      "obeservatory_name": "浦臼",
+      "group_id": "15",
+      "obeservatory_id": "1400"
+    },
+    {
+      "obeservatory_name": "鹿島",
+      "group_id": "15",
+      "obeservatory_id": "1401"
+    },
+    {
+      "obeservatory_name": "沼の沢",
+      "group_id": "15",
+      "obeservatory_id": "1402"
+    },
+    {
+      "obeservatory_name": "新城",
+      "group_id": "15",
+      "obeservatory_id": "1419"
+    },
+    {
+      "obeservatory_name": "赤平",
+      "group_id": "15",
+      "obeservatory_id": "1566"
+    },
+    {
+      "obeservatory_name": "雨竜",
+      "group_id": "15",
+      "obeservatory_id": "1567"
+    },
+    {
+      "obeservatory_name": "岩見沢",
+      "group_id": "15",
+      "obeservatory_id": "47413"
+    },
+    {
+      "obeservatory_name": "美国",
+      "group_id": "16",
+      "obeservatory_id": "51"
+    },
+    {
+      "obeservatory_name": "余市",
+      "group_id": "16",
+      "obeservatory_id": "52"
+    },
+    {
+      "obeservatory_name": "共和",
+      "group_id": "16",
+      "obeservatory_id": "54"
+    },
+    {
+      "obeservatory_name": "蘭越",
+      "group_id": "16",
+      "obeservatory_id": "55"
+    },
+    {
+      "obeservatory_name": "脇方台地",
+      "group_id": "16",
+      "obeservatory_id": "57"
+    },
+    {
+      "obeservatory_name": "桂台",
+      "group_id": "16",
+      "obeservatory_id": "59"
+    },
+    {
+      "obeservatory_name": "喜茂別",
+      "group_id": "16",
+      "obeservatory_id": "60"
+    },
+    {
+      "obeservatory_name": "黒松内",
+      "group_id": "16",
+      "obeservatory_id": "61"
+    },
+    {
+      "obeservatory_name": "真狩",
+      "group_id": "16",
+      "obeservatory_id": "1072"
+    },
+    {
+      "obeservatory_name": "赤井川",
+      "group_id": "16",
+      "obeservatory_id": "1091"
+    },
+    {
+      "obeservatory_name": "神恵内",
+      "group_id": "16",
+      "obeservatory_id": "1208"
+    },
+    {
+      "obeservatory_name": "ニセコ",
+      "group_id": "16",
+      "obeservatory_id": "1615"
+    },
+    {
+      "obeservatory_name": "小樽",
+      "group_id": "16",
+      "obeservatory_id": "47411"
+    },
+    {
+      "obeservatory_name": "寿都",
+      "group_id": "16",
+      "obeservatory_id": "47421"
+    },
+    {
+      "obeservatory_name": "倶知安",
+      "group_id": "16",
+      "obeservatory_id": "47433"
+    },
+    {
+      "obeservatory_name": "興部",
+      "group_id": "17",
+      "obeservatory_id": "63"
+    },
+    {
+      "obeservatory_name": "湧別",
+      "group_id": "17",
+      "obeservatory_id": "65"
+    },
+    {
+      "obeservatory_name": "滝上",
+      "group_id": "17",
+      "obeservatory_id": "66"
+    },
+    {
+      "obeservatory_name": "上藻別",
+      "group_id": "17",
+      "obeservatory_id": "67"
+    },
+    {
+      "obeservatory_name": "常呂",
+      "group_id": "17",
+      "obeservatory_id": "68"
+    },
+    {
+      "obeservatory_name": "遠軽",
+      "group_id": "17",
+      "obeservatory_id": "69"
+    },
+    {
+      "obeservatory_name": "佐呂間",
+      "group_id": "17",
+      "obeservatory_id": "70"
+    },
+    {
+      "obeservatory_name": "生田原",
+      "group_id": "17",
+      "obeservatory_id": "72"
+    },
+    {
+      "obeservatory_name": "仁頃山",
+      "group_id": "17",
+      "obeservatory_id": "73"
+    },
+    {
+      "obeservatory_name": "北見",
+      "group_id": "17",
+      "obeservatory_id": "74"
+    },
+    {
+      "obeservatory_name": "小清水",
+      "group_id": "17",
+      "obeservatory_id": "75"
+    },
+    {
+      "obeservatory_name": "斜里",
+      "group_id": "17",
+      "obeservatory_id": "76"
+    },
+    {
+      "obeservatory_name": "留辺蘂",
+      "group_id": "17",
+      "obeservatory_id": "77"
+    },
+    {
+      "obeservatory_name": "留辺蘂山",
+      "group_id": "17",
+      "obeservatory_id": "78"
+    },
+    {
+      "obeservatory_name": "美幌",
+      "group_id": "17",
+      "obeservatory_id": "79"
+    },
+    {
+      "obeservatory_name": "藻琴山",
+      "group_id": "17",
+      "obeservatory_id": "80"
+    },
+    {
+      "obeservatory_name": "チミケップ山",
+      "group_id": "17",
+      "obeservatory_id": "81"
+    },
+    {
+      "obeservatory_name": "津別",
+      "group_id": "17",
+      "obeservatory_id": "82"
+    },
+    {
+      "obeservatory_name": "北見中山",
+      "group_id": "17",
+      "obeservatory_id": "83"
+    },
+    {
+      "obeservatory_name": "宇登呂",
+      "group_id": "17",
+      "obeservatory_id": "981"
+    },
+    {
+      "obeservatory_name": "西興部",
+      "group_id": "17",
+      "obeservatory_id": "1073"
+    },
+    {
+      "obeservatory_name": "白滝",
+      "group_id": "17",
+      "obeservatory_id": "1092"
+    },
+    {
+      "obeservatory_name": "境野",
+      "group_id": "17",
+      "obeservatory_id": "1209"
+    },
+    {
+      "obeservatory_name": "東藻琴",
+      "group_id": "17",
+      "obeservatory_id": "1263"
+    },
+    {
+      "obeservatory_name": "丸瀬布",
+      "group_id": "17",
+      "obeservatory_id": "1420"
+    },
+    {
+      "obeservatory_name": "女満別",
+      "group_id": "17",
+      "obeservatory_id": "1460"
+    },
+    {
+      "obeservatory_name": "紋別小向",
+      "group_id": "17",
+      "obeservatory_id": "1487"
+    },
+    {
+      "obeservatory_name": "津別二又",
+      "group_id": "17",
+      "obeservatory_id": "1568"
+    },
+    {
+      "obeservatory_name": "置戸常元",
+      "group_id": "17",
+      "obeservatory_id": "1569"
+    },
+    {
+      "obeservatory_name": "山園",
+      "group_id": "17",
+      "obeservatory_id": "1617"
+    },
+    {
+      "obeservatory_name": "雄武",
+      "group_id": "17",
+      "obeservatory_id": "47405"
+    },
+    {
+      "obeservatory_name": "網走",
+      "group_id": "17",
+      "obeservatory_id": "47409"
+    },
+    {
+      "obeservatory_name": "紋別",
+      "group_id": "17",
+      "obeservatory_id": "47435"
+    },
+    {
+      "obeservatory_name": "羅臼",
+      "group_id": "18",
+      "obeservatory_id": "84"
+    },
+    {
+      "obeservatory_name": "標津",
+      "group_id": "18",
+      "obeservatory_id": "85"
+    },
+    {
+      "obeservatory_name": "中標津",
+      "group_id": "18",
+      "obeservatory_id": "86"
+    },
+    {
+      "obeservatory_name": "計根別",
+      "group_id": "18",
+      "obeservatory_id": "87"
+    },
+    {
+      "obeservatory_name": "別海",
+      "group_id": "18",
+      "obeservatory_id": "88"
+    },
+    {
+      "obeservatory_name": "納沙布",
+      "group_id": "18",
+      "obeservatory_id": "1056"
+    },
+    {
+      "obeservatory_name": "厚床",
+      "group_id": "18",
+      "obeservatory_id": "1196"
+    },
+    {
+      "obeservatory_name": "糸櫛別",
+      "group_id": "18",
+      "obeservatory_id": "1266"
+    },
+    {
+      "obeservatory_name": "根室中標津",
+      "group_id": "18",
+      "obeservatory_id": "1489"
+    },
+    {
+      "obeservatory_name": "上標津",
+      "group_id": "18",
+      "obeservatory_id": "1547"
+    },
+    {
+      "obeservatory_name": "根室",
+      "group_id": "18",
+      "obeservatory_id": "47420"
+    },
+    {
+      "obeservatory_name": "川湯",
+      "group_id": "19",
+      "obeservatory_id": "90"
+    },
+    {
+      "obeservatory_name": "阿寒湖畔",
+      "group_id": "19",
+      "obeservatory_id": "91"
+    },
+    {
+      "obeservatory_name": "弟子屈",
+      "group_id": "19",
+      "obeservatory_id": "92"
+    },
+    {
+      "obeservatory_name": "標茶",
+      "group_id": "19",
+      "obeservatory_id": "93"
+    },
+    {
+      "obeservatory_name": "幌呂台地",
+      "group_id": "19",
+      "obeservatory_id": "94"
+    },
+    {
+      "obeservatory_name": "中徹別",
+      "group_id": "19",
+      "obeservatory_id": "95"
+    },
+    {
+      "obeservatory_name": "阿寒",
+      "group_id": "19",
+      "obeservatory_id": "96"
+    },
+    {
+      "obeservatory_name": "霧多布",
+      "group_id": "19",
+      "obeservatory_id": "97"
+    },
+    {
+      "obeservatory_name": "白糠",
+      "group_id": "19",
+      "obeservatory_id": "98"
+    },
+    {
+      "obeservatory_name": "二俣",
+      "group_id": "19",
+      "obeservatory_id": "1107"
+    },
+    {
+      "obeservatory_name": "鶴居",
+      "group_id": "19",
+      "obeservatory_id": "1186"
+    },
+    {
+      "obeservatory_name": "弟子屈",
+      "group_id": "19",
+      "obeservatory_id": "1187"
+    },
+    {
+      "obeservatory_name": "太田",
+      "group_id": "19",
+      "obeservatory_id": "1192"
+    },
+    {
+      "obeservatory_name": "榊町",
+      "group_id": "19",
+      "obeservatory_id": "1195"
+    },
+    {
+      "obeservatory_name": "知方学",
+      "group_id": "19",
+      "obeservatory_id": "1283"
+    },
+    {
+      "obeservatory_name": "塘路",
+      "group_id": "19",
+      "obeservatory_id": "1403"
+    },
+    {
+      "obeservatory_name": "茶内原野",
+      "group_id": "19",
+      "obeservatory_id": "1417"
+    },
+    {
+      "obeservatory_name": "鶴丘",
+      "group_id": "19",
+      "obeservatory_id": "1461"
+    },
+    {
+      "obeservatory_name": "釧路",
+      "group_id": "19",
+      "obeservatory_id": "47418"
+    },
+    {
+      "obeservatory_name": "軍艦山",
+      "group_id": "20",
+      "obeservatory_id": "100"
+    },
+    {
+      "obeservatory_name": "陸別",
+      "group_id": "20",
+      "obeservatory_id": "101"
+    },
+    {
+      "obeservatory_name": "殖産高地",
+      "group_id": "20",
+      "obeservatory_id": "102"
+    },
+    {
+      "obeservatory_name": "糠平",
+      "group_id": "20",
+      "obeservatory_id": "103"
+    },
+    {
+      "obeservatory_name": "小坂山",
+      "group_id": "20",
+      "obeservatory_id": "104"
+    },
+    {
+      "obeservatory_name": "上足寄",
+      "group_id": "20",
+      "obeservatory_id": "105"
+    },
+    {
+      "obeservatory_name": "西ヌプカウシ山",
+      "group_id": "20",
+      "obeservatory_id": "106"
+    },
+    {
+      "obeservatory_name": "上士幌",
+      "group_id": "20",
+      "obeservatory_id": "107"
+    },
+    {
+      "obeservatory_name": "幌安山",
+      "group_id": "20",
+      "obeservatory_id": "108"
+    },
+    {
+      "obeservatory_name": "足寄",
+      "group_id": "20",
+      "obeservatory_id": "109"
+    },
+    {
+      "obeservatory_name": "佐幌岳",
+      "group_id": "20",
+      "obeservatory_id": "110"
+    },
+    {
+      "obeservatory_name": "三角山",
+      "group_id": "20",
+      "obeservatory_id": "111"
+    },
+    {
+      "obeservatory_name": "本別",
+      "group_id": "20",
+      "obeservatory_id": "112"
+    },
+    {
+      "obeservatory_name": "新得",
+      "group_id": "20",
+      "obeservatory_id": "113"
+    },
+    {
+      "obeservatory_name": "鹿追",
+      "group_id": "20",
+      "obeservatory_id": "114"
+    },
+    {
+      "obeservatory_name": "芽室",
+      "group_id": "20",
+      "obeservatory_id": "115"
+    },
+    {
+      "obeservatory_name": "池田",
+      "group_id": "20",
+      "obeservatory_id": "117"
+    },
+    {
+      "obeservatory_name": "浦幌",
+      "group_id": "20",
+      "obeservatory_id": "118"
+    },
+    {
+      "obeservatory_name": "帯広岳",
+      "group_id": "20",
+      "obeservatory_id": "119"
+    },
+    {
+      "obeservatory_name": "ひょうたん沢",
+      "group_id": "20",
+      "obeservatory_id": "120"
+    },
+    {
+      "obeservatory_name": "大樹",
+      "group_id": "20",
+      "obeservatory_id": "121"
+    },
+    {
+      "obeservatory_name": "三国山",
+      "group_id": "20",
+      "obeservatory_id": "1099"
+    },
+    {
+      "obeservatory_name": "駒場",
+      "group_id": "20",
+      "obeservatory_id": "1204"
+    },
+    {
+      "obeservatory_name": "上札内",
+      "group_id": "20",
+      "obeservatory_id": "1210"
+    },
+    {
+      "obeservatory_name": "更別",
+      "group_id": "20",
+      "obeservatory_id": "1211"
+    },
+    {
+      "obeservatory_name": "大津",
+      "group_id": "20",
+      "obeservatory_id": "1214"
+    },
+    {
+      "obeservatory_name": "糠内",
+      "group_id": "20",
+      "obeservatory_id": "1286"
+    },
+    {
+      "obeservatory_name": "小利別",
+      "group_id": "20",
+      "obeservatory_id": "1404"
+    },
+    {
+      "obeservatory_name": "押帯",
+      "group_id": "20",
+      "obeservatory_id": "1405"
+    },
+    {
+      "obeservatory_name": "柏倉",
+      "group_id": "20",
+      "obeservatory_id": "1409"
+    },
+    {
+      "obeservatory_name": "上螺湾",
+      "group_id": "20",
+      "obeservatory_id": "1410"
+    },
+    {
+      "obeservatory_name": "留真",
+      "group_id": "20",
+      "obeservatory_id": "1418"
+    },
+    {
+      "obeservatory_name": "帯広泉",
+      "group_id": "20",
+      "obeservatory_id": "1510"
+    },
+    {
+      "obeservatory_name": "三股",
+      "group_id": "20",
+      "obeservatory_id": "1571"
+    },
+    {
+      "obeservatory_name": "帯広",
+      "group_id": "20",
+      "obeservatory_id": "47417"
+    },
+    {
+      "obeservatory_name": "広尾",
+      "group_id": "20",
+      "obeservatory_id": "47440"
+    },
+    {
+      "obeservatory_name": "安平",
+      "group_id": "21",
+      "obeservatory_id": "123"
+    },
+    {
+      "obeservatory_name": "厚真",
+      "group_id": "21",
+      "obeservatory_id": "124"
+    },
+    {
+      "obeservatory_name": "穂別",
+      "group_id": "21",
+      "obeservatory_id": "125"
+    },
+    {
+      "obeservatory_name": "森野",
+      "group_id": "21",
+      "obeservatory_id": "126"
+    },
+    {
+      "obeservatory_name": "大岸",
+      "group_id": "21",
+      "obeservatory_id": "128"
+    },
+    {
+      "obeservatory_name": "有珠山",
+      "group_id": "21",
+      "obeservatory_id": "129"
+    },
+    {
+      "obeservatory_name": "白老",
+      "group_id": "21",
+      "obeservatory_id": "130"
+    },
+    {
+      "obeservatory_name": "鵡川",
+      "group_id": "21",
+      "obeservatory_id": "131"
+    },
+    {
+      "obeservatory_name": "伊達",
+      "group_id": "21",
+      "obeservatory_id": "132"
+    },
+    {
+      "obeservatory_name": "登別山",
+      "group_id": "21",
+      "obeservatory_id": "133"
+    },
+    {
+      "obeservatory_name": "登別",
+      "group_id": "21",
+      "obeservatory_id": "134"
+    },
+    {
+      "obeservatory_name": "大滝",
+      "group_id": "21",
+      "obeservatory_id": "1067"
+    },
+    {
+      "obeservatory_name": "洞爺湖温泉",
+      "group_id": "21",
+      "obeservatory_id": "1329"
+    },
+    {
+      "obeservatory_name": "カルルス",
+      "group_id": "21",
+      "obeservatory_id": "1429"
+    },
+    {
+      "obeservatory_name": "豊浦",
+      "group_id": "21",
+      "obeservatory_id": "1496"
+    },
+    {
+      "obeservatory_name": "花和",
+      "group_id": "21",
+      "obeservatory_id": "1498"
+    },
+    {
+      "obeservatory_name": "虻田",
+      "group_id": "21",
+      "obeservatory_id": "1499"
+    },
+    {
+      "obeservatory_name": "壮瞥",
+      "group_id": "21",
+      "obeservatory_id": "1500"
+    },
+    {
+      "obeservatory_name": "入江",
+      "group_id": "21",
+      "obeservatory_id": "1501"
+    },
+    {
+      "obeservatory_name": "月浦",
+      "group_id": "21",
+      "obeservatory_id": "1502"
+    },
+    {
+      "obeservatory_name": "北有珠",
+      "group_id": "21",
+      "obeservatory_id": "1503"
+    },
+    {
+      "obeservatory_name": "洞爺湖畔",
+      "group_id": "21",
+      "obeservatory_id": "1504"
+    },
+    {
+      "obeservatory_name": "室蘭",
+      "group_id": "21",
+      "obeservatory_id": "47423"
+    },
+    {
+      "obeservatory_name": "苫小牧",
+      "group_id": "21",
+      "obeservatory_id": "47424"
+    },
+    {
+      "obeservatory_name": "日高門別",
+      "group_id": "22",
+      "obeservatory_id": "136"
+    },
+    {
+      "obeservatory_name": "新和",
+      "group_id": "22",
+      "obeservatory_id": "137"
+    },
+    {
+      "obeservatory_name": "ヌモトル山",
+      "group_id": "22",
+      "obeservatory_id": "138"
+    },
+    {
+      "obeservatory_name": "笹山",
+      "group_id": "22",
+      "obeservatory_id": "139"
+    },
+    {
+      "obeservatory_name": "静内",
+      "group_id": "22",
+      "obeservatory_id": "140"
+    },
+    {
+      "obeservatory_name": "ピセナイ山",
+      "group_id": "22",
+      "obeservatory_id": "141"
+    },
+    {
+      "obeservatory_name": "仁世宇",
+      "group_id": "22",
+      "obeservatory_id": "1097"
+    },
+    {
+      "obeservatory_name": "三石",
+      "group_id": "22",
+      "obeservatory_id": "1198"
+    },
+    {
+      "obeservatory_name": "日高",
+      "group_id": "22",
+      "obeservatory_id": "1202"
+    },
+    {
+      "obeservatory_name": "幌満",
+      "group_id": "22",
+      "obeservatory_id": "1264"
+    },
+    {
+      "obeservatory_name": "目黒",
+      "group_id": "22",
+      "obeservatory_id": "1276"
+    },
+    {
+      "obeservatory_name": "中杵臼",
+      "group_id": "22",
+      "obeservatory_id": "1288"
+    },
+    {
+      "obeservatory_name": "えりも岬",
+      "group_id": "22",
+      "obeservatory_id": "1340"
+    },
+    {
+      "obeservatory_name": "旭",
+      "group_id": "22",
+      "obeservatory_id": "1430"
+    },
+    {
+      "obeservatory_name": "平取",
+      "group_id": "22",
+      "obeservatory_id": "1594"
+    },
+    {
+      "obeservatory_name": "浦河",
+      "group_id": "22",
+      "obeservatory_id": "47426"
+    },
+    {
+      "obeservatory_name": "長万部",
+      "group_id": "23",
+      "obeservatory_id": "143"
+    },
+    {
+      "obeservatory_name": "八雲",
+      "group_id": "23",
+      "obeservatory_id": "144"
+    },
+    {
+      "obeservatory_name": "森",
+      "group_id": "23",
+      "obeservatory_id": "145"
+    },
+    {
+      "obeservatory_name": "大沼",
+      "group_id": "23",
+      "obeservatory_id": "146"
+    },
+    {
+      "obeservatory_name": "川汲",
+      "group_id": "23",
+      "obeservatory_id": "147"
+    },
+    {
+      "obeservatory_name": "北斗",
+      "group_id": "23",
+      "obeservatory_id": "148"
+    },
+    {
+      "obeservatory_name": "汐首",
+      "group_id": "23",
+      "obeservatory_id": "150"
+    },
+    {
+      "obeservatory_name": "小谷石",
+      "group_id": "23",
+      "obeservatory_id": "151"
+    },
+    {
+      "obeservatory_name": "松前",
+      "group_id": "23",
+      "obeservatory_id": "152"
+    },
+    {
+      "obeservatory_name": "熊石",
+      "group_id": "23",
+      "obeservatory_id": "155"
+    },
+    {
+      "obeservatory_name": "木古内",
+      "group_id": "23",
+      "obeservatory_id": "917"
+    },
+    {
+      "obeservatory_name": "千軒",
+      "group_id": "23",
+      "obeservatory_id": "1265"
+    },
+    {
+      "obeservatory_name": "蛾眉野",
+      "group_id": "23",
+      "obeservatory_id": "1416"
+    },
+    {
+      "obeservatory_name": "高松",
+      "group_id": "23",
+      "obeservatory_id": "1462"
+    },
+    {
+      "obeservatory_name": "戸井泊",
+      "group_id": "23",
+      "obeservatory_id": "1543"
+    },
+    {
+      "obeservatory_name": "知内",
+      "group_id": "23",
+      "obeservatory_id": "1552"
+    },
+    {
+      "obeservatory_name": "函館",
+      "group_id": "23",
+      "obeservatory_id": "47430"
+    },
+    {
+      "obeservatory_name": "せたな",
+      "group_id": "24",
+      "obeservatory_id": "153"
+    },
+    {
+      "obeservatory_name": "今金",
+      "group_id": "24",
+      "obeservatory_id": "154"
+    },
+    {
+      "obeservatory_name": "潮見",
+      "group_id": "24",
+      "obeservatory_id": "156"
+    },
+    {
+      "obeservatory_name": "奥尻",
+      "group_id": "24",
+      "obeservatory_id": "1199"
+    },
+    {
+      "obeservatory_name": "鶉",
+      "group_id": "24",
+      "obeservatory_id": "1200"
+    },
+    {
+      "obeservatory_name": "石崎",
+      "group_id": "24",
+      "obeservatory_id": "1205"
+    },
+    {
+      "obeservatory_name": "米岡",
+      "group_id": "24",
+      "obeservatory_id": "1513"
+    },
+    {
+      "obeservatory_name": "江差",
+      "group_id": "24",
+      "obeservatory_id": "47428"
+    },
+    {
+      "obeservatory_name": "障子山",
+      "group_id": "31",
+      "obeservatory_id": "158"
+    },
+    {
+      "obeservatory_name": "蟹田",
+      "group_id": "31",
+      "obeservatory_id": "160"
+    },
+    {
+      "obeservatory_name": "野辺地",
+      "group_id": "31",
+      "obeservatory_id": "162"
+    },
+    {
+      "obeservatory_name": "鰺ケ沢",
+      "group_id": "31",
+      "obeservatory_id": "163"
+    },
+    {
+      "obeservatory_name": "五所川原",
+      "group_id": "31",
+      "obeservatory_id": "164"
+    },
+    {
+      "obeservatory_name": "弘前",
+      "group_id": "31",
+      "obeservatory_id": "166"
+    },
+    {
+      "obeservatory_name": "黒石",
+      "group_id": "31",
+      "obeservatory_id": "167"
+    },
+    {
+      "obeservatory_name": "八甲田山",
+      "group_id": "31",
+      "obeservatory_id": "168"
+    },
+    {
+      "obeservatory_name": "三沢",
+      "group_id": "31",
+      "obeservatory_id": "169"
+    },
+    {
+      "obeservatory_name": "四兵衛森",
+      "group_id": "31",
+      "obeservatory_id": "170"
+    },
+    {
+      "obeservatory_name": "毛無山",
+      "group_id": "31",
+      "obeservatory_id": "171"
+    },
+    {
+      "obeservatory_name": "十和田",
+      "group_id": "31",
+      "obeservatory_id": "172"
+    },
+    {
+      "obeservatory_name": "大鰐",
+      "group_id": "31",
+      "obeservatory_id": "174"
+    },
+    {
+      "obeservatory_name": "碇ケ関",
+      "group_id": "31",
+      "obeservatory_id": "175"
+    },
+    {
+      "obeservatory_name": "空岱山",
+      "group_id": "31",
+      "obeservatory_id": "176"
+    },
+    {
+      "obeservatory_name": "休屋",
+      "group_id": "31",
+      "obeservatory_id": "177"
+    },
+    {
+      "obeservatory_name": "朝日奈岳",
+      "group_id": "31",
+      "obeservatory_id": "178"
+    },
+    {
+      "obeservatory_name": "三戸",
+      "group_id": "31",
+      "obeservatory_id": "179"
+    },
+    {
+      "obeservatory_name": "今別",
+      "group_id": "31",
+      "obeservatory_id": "1026"
+    },
+    {
+      "obeservatory_name": "六ケ所",
+      "group_id": "31",
+      "obeservatory_id": "1027"
+    },
+    {
+      "obeservatory_name": "大間",
+      "group_id": "31",
+      "obeservatory_id": "1041"
+    },
+    {
+      "obeservatory_name": "大和山",
+      "group_id": "31",
+      "obeservatory_id": "1042"
+    },
+    {
+      "obeservatory_name": "酸ケ湯",
+      "group_id": "31",
+      "obeservatory_id": "1079"
+    },
+    {
+      "obeservatory_name": "岳",
+      "group_id": "31",
+      "obeservatory_id": "1108"
+    },
+    {
+      "obeservatory_name": "長慶平",
+      "group_id": "31",
+      "obeservatory_id": "1110"
+    },
+    {
+      "obeservatory_name": "市浦",
+      "group_id": "31",
+      "obeservatory_id": "1119"
+    },
+    {
+      "obeservatory_name": "小田野沢",
+      "group_id": "31",
+      "obeservatory_id": "1122"
+    },
+    {
+      "obeservatory_name": "脇野沢",
+      "group_id": "31",
+      "obeservatory_id": "1124"
+    },
+    {
+      "obeservatory_name": "七戸",
+      "group_id": "31",
+      "obeservatory_id": "1183"
+    },
+    {
+      "obeservatory_name": "戸来",
+      "group_id": "31",
+      "obeservatory_id": "1272"
+    },
+    {
+      "obeservatory_name": "温川",
+      "group_id": "31",
+      "obeservatory_id": "1406"
+    },
+    {
+      "obeservatory_name": "青森大谷",
+      "group_id": "31",
+      "obeservatory_id": "1495"
+    },
+    {
+      "obeservatory_name": "湯野川",
+      "group_id": "31",
+      "obeservatory_id": "1559"
+    },
+    {
+      "obeservatory_name": "深浦",
+      "group_id": "31",
+      "obeservatory_id": "47574"
+    },
+    {
+      "obeservatory_name": "青森",
+      "group_id": "31",
+      "obeservatory_id": "47575"
+    },
+    {
+      "obeservatory_name": "むつ",
+      "group_id": "31",
+      "obeservatory_id": "47576"
+    },
+    {
+      "obeservatory_name": "八戸",
+      "group_id": "31",
+      "obeservatory_id": "47581"
+    },
+    {
+      "obeservatory_name": "田代岳",
+      "group_id": "32",
+      "obeservatory_id": "180"
+    },
+    {
+      "obeservatory_name": "陣場",
+      "group_id": "32",
+      "obeservatory_id": "181"
+    },
+    {
+      "obeservatory_name": "杉沢山",
+      "group_id": "32",
+      "obeservatory_id": "182"
+    },
+    {
+      "obeservatory_name": "能代",
+      "group_id": "32",
+      "obeservatory_id": "183"
+    },
+    {
+      "obeservatory_name": "鷹巣",
+      "group_id": "32",
+      "obeservatory_id": "184"
+    },
+    {
+      "obeservatory_name": "鹿角",
+      "group_id": "32",
+      "obeservatory_id": "185"
+    },
+    {
+      "obeservatory_name": "湯瀬",
+      "group_id": "32",
+      "obeservatory_id": "186"
+    },
+    {
+      "obeservatory_name": "森吉山",
+      "group_id": "32",
+      "obeservatory_id": "187"
+    },
+    {
+      "obeservatory_name": "五城目",
+      "group_id": "32",
+      "obeservatory_id": "188"
+    },
+    {
+      "obeservatory_name": "男鹿本山",
+      "group_id": "32",
+      "obeservatory_id": "189"
+    },
+    {
+      "obeservatory_name": "太平山",
+      "group_id": "32",
+      "obeservatory_id": "191"
+    },
+    {
+      "obeservatory_name": "岩見三内",
+      "group_id": "32",
+      "obeservatory_id": "192"
+    },
+    {
+      "obeservatory_name": "角館",
+      "group_id": "32",
+      "obeservatory_id": "193"
+    },
+    {
+      "obeservatory_name": "田沢湖",
+      "group_id": "32",
+      "obeservatory_id": "194"
+    },
+    {
+      "obeservatory_name": "大曲",
+      "group_id": "32",
+      "obeservatory_id": "195"
+    },
+    {
+      "obeservatory_name": "本荘",
+      "group_id": "32",
+      "obeservatory_id": "196"
+    },
+    {
+      "obeservatory_name": "保呂羽山",
+      "group_id": "32",
+      "obeservatory_id": "197"
+    },
+    {
+      "obeservatory_name": "横手",
+      "group_id": "32",
+      "obeservatory_id": "198"
+    },
+    {
+      "obeservatory_name": "象潟",
+      "group_id": "32",
+      "obeservatory_id": "199"
+    },
+    {
+      "obeservatory_name": "矢島",
+      "group_id": "32",
+      "obeservatory_id": "200"
+    },
+    {
+      "obeservatory_name": "三森山",
+      "group_id": "32",
+      "obeservatory_id": "201"
+    },
+    {
+      "obeservatory_name": "湯沢",
+      "group_id": "32",
+      "obeservatory_id": "202"
+    },
+    {
+      "obeservatory_name": "姥井戸山",
+      "group_id": "32",
+      "obeservatory_id": "203"
+    },
+    {
+      "obeservatory_name": "湯の岱",
+      "group_id": "32",
+      "obeservatory_id": "204"
+    },
+    {
+      "obeservatory_name": "大館",
+      "group_id": "32",
+      "obeservatory_id": "912"
+    },
+    {
+      "obeservatory_name": "大潟",
+      "group_id": "32",
+      "obeservatory_id": "1035"
+    },
+    {
+      "obeservatory_name": "男鹿",
+      "group_id": "32",
+      "obeservatory_id": "1036"
+    },
+    {
+      "obeservatory_name": "八森",
+      "group_id": "32",
+      "obeservatory_id": "1043"
+    },
+    {
+      "obeservatory_name": "大正寺",
+      "group_id": "32",
+      "obeservatory_id": "1050"
+    },
+    {
+      "obeservatory_name": "東成瀬",
+      "group_id": "32",
+      "obeservatory_id": "1109"
+    },
+    {
+      "obeservatory_name": "比立内",
+      "group_id": "32",
+      "obeservatory_id": "1115"
+    },
+    {
+      "obeservatory_name": "東由利",
+      "group_id": "32",
+      "obeservatory_id": "1117"
+    },
+    {
+      "obeservatory_name": "阿仁合",
+      "group_id": "32",
+      "obeservatory_id": "1131"
+    },
+    {
+      "obeservatory_name": "鎧畑",
+      "group_id": "32",
+      "obeservatory_id": "1167"
+    },
+    {
+      "obeservatory_name": "藤里",
+      "group_id": "32",
+      "obeservatory_id": "1273"
+    },
+    {
+      "obeservatory_name": "桧木内",
+      "group_id": "32",
+      "obeservatory_id": "1278"
+    },
+    {
+      "obeservatory_name": "八幡平",
+      "group_id": "32",
+      "obeservatory_id": "1289"
+    },
+    {
+      "obeservatory_name": "笹子",
+      "group_id": "32",
+      "obeservatory_id": "1407"
+    },
+    {
+      "obeservatory_name": "藤原",
+      "group_id": "32",
+      "obeservatory_id": "1408"
+    },
+    {
+      "obeservatory_name": "男鹿真山",
+      "group_id": "32",
+      "obeservatory_id": "1422"
+    },
+    {
+      "obeservatory_name": "仁別",
+      "group_id": "32",
+      "obeservatory_id": "1425"
+    },
+    {
+      "obeservatory_name": "脇神",
+      "group_id": "32",
+      "obeservatory_id": "1463"
+    },
+    {
+      "obeservatory_name": "雄和",
+      "group_id": "32",
+      "obeservatory_id": "1511"
+    },
+    {
+      "obeservatory_name": "秋田",
+      "group_id": "32",
+      "obeservatory_id": "47582"
+    },
+    {
+      "obeservatory_name": "種市",
+      "group_id": "33",
+      "obeservatory_id": "205"
+    },
+    {
+      "obeservatory_name": "軽米",
+      "group_id": "33",
+      "obeservatory_id": "206"
+    },
+    {
+      "obeservatory_name": "二戸",
+      "group_id": "33",
+      "obeservatory_id": "207"
+    },
+    {
+      "obeservatory_name": "折爪岳",
+      "group_id": "33",
+      "obeservatory_id": "208"
+    },
+    {
+      "obeservatory_name": "久慈",
+      "group_id": "33",
+      "obeservatory_id": "209"
+    },
+    {
+      "obeservatory_name": "西岳",
+      "group_id": "33",
+      "obeservatory_id": "210"
+    },
+    {
+      "obeservatory_name": "葛巻",
+      "group_id": "33",
+      "obeservatory_id": "211"
+    },
+    {
+      "obeservatory_name": "袖山",
+      "group_id": "33",
+      "obeservatory_id": "212"
+    },
+    {
+      "obeservatory_name": "茶臼岳",
+      "group_id": "33",
+      "obeservatory_id": "213"
+    },
+    {
+      "obeservatory_name": "岩手松尾",
+      "group_id": "33",
+      "obeservatory_id": "214"
+    },
+    {
+      "obeservatory_name": "岩手山",
+      "group_id": "33",
+      "obeservatory_id": "215"
+    },
+    {
+      "obeservatory_name": "岩洞",
+      "group_id": "33",
+      "obeservatory_id": "216"
+    },
+    {
+      "obeservatory_name": "大森山",
+      "group_id": "33",
+      "obeservatory_id": "217"
+    },
+    {
+      "obeservatory_name": "岩泉",
+      "group_id": "33",
+      "obeservatory_id": "218"
+    },
+    {
+      "obeservatory_name": "駒ケ岳",
+      "group_id": "33",
+      "obeservatory_id": "219"
+    },
+    {
+      "obeservatory_name": "害鷹森",
+      "group_id": "33",
+      "obeservatory_id": "220"
+    },
+    {
+      "obeservatory_name": "雫石",
+      "group_id": "33",
+      "obeservatory_id": "221"
+    },
+    {
+      "obeservatory_name": "薬師岳",
+      "group_id": "33",
+      "obeservatory_id": "224"
+    },
+    {
+      "obeservatory_name": "黒森山",
+      "group_id": "33",
+      "obeservatory_id": "225"
+    },
+    {
+      "obeservatory_name": "豊沢",
+      "group_id": "33",
+      "obeservatory_id": "226"
+    },
+    {
+      "obeservatory_name": "花巻",
+      "group_id": "33",
+      "obeservatory_id": "227"
+    },
+    {
+      "obeservatory_name": "大迫",
+      "group_id": "33",
+      "obeservatory_id": "228"
+    },
+    {
+      "obeservatory_name": "湯田",
+      "group_id": "33",
+      "obeservatory_id": "229"
+    },
+    {
+      "obeservatory_name": "北上",
+      "group_id": "33",
+      "obeservatory_id": "230"
+    },
+    {
+      "obeservatory_name": "遠野",
+      "group_id": "33",
+      "obeservatory_id": "231"
+    },
+    {
+      "obeservatory_name": "五葉山",
+      "group_id": "33",
+      "obeservatory_id": "232"
+    },
+    {
+      "obeservatory_name": "釜石",
+      "group_id": "33",
+      "obeservatory_id": "233"
+    },
+    {
+      "obeservatory_name": "岳山",
+      "group_id": "33",
+      "obeservatory_id": "234"
+    },
+    {
+      "obeservatory_name": "若柳",
+      "group_id": "33",
+      "obeservatory_id": "235"
+    },
+    {
+      "obeservatory_name": "江刺",
+      "group_id": "33",
+      "obeservatory_id": "236"
+    },
+    {
+      "obeservatory_name": "一関",
+      "group_id": "33",
+      "obeservatory_id": "238"
+    },
+    {
+      "obeservatory_name": "千厩",
+      "group_id": "33",
+      "obeservatory_id": "239"
+    },
+    {
+      "obeservatory_name": "室根山",
+      "group_id": "33",
+      "obeservatory_id": "240"
+    },
+    {
+      "obeservatory_name": "祭畤",
+      "group_id": "33",
+      "obeservatory_id": "1028"
+    },
+    {
+      "obeservatory_name": "好摩",
+      "group_id": "33",
+      "obeservatory_id": "1032"
+    },
+    {
+      "obeservatory_name": "山田",
+      "group_id": "33",
+      "obeservatory_id": "1033"
+    },
+    {
+      "obeservatory_name": "大野",
+      "group_id": "33",
+      "obeservatory_id": "1037"
+    },
+    {
+      "obeservatory_name": "衣川",
+      "group_id": "33",
+      "obeservatory_id": "1045"
+    },
+    {
+      "obeservatory_name": "藪川",
+      "group_id": "33",
+      "obeservatory_id": "1078"
+    },
+    {
+      "obeservatory_name": "米里",
+      "group_id": "33",
+      "obeservatory_id": "1113"
+    },
+    {
+      "obeservatory_name": "沢内",
+      "group_id": "33",
+      "obeservatory_id": "1118"
+    },
+    {
+      "obeservatory_name": "荒屋",
+      "group_id": "33",
+      "obeservatory_id": "1120"
+    },
+    {
+      "obeservatory_name": "普代",
+      "group_id": "33",
+      "obeservatory_id": "1123"
+    },
+    {
+      "obeservatory_name": "紫波",
+      "group_id": "33",
+      "obeservatory_id": "1128"
+    },
+    {
+      "obeservatory_name": "葛根田",
+      "group_id": "33",
+      "obeservatory_id": "1168"
+    },
+    {
+      "obeservatory_name": "住田",
+      "group_id": "33",
+      "obeservatory_id": "1206"
+    },
+    {
+      "obeservatory_name": "小本",
+      "group_id": "33",
+      "obeservatory_id": "1212"
+    },
+    {
+      "obeservatory_name": "奥中山",
+      "group_id": "33",
+      "obeservatory_id": "1215"
+    },
+    {
+      "obeservatory_name": "山形",
+      "group_id": "33",
+      "obeservatory_id": "1219"
+    },
+    {
+      "obeservatory_name": "川井",
+      "group_id": "33",
+      "obeservatory_id": "1224"
+    },
+    {
+      "obeservatory_name": "門馬",
+      "group_id": "33",
+      "obeservatory_id": "1225"
+    },
+    {
+      "obeservatory_name": "下戸鎖",
+      "group_id": "33",
+      "obeservatory_id": "1332"
+    },
+    {
+      "obeservatory_name": "区界",
+      "group_id": "33",
+      "obeservatory_id": "1447"
+    },
+    {
+      "obeservatory_name": "大槌",
+      "group_id": "33",
+      "obeservatory_id": "1508"
+    },
+    {
+      "obeservatory_name": "大東",
+      "group_id": "33",
+      "obeservatory_id": "1557"
+    },
+    {
+      "obeservatory_name": "金ヶ崎",
+      "group_id": "33",
+      "obeservatory_id": "1558"
+    },
+    {
+      "obeservatory_name": "滝沢",
+      "group_id": "33",
+      "obeservatory_id": "1560"
+    },
+    {
+      "obeservatory_name": "附馬牛",
+      "group_id": "33",
+      "obeservatory_id": "1563"
+    },
+    {
+      "obeservatory_name": "厳美",
+      "group_id": "33",
+      "obeservatory_id": "1598"
+    },
+    {
+      "obeservatory_name": "大船渡",
+      "group_id": "33",
+      "obeservatory_id": "47512"
+    },
+    {
+      "obeservatory_name": "盛岡",
+      "group_id": "33",
+      "obeservatory_id": "47584"
+    },
+    {
+      "obeservatory_name": "宮古",
+      "group_id": "33",
+      "obeservatory_id": "47585"
+    },
+    {
+      "obeservatory_name": "栗駒山",
+      "group_id": "34",
+      "obeservatory_id": "241"
+    },
+    {
+      "obeservatory_name": "気仙沼",
+      "group_id": "34",
+      "obeservatory_id": "242"
+    },
+    {
+      "obeservatory_name": "川渡",
+      "group_id": "34",
+      "obeservatory_id": "243"
+    },
+    {
+      "obeservatory_name": "築館",
+      "group_id": "34",
+      "obeservatory_id": "244"
+    },
+    {
+      "obeservatory_name": "箕輪山",
+      "group_id": "34",
+      "obeservatory_id": "245"
+    },
+    {
+      "obeservatory_name": "志津川",
+      "group_id": "34",
+      "obeservatory_id": "246"
+    },
+    {
+      "obeservatory_name": "古川",
+      "group_id": "34",
+      "obeservatory_id": "247"
+    },
+    {
+      "obeservatory_name": "大衡",
+      "group_id": "34",
+      "obeservatory_id": "248"
+    },
+    {
+      "obeservatory_name": "鹿島台",
+      "group_id": "34",
+      "obeservatory_id": "249"
+    },
+    {
+      "obeservatory_name": "新川",
+      "group_id": "34",
+      "obeservatory_id": "251"
+    },
+    {
+      "obeservatory_name": "鷹巣山",
+      "group_id": "34",
+      "obeservatory_id": "252"
+    },
+    {
+      "obeservatory_name": "川崎",
+      "group_id": "34",
+      "obeservatory_id": "254"
+    },
+    {
+      "obeservatory_name": "不忘山",
+      "group_id": "34",
+      "obeservatory_id": "255"
+    },
+    {
+      "obeservatory_name": "白石",
+      "group_id": "34",
+      "obeservatory_id": "256"
+    },
+    {
+      "obeservatory_name": "亘理",
+      "group_id": "34",
+      "obeservatory_id": "257"
+    },
+    {
+      "obeservatory_name": "雄勝",
+      "group_id": "34",
+      "obeservatory_id": "985"
+    },
+    {
+      "obeservatory_name": "米山",
+      "group_id": "34",
+      "obeservatory_id": "1029"
+    },
+    {
+      "obeservatory_name": "塩釜",
+      "group_id": "34",
+      "obeservatory_id": "1030"
+    },
+    {
+      "obeservatory_name": "駒ノ湯",
+      "group_id": "34",
+      "obeservatory_id": "1126"
+    },
+    {
+      "obeservatory_name": "丸森",
+      "group_id": "34",
+      "obeservatory_id": "1220"
+    },
+    {
+      "obeservatory_name": "花山",
+      "group_id": "34",
+      "obeservatory_id": "1267"
+    },
+    {
+      "obeservatory_name": "江ノ島",
+      "group_id": "34",
+      "obeservatory_id": "1290"
+    },
+    {
+      "obeservatory_name": "筆甫",
+      "group_id": "34",
+      "obeservatory_id": "1298"
+    },
+    {
+      "obeservatory_name": "泉ケ岳",
+      "group_id": "34",
+      "obeservatory_id": "1365"
+    },
+    {
+      "obeservatory_name": "名取",
+      "group_id": "34",
+      "obeservatory_id": "1464"
+    },
+    {
+      "obeservatory_name": "鴬沢",
+      "group_id": "34",
+      "obeservatory_id": "1526"
+    },
+    {
+      "obeservatory_name": "加美",
+      "group_id": "34",
+      "obeservatory_id": "1561"
+    },
+    {
+      "obeservatory_name": "蔵王",
+      "group_id": "34",
+      "obeservatory_id": "1564"
+    },
+    {
+      "obeservatory_name": "栗駒深山",
+      "group_id": "34",
+      "obeservatory_id": "1597"
+    },
+    {
+      "obeservatory_name": "栗駒",
+      "group_id": "34",
+      "obeservatory_id": "1600"
+    },
+    {
+      "obeservatory_name": "仙台",
+      "group_id": "34",
+      "obeservatory_id": "47590"
+    },
+    {
+      "obeservatory_name": "石巻",
+      "group_id": "34",
+      "obeservatory_id": "47592"
+    },
+    {
+      "obeservatory_name": "鳥海山",
+      "group_id": "35",
+      "obeservatory_id": "258"
+    },
+    {
+      "obeservatory_name": "差首鍋",
+      "group_id": "35",
+      "obeservatory_id": "260"
+    },
+    {
+      "obeservatory_name": "太平山",
+      "group_id": "35",
+      "obeservatory_id": "261"
+    },
+    {
+      "obeservatory_name": "金山",
+      "group_id": "35",
+      "obeservatory_id": "262"
+    },
+    {
+      "obeservatory_name": "鶴岡",
+      "group_id": "35",
+      "obeservatory_id": "263"
+    },
+    {
+      "obeservatory_name": "狩川",
+      "group_id": "35",
+      "obeservatory_id": "264"
+    },
+    {
+      "obeservatory_name": "瀬見",
+      "group_id": "35",
+      "obeservatory_id": "266"
+    },
+    {
+      "obeservatory_name": "温海岳",
+      "group_id": "35",
+      "obeservatory_id": "267"
+    },
+    {
+      "obeservatory_name": "櫛引",
+      "group_id": "35",
+      "obeservatory_id": "268"
+    },
+    {
+      "obeservatory_name": "月山",
+      "group_id": "35",
+      "obeservatory_id": "269"
+    },
+    {
+      "obeservatory_name": "銀山",
+      "group_id": "35",
+      "obeservatory_id": "270"
+    },
+    {
+      "obeservatory_name": "楯岡",
+      "group_id": "35",
+      "obeservatory_id": "271"
+    },
+    {
+      "obeservatory_name": "左沢",
+      "group_id": "35",
+      "obeservatory_id": "272"
+    },
+    {
+      "obeservatory_name": "葉山",
+      "group_id": "35",
+      "obeservatory_id": "274"
+    },
+    {
+      "obeservatory_name": "長井",
+      "group_id": "35",
+      "obeservatory_id": "275"
+    },
+    {
+      "obeservatory_name": "蔵王山",
+      "group_id": "35",
+      "obeservatory_id": "276"
+    },
+    {
+      "obeservatory_name": "小国",
+      "group_id": "35",
+      "obeservatory_id": "277"
+    },
+    {
+      "obeservatory_name": "高峰",
+      "group_id": "35",
+      "obeservatory_id": "278"
+    },
+    {
+      "obeservatory_name": "米沢",
+      "group_id": "35",
+      "obeservatory_id": "279"
+    },
+    {
+      "obeservatory_name": "西吾妻山",
+      "group_id": "35",
+      "obeservatory_id": "280"
+    },
+    {
+      "obeservatory_name": "向町",
+      "group_id": "35",
+      "obeservatory_id": "910"
+    },
+    {
+      "obeservatory_name": "上草津",
+      "group_id": "35",
+      "obeservatory_id": "1038"
+    },
+    {
+      "obeservatory_name": "尾花沢",
+      "group_id": "35",
+      "obeservatory_id": "1039"
+    },
+    {
+      "obeservatory_name": "鼠ケ関",
+      "group_id": "35",
+      "obeservatory_id": "1040"
+    },
+    {
+      "obeservatory_name": "山毛欅潰山",
+      "group_id": "35",
+      "obeservatory_id": "1103"
+    },
+    {
+      "obeservatory_name": "肘折",
+      "group_id": "35",
+      "obeservatory_id": "1125"
+    },
+    {
+      "obeservatory_name": "高畠",
+      "group_id": "35",
+      "obeservatory_id": "1132"
+    },
+    {
+      "obeservatory_name": "落合",
+      "group_id": "35",
+      "obeservatory_id": "1169"
+    },
+    {
+      "obeservatory_name": "飛島",
+      "group_id": "35",
+      "obeservatory_id": "1291"
+    },
+    {
+      "obeservatory_name": "大井沢",
+      "group_id": "35",
+      "obeservatory_id": "1292"
+    },
+    {
+      "obeservatory_name": "荒沢",
+      "group_id": "35",
+      "obeservatory_id": "1357"
+    },
+    {
+      "obeservatory_name": "中津川",
+      "group_id": "35",
+      "obeservatory_id": "1372"
+    },
+    {
+      "obeservatory_name": "白鷹山",
+      "group_id": "35",
+      "obeservatory_id": "1428"
+    },
+    {
+      "obeservatory_name": "浜中",
+      "group_id": "35",
+      "obeservatory_id": "1465"
+    },
+    {
+      "obeservatory_name": "東根",
+      "group_id": "35",
+      "obeservatory_id": "1488"
+    },
+    {
+      "obeservatory_name": "村山",
+      "group_id": "35",
+      "obeservatory_id": "1539"
+    },
+    {
+      "obeservatory_name": "上山中山",
+      "group_id": "35",
+      "obeservatory_id": "1562"
+    },
+    {
+      "obeservatory_name": "新庄",
+      "group_id": "35",
+      "obeservatory_id": "47520"
+    },
+    {
+      "obeservatory_name": "酒田",
+      "group_id": "35",
+      "obeservatory_id": "47587"
+    },
+    {
+      "obeservatory_name": "山形",
+      "group_id": "35",
+      "obeservatory_id": "47588"
+    },
+    {
+      "obeservatory_name": "梁川",
+      "group_id": "36",
+      "obeservatory_id": "281"
+    },
+    {
+      "obeservatory_name": "稲荷峠",
+      "group_id": "36",
+      "obeservatory_id": "282"
+    },
+    {
+      "obeservatory_name": "吾妻山",
+      "group_id": "36",
+      "obeservatory_id": "283"
+    },
+    {
+      "obeservatory_name": "相馬",
+      "group_id": "36",
+      "obeservatory_id": "285"
+    },
+    {
+      "obeservatory_name": "喜多方",
+      "group_id": "36",
+      "obeservatory_id": "286"
+    },
+    {
+      "obeservatory_name": "八木沢",
+      "group_id": "36",
+      "obeservatory_id": "287"
+    },
+    {
+      "obeservatory_name": "原町",
+      "group_id": "36",
+      "obeservatory_id": "288"
+    },
+    {
+      "obeservatory_name": "飯谷山",
+      "group_id": "36",
+      "obeservatory_id": "289"
+    },
+    {
+      "obeservatory_name": "猪苗代",
+      "group_id": "36",
+      "obeservatory_id": "290"
+    },
+    {
+      "obeservatory_name": "二本松",
+      "group_id": "36",
+      "obeservatory_id": "291"
+    },
+    {
+      "obeservatory_name": "白馬石山",
+      "group_id": "36",
+      "obeservatory_id": "292"
+    },
+    {
+      "obeservatory_name": "船引",
+      "group_id": "36",
+      "obeservatory_id": "294"
+    },
+    {
+      "obeservatory_name": "浪江",
+      "group_id": "36",
+      "obeservatory_id": "295"
+    },
+    {
+      "obeservatory_name": "浅草岳",
+      "group_id": "36",
+      "obeservatory_id": "296"
+    },
+    {
+      "obeservatory_name": "只見",
+      "group_id": "36",
+      "obeservatory_id": "297"
+    },
+    {
+      "obeservatory_name": "博士峠",
+      "group_id": "36",
+      "obeservatory_id": "298"
+    },
+    {
+      "obeservatory_name": "郡山",
+      "group_id": "36",
+      "obeservatory_id": "299"
+    },
+    {
+      "obeservatory_name": "富岡",
+      "group_id": "36",
+      "obeservatory_id": "300"
+    },
+    {
+      "obeservatory_name": "南郷",
+      "group_id": "36",
+      "obeservatory_id": "301"
+    },
+    {
+      "obeservatory_name": "駒止峠",
+      "group_id": "36",
+      "obeservatory_id": "302"
+    },
+    {
+      "obeservatory_name": "田島",
+      "group_id": "36",
+      "obeservatory_id": "303"
+    },
+    {
+      "obeservatory_name": "小野新町",
+      "group_id": "36",
+      "obeservatory_id": "304"
+    },
+    {
+      "obeservatory_name": "観音山",
+      "group_id": "36",
+      "obeservatory_id": "305"
+    },
+    {
+      "obeservatory_name": "石川",
+      "group_id": "36",
+      "obeservatory_id": "307"
+    },
+    {
+      "obeservatory_name": "山王峠",
+      "group_id": "36",
+      "obeservatory_id": "308"
+    },
+    {
+      "obeservatory_name": "大辷山",
+      "group_id": "36",
+      "obeservatory_id": "309"
+    },
+    {
+      "obeservatory_name": "平",
+      "group_id": "36",
+      "obeservatory_id": "310"
+    },
+    {
+      "obeservatory_name": "田代山",
+      "group_id": "36",
+      "obeservatory_id": "311"
+    },
+    {
+      "obeservatory_name": "東白川",
+      "group_id": "36",
+      "obeservatory_id": "312"
+    },
+    {
+      "obeservatory_name": "西会津",
+      "group_id": "36",
+      "obeservatory_id": "1031"
+    },
+    {
+      "obeservatory_name": "広野",
+      "group_id": "36",
+      "obeservatory_id": "1034"
+    },
+    {
+      "obeservatory_name": "金山",
+      "group_id": "36",
+      "obeservatory_id": "1044"
+    },
+    {
+      "obeservatory_name": "鷲倉",
+      "group_id": "36",
+      "obeservatory_id": "1116"
+    },
+    {
+      "obeservatory_name": "上遠野",
+      "group_id": "36",
+      "obeservatory_id": "1127"
+    },
+    {
+      "obeservatory_name": "川内",
+      "group_id": "36",
+      "obeservatory_id": "1129"
+    },
+    {
+      "obeservatory_name": "飯舘",
+      "group_id": "36",
+      "obeservatory_id": "1130"
+    },
+    {
+      "obeservatory_name": "津島",
+      "group_id": "36",
+      "obeservatory_id": "1150"
+    },
+    {
+      "obeservatory_name": "長沼",
+      "group_id": "36",
+      "obeservatory_id": "1268"
+    },
+    {
+      "obeservatory_name": "舘岩",
+      "group_id": "36",
+      "obeservatory_id": "1269"
+    },
+    {
+      "obeservatory_name": "川前",
+      "group_id": "36",
+      "obeservatory_id": "1274"
+    },
+    {
+      "obeservatory_name": "桧原",
+      "group_id": "36",
+      "obeservatory_id": "1282"
+    },
+    {
+      "obeservatory_name": "茂庭",
+      "group_id": "36",
+      "obeservatory_id": "1293"
+    },
+    {
+      "obeservatory_name": "湯本",
+      "group_id": "36",
+      "obeservatory_id": "1294"
+    },
+    {
+      "obeservatory_name": "桧枝岐",
+      "group_id": "36",
+      "obeservatory_id": "1295"
+    },
+    {
+      "obeservatory_name": "吉尾峠",
+      "group_id": "36",
+      "obeservatory_id": "1359"
+    },
+    {
+      "obeservatory_name": "六十里越",
+      "group_id": "36",
+      "obeservatory_id": "1364"
+    },
+    {
+      "obeservatory_name": "湖南",
+      "group_id": "36",
+      "obeservatory_id": "1386"
+    },
+    {
+      "obeservatory_name": "玉川",
+      "group_id": "36",
+      "obeservatory_id": "1466"
+    },
+    {
+      "obeservatory_name": "山田",
+      "group_id": "36",
+      "obeservatory_id": "1607"
+    },
+    {
+      "obeservatory_name": "若松",
+      "group_id": "36",
+      "obeservatory_id": "47570"
+    },
+    {
+      "obeservatory_name": "福島",
+      "group_id": "36",
+      "obeservatory_id": "47595"
+    },
+    {
+      "obeservatory_name": "白河",
+      "group_id": "36",
+      "obeservatory_id": "47597"
+    },
+    {
+      "obeservatory_name": "小名浜",
+      "group_id": "36",
+      "obeservatory_id": "47598"
+    },
+    {
+      "obeservatory_name": "花園",
+      "group_id": "40",
+      "obeservatory_id": "314"
+    },
+    {
+      "obeservatory_name": "北茨城",
+      "group_id": "40",
+      "obeservatory_id": "315"
+    },
+    {
+      "obeservatory_name": "大子",
+      "group_id": "40",
+      "obeservatory_id": "316"
+    },
+    {
+      "obeservatory_name": "神峰山",
+      "group_id": "40",
+      "obeservatory_id": "317"
+    },
+    {
+      "obeservatory_name": "笠間",
+      "group_id": "40",
+      "obeservatory_id": "318"
+    },
+    {
+      "obeservatory_name": "古河",
+      "group_id": "40",
+      "obeservatory_id": "320"
+    },
+    {
+      "obeservatory_name": "愛宕山",
+      "group_id": "40",
+      "obeservatory_id": "321"
+    },
+    {
+      "obeservatory_name": "下妻",
+      "group_id": "40",
+      "obeservatory_id": "322"
+    },
+    {
+      "obeservatory_name": "坂東",
+      "group_id": "40",
+      "obeservatory_id": "323"
+    },
+    {
+      "obeservatory_name": "土浦",
+      "group_id": "40",
+      "obeservatory_id": "324"
+    },
+    {
+      "obeservatory_name": "鹿嶋",
+      "group_id": "40",
+      "obeservatory_id": "325"
+    },
+    {
+      "obeservatory_name": "江戸崎",
+      "group_id": "40",
+      "obeservatory_id": "911"
+    },
+    {
+      "obeservatory_name": "日立",
+      "group_id": "40",
+      "obeservatory_id": "1011"
+    },
+    {
+      "obeservatory_name": "柿岡",
+      "group_id": "40",
+      "obeservatory_id": "1012"
+    },
+    {
+      "obeservatory_name": "美野里",
+      "group_id": "40",
+      "obeservatory_id": "1013"
+    },
+    {
+      "obeservatory_name": "龍ケ崎",
+      "group_id": "40",
+      "obeservatory_id": "1014"
+    },
+    {
+      "obeservatory_name": "筑波山",
+      "group_id": "40",
+      "obeservatory_id": "1082"
+    },
+    {
+      "obeservatory_name": "中野",
+      "group_id": "40",
+      "obeservatory_id": "1170"
+    },
+    {
+      "obeservatory_name": "徳田",
+      "group_id": "40",
+      "obeservatory_id": "1173"
+    },
+    {
+      "obeservatory_name": "鉾田",
+      "group_id": "40",
+      "obeservatory_id": "1245"
+    },
+    {
+      "obeservatory_name": "小瀬",
+      "group_id": "40",
+      "obeservatory_id": "1331"
+    },
+    {
+      "obeservatory_name": "門井",
+      "group_id": "40",
+      "obeservatory_id": "1388"
+    },
+    {
+      "obeservatory_name": "大能",
+      "group_id": "40",
+      "obeservatory_id": "1421"
+    },
+    {
+      "obeservatory_name": "下館",
+      "group_id": "40",
+      "obeservatory_id": "1530"
+    },
+    {
+      "obeservatory_name": "水戸",
+      "group_id": "40",
+      "obeservatory_id": "47629"
+    },
+    {
+      "obeservatory_name": "つくば(館野)",
+      "group_id": "40",
+      "obeservatory_id": "47646"
+    },
+    {
+      "obeservatory_name": "那須",
+      "group_id": "41",
+      "obeservatory_id": "326"
+    },
+    {
+      "obeservatory_name": "黒田原",
+      "group_id": "41",
+      "obeservatory_id": "327"
+    },
+    {
+      "obeservatory_name": "八方が原",
+      "group_id": "41",
+      "obeservatory_id": "328"
+    },
+    {
+      "obeservatory_name": "黒磯",
+      "group_id": "41",
+      "obeservatory_id": "329"
+    },
+    {
+      "obeservatory_name": "八溝山",
+      "group_id": "41",
+      "obeservatory_id": "330"
+    },
+    {
+      "obeservatory_name": "大田原",
+      "group_id": "41",
+      "obeservatory_id": "331"
+    },
+    {
+      "obeservatory_name": "方塞山",
+      "group_id": "41",
+      "obeservatory_id": "333"
+    },
+    {
+      "obeservatory_name": "高根沢",
+      "group_id": "41",
+      "obeservatory_id": "334"
+    },
+    {
+      "obeservatory_name": "鹿沼",
+      "group_id": "41",
+      "obeservatory_id": "335"
+    },
+    {
+      "obeservatory_name": "葛生",
+      "group_id": "41",
+      "obeservatory_id": "337"
+    },
+    {
+      "obeservatory_name": "真岡",
+      "group_id": "41",
+      "obeservatory_id": "338"
+    },
+    {
+      "obeservatory_name": "足利",
+      "group_id": "41",
+      "obeservatory_id": "339"
+    },
+    {
+      "obeservatory_name": "栃木",
+      "group_id": "41",
+      "obeservatory_id": "340"
+    },
+    {
+      "obeservatory_name": "小山",
+      "group_id": "41",
+      "obeservatory_id": "341"
+    },
+    {
+      "obeservatory_name": "五十里",
+      "group_id": "41",
+      "obeservatory_id": "1015"
+    },
+    {
+      "obeservatory_name": "足尾",
+      "group_id": "41",
+      "obeservatory_id": "1016"
+    },
+    {
+      "obeservatory_name": "烏山",
+      "group_id": "41",
+      "obeservatory_id": "1017"
+    },
+    {
+      "obeservatory_name": "佐野",
+      "group_id": "41",
+      "obeservatory_id": "1018"
+    },
+    {
+      "obeservatory_name": "土呂部",
+      "group_id": "41",
+      "obeservatory_id": "1221"
+    },
+    {
+      "obeservatory_name": "今市",
+      "group_id": "41",
+      "obeservatory_id": "1333"
+    },
+    {
+      "obeservatory_name": "塩谷",
+      "group_id": "41",
+      "obeservatory_id": "1334"
+    },
+    {
+      "obeservatory_name": "那須烏山",
+      "group_id": "41",
+      "obeservatory_id": "1605"
+    },
+    {
+      "obeservatory_name": "宇都宮",
+      "group_id": "41",
+      "obeservatory_id": "47615"
+    },
+    {
+      "obeservatory_name": "奥日光(日光)",
+      "group_id": "41",
+      "obeservatory_id": "47690"
+    },
+    {
+      "obeservatory_name": "前武尊",
+      "group_id": "42",
+      "obeservatory_id": "342"
+    },
+    {
+      "obeservatory_name": "草津",
+      "group_id": "42",
+      "obeservatory_id": "343"
+    },
+    {
+      "obeservatory_name": "野反湖",
+      "group_id": "42",
+      "obeservatory_id": "344"
+    },
+    {
+      "obeservatory_name": "雨見山",
+      "group_id": "42",
+      "obeservatory_id": "345"
+    },
+    {
+      "obeservatory_name": "沼田",
+      "group_id": "42",
+      "obeservatory_id": "346"
+    },
+    {
+      "obeservatory_name": "赤城山",
+      "group_id": "42",
+      "obeservatory_id": "347"
+    },
+    {
+      "obeservatory_name": "田代",
+      "group_id": "42",
+      "obeservatory_id": "348"
+    },
+    {
+      "obeservatory_name": "榛名山",
+      "group_id": "42",
+      "obeservatory_id": "349"
+    },
+    {
+      "obeservatory_name": "桐生",
+      "group_id": "42",
+      "obeservatory_id": "351"
+    },
+    {
+      "obeservatory_name": "一の字山",
+      "group_id": "42",
+      "obeservatory_id": "352"
+    },
+    {
+      "obeservatory_name": "上里見",
+      "group_id": "42",
+      "obeservatory_id": "353"
+    },
+    {
+      "obeservatory_name": "西野牧",
+      "group_id": "42",
+      "obeservatory_id": "354"
+    },
+    {
+      "obeservatory_name": "藤岡",
+      "group_id": "42",
+      "obeservatory_id": "355"
+    },
+    {
+      "obeservatory_name": "館林",
+      "group_id": "42",
+      "obeservatory_id": "356"
+    },
+    {
+      "obeservatory_name": "稲含山",
+      "group_id": "42",
+      "obeservatory_id": "357"
+    },
+    {
+      "obeservatory_name": "みなかみ",
+      "group_id": "42",
+      "obeservatory_id": "1019"
+    },
+    {
+      "obeservatory_name": "中之条",
+      "group_id": "42",
+      "obeservatory_id": "1020"
+    },
+    {
+      "obeservatory_name": "伊勢崎",
+      "group_id": "42",
+      "obeservatory_id": "1021"
+    },
+    {
+      "obeservatory_name": "片品",
+      "group_id": "42",
+      "obeservatory_id": "1174"
+    },
+    {
+      "obeservatory_name": "藤原",
+      "group_id": "42",
+      "obeservatory_id": "1222"
+    },
+    {
+      "obeservatory_name": "神流",
+      "group_id": "42",
+      "obeservatory_id": "1223"
+    },
+    {
+      "obeservatory_name": "黒保根",
+      "group_id": "42",
+      "obeservatory_id": "1259"
+    },
+    {
+      "obeservatory_name": "高手山",
+      "group_id": "42",
+      "obeservatory_id": "1375"
+    },
+    {
+      "obeservatory_name": "前橋",
+      "group_id": "42",
+      "obeservatory_id": "47624"
+    },
+    {
+      "obeservatory_name": "久喜",
+      "group_id": "43",
+      "obeservatory_id": "359"
+    },
+    {
+      "obeservatory_name": "堂平",
+      "group_id": "43",
+      "obeservatory_id": "361"
+    },
+    {
+      "obeservatory_name": "飯能",
+      "group_id": "43",
+      "obeservatory_id": "362"
+    },
+    {
+      "obeservatory_name": "さいたま",
+      "group_id": "43",
+      "obeservatory_id": "363"
+    },
+    {
+      "obeservatory_name": "越谷",
+      "group_id": "43",
+      "obeservatory_id": "364"
+    },
+    {
+      "obeservatory_name": "三峰",
+      "group_id": "43",
+      "obeservatory_id": "1000"
+    },
+    {
+      "obeservatory_name": "寄居",
+      "group_id": "43",
+      "obeservatory_id": "1009"
+    },
+    {
+      "obeservatory_name": "鴻巣",
+      "group_id": "43",
+      "obeservatory_id": "1069"
+    },
+    {
+      "obeservatory_name": "所沢",
+      "group_id": "43",
+      "obeservatory_id": "1070"
+    },
+    {
+      "obeservatory_name": "浦山",
+      "group_id": "43",
+      "obeservatory_id": "1159"
+    },
+    {
+      "obeservatory_name": "上吉田",
+      "group_id": "43",
+      "obeservatory_id": "1182"
+    },
+    {
+      "obeservatory_name": "鳩山",
+      "group_id": "43",
+      "obeservatory_id": "1232"
+    },
+    {
+      "obeservatory_name": "ときがわ",
+      "group_id": "43",
+      "obeservatory_id": "1497"
+    },
+    {
+      "obeservatory_name": "熊谷",
+      "group_id": "43",
+      "obeservatory_id": "47626"
+    },
+    {
+      "obeservatory_name": "秩父",
+      "group_id": "43",
+      "obeservatory_id": "47641"
+    },
+    {
+      "obeservatory_name": "小河内",
+      "group_id": "44",
+      "obeservatory_id": "365"
+    },
+    {
+      "obeservatory_name": "八王子",
+      "group_id": "44",
+      "obeservatory_id": "366"
+    },
+    {
+      "obeservatory_name": "調布",
+      "group_id": "44",
+      "obeservatory_id": "367"
+    },
+    {
+      "obeservatory_name": "世田谷",
+      "group_id": "44",
+      "obeservatory_id": "368"
+    },
+    {
+      "obeservatory_name": "江戸川臨海",
+      "group_id": "44",
+      "obeservatory_id": "370"
+    },
+    {
+      "obeservatory_name": "羽田",
+      "group_id": "44",
+      "obeservatory_id": "371"
+    },
+    {
+      "obeservatory_name": "青梅",
+      "group_id": "44",
+      "obeservatory_id": "1001"
+    },
+    {
+      "obeservatory_name": "練馬",
+      "group_id": "44",
+      "obeservatory_id": "1002"
+    },
+    {
+      "obeservatory_name": "府中",
+      "group_id": "44",
+      "obeservatory_id": "1133"
+    },
+    {
+      "obeservatory_name": "新島",
+      "group_id": "44",
+      "obeservatory_id": "1134"
+    },
+    {
+      "obeservatory_name": "小沢",
+      "group_id": "44",
+      "obeservatory_id": "1180"
+    },
+    {
+      "obeservatory_name": "大島北ノ山",
+      "group_id": "44",
+      "obeservatory_id": "1467"
+    },
+    {
+      "obeservatory_name": "八重見ヶ原",
+      "group_id": "44",
+      "obeservatory_id": "1468"
+    },
+    {
+      "obeservatory_name": "神津島",
+      "group_id": "44",
+      "obeservatory_id": "1505"
+    },
+    {
+      "obeservatory_name": "三宅坪田",
+      "group_id": "44",
+      "obeservatory_id": "1506"
+    },
+    {
+      "obeservatory_name": "三宅島阿古",
+      "group_id": "44",
+      "obeservatory_id": "1509"
+    },
+    {
+      "obeservatory_name": "新島",
+      "group_id": "44",
+      "obeservatory_id": "1522"
+    },
+    {
+      "obeservatory_name": "神津島",
+      "group_id": "44",
+      "obeservatory_id": "1523"
+    },
+    {
+      "obeservatory_name": "三宅伊豆",
+      "group_id": "44",
+      "obeservatory_id": "1525"
+    },
+    {
+      "obeservatory_name": "母島",
+      "group_id": "44",
+      "obeservatory_id": "1595"
+    },
+    {
+      "obeservatory_name": "東京",
+      "group_id": "44",
+      "obeservatory_id": "47662"
+    },
+    {
+      "obeservatory_name": "大島",
+      "group_id": "44",
+      "obeservatory_id": "47675"
+    },
+    {
+      "obeservatory_name": "三宅島",
+      "group_id": "44",
+      "obeservatory_id": "47677"
+    },
+    {
+      "obeservatory_name": "八丈島",
+      "group_id": "44",
+      "obeservatory_id": "47678"
+    },
+    {
+      "obeservatory_name": "父島",
+      "group_id": "44",
+      "obeservatory_id": "47971"
+    },
+    {
+      "obeservatory_name": "南鳥島",
+      "group_id": "44",
+      "obeservatory_id": "47991"
+    },
+    {
+      "obeservatory_name": "香取",
+      "group_id": "45",
+      "obeservatory_id": "375"
+    },
+    {
+      "obeservatory_name": "我孫子",
+      "group_id": "45",
+      "obeservatory_id": "376"
+    },
+    {
+      "obeservatory_name": "東庄",
+      "group_id": "45",
+      "obeservatory_id": "377"
+    },
+    {
+      "obeservatory_name": "成田",
+      "group_id": "45",
+      "obeservatory_id": "378"
+    },
+    {
+      "obeservatory_name": "茂原",
+      "group_id": "45",
+      "obeservatory_id": "381"
+    },
+    {
+      "obeservatory_name": "木更津",
+      "group_id": "45",
+      "obeservatory_id": "382"
+    },
+    {
+      "obeservatory_name": "鋸南",
+      "group_id": "45",
+      "obeservatory_id": "383"
+    },
+    {
+      "obeservatory_name": "鴨川",
+      "group_id": "45",
+      "obeservatory_id": "384"
+    },
+    {
+      "obeservatory_name": "佐倉",
+      "group_id": "45",
+      "obeservatory_id": "916"
+    },
+    {
+      "obeservatory_name": "横芝光",
+      "group_id": "45",
+      "obeservatory_id": "1003"
+    },
+    {
+      "obeservatory_name": "大多喜",
+      "group_id": "45",
+      "obeservatory_id": "1004"
+    },
+    {
+      "obeservatory_name": "船橋",
+      "group_id": "45",
+      "obeservatory_id": "1236"
+    },
+    {
+      "obeservatory_name": "牛久",
+      "group_id": "45",
+      "obeservatory_id": "1238"
+    },
+    {
+      "obeservatory_name": "坂畑",
+      "group_id": "45",
+      "obeservatory_id": "1241"
+    },
+    {
+      "obeservatory_name": "銚子",
+      "group_id": "45",
+      "obeservatory_id": "47648"
+    },
+    {
+      "obeservatory_name": "館山",
+      "group_id": "45",
+      "obeservatory_id": "47672"
+    },
+    {
+      "obeservatory_name": "勝浦",
+      "group_id": "45",
+      "obeservatory_id": "47674"
+    },
+    {
+      "obeservatory_name": "千葉",
+      "group_id": "45",
+      "obeservatory_id": "47682"
+    },
+    {
+      "obeservatory_name": "相模湖",
+      "group_id": "46",
+      "obeservatory_id": "387"
+    },
+    {
+      "obeservatory_name": "海老名",
+      "group_id": "46",
+      "obeservatory_id": "388"
+    },
+    {
+      "obeservatory_name": "箱根",
+      "group_id": "46",
+      "obeservatory_id": "390"
+    },
+    {
+      "obeservatory_name": "江ノ島",
+      "group_id": "46",
+      "obeservatory_id": "391"
+    },
+    {
+      "obeservatory_name": "三浦",
+      "group_id": "46",
+      "obeservatory_id": "392"
+    },
+    {
+      "obeservatory_name": "相模原中央",
+      "group_id": "46",
+      "obeservatory_id": "1005"
+    },
+    {
+      "obeservatory_name": "日吉",
+      "group_id": "46",
+      "obeservatory_id": "1006"
+    },
+    {
+      "obeservatory_name": "平塚",
+      "group_id": "46",
+      "obeservatory_id": "1007"
+    },
+    {
+      "obeservatory_name": "小田原",
+      "group_id": "46",
+      "obeservatory_id": "1008"
+    },
+    {
+      "obeservatory_name": "丹沢湖",
+      "group_id": "46",
+      "obeservatory_id": "1096"
+    },
+    {
+      "obeservatory_name": "辻堂",
+      "group_id": "46",
+      "obeservatory_id": "1443"
+    },
+    {
+      "obeservatory_name": "横浜",
+      "group_id": "46",
+      "obeservatory_id": "47670"
+    },
+    {
+      "obeservatory_name": "野沢温泉",
+      "group_id": "48",
+      "obeservatory_id": "393"
+    },
+    {
+      "obeservatory_name": "信濃町",
+      "group_id": "48",
+      "obeservatory_id": "394"
+    },
+    {
+      "obeservatory_name": "飯山",
+      "group_id": "48",
+      "obeservatory_id": "395"
+    },
+    {
+      "obeservatory_name": "白馬",
+      "group_id": "48",
+      "obeservatory_id": "396"
+    },
+    {
+      "obeservatory_name": "笠岳",
+      "group_id": "48",
+      "obeservatory_id": "398"
+    },
+    {
+      "obeservatory_name": "大町",
+      "group_id": "48",
+      "obeservatory_id": "399"
+    },
+    {
+      "obeservatory_name": "信州新町",
+      "group_id": "48",
+      "obeservatory_id": "400"
+    },
+    {
+      "obeservatory_name": "四阿屋山",
+      "group_id": "48",
+      "obeservatory_id": "401"
+    },
+    {
+      "obeservatory_name": "上田",
+      "group_id": "48",
+      "obeservatory_id": "402"
+    },
+    {
+      "obeservatory_name": "燕岳",
+      "group_id": "48",
+      "obeservatory_id": "403"
+    },
+    {
+      "obeservatory_name": "穂高",
+      "group_id": "48",
+      "obeservatory_id": "404"
+    },
+    {
+      "obeservatory_name": "鹿教湯",
+      "group_id": "48",
+      "obeservatory_id": "407"
+    },
+    {
+      "obeservatory_name": "佐久",
+      "group_id": "48",
+      "obeservatory_id": "408"
+    },
+    {
+      "obeservatory_name": "高ボッチ",
+      "group_id": "48",
+      "obeservatory_id": "409"
+    },
+    {
+      "obeservatory_name": "茂来山",
+      "group_id": "48",
+      "obeservatory_id": "410"
+    },
+    {
+      "obeservatory_name": "八ケ岳",
+      "group_id": "48",
+      "obeservatory_id": "412"
+    },
+    {
+      "obeservatory_name": "木曽平沢",
+      "group_id": "48",
+      "obeservatory_id": "413"
+    },
+    {
+      "obeservatory_name": "原村",
+      "group_id": "48",
+      "obeservatory_id": "414"
+    },
+    {
+      "obeservatory_name": "野辺山",
+      "group_id": "48",
+      "obeservatory_id": "415"
+    },
+    {
+      "obeservatory_name": "御嶽山",
+      "group_id": "48",
+      "obeservatory_id": "416"
+    },
+    {
+      "obeservatory_name": "木曽福島",
+      "group_id": "48",
+      "obeservatory_id": "417"
+    },
+    {
+      "obeservatory_name": "高遠",
+      "group_id": "48",
+      "obeservatory_id": "418"
+    },
+    {
+      "obeservatory_name": "入笠山",
+      "group_id": "48",
+      "obeservatory_id": "419"
+    },
+    {
+      "obeservatory_name": "宮田高原",
+      "group_id": "48",
+      "obeservatory_id": "420"
+    },
+    {
+      "obeservatory_name": "松峯",
+      "group_id": "48",
+      "obeservatory_id": "421"
+    },
+    {
+      "obeservatory_name": "須原",
+      "group_id": "48",
+      "obeservatory_id": "422"
+    },
+    {
+      "obeservatory_name": "摺古木山",
+      "group_id": "48",
+      "obeservatory_id": "423"
+    },
+    {
+      "obeservatory_name": "飯島",
+      "group_id": "48",
+      "obeservatory_id": "424"
+    },
+    {
+      "obeservatory_name": "笹山",
+      "group_id": "48",
+      "obeservatory_id": "425"
+    },
+    {
+      "obeservatory_name": "恵那山",
+      "group_id": "48",
+      "obeservatory_id": "427"
+    },
+    {
+      "obeservatory_name": "鶯巣",
+      "group_id": "48",
+      "obeservatory_id": "428"
+    },
+    {
+      "obeservatory_name": "菅平",
+      "group_id": "48",
+      "obeservatory_id": "992"
+    },
+    {
+      "obeservatory_name": "東御",
+      "group_id": "48",
+      "obeservatory_id": "993"
+    },
+    {
+      "obeservatory_name": "上高地",
+      "group_id": "48",
+      "obeservatory_id": "994"
+    },
+    {
+      "obeservatory_name": "南木曽",
+      "group_id": "48",
+      "obeservatory_id": "1022"
+    },
+    {
+      "obeservatory_name": "南小谷",
+      "group_id": "48",
+      "obeservatory_id": "1090"
+    },
+    {
+      "obeservatory_name": "鬼無里",
+      "group_id": "48",
+      "obeservatory_id": "1162"
+    },
+    {
+      "obeservatory_name": "立科",
+      "group_id": "48",
+      "obeservatory_id": "1300"
+    },
+    {
+      "obeservatory_name": "奈川",
+      "group_id": "48",
+      "obeservatory_id": "1312"
+    },
+    {
+      "obeservatory_name": "開田高原",
+      "group_id": "48",
+      "obeservatory_id": "1314"
+    },
+    {
+      "obeservatory_name": "浪合",
+      "group_id": "48",
+      "obeservatory_id": "1317"
+    },
+    {
+      "obeservatory_name": "辰野",
+      "group_id": "48",
+      "obeservatory_id": "1319"
+    },
+    {
+      "obeservatory_name": "南信濃",
+      "group_id": "48",
+      "obeservatory_id": "1323"
+    },
+    {
+      "obeservatory_name": "阿南",
+      "group_id": "48",
+      "obeservatory_id": "1339"
+    },
+    {
+      "obeservatory_name": "聖高原",
+      "group_id": "48",
+      "obeservatory_id": "1360"
+    },
+    {
+      "obeservatory_name": "網掛山",
+      "group_id": "48",
+      "obeservatory_id": "1392"
+    },
+    {
+      "obeservatory_name": "大鹿",
+      "group_id": "48",
+      "obeservatory_id": "1394"
+    },
+    {
+      "obeservatory_name": "杉島",
+      "group_id": "48",
+      "obeservatory_id": "1397"
+    },
+    {
+      "obeservatory_name": "十石峠",
+      "group_id": "48",
+      "obeservatory_id": "1399"
+    },
+    {
+      "obeservatory_name": "小谷",
+      "group_id": "48",
+      "obeservatory_id": "1411"
+    },
+    {
+      "obeservatory_name": "伊那",
+      "group_id": "48",
+      "obeservatory_id": "1445"
+    },
+    {
+      "obeservatory_name": "松本今井",
+      "group_id": "48",
+      "obeservatory_id": "1529"
+    },
+    {
+      "obeservatory_name": "北相木",
+      "group_id": "48",
+      "obeservatory_id": "1549"
+    },
+    {
+      "obeservatory_name": "白樺湖",
+      "group_id": "48",
+      "obeservatory_id": "1550"
+    },
+    {
+      "obeservatory_name": "高遠",
+      "group_id": "48",
+      "obeservatory_id": "1551"
+    },
+    {
+      "obeservatory_name": "宮田",
+      "group_id": "48",
+      "obeservatory_id": "1591"
+    },
+    {
+      "obeservatory_name": "長野",
+      "group_id": "48",
+      "obeservatory_id": "47610"
+    },
+    {
+      "obeservatory_name": "松本",
+      "group_id": "48",
+      "obeservatory_id": "47618"
+    },
+    {
+      "obeservatory_name": "諏訪",
+      "group_id": "48",
+      "obeservatory_id": "47620"
+    },
+    {
+      "obeservatory_name": "軽井沢",
+      "group_id": "48",
+      "obeservatory_id": "47622"
+    },
+    {
+      "obeservatory_name": "飯田",
+      "group_id": "48",
+      "obeservatory_id": "47637"
+    },
+    {
+      "obeservatory_name": "剣ノ峰",
+      "group_id": "49",
+      "obeservatory_id": "429"
+    },
+    {
+      "obeservatory_name": "日向山",
+      "group_id": "49",
+      "obeservatory_id": "430"
+    },
+    {
+      "obeservatory_name": "大菩薩",
+      "group_id": "49",
+      "obeservatory_id": "431"
+    },
+    {
+      "obeservatory_name": "勝沼",
+      "group_id": "49",
+      "obeservatory_id": "433"
+    },
+    {
+      "obeservatory_name": "大月",
+      "group_id": "49",
+      "obeservatory_id": "434"
+    },
+    {
+      "obeservatory_name": "八町山",
+      "group_id": "49",
+      "obeservatory_id": "435"
+    },
+    {
+      "obeservatory_name": "古関",
+      "group_id": "49",
+      "obeservatory_id": "436"
+    },
+    {
+      "obeservatory_name": "山中",
+      "group_id": "49",
+      "obeservatory_id": "438"
+    },
+    {
+      "obeservatory_name": "南部",
+      "group_id": "49",
+      "obeservatory_id": "439"
+    },
+    {
+      "obeservatory_name": "大泉",
+      "group_id": "49",
+      "obeservatory_id": "1023"
+    },
+    {
+      "obeservatory_name": "韮崎",
+      "group_id": "49",
+      "obeservatory_id": "1024"
+    },
+    {
+      "obeservatory_name": "上野原",
+      "group_id": "49",
+      "obeservatory_id": "1165"
+    },
+    {
+      "obeservatory_name": "切石",
+      "group_id": "49",
+      "obeservatory_id": "1234"
+    },
+    {
+      "obeservatory_name": "乙女湖",
+      "group_id": "49",
+      "obeservatory_id": "1599"
+    },
+    {
+      "obeservatory_name": "甲府",
+      "group_id": "49",
+      "obeservatory_id": "47638"
+    },
+    {
+      "obeservatory_name": "富士山",
+      "group_id": "49",
+      "obeservatory_id": "47639"
+    },
+    {
+      "obeservatory_name": "河口湖",
+      "group_id": "49",
+      "obeservatory_id": "47640"
+    },
+    {
+      "obeservatory_name": "白糸",
+      "group_id": "50",
+      "obeservatory_id": "440"
+    },
+    {
+      "obeservatory_name": "御殿場",
+      "group_id": "50",
+      "obeservatory_id": "441"
+    },
+    {
+      "obeservatory_name": "富士",
+      "group_id": "50",
+      "obeservatory_id": "442"
+    },
+    {
+      "obeservatory_name": "越木平",
+      "group_id": "50",
+      "obeservatory_id": "444"
+    },
+    {
+      "obeservatory_name": "川根本町",
+      "group_id": "50",
+      "obeservatory_id": "445"
+    },
+    {
+      "obeservatory_name": "大山",
+      "group_id": "50",
+      "obeservatory_id": "446"
+    },
+    {
+      "obeservatory_name": "高根山",
+      "group_id": "50",
+      "obeservatory_id": "448"
+    },
+    {
+      "obeservatory_name": "霧山",
+      "group_id": "50",
+      "obeservatory_id": "450"
+    },
+    {
+      "obeservatory_name": "天竜",
+      "group_id": "50",
+      "obeservatory_id": "451"
+    },
+    {
+      "obeservatory_name": "島田",
+      "group_id": "50",
+      "obeservatory_id": "452"
+    },
+    {
+      "obeservatory_name": "湯ケ島",
+      "group_id": "50",
+      "obeservatory_id": "453"
+    },
+    {
+      "obeservatory_name": "天城山",
+      "group_id": "50",
+      "obeservatory_id": "454"
+    },
+    {
+      "obeservatory_name": "松崎",
+      "group_id": "50",
+      "obeservatory_id": "456"
+    },
+    {
+      "obeservatory_name": "稲取",
+      "group_id": "50",
+      "obeservatory_id": "457"
+    },
+    {
+      "obeservatory_name": "佐久間",
+      "group_id": "50",
+      "obeservatory_id": "986"
+    },
+    {
+      "obeservatory_name": "土肥",
+      "group_id": "50",
+      "obeservatory_id": "987"
+    },
+    {
+      "obeservatory_name": "三ヶ日",
+      "group_id": "50",
+      "obeservatory_id": "988"
+    },
+    {
+      "obeservatory_name": "掛川",
+      "group_id": "50",
+      "obeservatory_id": "989"
+    },
+    {
+      "obeservatory_name": "熊",
+      "group_id": "50",
+      "obeservatory_id": "1105"
+    },
+    {
+      "obeservatory_name": "三倉",
+      "group_id": "50",
+      "obeservatory_id": "1106"
+    },
+    {
+      "obeservatory_name": "梅ケ島",
+      "group_id": "50",
+      "obeservatory_id": "1114"
+    },
+    {
+      "obeservatory_name": "清水",
+      "group_id": "50",
+      "obeservatory_id": "1243"
+    },
+    {
+      "obeservatory_name": "磐田",
+      "group_id": "50",
+      "obeservatory_id": "1244"
+    },
+    {
+      "obeservatory_name": "菊川牧之原",
+      "group_id": "50",
+      "obeservatory_id": "1335"
+    },
+    {
+      "obeservatory_name": "井川",
+      "group_id": "50",
+      "obeservatory_id": "1338"
+    },
+    {
+      "obeservatory_name": "三倉",
+      "group_id": "50",
+      "obeservatory_id": "1393"
+    },
+    {
+      "obeservatory_name": "鍵穴",
+      "group_id": "50",
+      "obeservatory_id": "1440"
+    },
+    {
+      "obeservatory_name": "静岡空港",
+      "group_id": "50",
+      "obeservatory_id": "1601"
+    },
+    {
+      "obeservatory_name": "富士山",
+      "group_id": "50",
+      "obeservatory_id": "47639"
+    },
+    {
+      "obeservatory_name": "浜松",
+      "group_id": "50",
+      "obeservatory_id": "47654"
+    },
+    {
+      "obeservatory_name": "御前崎",
+      "group_id": "50",
+      "obeservatory_id": "47655"
+    },
+    {
+      "obeservatory_name": "静岡",
+      "group_id": "50",
+      "obeservatory_id": "47656"
+    },
+    {
+      "obeservatory_name": "三島",
+      "group_id": "50",
+      "obeservatory_id": "47657"
+    },
+    {
+      "obeservatory_name": "石廊崎",
+      "group_id": "50",
+      "obeservatory_id": "47666"
+    },
+    {
+      "obeservatory_name": "網代",
+      "group_id": "50",
+      "obeservatory_id": "47668"
+    },
+    {
+      "obeservatory_name": "一宮",
+      "group_id": "51",
+      "obeservatory_id": "460"
+    },
+    {
+      "obeservatory_name": "豊山",
+      "group_id": "51",
+      "obeservatory_id": "461"
+    },
+    {
+      "obeservatory_name": "茶臼山",
+      "group_id": "51",
+      "obeservatory_id": "462"
+    },
+    {
+      "obeservatory_name": "豊田",
+      "group_id": "51",
+      "obeservatory_id": "464"
+    },
+    {
+      "obeservatory_name": "東海",
+      "group_id": "51",
+      "obeservatory_id": "465"
+    },
+    {
+      "obeservatory_name": "出来山",
+      "group_id": "51",
+      "obeservatory_id": "466"
+    },
+    {
+      "obeservatory_name": "岡崎",
+      "group_id": "51",
+      "obeservatory_id": "467"
+    },
+    {
+      "obeservatory_name": "作手",
+      "group_id": "51",
+      "obeservatory_id": "468"
+    },
+    {
+      "obeservatory_name": "一色",
+      "group_id": "51",
+      "obeservatory_id": "469"
+    },
+    {
+      "obeservatory_name": "豊橋",
+      "group_id": "51",
+      "obeservatory_id": "470"
+    },
+    {
+      "obeservatory_name": "田原",
+      "group_id": "51",
+      "obeservatory_id": "472"
+    },
+    {
+      "obeservatory_name": "稲武",
+      "group_id": "51",
+      "obeservatory_id": "982"
+    },
+    {
+      "obeservatory_name": "蟹江",
+      "group_id": "51",
+      "obeservatory_id": "983"
+    },
+    {
+      "obeservatory_name": "南知多",
+      "group_id": "51",
+      "obeservatory_id": "984"
+    },
+    {
+      "obeservatory_name": "小原",
+      "group_id": "51",
+      "obeservatory_id": "1166"
+    },
+    {
+      "obeservatory_name": "鳳来",
+      "group_id": "51",
+      "obeservatory_id": "1341"
+    },
+    {
+      "obeservatory_name": "蒲郡",
+      "group_id": "51",
+      "obeservatory_id": "1344"
+    },
+    {
+      "obeservatory_name": "愛西",
+      "group_id": "51",
+      "obeservatory_id": "1346"
+    },
+    {
+      "obeservatory_name": "新城",
+      "group_id": "51",
+      "obeservatory_id": "1541"
+    },
+    {
+      "obeservatory_name": "セントレア",
+      "group_id": "51",
+      "obeservatory_id": "1555"
+    },
+    {
+      "obeservatory_name": "阿蔵",
+      "group_id": "51",
+      "obeservatory_id": "1576"
+    },
+    {
+      "obeservatory_name": "名古屋",
+      "group_id": "51",
+      "obeservatory_id": "47636"
+    },
+    {
+      "obeservatory_name": "伊良湖",
+      "group_id": "51",
+      "obeservatory_id": "47653"
+    },
+    {
+      "obeservatory_name": "神岡",
+      "group_id": "52",
+      "obeservatory_id": "473"
+    },
+    {
+      "obeservatory_name": "流葉山",
+      "group_id": "52",
+      "obeservatory_id": "474"
+    },
+    {
+      "obeservatory_name": "森茂",
+      "group_id": "52",
+      "obeservatory_id": "475"
+    },
+    {
+      "obeservatory_name": "乗鞍岳",
+      "group_id": "52",
+      "obeservatory_id": "477"
+    },
+    {
+      "obeservatory_name": "大日岳",
+      "group_id": "52",
+      "obeservatory_id": "478"
+    },
+    {
+      "obeservatory_name": "新渕山",
+      "group_id": "52",
+      "obeservatory_id": "479"
+    },
+    {
+      "obeservatory_name": "船山",
+      "group_id": "52",
+      "obeservatory_id": "480"
+    },
+    {
+      "obeservatory_name": "白尾山",
+      "group_id": "52",
+      "obeservatory_id": "481"
+    },
+    {
+      "obeservatory_name": "白鳥",
+      "group_id": "52",
+      "obeservatory_id": "482"
+    },
+    {
+      "obeservatory_name": "萩原",
+      "group_id": "52",
+      "obeservatory_id": "483"
+    },
+    {
+      "obeservatory_name": "蕪山",
+      "group_id": "52",
+      "obeservatory_id": "484"
+    },
+    {
+      "obeservatory_name": "八幡",
+      "group_id": "52",
+      "obeservatory_id": "485"
+    },
+    {
+      "obeservatory_name": "樽見",
+      "group_id": "52",
+      "obeservatory_id": "486"
+    },
+    {
+      "obeservatory_name": "金山",
+      "group_id": "52",
+      "obeservatory_id": "487"
+    },
+    {
+      "obeservatory_name": "三界山",
+      "group_id": "52",
+      "obeservatory_id": "488"
+    },
+    {
+      "obeservatory_name": "権現山",
+      "group_id": "52",
+      "obeservatory_id": "489"
+    },
+    {
+      "obeservatory_name": "伽藍",
+      "group_id": "52",
+      "obeservatory_id": "490"
+    },
+    {
+      "obeservatory_name": "美濃加茂",
+      "group_id": "52",
+      "obeservatory_id": "491"
+    },
+    {
+      "obeservatory_name": "柄石峠",
+      "group_id": "52",
+      "obeservatory_id": "492"
+    },
+    {
+      "obeservatory_name": "恵那",
+      "group_id": "52",
+      "obeservatory_id": "493"
+    },
+    {
+      "obeservatory_name": "中津川",
+      "group_id": "52",
+      "obeservatory_id": "494"
+    },
+    {
+      "obeservatory_name": "関ケ原",
+      "group_id": "52",
+      "obeservatory_id": "495"
+    },
+    {
+      "obeservatory_name": "大垣",
+      "group_id": "52",
+      "obeservatory_id": "496"
+    },
+    {
+      "obeservatory_name": "三森山",
+      "group_id": "52",
+      "obeservatory_id": "498"
+    },
+    {
+      "obeservatory_name": "美濃",
+      "group_id": "52",
+      "obeservatory_id": "1057"
+    },
+    {
+      "obeservatory_name": "多治見",
+      "group_id": "52",
+      "obeservatory_id": "1058"
+    },
+    {
+      "obeservatory_name": "上石津",
+      "group_id": "52",
+      "obeservatory_id": "1059"
+    },
+    {
+      "obeservatory_name": "栃尾",
+      "group_id": "52",
+      "obeservatory_id": "1061"
+    },
+    {
+      "obeservatory_name": "宮地",
+      "group_id": "52",
+      "obeservatory_id": "1066"
+    },
+    {
+      "obeservatory_name": "平井",
+      "group_id": "52",
+      "obeservatory_id": "1153"
+    },
+    {
+      "obeservatory_name": "長滝",
+      "group_id": "52",
+      "obeservatory_id": "1299"
+    },
+    {
+      "obeservatory_name": "揖斐川",
+      "group_id": "52",
+      "obeservatory_id": "1301"
+    },
+    {
+      "obeservatory_name": "六厩",
+      "group_id": "52",
+      "obeservatory_id": "1305"
+    },
+    {
+      "obeservatory_name": "白川",
+      "group_id": "52",
+      "obeservatory_id": "1306"
+    },
+    {
+      "obeservatory_name": "河合",
+      "group_id": "52",
+      "obeservatory_id": "1308"
+    },
+    {
+      "obeservatory_name": "宮之前",
+      "group_id": "52",
+      "obeservatory_id": "1311"
+    },
+    {
+      "obeservatory_name": "黒川",
+      "group_id": "52",
+      "obeservatory_id": "1313"
+    },
+    {
+      "obeservatory_name": "大日",
+      "group_id": "52",
+      "obeservatory_id": "1363"
+    },
+    {
+      "obeservatory_name": "付知",
+      "group_id": "52",
+      "obeservatory_id": "1384"
+    },
+    {
+      "obeservatory_name": "御母衣",
+      "group_id": "52",
+      "obeservatory_id": "1387"
+    },
+    {
+      "obeservatory_name": "小津",
+      "group_id": "52",
+      "obeservatory_id": "1390"
+    },
+    {
+      "obeservatory_name": "十二岳",
+      "group_id": "52",
+      "obeservatory_id": "1396"
+    },
+    {
+      "obeservatory_name": "ひるがの",
+      "group_id": "52",
+      "obeservatory_id": "1436"
+    },
+    {
+      "obeservatory_name": "清見",
+      "group_id": "52",
+      "obeservatory_id": "1437"
+    },
+    {
+      "obeservatory_name": "丹生川",
+      "group_id": "52",
+      "obeservatory_id": "1438"
+    },
+    {
+      "obeservatory_name": "関市板取",
+      "group_id": "52",
+      "obeservatory_id": "1577"
+    },
+    {
+      "obeservatory_name": "高山",
+      "group_id": "52",
+      "obeservatory_id": "47617"
+    },
+    {
+      "obeservatory_name": "岐阜",
+      "group_id": "52",
+      "obeservatory_id": "47632"
+    },
+    {
+      "obeservatory_name": "北勢",
+      "group_id": "53",
+      "obeservatory_id": "499"
+    },
+    {
+      "obeservatory_name": "桑名",
+      "group_id": "53",
+      "obeservatory_id": "500"
+    },
+    {
+      "obeservatory_name": "雲母峰",
+      "group_id": "53",
+      "obeservatory_id": "501"
+    },
+    {
+      "obeservatory_name": "亀山",
+      "group_id": "53",
+      "obeservatory_id": "503"
+    },
+    {
+      "obeservatory_name": "笠取山",
+      "group_id": "53",
+      "obeservatory_id": "505"
+    },
+    {
+      "obeservatory_name": "名張",
+      "group_id": "53",
+      "obeservatory_id": "507"
+    },
+    {
+      "obeservatory_name": "国見山",
+      "group_id": "53",
+      "obeservatory_id": "508"
+    },
+    {
+      "obeservatory_name": "小俣",
+      "group_id": "53",
+      "obeservatory_id": "509"
+    },
+    {
+      "obeservatory_name": "粥見",
+      "group_id": "53",
+      "obeservatory_id": "510"
+    },
+    {
+      "obeservatory_name": "藤坂峠",
+      "group_id": "53",
+      "obeservatory_id": "511"
+    },
+    {
+      "obeservatory_name": "八幡峠",
+      "group_id": "53",
+      "obeservatory_id": "513"
+    },
+    {
+      "obeservatory_name": "熊野",
+      "group_id": "53",
+      "obeservatory_id": "514"
+    },
+    {
+      "obeservatory_name": "大台",
+      "group_id": "53",
+      "obeservatory_id": "918"
+    },
+    {
+      "obeservatory_name": "松阪",
+      "group_id": "53",
+      "obeservatory_id": "990"
+    },
+    {
+      "obeservatory_name": "磯部",
+      "group_id": "53",
+      "obeservatory_id": "991"
+    },
+    {
+      "obeservatory_name": "鳥羽",
+      "group_id": "53",
+      "obeservatory_id": "1230"
+    },
+    {
+      "obeservatory_name": "宮川",
+      "group_id": "53",
+      "obeservatory_id": "1255"
+    },
+    {
+      "obeservatory_name": "南伊勢",
+      "group_id": "53",
+      "obeservatory_id": "1258"
+    },
+    {
+      "obeservatory_name": "紀伊長島",
+      "group_id": "53",
+      "obeservatory_id": "1349"
+    },
+    {
+      "obeservatory_name": "白山",
+      "group_id": "53",
+      "obeservatory_id": "1356"
+    },
+    {
+      "obeservatory_name": "阿児",
+      "group_id": "53",
+      "obeservatory_id": "1381"
+    },
+    {
+      "obeservatory_name": "御浜",
+      "group_id": "53",
+      "obeservatory_id": "1423"
+    },
+    {
+      "obeservatory_name": "熊野新鹿",
+      "group_id": "53",
+      "obeservatory_id": "1532"
+    },
+    {
+      "obeservatory_name": "上野",
+      "group_id": "53",
+      "obeservatory_id": "47649"
+    },
+    {
+      "obeservatory_name": "津",
+      "group_id": "53",
+      "obeservatory_id": "47651"
+    },
+    {
+      "obeservatory_name": "尾鷲",
+      "group_id": "53",
+      "obeservatory_id": "47663"
+    },
+    {
+      "obeservatory_name": "四日市",
+      "group_id": "53",
+      "obeservatory_id": "47684"
+    },
+    {
+      "obeservatory_name": "村上",
+      "group_id": "54",
+      "obeservatory_id": "515"
+    },
+    {
+      "obeservatory_name": "鷲ケ巣山",
+      "group_id": "54",
+      "obeservatory_id": "516"
+    },
+    {
+      "obeservatory_name": "両津",
+      "group_id": "54",
+      "obeservatory_id": "518"
+    },
+    {
+      "obeservatory_name": "二王子岳",
+      "group_id": "54",
+      "obeservatory_id": "520"
+    },
+    {
+      "obeservatory_name": "新津",
+      "group_id": "54",
+      "obeservatory_id": "521"
+    },
+    {
+      "obeservatory_name": "巻",
+      "group_id": "54",
+      "obeservatory_id": "522"
+    },
+    {
+      "obeservatory_name": "宝珠山",
+      "group_id": "54",
+      "obeservatory_id": "523"
+    },
+    {
+      "obeservatory_name": "寺泊",
+      "group_id": "54",
+      "obeservatory_id": "524"
+    },
+    {
+      "obeservatory_name": "三条",
+      "group_id": "54",
+      "obeservatory_id": "525"
+    },
+    {
+      "obeservatory_name": "村松",
+      "group_id": "54",
+      "obeservatory_id": "526"
+    },
+    {
+      "obeservatory_name": "津川",
+      "group_id": "54",
+      "obeservatory_id": "527"
+    },
+    {
+      "obeservatory_name": "粟ヶ岳",
+      "group_id": "54",
+      "obeservatory_id": "528"
+    },
+    {
+      "obeservatory_name": "長岡",
+      "group_id": "54",
+      "obeservatory_id": "529"
+    },
+    {
+      "obeservatory_name": "栃尾",
+      "group_id": "54",
+      "obeservatory_id": "530"
+    },
+    {
+      "obeservatory_name": "守門岳",
+      "group_id": "54",
+      "obeservatory_id": "531"
+    },
+    {
+      "obeservatory_name": "柏崎",
+      "group_id": "54",
+      "obeservatory_id": "532"
+    },
+    {
+      "obeservatory_name": "桜坂峠",
+      "group_id": "54",
+      "obeservatory_id": "533"
+    },
+    {
+      "obeservatory_name": "小出",
+      "group_id": "54",
+      "obeservatory_id": "534"
+    },
+    {
+      "obeservatory_name": "安塚",
+      "group_id": "54",
+      "obeservatory_id": "536"
+    },
+    {
+      "obeservatory_name": "十日町",
+      "group_id": "54",
+      "obeservatory_id": "537"
+    },
+    {
+      "obeservatory_name": "枝折峠",
+      "group_id": "54",
+      "obeservatory_id": "538"
+    },
+    {
+      "obeservatory_name": "糸魚川",
+      "group_id": "54",
+      "obeservatory_id": "539"
+    },
+    {
+      "obeservatory_name": "能生",
+      "group_id": "54",
+      "obeservatory_id": "540"
+    },
+    {
+      "obeservatory_name": "光ケ原",
+      "group_id": "54",
+      "obeservatory_id": "541"
+    },
+    {
+      "obeservatory_name": "大沢峠",
+      "group_id": "54",
+      "obeservatory_id": "542"
+    },
+    {
+      "obeservatory_name": "津南",
+      "group_id": "54",
+      "obeservatory_id": "543"
+    },
+    {
+      "obeservatory_name": "湯沢",
+      "group_id": "54",
+      "obeservatory_id": "544"
+    },
+    {
+      "obeservatory_name": "袴岳",
+      "group_id": "54",
+      "obeservatory_id": "545"
+    },
+    {
+      "obeservatory_name": "粟島",
+      "group_id": "54",
+      "obeservatory_id": "995"
+    },
+    {
+      "obeservatory_name": "羽茂",
+      "group_id": "54",
+      "obeservatory_id": "996"
+    },
+    {
+      "obeservatory_name": "入広瀬",
+      "group_id": "54",
+      "obeservatory_id": "997"
+    },
+    {
+      "obeservatory_name": "関山",
+      "group_id": "54",
+      "obeservatory_id": "998"
+    },
+    {
+      "obeservatory_name": "下関",
+      "group_id": "54",
+      "obeservatory_id": "1060"
+    },
+    {
+      "obeservatory_name": "鍵取",
+      "group_id": "54",
+      "obeservatory_id": "1102"
+    },
+    {
+      "obeservatory_name": "赤谷",
+      "group_id": "54",
+      "obeservatory_id": "1111"
+    },
+    {
+      "obeservatory_name": "小国",
+      "group_id": "54",
+      "obeservatory_id": "1154"
+    },
+    {
+      "obeservatory_name": "松代",
+      "group_id": "54",
+      "obeservatory_id": "1155"
+    },
+    {
+      "obeservatory_name": "高根",
+      "group_id": "54",
+      "obeservatory_id": "1256"
+    },
+    {
+      "obeservatory_name": "平岩",
+      "group_id": "54",
+      "obeservatory_id": "1297"
+    },
+    {
+      "obeservatory_name": "大潟",
+      "group_id": "54",
+      "obeservatory_id": "1302"
+    },
+    {
+      "obeservatory_name": "弾崎",
+      "group_id": "54",
+      "obeservatory_id": "1315"
+    },
+    {
+      "obeservatory_name": "中条",
+      "group_id": "54",
+      "obeservatory_id": "1318"
+    },
+    {
+      "obeservatory_name": "三面",
+      "group_id": "54",
+      "obeservatory_id": "1369"
+    },
+    {
+      "obeservatory_name": "大湯",
+      "group_id": "54",
+      "obeservatory_id": "1370"
+    },
+    {
+      "obeservatory_name": "塩沢",
+      "group_id": "54",
+      "obeservatory_id": "1395"
+    },
+    {
+      "obeservatory_name": "宮寄上",
+      "group_id": "54",
+      "obeservatory_id": "1398"
+    },
+    {
+      "obeservatory_name": "樽本",
+      "group_id": "54",
+      "obeservatory_id": "1424"
+    },
+    {
+      "obeservatory_name": "川谷",
+      "group_id": "54",
+      "obeservatory_id": "1426"
+    },
+    {
+      "obeservatory_name": "筒方",
+      "group_id": "54",
+      "obeservatory_id": "1427"
+    },
+    {
+      "obeservatory_name": "室谷",
+      "group_id": "54",
+      "obeservatory_id": "1444"
+    },
+    {
+      "obeservatory_name": "松浜",
+      "group_id": "54",
+      "obeservatory_id": "1469"
+    },
+    {
+      "obeservatory_name": "秋津",
+      "group_id": "54",
+      "obeservatory_id": "1514"
+    },
+    {
+      "obeservatory_name": "相川",
+      "group_id": "54",
+      "obeservatory_id": "47602"
+    },
+    {
+      "obeservatory_name": "新潟",
+      "group_id": "54",
+      "obeservatory_id": "47604"
+    },
+    {
+      "obeservatory_name": "高田",
+      "group_id": "54",
+      "obeservatory_id": "47612"
+    },
+    {
+      "obeservatory_name": "泊",
+      "group_id": "55",
+      "obeservatory_id": "546"
+    },
+    {
+      "obeservatory_name": "魚津",
+      "group_id": "55",
+      "obeservatory_id": "547"
+    },
+    {
+      "obeservatory_name": "宇奈月",
+      "group_id": "55",
+      "obeservatory_id": "548"
+    },
+    {
+      "obeservatory_name": "嘉例沢",
+      "group_id": "55",
+      "obeservatory_id": "549"
+    },
+    {
+      "obeservatory_name": "砺波",
+      "group_id": "55",
+      "obeservatory_id": "552"
+    },
+    {
+      "obeservatory_name": "上市",
+      "group_id": "55",
+      "obeservatory_id": "553"
+    },
+    {
+      "obeservatory_name": "南砺高宮",
+      "group_id": "55",
+      "obeservatory_id": "554"
+    },
+    {
+      "obeservatory_name": "八尾",
+      "group_id": "55",
+      "obeservatory_id": "555"
+    },
+    {
+      "obeservatory_name": "小谷",
+      "group_id": "55",
+      "obeservatory_id": "556"
+    },
+    {
+      "obeservatory_name": "立山",
+      "group_id": "55",
+      "obeservatory_id": "557"
+    },
+    {
+      "obeservatory_name": "細尾峠",
+      "group_id": "55",
+      "obeservatory_id": "558"
+    },
+    {
+      "obeservatory_name": "谷折",
+      "group_id": "55",
+      "obeservatory_id": "559"
+    },
+    {
+      "obeservatory_name": "氷見",
+      "group_id": "55",
+      "obeservatory_id": "1309"
+    },
+    {
+      "obeservatory_name": "宇奈月",
+      "group_id": "55",
+      "obeservatory_id": "1412"
+    },
+    {
+      "obeservatory_name": "平",
+      "group_id": "55",
+      "obeservatory_id": "1413"
+    },
+    {
+      "obeservatory_name": "大山",
+      "group_id": "55",
+      "obeservatory_id": "1414"
+    },
+    {
+      "obeservatory_name": "細入",
+      "group_id": "55",
+      "obeservatory_id": "1415"
+    },
+    {
+      "obeservatory_name": "猪谷",
+      "group_id": "55",
+      "obeservatory_id": "1455"
+    },
+    {
+      "obeservatory_name": "秋ヶ島",
+      "group_id": "55",
+      "obeservatory_id": "1533"
+    },
+    {
+      "obeservatory_name": "五箇山",
+      "group_id": "55",
+      "obeservatory_id": "1553"
+    },
+    {
+      "obeservatory_name": "立山芦峅",
+      "group_id": "55",
+      "obeservatory_id": "1621"
+    },
+    {
+      "obeservatory_name": "伏木",
+      "group_id": "55",
+      "obeservatory_id": "47606"
+    },
+    {
+      "obeservatory_name": "富山",
+      "group_id": "55",
+      "obeservatory_id": "47607"
+    },
+    {
+      "obeservatory_name": "珠洲",
+      "group_id": "56",
+      "obeservatory_id": "560"
+    },
+    {
+      "obeservatory_name": "門前",
+      "group_id": "56",
+      "obeservatory_id": "562"
+    },
+    {
+      "obeservatory_name": "木原岳",
+      "group_id": "56",
+      "obeservatory_id": "563"
+    },
+    {
+      "obeservatory_name": "志賀",
+      "group_id": "56",
+      "obeservatory_id": "564"
+    },
+    {
+      "obeservatory_name": "七尾",
+      "group_id": "56",
+      "obeservatory_id": "565"
+    },
+    {
+      "obeservatory_name": "羽咋",
+      "group_id": "56",
+      "obeservatory_id": "566"
+    },
+    {
+      "obeservatory_name": "かほく",
+      "group_id": "56",
+      "obeservatory_id": "567"
+    },
+    {
+      "obeservatory_name": "宝達山",
+      "group_id": "56",
+      "obeservatory_id": "568"
+    },
+    {
+      "obeservatory_name": "医王山",
+      "group_id": "56",
+      "obeservatory_id": "570"
+    },
+    {
+      "obeservatory_name": "栢野",
+      "group_id": "56",
+      "obeservatory_id": "571"
+    },
+    {
+      "obeservatory_name": "白山吉野",
+      "group_id": "56",
+      "obeservatory_id": "973"
+    },
+    {
+      "obeservatory_name": "白山白峰",
+      "group_id": "56",
+      "obeservatory_id": "1171"
+    },
+    {
+      "obeservatory_name": "小松",
+      "group_id": "56",
+      "obeservatory_id": "1324"
+    },
+    {
+      "obeservatory_name": "穴水",
+      "group_id": "56",
+      "obeservatory_id": "1486"
+    },
+    {
+      "obeservatory_name": "三井",
+      "group_id": "56",
+      "obeservatory_id": "1544"
+    },
+    {
+      "obeservatory_name": "宝達志水",
+      "group_id": "56",
+      "obeservatory_id": "1545"
+    },
+    {
+      "obeservatory_name": "輪島",
+      "group_id": "56",
+      "obeservatory_id": "47600"
+    },
+    {
+      "obeservatory_name": "金沢",
+      "group_id": "56",
+      "obeservatory_id": "47605"
+    },
+    {
+      "obeservatory_name": "大野",
+      "group_id": "57",
+      "obeservatory_id": "573"
+    },
+    {
+      "obeservatory_name": "タイラ山",
+      "group_id": "57",
+      "obeservatory_id": "574"
+    },
+    {
+      "obeservatory_name": "春日野",
+      "group_id": "57",
+      "obeservatory_id": "575"
+    },
+    {
+      "obeservatory_name": "板垣",
+      "group_id": "57",
+      "obeservatory_id": "576"
+    },
+    {
+      "obeservatory_name": "今庄",
+      "group_id": "57",
+      "obeservatory_id": "577"
+    },
+    {
+      "obeservatory_name": "小浜",
+      "group_id": "57",
+      "obeservatory_id": "579"
+    },
+    {
+      "obeservatory_name": "美山",
+      "group_id": "57",
+      "obeservatory_id": "974"
+    },
+    {
+      "obeservatory_name": "川上",
+      "group_id": "57",
+      "obeservatory_id": "975"
+    },
+    {
+      "obeservatory_name": "美浜",
+      "group_id": "57",
+      "obeservatory_id": "1010"
+    },
+    {
+      "obeservatory_name": "三国",
+      "group_id": "57",
+      "obeservatory_id": "1071"
+    },
+    {
+      "obeservatory_name": "勝山",
+      "group_id": "57",
+      "obeservatory_id": "1226"
+    },
+    {
+      "obeservatory_name": "越廼",
+      "group_id": "57",
+      "obeservatory_id": "1316"
+    },
+    {
+      "obeservatory_name": "九頭竜",
+      "group_id": "57",
+      "obeservatory_id": "1382"
+    },
+    {
+      "obeservatory_name": "大飯",
+      "group_id": "57",
+      "obeservatory_id": "1454"
+    },
+    {
+      "obeservatory_name": "春江",
+      "group_id": "57",
+      "obeservatory_id": "1537"
+    },
+    {
+      "obeservatory_name": "武生",
+      "group_id": "57",
+      "obeservatory_id": "1565"
+    },
+    {
+      "obeservatory_name": "福井",
+      "group_id": "57",
+      "obeservatory_id": "47616"
+    },
+    {
+      "obeservatory_name": "敦賀",
+      "group_id": "57",
+      "obeservatory_id": "47631"
+    },
+    {
+      "obeservatory_name": "今津",
+      "group_id": "60",
+      "obeservatory_id": "580"
+    },
+    {
+      "obeservatory_name": "荒川",
+      "group_id": "60",
+      "obeservatory_id": "581"
+    },
+    {
+      "obeservatory_name": "春照",
+      "group_id": "60",
+      "obeservatory_id": "582"
+    },
+    {
+      "obeservatory_name": "近江八幡",
+      "group_id": "60",
+      "obeservatory_id": "584"
+    },
+    {
+      "obeservatory_name": "君ケ畑台地",
+      "group_id": "60",
+      "obeservatory_id": "585"
+    },
+    {
+      "obeservatory_name": "大津",
+      "group_id": "60",
+      "obeservatory_id": "586"
+    },
+    {
+      "obeservatory_name": "土山",
+      "group_id": "60",
+      "obeservatory_id": "587"
+    },
+    {
+      "obeservatory_name": "東近江",
+      "group_id": "60",
+      "obeservatory_id": "963"
+    },
+    {
+      "obeservatory_name": "信楽",
+      "group_id": "60",
+      "obeservatory_id": "964"
+    },
+    {
+      "obeservatory_name": "長浜",
+      "group_id": "60",
+      "obeservatory_id": "976"
+    },
+    {
+      "obeservatory_name": "南小松",
+      "group_id": "60",
+      "obeservatory_id": "1083"
+    },
+    {
+      "obeservatory_name": "柳ケ瀬",
+      "group_id": "60",
+      "obeservatory_id": "1087"
+    },
+    {
+      "obeservatory_name": "霜ケ原",
+      "group_id": "60",
+      "obeservatory_id": "1361"
+    },
+    {
+      "obeservatory_name": "米原",
+      "group_id": "60",
+      "obeservatory_id": "1524"
+    },
+    {
+      "obeservatory_name": "朽木平良",
+      "group_id": "60",
+      "obeservatory_id": "1578"
+    },
+    {
+      "obeservatory_name": "伊吹山",
+      "group_id": "60",
+      "obeservatory_id": "47751"
+    },
+    {
+      "obeservatory_name": "彦根",
+      "group_id": "60",
+      "obeservatory_id": "47761"
+    },
+    {
+      "obeservatory_name": "峰山",
+      "group_id": "61",
+      "obeservatory_id": "588"
+    },
+    {
+      "obeservatory_name": "宮津",
+      "group_id": "61",
+      "obeservatory_id": "589"
+    },
+    {
+      "obeservatory_name": "仏坂",
+      "group_id": "61",
+      "obeservatory_id": "591"
+    },
+    {
+      "obeservatory_name": "浅原山",
+      "group_id": "61",
+      "obeservatory_id": "592"
+    },
+    {
+      "obeservatory_name": "福知山",
+      "group_id": "61",
+      "obeservatory_id": "593"
+    },
+    {
+      "obeservatory_name": "胡麻",
+      "group_id": "61",
+      "obeservatory_id": "594"
+    },
+    {
+      "obeservatory_name": "妙高山",
+      "group_id": "61",
+      "obeservatory_id": "595"
+    },
+    {
+      "obeservatory_name": "園部",
+      "group_id": "61",
+      "obeservatory_id": "596"
+    },
+    {
+      "obeservatory_name": "京田辺",
+      "group_id": "61",
+      "obeservatory_id": "598"
+    },
+    {
+      "obeservatory_name": "鷲峰山",
+      "group_id": "61",
+      "obeservatory_id": "599"
+    },
+    {
+      "obeservatory_name": "花背峠",
+      "group_id": "61",
+      "obeservatory_id": "920"
+    },
+    {
+      "obeservatory_name": "知井",
+      "group_id": "61",
+      "obeservatory_id": "927"
+    },
+    {
+      "obeservatory_name": "京北",
+      "group_id": "61",
+      "obeservatory_id": "928"
+    },
+    {
+      "obeservatory_name": "間人",
+      "group_id": "61",
+      "obeservatory_id": "965"
+    },
+    {
+      "obeservatory_name": "本庄",
+      "group_id": "61",
+      "obeservatory_id": "966"
+    },
+    {
+      "obeservatory_name": "長岡京",
+      "group_id": "61",
+      "obeservatory_id": "1025"
+    },
+    {
+      "obeservatory_name": "故屋岡",
+      "group_id": "61",
+      "obeservatory_id": "1160"
+    },
+    {
+      "obeservatory_name": "美山",
+      "group_id": "61",
+      "obeservatory_id": "1303"
+    },
+    {
+      "obeservatory_name": "須知",
+      "group_id": "61",
+      "obeservatory_id": "1378"
+    },
+    {
+      "obeservatory_name": "三岳",
+      "group_id": "61",
+      "obeservatory_id": "1379"
+    },
+    {
+      "obeservatory_name": "綾部",
+      "group_id": "61",
+      "obeservatory_id": "1380"
+    },
+    {
+      "obeservatory_name": "三和",
+      "group_id": "61",
+      "obeservatory_id": "1383"
+    },
+    {
+      "obeservatory_name": "舞鶴",
+      "group_id": "61",
+      "obeservatory_id": "47750"
+    },
+    {
+      "obeservatory_name": "京都",
+      "group_id": "61",
+      "obeservatory_id": "47759"
+    },
+    {
+      "obeservatory_name": "能勢",
+      "group_id": "62",
+      "obeservatory_id": "600"
+    },
+    {
+      "obeservatory_name": "箕面",
+      "group_id": "62",
+      "obeservatory_id": "601"
+    },
+    {
+      "obeservatory_name": "豊中",
+      "group_id": "62",
+      "obeservatory_id": "602"
+    },
+    {
+      "obeservatory_name": "生駒山",
+      "group_id": "62",
+      "obeservatory_id": "604"
+    },
+    {
+      "obeservatory_name": "河内長野",
+      "group_id": "62",
+      "obeservatory_id": "605"
+    },
+    {
+      "obeservatory_name": "熊取",
+      "group_id": "62",
+      "obeservatory_id": "606"
+    },
+    {
+      "obeservatory_name": "堺",
+      "group_id": "62",
+      "obeservatory_id": "1062"
+    },
+    {
+      "obeservatory_name": "枚方",
+      "group_id": "62",
+      "obeservatory_id": "1065"
+    },
+    {
+      "obeservatory_name": "八尾",
+      "group_id": "62",
+      "obeservatory_id": "1470"
+    },
+    {
+      "obeservatory_name": "関空島",
+      "group_id": "62",
+      "obeservatory_id": "1471"
+    },
+    {
+      "obeservatory_name": "茨木",
+      "group_id": "62",
+      "obeservatory_id": "1602"
+    },
+    {
+      "obeservatory_name": "大阪",
+      "group_id": "62",
+      "obeservatory_id": "47772"
+    },
+    {
+      "obeservatory_name": "香住",
+      "group_id": "63",
+      "obeservatory_id": "607"
+    },
+    {
+      "obeservatory_name": "温泉",
+      "group_id": "63",
+      "obeservatory_id": "608"
+    },
+    {
+      "obeservatory_name": "三川山",
+      "group_id": "63",
+      "obeservatory_id": "609"
+    },
+    {
+      "obeservatory_name": "八鹿",
+      "group_id": "63",
+      "obeservatory_id": "611"
+    },
+    {
+      "obeservatory_name": "和田山",
+      "group_id": "63",
+      "obeservatory_id": "612"
+    },
+    {
+      "obeservatory_name": "生野",
+      "group_id": "63",
+      "obeservatory_id": "613"
+    },
+    {
+      "obeservatory_name": "柏原",
+      "group_id": "63",
+      "obeservatory_id": "614"
+    },
+    {
+      "obeservatory_name": "一宮",
+      "group_id": "63",
+      "obeservatory_id": "615"
+    },
+    {
+      "obeservatory_name": "笠形山",
+      "group_id": "63",
+      "obeservatory_id": "616"
+    },
+    {
+      "obeservatory_name": "佐用",
+      "group_id": "63",
+      "obeservatory_id": "617"
+    },
+    {
+      "obeservatory_name": "後川",
+      "group_id": "63",
+      "obeservatory_id": "618"
+    },
+    {
+      "obeservatory_name": "上郡",
+      "group_id": "63",
+      "obeservatory_id": "619"
+    },
+    {
+      "obeservatory_name": "的場山",
+      "group_id": "63",
+      "obeservatory_id": "620"
+    },
+    {
+      "obeservatory_name": "名塩",
+      "group_id": "63",
+      "obeservatory_id": "622"
+    },
+    {
+      "obeservatory_name": "六甲山",
+      "group_id": "63",
+      "obeservatory_id": "623"
+    },
+    {
+      "obeservatory_name": "家島",
+      "group_id": "63",
+      "obeservatory_id": "624"
+    },
+    {
+      "obeservatory_name": "明石",
+      "group_id": "63",
+      "obeservatory_id": "625"
+    },
+    {
+      "obeservatory_name": "福良",
+      "group_id": "63",
+      "obeservatory_id": "628"
+    },
+    {
+      "obeservatory_name": "西脇",
+      "group_id": "63",
+      "obeservatory_id": "956"
+    },
+    {
+      "obeservatory_name": "大屋",
+      "group_id": "63",
+      "obeservatory_id": "967"
+    },
+    {
+      "obeservatory_name": "福崎",
+      "group_id": "63",
+      "obeservatory_id": "968"
+    },
+    {
+      "obeservatory_name": "三田",
+      "group_id": "63",
+      "obeservatory_id": "969"
+    },
+    {
+      "obeservatory_name": "郡家",
+      "group_id": "63",
+      "obeservatory_id": "970"
+    },
+    {
+      "obeservatory_name": "兎和野高原",
+      "group_id": "63",
+      "obeservatory_id": "977"
+    },
+    {
+      "obeservatory_name": "三木",
+      "group_id": "63",
+      "obeservatory_id": "1227"
+    },
+    {
+      "obeservatory_name": "南淡",
+      "group_id": "63",
+      "obeservatory_id": "1337"
+    },
+    {
+      "obeservatory_name": "淡路町",
+      "group_id": "63",
+      "obeservatory_id": "1448"
+    },
+    {
+      "obeservatory_name": "芦屋",
+      "group_id": "63",
+      "obeservatory_id": "1449"
+    },
+    {
+      "obeservatory_name": "神戸塩屋",
+      "group_id": "63",
+      "obeservatory_id": "1450"
+    },
+    {
+      "obeservatory_name": "神戸空港",
+      "group_id": "63",
+      "obeservatory_id": "1587"
+    },
+    {
+      "obeservatory_name": "西宮",
+      "group_id": "63",
+      "obeservatory_id": "1588"
+    },
+    {
+      "obeservatory_name": "豊岡",
+      "group_id": "63",
+      "obeservatory_id": "47747"
+    },
+    {
+      "obeservatory_name": "姫路",
+      "group_id": "63",
+      "obeservatory_id": "47769"
+    },
+    {
+      "obeservatory_name": "神戸",
+      "group_id": "63",
+      "obeservatory_id": "47770"
+    },
+    {
+      "obeservatory_name": "洲本",
+      "group_id": "63",
+      "obeservatory_id": "47776"
+    },
+    {
+      "obeservatory_name": "針",
+      "group_id": "64",
+      "obeservatory_id": "630"
+    },
+    {
+      "obeservatory_name": "田原本",
+      "group_id": "64",
+      "obeservatory_id": "631"
+    },
+    {
+      "obeservatory_name": "曽爾",
+      "group_id": "64",
+      "obeservatory_id": "632"
+    },
+    {
+      "obeservatory_name": "大宇陀",
+      "group_id": "64",
+      "obeservatory_id": "633"
+    },
+    {
+      "obeservatory_name": "高見山",
+      "group_id": "64",
+      "obeservatory_id": "634"
+    },
+    {
+      "obeservatory_name": "五條",
+      "group_id": "64",
+      "obeservatory_id": "635"
+    },
+    {
+      "obeservatory_name": "天辻",
+      "group_id": "64",
+      "obeservatory_id": "636"
+    },
+    {
+      "obeservatory_name": "山上ケ岳",
+      "group_id": "64",
+      "obeservatory_id": "637"
+    },
+    {
+      "obeservatory_name": "荒神岳",
+      "group_id": "64",
+      "obeservatory_id": "638"
+    },
+    {
+      "obeservatory_name": "日出岳",
+      "group_id": "64",
+      "obeservatory_id": "639"
+    },
+    {
+      "obeservatory_name": "上野地",
+      "group_id": "64",
+      "obeservatory_id": "640"
+    },
+    {
+      "obeservatory_name": "玉置山",
+      "group_id": "64",
+      "obeservatory_id": "641"
+    },
+    {
+      "obeservatory_name": "上北山",
+      "group_id": "64",
+      "obeservatory_id": "957"
+    },
+    {
+      "obeservatory_name": "風屋",
+      "group_id": "64",
+      "obeservatory_id": "1228"
+    },
+    {
+      "obeservatory_name": "高見",
+      "group_id": "64",
+      "obeservatory_id": "1366"
+    },
+    {
+      "obeservatory_name": "葛城",
+      "group_id": "64",
+      "obeservatory_id": "1376"
+    },
+    {
+      "obeservatory_name": "壷坂",
+      "group_id": "64",
+      "obeservatory_id": "1377"
+    },
+    {
+      "obeservatory_name": "吉野",
+      "group_id": "64",
+      "obeservatory_id": "1439"
+    },
+    {
+      "obeservatory_name": "天川",
+      "group_id": "64",
+      "obeservatory_id": "1619"
+    },
+    {
+      "obeservatory_name": "奈良",
+      "group_id": "64",
+      "obeservatory_id": "47780"
+    },
+    {
+      "obeservatory_name": "葛城山",
+      "group_id": "65",
+      "obeservatory_id": "642"
+    },
+    {
+      "obeservatory_name": "岩出",
+      "group_id": "65",
+      "obeservatory_id": "644"
+    },
+    {
+      "obeservatory_name": "高野山",
+      "group_id": "65",
+      "obeservatory_id": "645"
+    },
+    {
+      "obeservatory_name": "護摩壇山",
+      "group_id": "65",
+      "obeservatory_id": "646"
+    },
+    {
+      "obeservatory_name": "御坊",
+      "group_id": "65",
+      "obeservatory_id": "647"
+    },
+    {
+      "obeservatory_name": "虎ケ峰峠",
+      "group_id": "65",
+      "obeservatory_id": "648"
+    },
+    {
+      "obeservatory_name": "新宮",
+      "group_id": "65",
+      "obeservatory_id": "649"
+    },
+    {
+      "obeservatory_name": "白浜",
+      "group_id": "65",
+      "obeservatory_id": "650"
+    },
+    {
+      "obeservatory_name": "日置川",
+      "group_id": "65",
+      "obeservatory_id": "651"
+    },
+    {
+      "obeservatory_name": "栗栖川",
+      "group_id": "65",
+      "obeservatory_id": "971"
+    },
+    {
+      "obeservatory_name": "湯浅",
+      "group_id": "65",
+      "obeservatory_id": "978"
+    },
+    {
+      "obeservatory_name": "清水",
+      "group_id": "65",
+      "obeservatory_id": "1063"
+    },
+    {
+      "obeservatory_name": "本宮",
+      "group_id": "65",
+      "obeservatory_id": "1074"
+    },
+    {
+      "obeservatory_name": "龍神",
+      "group_id": "65",
+      "obeservatory_id": "1089"
+    },
+    {
+      "obeservatory_name": "色川",
+      "group_id": "65",
+      "obeservatory_id": "1172"
+    },
+    {
+      "obeservatory_name": "かつらぎ",
+      "group_id": "65",
+      "obeservatory_id": "1342"
+    },
+    {
+      "obeservatory_name": "西川",
+      "group_id": "65",
+      "obeservatory_id": "1347"
+    },
+    {
+      "obeservatory_name": "友ケ島",
+      "group_id": "65",
+      "obeservatory_id": "1457"
+    },
+    {
+      "obeservatory_name": "川辺",
+      "group_id": "65",
+      "obeservatory_id": "1485"
+    },
+    {
+      "obeservatory_name": "南紀白浜",
+      "group_id": "65",
+      "obeservatory_id": "1589"
+    },
+    {
+      "obeservatory_name": "和歌山",
+      "group_id": "65",
+      "obeservatory_id": "47777"
+    },
+    {
+      "obeservatory_name": "潮岬",
+      "group_id": "65",
+      "obeservatory_id": "47778"
+    },
+    {
+      "obeservatory_name": "大空山",
+      "group_id": "66",
+      "obeservatory_id": "653"
+    },
+    {
+      "obeservatory_name": "那岐山",
+      "group_id": "66",
+      "obeservatory_id": "654"
+    },
+    {
+      "obeservatory_name": "今岡",
+      "group_id": "66",
+      "obeservatory_id": "655"
+    },
+    {
+      "obeservatory_name": "久世",
+      "group_id": "66",
+      "obeservatory_id": "656"
+    },
+    {
+      "obeservatory_name": "新見",
+      "group_id": "66",
+      "obeservatory_id": "658"
+    },
+    {
+      "obeservatory_name": "天子山",
+      "group_id": "66",
+      "obeservatory_id": "659"
+    },
+    {
+      "obeservatory_name": "赤磐",
+      "group_id": "66",
+      "obeservatory_id": "660"
+    },
+    {
+      "obeservatory_name": "陣山",
+      "group_id": "66",
+      "obeservatory_id": "661"
+    },
+    {
+      "obeservatory_name": "大平山",
+      "group_id": "66",
+      "obeservatory_id": "662"
+    },
+    {
+      "obeservatory_name": "福渡",
+      "group_id": "66",
+      "obeservatory_id": "663"
+    },
+    {
+      "obeservatory_name": "和気",
+      "group_id": "66",
+      "obeservatory_id": "664"
+    },
+    {
+      "obeservatory_name": "佐屋",
+      "group_id": "66",
+      "obeservatory_id": "665"
+    },
+    {
+      "obeservatory_name": "矢掛",
+      "group_id": "66",
+      "obeservatory_id": "666"
+    },
+    {
+      "obeservatory_name": "虫明",
+      "group_id": "66",
+      "obeservatory_id": "668"
+    },
+    {
+      "obeservatory_name": "倉敷",
+      "group_id": "66",
+      "obeservatory_id": "669"
+    },
+    {
+      "obeservatory_name": "玉野",
+      "group_id": "66",
+      "obeservatory_id": "670"
+    },
+    {
+      "obeservatory_name": "笠岡",
+      "group_id": "66",
+      "obeservatory_id": "919"
+    },
+    {
+      "obeservatory_name": "下呰部",
+      "group_id": "66",
+      "obeservatory_id": "929"
+    },
+    {
+      "obeservatory_name": "高梁",
+      "group_id": "66",
+      "obeservatory_id": "930"
+    },
+    {
+      "obeservatory_name": "奈義",
+      "group_id": "66",
+      "obeservatory_id": "1140"
+    },
+    {
+      "obeservatory_name": "上長田",
+      "group_id": "66",
+      "obeservatory_id": "1328"
+    },
+    {
+      "obeservatory_name": "千屋",
+      "group_id": "66",
+      "obeservatory_id": "1330"
+    },
+    {
+      "obeservatory_name": "恩原",
+      "group_id": "66",
+      "obeservatory_id": "1371"
+    },
+    {
+      "obeservatory_name": "日応寺",
+      "group_id": "66",
+      "obeservatory_id": "1531"
+    },
+    {
+      "obeservatory_name": "富",
+      "group_id": "66",
+      "obeservatory_id": "1584"
+    },
+    {
+      "obeservatory_name": "吉備中央",
+      "group_id": "66",
+      "obeservatory_id": "1585"
+    },
+    {
+      "obeservatory_name": "旭西",
+      "group_id": "66",
+      "obeservatory_id": "1618"
+    },
+    {
+      "obeservatory_name": "津山",
+      "group_id": "66",
+      "obeservatory_id": "47756"
+    },
+    {
+      "obeservatory_name": "岡山",
+      "group_id": "66",
+      "obeservatory_id": "47768"
+    },
+    {
+      "obeservatory_name": "道後山",
+      "group_id": "67",
+      "obeservatory_id": "671"
+    },
+    {
+      "obeservatory_name": "安田山",
+      "group_id": "67",
+      "obeservatory_id": "672"
+    },
+    {
+      "obeservatory_name": "犬伏山",
+      "group_id": "67",
+      "obeservatory_id": "673"
+    },
+    {
+      "obeservatory_name": "三次",
+      "group_id": "67",
+      "obeservatory_id": "674"
+    },
+    {
+      "obeservatory_name": "庄原",
+      "group_id": "67",
+      "obeservatory_id": "675"
+    },
+    {
+      "obeservatory_name": "大朝",
+      "group_id": "67",
+      "obeservatory_id": "676"
+    },
+    {
+      "obeservatory_name": "加計",
+      "group_id": "67",
+      "obeservatory_id": "677"
+    },
+    {
+      "obeservatory_name": "海見山",
+      "group_id": "67",
+      "obeservatory_id": "678"
+    },
+    {
+      "obeservatory_name": "上下",
+      "group_id": "67",
+      "obeservatory_id": "679"
+    },
+    {
+      "obeservatory_name": "内黒山",
+      "group_id": "67",
+      "obeservatory_id": "680"
+    },
+    {
+      "obeservatory_name": "世羅",
+      "group_id": "67",
+      "obeservatory_id": "681"
+    },
+    {
+      "obeservatory_name": "恵下谷山",
+      "group_id": "67",
+      "obeservatory_id": "682"
+    },
+    {
+      "obeservatory_name": "東広島",
+      "group_id": "67",
+      "obeservatory_id": "683"
+    },
+    {
+      "obeservatory_name": "竹原",
+      "group_id": "67",
+      "obeservatory_id": "686"
+    },
+    {
+      "obeservatory_name": "生口島",
+      "group_id": "67",
+      "obeservatory_id": "687"
+    },
+    {
+      "obeservatory_name": "大竹",
+      "group_id": "67",
+      "obeservatory_id": "688"
+    },
+    {
+      "obeservatory_name": "倉橋",
+      "group_id": "67",
+      "obeservatory_id": "690"
+    },
+    {
+      "obeservatory_name": "高野",
+      "group_id": "67",
+      "obeservatory_id": "947"
+    },
+    {
+      "obeservatory_name": "東城",
+      "group_id": "67",
+      "obeservatory_id": "948"
+    },
+    {
+      "obeservatory_name": "甲田",
+      "group_id": "67",
+      "obeservatory_id": "949"
+    },
+    {
+      "obeservatory_name": "三入",
+      "group_id": "67",
+      "obeservatory_id": "950"
+    },
+    {
+      "obeservatory_name": "府中",
+      "group_id": "67",
+      "obeservatory_id": "951"
+    },
+    {
+      "obeservatory_name": "河内",
+      "group_id": "67",
+      "obeservatory_id": "952"
+    },
+    {
+      "obeservatory_name": "久比",
+      "group_id": "67",
+      "obeservatory_id": "953"
+    },
+    {
+      "obeservatory_name": "志和",
+      "group_id": "67",
+      "obeservatory_id": "1163"
+    },
+    {
+      "obeservatory_name": "王泊",
+      "group_id": "67",
+      "obeservatory_id": "1257"
+    },
+    {
+      "obeservatory_name": "八幡",
+      "group_id": "67",
+      "obeservatory_id": "1262"
+    },
+    {
+      "obeservatory_name": "油木",
+      "group_id": "67",
+      "obeservatory_id": "1325"
+    },
+    {
+      "obeservatory_name": "廿日市津田",
+      "group_id": "67",
+      "obeservatory_id": "1326"
+    },
+    {
+      "obeservatory_name": "本郷",
+      "group_id": "67",
+      "obeservatory_id": "1472"
+    },
+    {
+      "obeservatory_name": "佐伯湯来",
+      "group_id": "67",
+      "obeservatory_id": "1575"
+    },
+    {
+      "obeservatory_name": "都志見",
+      "group_id": "67",
+      "obeservatory_id": "1579"
+    },
+    {
+      "obeservatory_name": "君田",
+      "group_id": "67",
+      "obeservatory_id": "1582"
+    },
+    {
+      "obeservatory_name": "美土里",
+      "group_id": "67",
+      "obeservatory_id": "1583"
+    },
+    {
+      "obeservatory_name": "安宿",
+      "group_id": "67",
+      "obeservatory_id": "1603"
+    },
+    {
+      "obeservatory_name": "呉市蒲刈",
+      "group_id": "67",
+      "obeservatory_id": "1606"
+    },
+    {
+      "obeservatory_name": "広島",
+      "group_id": "67",
+      "obeservatory_id": "47765"
+    },
+    {
+      "obeservatory_name": "呉",
+      "group_id": "67",
+      "obeservatory_id": "47766"
+    },
+    {
+      "obeservatory_name": "福山",
+      "group_id": "67",
+      "obeservatory_id": "47767"
+    },
+    {
+      "obeservatory_name": "西ノ島",
+      "group_id": "68",
+      "obeservatory_id": "692"
+    },
+    {
+      "obeservatory_name": "鹿島",
+      "group_id": "68",
+      "obeservatory_id": "693"
+    },
+    {
+      "obeservatory_name": "斐川",
+      "group_id": "68",
+      "obeservatory_id": "694"
+    },
+    {
+      "obeservatory_name": "大東",
+      "group_id": "68",
+      "obeservatory_id": "696"
+    },
+    {
+      "obeservatory_name": "大田",
+      "group_id": "68",
+      "obeservatory_id": "697"
+    },
+    {
+      "obeservatory_name": "掛合",
+      "group_id": "68",
+      "obeservatory_id": "698"
+    },
+    {
+      "obeservatory_name": "横田",
+      "group_id": "68",
+      "obeservatory_id": "699"
+    },
+    {
+      "obeservatory_name": "吾妻山",
+      "group_id": "68",
+      "obeservatory_id": "700"
+    },
+    {
+      "obeservatory_name": "川本",
+      "group_id": "68",
+      "obeservatory_id": "701"
+    },
+    {
+      "obeservatory_name": "三隅",
+      "group_id": "68",
+      "obeservatory_id": "703"
+    },
+    {
+      "obeservatory_name": "益田",
+      "group_id": "68",
+      "obeservatory_id": "704"
+    },
+    {
+      "obeservatory_name": "聖山",
+      "group_id": "68",
+      "obeservatory_id": "705"
+    },
+    {
+      "obeservatory_name": "十種峯",
+      "group_id": "68",
+      "obeservatory_id": "706"
+    },
+    {
+      "obeservatory_name": "津和野",
+      "group_id": "68",
+      "obeservatory_id": "707"
+    },
+    {
+      "obeservatory_name": "佐田",
+      "group_id": "68",
+      "obeservatory_id": "954"
+    },
+    {
+      "obeservatory_name": "桜江",
+      "group_id": "68",
+      "obeservatory_id": "1093"
+    },
+    {
+      "obeservatory_name": "瑞穂",
+      "group_id": "68",
+      "obeservatory_id": "1094"
+    },
+    {
+      "obeservatory_name": "伯太",
+      "group_id": "68",
+      "obeservatory_id": "1095"
+    },
+    {
+      "obeservatory_name": "波佐",
+      "group_id": "68",
+      "obeservatory_id": "1175"
+    },
+    {
+      "obeservatory_name": "匹見",
+      "group_id": "68",
+      "obeservatory_id": "1176"
+    },
+    {
+      "obeservatory_name": "海士",
+      "group_id": "68",
+      "obeservatory_id": "1307"
+    },
+    {
+      "obeservatory_name": "出雲",
+      "group_id": "68",
+      "obeservatory_id": "1310"
+    },
+    {
+      "obeservatory_name": "赤名",
+      "group_id": "68",
+      "obeservatory_id": "1320"
+    },
+    {
+      "obeservatory_name": "弥栄",
+      "group_id": "68",
+      "obeservatory_id": "1321"
+    },
+    {
+      "obeservatory_name": "六日市",
+      "group_id": "68",
+      "obeservatory_id": "1322"
+    },
+    {
+      "obeservatory_name": "福光",
+      "group_id": "68",
+      "obeservatory_id": "1336"
+    },
+    {
+      "obeservatory_name": "原山",
+      "group_id": "68",
+      "obeservatory_id": "1362"
+    },
+    {
+      "obeservatory_name": "西郷岬",
+      "group_id": "68",
+      "obeservatory_id": "1473"
+    },
+    {
+      "obeservatory_name": "高津",
+      "group_id": "68",
+      "obeservatory_id": "1474"
+    },
+    {
+      "obeservatory_name": "吉賀",
+      "group_id": "68",
+      "obeservatory_id": "1592"
+    },
+    {
+      "obeservatory_name": "西郷",
+      "group_id": "68",
+      "obeservatory_id": "47740"
+    },
+    {
+      "obeservatory_name": "松江",
+      "group_id": "68",
+      "obeservatory_id": "47741"
+    },
+    {
+      "obeservatory_name": "浜田",
+      "group_id": "68",
+      "obeservatory_id": "47755"
+    },
+    {
+      "obeservatory_name": "青谷",
+      "group_id": "69",
+      "obeservatory_id": "709"
+    },
+    {
+      "obeservatory_name": "岩井",
+      "group_id": "69",
+      "obeservatory_id": "711"
+    },
+    {
+      "obeservatory_name": "倉吉",
+      "group_id": "69",
+      "obeservatory_id": "713"
+    },
+    {
+      "obeservatory_name": "菅俵原",
+      "group_id": "69",
+      "obeservatory_id": "714"
+    },
+    {
+      "obeservatory_name": "霊石山",
+      "group_id": "69",
+      "obeservatory_id": "715"
+    },
+    {
+      "obeservatory_name": "大山",
+      "group_id": "69",
+      "obeservatory_id": "716"
+    },
+    {
+      "obeservatory_name": "古峠山",
+      "group_id": "69",
+      "obeservatory_id": "717"
+    },
+    {
+      "obeservatory_name": "智頭",
+      "group_id": "69",
+      "obeservatory_id": "718"
+    },
+    {
+      "obeservatory_name": "日南",
+      "group_id": "69",
+      "obeservatory_id": "938"
+    },
+    {
+      "obeservatory_name": "関金",
+      "group_id": "69",
+      "obeservatory_id": "1177"
+    },
+    {
+      "obeservatory_name": "若桜",
+      "group_id": "69",
+      "obeservatory_id": "1178"
+    },
+    {
+      "obeservatory_name": "塩津",
+      "group_id": "69",
+      "obeservatory_id": "1231"
+    },
+    {
+      "obeservatory_name": "茶屋",
+      "group_id": "69",
+      "obeservatory_id": "1304"
+    },
+    {
+      "obeservatory_name": "佐治",
+      "group_id": "69",
+      "obeservatory_id": "1385"
+    },
+    {
+      "obeservatory_name": "江尾",
+      "group_id": "69",
+      "obeservatory_id": "1389"
+    },
+    {
+      "obeservatory_name": "鹿野",
+      "group_id": "69",
+      "obeservatory_id": "1391"
+    },
+    {
+      "obeservatory_name": "湖山",
+      "group_id": "69",
+      "obeservatory_id": "1519"
+    },
+    {
+      "obeservatory_name": "境",
+      "group_id": "69",
+      "obeservatory_id": "47742"
+    },
+    {
+      "obeservatory_name": "米子",
+      "group_id": "69",
+      "obeservatory_id": "47744"
+    },
+    {
+      "obeservatory_name": "鳥取",
+      "group_id": "69",
+      "obeservatory_id": "47746"
+    },
+    {
+      "obeservatory_name": "大山寺",
+      "group_id": "71",
+      "obeservatory_id": "719"
+    },
+    {
+      "obeservatory_name": "池田",
+      "group_id": "71",
+      "obeservatory_id": "720"
+    },
+    {
+      "obeservatory_name": "江田山",
+      "group_id": "71",
+      "obeservatory_id": "722"
+    },
+    {
+      "obeservatory_name": "太竜寺山",
+      "group_id": "71",
+      "obeservatory_id": "723"
+    },
+    {
+      "obeservatory_name": "日和佐",
+      "group_id": "71",
+      "obeservatory_id": "724"
+    },
+    {
+      "obeservatory_name": "宍喰",
+      "group_id": "71",
+      "obeservatory_id": "725"
+    },
+    {
+      "obeservatory_name": "穴吹",
+      "group_id": "71",
+      "obeservatory_id": "972"
+    },
+    {
+      "obeservatory_name": "福原旭",
+      "group_id": "71",
+      "obeservatory_id": "1098"
+    },
+    {
+      "obeservatory_name": "蒲生田",
+      "group_id": "71",
+      "obeservatory_id": "1242"
+    },
+    {
+      "obeservatory_name": "京上",
+      "group_id": "71",
+      "obeservatory_id": "1252"
+    },
+    {
+      "obeservatory_name": "半田",
+      "group_id": "71",
+      "obeservatory_id": "1327"
+    },
+    {
+      "obeservatory_name": "木頭",
+      "group_id": "71",
+      "obeservatory_id": "1352"
+    },
+    {
+      "obeservatory_name": "旭丸",
+      "group_id": "71",
+      "obeservatory_id": "1358"
+    },
+    {
+      "obeservatory_name": "海陽",
+      "group_id": "71",
+      "obeservatory_id": "1604"
+    },
+    {
+      "obeservatory_name": "剣山",
+      "group_id": "71",
+      "obeservatory_id": "47894"
+    },
+    {
+      "obeservatory_name": "徳島",
+      "group_id": "71",
+      "obeservatory_id": "47895"
+    },
+    {
+      "obeservatory_name": "内海",
+      "group_id": "72",
+      "obeservatory_id": "726"
+    },
+    {
+      "obeservatory_name": "滝宮",
+      "group_id": "72",
+      "obeservatory_id": "729"
+    },
+    {
+      "obeservatory_name": "引田",
+      "group_id": "72",
+      "obeservatory_id": "730"
+    },
+    {
+      "obeservatory_name": "竜王山",
+      "group_id": "72",
+      "obeservatory_id": "731"
+    },
+    {
+      "obeservatory_name": "財田",
+      "group_id": "72",
+      "obeservatory_id": "1239"
+    },
+    {
+      "obeservatory_name": "香南",
+      "group_id": "72",
+      "obeservatory_id": "1475"
+    },
+    {
+      "obeservatory_name": "多度津",
+      "group_id": "72",
+      "obeservatory_id": "47890"
+    },
+    {
+      "obeservatory_name": "高松",
+      "group_id": "72",
+      "obeservatory_id": "47891"
+    },
+    {
+      "obeservatory_name": "大三島",
+      "group_id": "73",
+      "obeservatory_id": "732"
+    },
+    {
+      "obeservatory_name": "玉川",
+      "group_id": "73",
+      "obeservatory_id": "733"
+    },
+    {
+      "obeservatory_name": "新居浜",
+      "group_id": "73",
+      "obeservatory_id": "734"
+    },
+    {
+      "obeservatory_name": "四国中央",
+      "group_id": "73",
+      "obeservatory_id": "735"
+    },
+    {
+      "obeservatory_name": "上林",
+      "group_id": "73",
+      "obeservatory_id": "737"
+    },
+    {
+      "obeservatory_name": "成就社",
+      "group_id": "73",
+      "obeservatory_id": "738"
+    },
+    {
+      "obeservatory_name": "長浜",
+      "group_id": "73",
+      "obeservatory_id": "739"
+    },
+    {
+      "obeservatory_name": "中山",
+      "group_id": "73",
+      "obeservatory_id": "740"
+    },
+    {
+      "obeservatory_name": "久万",
+      "group_id": "73",
+      "obeservatory_id": "741"
+    },
+    {
+      "obeservatory_name": "獅子越峠",
+      "group_id": "73",
+      "obeservatory_id": "742"
+    },
+    {
+      "obeservatory_name": "八幡浜",
+      "group_id": "73",
+      "obeservatory_id": "743"
+    },
+    {
+      "obeservatory_name": "御荘",
+      "group_id": "73",
+      "obeservatory_id": "745"
+    },
+    {
+      "obeservatory_name": "西条",
+      "group_id": "73",
+      "obeservatory_id": "958"
+    },
+    {
+      "obeservatory_name": "大洲",
+      "group_id": "73",
+      "obeservatory_id": "959"
+    },
+    {
+      "obeservatory_name": "三崎",
+      "group_id": "73",
+      "obeservatory_id": "960"
+    },
+    {
+      "obeservatory_name": "宇和",
+      "group_id": "73",
+      "obeservatory_id": "961"
+    },
+    {
+      "obeservatory_name": "今治",
+      "group_id": "73",
+      "obeservatory_id": "1077"
+    },
+    {
+      "obeservatory_name": "富郷",
+      "group_id": "73",
+      "obeservatory_id": "1260"
+    },
+    {
+      "obeservatory_name": "近永",
+      "group_id": "73",
+      "obeservatory_id": "1350"
+    },
+    {
+      "obeservatory_name": "瀬戸",
+      "group_id": "73",
+      "obeservatory_id": "1456"
+    },
+    {
+      "obeservatory_name": "松山南吉田",
+      "group_id": "73",
+      "obeservatory_id": "1521"
+    },
+    {
+      "obeservatory_name": "松山",
+      "group_id": "73",
+      "obeservatory_id": "47887"
+    },
+    {
+      "obeservatory_name": "宇和島",
+      "group_id": "73",
+      "obeservatory_id": "47892"
+    },
+    {
+      "obeservatory_name": "本山",
+      "group_id": "74",
+      "obeservatory_id": "746"
+    },
+    {
+      "obeservatory_name": "繁藤",
+      "group_id": "74",
+      "obeservatory_id": "747"
+    },
+    {
+      "obeservatory_name": "佐川",
+      "group_id": "74",
+      "obeservatory_id": "748"
+    },
+    {
+      "obeservatory_name": "成山",
+      "group_id": "74",
+      "obeservatory_id": "749"
+    },
+    {
+      "obeservatory_name": "南国",
+      "group_id": "74",
+      "obeservatory_id": "751"
+    },
+    {
+      "obeservatory_name": "芸西",
+      "group_id": "74",
+      "obeservatory_id": "752"
+    },
+    {
+      "obeservatory_name": "鳥形山",
+      "group_id": "74",
+      "obeservatory_id": "753"
+    },
+    {
+      "obeservatory_name": "船戸",
+      "group_id": "74",
+      "obeservatory_id": "754"
+    },
+    {
+      "obeservatory_name": "安芸",
+      "group_id": "74",
+      "obeservatory_id": "755"
+    },
+    {
+      "obeservatory_name": "須崎",
+      "group_id": "74",
+      "obeservatory_id": "756"
+    },
+    {
+      "obeservatory_name": "佐喜浜",
+      "group_id": "74",
+      "obeservatory_id": "757"
+    },
+    {
+      "obeservatory_name": "窪川",
+      "group_id": "74",
+      "obeservatory_id": "758"
+    },
+    {
+      "obeservatory_name": "堂ケ森",
+      "group_id": "74",
+      "obeservatory_id": "760"
+    },
+    {
+      "obeservatory_name": "大正",
+      "group_id": "74",
+      "obeservatory_id": "761"
+    },
+    {
+      "obeservatory_name": "中村",
+      "group_id": "74",
+      "obeservatory_id": "763"
+    },
+    {
+      "obeservatory_name": "梼原",
+      "group_id": "74",
+      "obeservatory_id": "921"
+    },
+    {
+      "obeservatory_name": "田野",
+      "group_id": "74",
+      "obeservatory_id": "955"
+    },
+    {
+      "obeservatory_name": "池川",
+      "group_id": "74",
+      "obeservatory_id": "1179"
+    },
+    {
+      "obeservatory_name": "大栃",
+      "group_id": "74",
+      "obeservatory_id": "1229"
+    },
+    {
+      "obeservatory_name": "佐賀",
+      "group_id": "74",
+      "obeservatory_id": "1233"
+    },
+    {
+      "obeservatory_name": "江川崎",
+      "group_id": "74",
+      "obeservatory_id": "1235"
+    },
+    {
+      "obeservatory_name": "後免",
+      "group_id": "74",
+      "obeservatory_id": "1249"
+    },
+    {
+      "obeservatory_name": "魚梁瀬",
+      "group_id": "74",
+      "obeservatory_id": "1281"
+    },
+    {
+      "obeservatory_name": "本川",
+      "group_id": "74",
+      "obeservatory_id": "1351"
+    },
+    {
+      "obeservatory_name": "南国日章",
+      "group_id": "74",
+      "obeservatory_id": "1476"
+    },
+    {
+      "obeservatory_name": "三崎",
+      "group_id": "74",
+      "obeservatory_id": "1556"
+    },
+    {
+      "obeservatory_name": "高知",
+      "group_id": "74",
+      "obeservatory_id": "47893"
+    },
+    {
+      "obeservatory_name": "宿毛",
+      "group_id": "74",
+      "obeservatory_id": "47897"
+    },
+    {
+      "obeservatory_name": "清水",
+      "group_id": "74",
+      "obeservatory_id": "47898"
+    },
+    {
+      "obeservatory_name": "室戸岬",
+      "group_id": "74",
+      "obeservatory_id": "47899"
+    },
+    {
+      "obeservatory_name": "須佐",
+      "group_id": "81",
+      "obeservatory_id": "765"
+    },
+    {
+      "obeservatory_name": "徳佐",
+      "group_id": "81",
+      "obeservatory_id": "767"
+    },
+    {
+      "obeservatory_name": "鍋提峠",
+      "group_id": "81",
+      "obeservatory_id": "768"
+    },
+    {
+      "obeservatory_name": "秋吉台",
+      "group_id": "81",
+      "obeservatory_id": "769"
+    },
+    {
+      "obeservatory_name": "瀬戸原",
+      "group_id": "81",
+      "obeservatory_id": "770"
+    },
+    {
+      "obeservatory_name": "広瀬",
+      "group_id": "81",
+      "obeservatory_id": "771"
+    },
+    {
+      "obeservatory_name": "豊田",
+      "group_id": "81",
+      "obeservatory_id": "772"
+    },
+    {
+      "obeservatory_name": "桜山",
+      "group_id": "81",
+      "obeservatory_id": "773"
+    },
+    {
+      "obeservatory_name": "防府",
+      "group_id": "81",
+      "obeservatory_id": "775"
+    },
+    {
+      "obeservatory_name": "下松",
+      "group_id": "81",
+      "obeservatory_id": "776"
+    },
+    {
+      "obeservatory_name": "宇部",
+      "group_id": "81",
+      "obeservatory_id": "778"
+    },
+    {
+      "obeservatory_name": "安下庄",
+      "group_id": "81",
+      "obeservatory_id": "779"
+    },
+    {
+      "obeservatory_name": "玖珂",
+      "group_id": "81",
+      "obeservatory_id": "913"
+    },
+    {
+      "obeservatory_name": "油谷",
+      "group_id": "81",
+      "obeservatory_id": "939"
+    },
+    {
+      "obeservatory_name": "岩国",
+      "group_id": "81",
+      "obeservatory_id": "940"
+    },
+    {
+      "obeservatory_name": "周東",
+      "group_id": "81",
+      "obeservatory_id": "941"
+    },
+    {
+      "obeservatory_name": "柳井",
+      "group_id": "81",
+      "obeservatory_id": "942"
+    },
+    {
+      "obeservatory_name": "羅漢山",
+      "group_id": "81",
+      "obeservatory_id": "1100"
+    },
+    {
+      "obeservatory_name": "長野山",
+      "group_id": "81",
+      "obeservatory_id": "1101"
+    },
+    {
+      "obeservatory_name": "和田",
+      "group_id": "81",
+      "obeservatory_id": "1261"
+    },
+    {
+      "obeservatory_name": "篠生",
+      "group_id": "81",
+      "obeservatory_id": "1367"
+    },
+    {
+      "obeservatory_name": "鹿野",
+      "group_id": "81",
+      "obeservatory_id": "1614"
+    },
+    {
+      "obeservatory_name": "東厚保",
+      "group_id": "81",
+      "obeservatory_id": "1620"
+    },
+    {
+      "obeservatory_name": "萩",
+      "group_id": "81",
+      "obeservatory_id": "47754"
+    },
+    {
+      "obeservatory_name": "下関",
+      "group_id": "81",
+      "obeservatory_id": "47762"
+    },
+    {
+      "obeservatory_name": "山口",
+      "group_id": "81",
+      "obeservatory_id": "47784"
+    },
+    {
+      "obeservatory_name": "八幡",
+      "group_id": "82",
+      "obeservatory_id": "780"
+    },
+    {
+      "obeservatory_name": "小倉",
+      "group_id": "82",
+      "obeservatory_id": "781"
+    },
+    {
+      "obeservatory_name": "行橋",
+      "group_id": "82",
+      "obeservatory_id": "782"
+    },
+    {
+      "obeservatory_name": "篠栗",
+      "group_id": "82",
+      "obeservatory_id": "783"
+    },
+    {
+      "obeservatory_name": "前原",
+      "group_id": "82",
+      "obeservatory_id": "785"
+    },
+    {
+      "obeservatory_name": "九千部山",
+      "group_id": "82",
+      "obeservatory_id": "787"
+    },
+    {
+      "obeservatory_name": "朝倉",
+      "group_id": "82",
+      "obeservatory_id": "788"
+    },
+    {
+      "obeservatory_name": "英彦山",
+      "group_id": "82",
+      "obeservatory_id": "789"
+    },
+    {
+      "obeservatory_name": "久留米",
+      "group_id": "82",
+      "obeservatory_id": "790"
+    },
+    {
+      "obeservatory_name": "耳納山",
+      "group_id": "82",
+      "obeservatory_id": "791"
+    },
+    {
+      "obeservatory_name": "黒木",
+      "group_id": "82",
+      "obeservatory_id": "792"
+    },
+    {
+      "obeservatory_name": "大牟田",
+      "group_id": "82",
+      "obeservatory_id": "793"
+    },
+    {
+      "obeservatory_name": "宗像",
+      "group_id": "82",
+      "obeservatory_id": "943"
+    },
+    {
+      "obeservatory_name": "頂吉",
+      "group_id": "82",
+      "obeservatory_id": "944"
+    },
+    {
+      "obeservatory_name": "柳川",
+      "group_id": "82",
+      "obeservatory_id": "945"
+    },
+    {
+      "obeservatory_name": "添田",
+      "group_id": "82",
+      "obeservatory_id": "1046"
+    },
+    {
+      "obeservatory_name": "太宰府",
+      "group_id": "82",
+      "obeservatory_id": "1141"
+    },
+    {
+      "obeservatory_name": "博多",
+      "group_id": "82",
+      "obeservatory_id": "1477"
+    },
+    {
+      "obeservatory_name": "曽根",
+      "group_id": "82",
+      "obeservatory_id": "1527"
+    },
+    {
+      "obeservatory_name": "空港北町",
+      "group_id": "82",
+      "obeservatory_id": "1590"
+    },
+    {
+      "obeservatory_name": "早良脇山",
+      "group_id": "82",
+      "obeservatory_id": "1611"
+    },
+    {
+      "obeservatory_name": "福岡",
+      "group_id": "82",
+      "obeservatory_id": "47807"
+    },
+    {
+      "obeservatory_name": "飯塚",
+      "group_id": "82",
+      "obeservatory_id": "47809"
+    },
+    {
+      "obeservatory_name": "中津",
+      "group_id": "83",
+      "obeservatory_id": "794"
+    },
+    {
+      "obeservatory_name": "豊後高田",
+      "group_id": "83",
+      "obeservatory_id": "795"
+    },
+    {
+      "obeservatory_name": "武蔵",
+      "group_id": "83",
+      "obeservatory_id": "796"
+    },
+    {
+      "obeservatory_name": "伏木",
+      "group_id": "83",
+      "obeservatory_id": "797"
+    },
+    {
+      "obeservatory_name": "湯布院",
+      "group_id": "83",
+      "obeservatory_id": "799"
+    },
+    {
+      "obeservatory_name": "佐賀関",
+      "group_id": "83",
+      "obeservatory_id": "801"
+    },
+    {
+      "obeservatory_name": "釈迦岳",
+      "group_id": "83",
+      "obeservatory_id": "802"
+    },
+    {
+      "obeservatory_name": "湯平",
+      "group_id": "83",
+      "obeservatory_id": "803"
+    },
+    {
+      "obeservatory_name": "温見",
+      "group_id": "83",
+      "obeservatory_id": "804"
+    },
+    {
+      "obeservatory_name": "犬飼",
+      "group_id": "83",
+      "obeservatory_id": "805"
+    },
+    {
+      "obeservatory_name": "竹田",
+      "group_id": "83",
+      "obeservatory_id": "806"
+    },
+    {
+      "obeservatory_name": "出羽",
+      "group_id": "83",
+      "obeservatory_id": "807"
+    },
+    {
+      "obeservatory_name": "佐伯",
+      "group_id": "83",
+      "obeservatory_id": "808"
+    },
+    {
+      "obeservatory_name": "倉木",
+      "group_id": "83",
+      "obeservatory_id": "809"
+    },
+    {
+      "obeservatory_name": "蒲江",
+      "group_id": "83",
+      "obeservatory_id": "810"
+    },
+    {
+      "obeservatory_name": "院内",
+      "group_id": "83",
+      "obeservatory_id": "931"
+    },
+    {
+      "obeservatory_name": "玖珠",
+      "group_id": "83",
+      "obeservatory_id": "932"
+    },
+    {
+      "obeservatory_name": "臼杵",
+      "group_id": "83",
+      "obeservatory_id": "933"
+    },
+    {
+      "obeservatory_name": "耶馬渓",
+      "group_id": "83",
+      "obeservatory_id": "979"
+    },
+    {
+      "obeservatory_name": "国見",
+      "group_id": "83",
+      "obeservatory_id": "1137"
+    },
+    {
+      "obeservatory_name": "宇目",
+      "group_id": "83",
+      "obeservatory_id": "1142"
+    },
+    {
+      "obeservatory_name": "別府",
+      "group_id": "83",
+      "obeservatory_id": "1157"
+    },
+    {
+      "obeservatory_name": "杵築",
+      "group_id": "83",
+      "obeservatory_id": "1237"
+    },
+    {
+      "obeservatory_name": "椿ヶ鼻",
+      "group_id": "83",
+      "obeservatory_id": "1554"
+    },
+    {
+      "obeservatory_name": "日田",
+      "group_id": "83",
+      "obeservatory_id": "47814"
+    },
+    {
+      "obeservatory_name": "大分",
+      "group_id": "83",
+      "obeservatory_id": "47815"
+    },
+    {
+      "obeservatory_name": "佐須奈",
+      "group_id": "84",
+      "obeservatory_id": "811"
+    },
+    {
+      "obeservatory_name": "松浦",
+      "group_id": "84",
+      "obeservatory_id": "814"
+    },
+    {
+      "obeservatory_name": "国見山",
+      "group_id": "84",
+      "obeservatory_id": "815"
+    },
+    {
+      "obeservatory_name": "大瀬戸",
+      "group_id": "84",
+      "obeservatory_id": "817"
+    },
+    {
+      "obeservatory_name": "長浦岳",
+      "group_id": "84",
+      "obeservatory_id": "818"
+    },
+    {
+      "obeservatory_name": "五家原岳",
+      "group_id": "84",
+      "obeservatory_id": "819"
+    },
+    {
+      "obeservatory_name": "諫早",
+      "group_id": "84",
+      "obeservatory_id": "820"
+    },
+    {
+      "obeservatory_name": "口之津",
+      "group_id": "84",
+      "obeservatory_id": "922"
+    },
+    {
+      "obeservatory_name": "島原",
+      "group_id": "84",
+      "obeservatory_id": "962"
+    },
+    {
+      "obeservatory_name": "有川",
+      "group_id": "84",
+      "obeservatory_id": "1080"
+    },
+    {
+      "obeservatory_name": "大村",
+      "group_id": "84",
+      "obeservatory_id": "1084"
+    },
+    {
+      "obeservatory_name": "有川",
+      "group_id": "84",
+      "obeservatory_id": "1138"
+    },
+    {
+      "obeservatory_name": "芦辺",
+      "group_id": "84",
+      "obeservatory_id": "1144"
+    },
+    {
+      "obeservatory_name": "野母崎",
+      "group_id": "84",
+      "obeservatory_id": "1441"
+    },
+    {
+      "obeservatory_name": "深江",
+      "group_id": "84",
+      "obeservatory_id": "1442"
+    },
+    {
+      "obeservatory_name": "普賢岳",
+      "group_id": "84",
+      "obeservatory_id": "1446"
+    },
+    {
+      "obeservatory_name": "百花台",
+      "group_id": "84",
+      "obeservatory_id": "1451"
+    },
+    {
+      "obeservatory_name": "千々石",
+      "group_id": "84",
+      "obeservatory_id": "1452"
+    },
+    {
+      "obeservatory_name": "鰐浦",
+      "group_id": "84",
+      "obeservatory_id": "1453"
+    },
+    {
+      "obeservatory_name": "石田",
+      "group_id": "84",
+      "obeservatory_id": "1478"
+    },
+    {
+      "obeservatory_name": "上大津",
+      "group_id": "84",
+      "obeservatory_id": "1479"
+    },
+    {
+      "obeservatory_name": "小値賀",
+      "group_id": "84",
+      "obeservatory_id": "1535"
+    },
+    {
+      "obeservatory_name": "頭ヶ島",
+      "group_id": "84",
+      "obeservatory_id": "1536"
+    },
+    {
+      "obeservatory_name": "美津島",
+      "group_id": "84",
+      "obeservatory_id": "1538"
+    },
+    {
+      "obeservatory_name": "厳原",
+      "group_id": "84",
+      "obeservatory_id": "47800"
+    },
+    {
+      "obeservatory_name": "平戸",
+      "group_id": "84",
+      "obeservatory_id": "47805"
+    },
+    {
+      "obeservatory_name": "佐世保",
+      "group_id": "84",
+      "obeservatory_id": "47812"
+    },
+    {
+      "obeservatory_name": "長崎",
+      "group_id": "84",
+      "obeservatory_id": "47817"
+    },
+    {
+      "obeservatory_name": "雲仙岳",
+      "group_id": "84",
+      "obeservatory_id": "47818"
+    },
+    {
+      "obeservatory_name": "福江",
+      "group_id": "84",
+      "obeservatory_id": "47843"
+    },
+    {
+      "obeservatory_name": "枝去木",
+      "group_id": "85",
+      "obeservatory_id": "824"
+    },
+    {
+      "obeservatory_name": "和多田",
+      "group_id": "85",
+      "obeservatory_id": "825"
+    },
+    {
+      "obeservatory_name": "権現山",
+      "group_id": "85",
+      "obeservatory_id": "826"
+    },
+    {
+      "obeservatory_name": "八幡岳",
+      "group_id": "85",
+      "obeservatory_id": "827"
+    },
+    {
+      "obeservatory_name": "白石",
+      "group_id": "85",
+      "obeservatory_id": "829"
+    },
+    {
+      "obeservatory_name": "嬉野",
+      "group_id": "85",
+      "obeservatory_id": "830"
+    },
+    {
+      "obeservatory_name": "多良岳",
+      "group_id": "85",
+      "obeservatory_id": "831"
+    },
+    {
+      "obeservatory_name": "伊万里",
+      "group_id": "85",
+      "obeservatory_id": "1075"
+    },
+    {
+      "obeservatory_name": "川副",
+      "group_id": "85",
+      "obeservatory_id": "1480"
+    },
+    {
+      "obeservatory_name": "唐津",
+      "group_id": "85",
+      "obeservatory_id": "1610"
+    },
+    {
+      "obeservatory_name": "鳥栖",
+      "group_id": "85",
+      "obeservatory_id": "1612"
+    },
+    {
+      "obeservatory_name": "北山",
+      "group_id": "85",
+      "obeservatory_id": "1616"
+    },
+    {
+      "obeservatory_name": "佐賀",
+      "group_id": "85",
+      "obeservatory_id": "47813"
+    },
+    {
+      "obeservatory_name": "鹿北",
+      "group_id": "86",
+      "obeservatory_id": "832"
+    },
+    {
+      "obeservatory_name": "南小国",
+      "group_id": "86",
+      "obeservatory_id": "833"
+    },
+    {
+      "obeservatory_name": "岱明",
+      "group_id": "86",
+      "obeservatory_id": "834"
+    },
+    {
+      "obeservatory_name": "菊池",
+      "group_id": "86",
+      "obeservatory_id": "835"
+    },
+    {
+      "obeservatory_name": "鞍岳",
+      "group_id": "86",
+      "obeservatory_id": "836"
+    },
+    {
+      "obeservatory_name": "俵山",
+      "group_id": "86",
+      "obeservatory_id": "838"
+    },
+    {
+      "obeservatory_name": "高森",
+      "group_id": "86",
+      "obeservatory_id": "840"
+    },
+    {
+      "obeservatory_name": "間の谷山",
+      "group_id": "86",
+      "obeservatory_id": "841"
+    },
+    {
+      "obeservatory_name": "甲佐",
+      "group_id": "86",
+      "obeservatory_id": "842"
+    },
+    {
+      "obeservatory_name": "松島",
+      "group_id": "86",
+      "obeservatory_id": "843"
+    },
+    {
+      "obeservatory_name": "大金峰",
+      "group_id": "86",
+      "obeservatory_id": "844"
+    },
+    {
+      "obeservatory_name": "本渡",
+      "group_id": "86",
+      "obeservatory_id": "845"
+    },
+    {
+      "obeservatory_name": "八代",
+      "group_id": "86",
+      "obeservatory_id": "846"
+    },
+    {
+      "obeservatory_name": "戦山",
+      "group_id": "86",
+      "obeservatory_id": "847"
+    },
+    {
+      "obeservatory_name": "一里山",
+      "group_id": "86",
+      "obeservatory_id": "850"
+    },
+    {
+      "obeservatory_name": "白髪岳",
+      "group_id": "86",
+      "obeservatory_id": "851"
+    },
+    {
+      "obeservatory_name": "益城",
+      "group_id": "86",
+      "obeservatory_id": "923"
+    },
+    {
+      "obeservatory_name": "水俣",
+      "group_id": "86",
+      "obeservatory_id": "924"
+    },
+    {
+      "obeservatory_name": "多良木",
+      "group_id": "86",
+      "obeservatory_id": "925"
+    },
+    {
+      "obeservatory_name": "上",
+      "group_id": "86",
+      "obeservatory_id": "926"
+    },
+    {
+      "obeservatory_name": "田浦",
+      "group_id": "86",
+      "obeservatory_id": "946"
+    },
+    {
+      "obeservatory_name": "三角",
+      "group_id": "86",
+      "obeservatory_id": "1081"
+    },
+    {
+      "obeservatory_name": "湯前横谷",
+      "group_id": "86",
+      "obeservatory_id": "1086"
+    },
+    {
+      "obeservatory_name": "茶臼峠",
+      "group_id": "86",
+      "obeservatory_id": "1088"
+    },
+    {
+      "obeservatory_name": "屋形山",
+      "group_id": "86",
+      "obeservatory_id": "1156"
+    },
+    {
+      "obeservatory_name": "五家荘",
+      "group_id": "86",
+      "obeservatory_id": "1158"
+    },
+    {
+      "obeservatory_name": "阿蘇乙姫",
+      "group_id": "86",
+      "obeservatory_id": "1240"
+    },
+    {
+      "obeservatory_name": "五木",
+      "group_id": "86",
+      "obeservatory_id": "1368"
+    },
+    {
+      "obeservatory_name": "山江",
+      "group_id": "86",
+      "obeservatory_id": "1435"
+    },
+    {
+      "obeservatory_name": "宇土",
+      "group_id": "86",
+      "obeservatory_id": "1580"
+    },
+    {
+      "obeservatory_name": "一勝地",
+      "group_id": "86",
+      "obeservatory_id": "1581"
+    },
+    {
+      "obeservatory_name": "山都",
+      "group_id": "86",
+      "obeservatory_id": "1613"
+    },
+    {
+      "obeservatory_name": "熊本",
+      "group_id": "86",
+      "obeservatory_id": "47819"
+    },
+    {
+      "obeservatory_name": "阿蘇山",
+      "group_id": "86",
+      "obeservatory_id": "47821"
+    },
+    {
+      "obeservatory_name": "人吉",
+      "group_id": "86",
+      "obeservatory_id": "47824"
+    },
+    {
+      "obeservatory_name": "牛深",
+      "group_id": "86",
+      "obeservatory_id": "47838"
+    },
+    {
+      "obeservatory_name": "高千穂",
+      "group_id": "87",
+      "obeservatory_id": "852"
+    },
+    {
+      "obeservatory_name": "大中尾",
+      "group_id": "87",
+      "obeservatory_id": "853"
+    },
+    {
+      "obeservatory_name": "中小屋",
+      "group_id": "87",
+      "obeservatory_id": "854"
+    },
+    {
+      "obeservatory_name": "猪原",
+      "group_id": "87",
+      "obeservatory_id": "856"
+    },
+    {
+      "obeservatory_name": "日向",
+      "group_id": "87",
+      "obeservatory_id": "857"
+    },
+    {
+      "obeservatory_name": "矢櫃岳",
+      "group_id": "87",
+      "obeservatory_id": "858"
+    },
+    {
+      "obeservatory_name": "高鍋",
+      "group_id": "87",
+      "obeservatory_id": "859"
+    },
+    {
+      "obeservatory_name": "加久藤",
+      "group_id": "87",
+      "obeservatory_id": "860"
+    },
+    {
+      "obeservatory_name": "西都",
+      "group_id": "87",
+      "obeservatory_id": "861"
+    },
+    {
+      "obeservatory_name": "えびの",
+      "group_id": "87",
+      "obeservatory_id": "862"
+    },
+    {
+      "obeservatory_name": "小林",
+      "group_id": "87",
+      "obeservatory_id": "863"
+    },
+    {
+      "obeservatory_name": "野尻",
+      "group_id": "87",
+      "obeservatory_id": "864"
+    },
+    {
+      "obeservatory_name": "国富",
+      "group_id": "87",
+      "obeservatory_id": "865"
+    },
+    {
+      "obeservatory_name": "霧島御池",
+      "group_id": "87",
+      "obeservatory_id": "867"
+    },
+    {
+      "obeservatory_name": "青島",
+      "group_id": "87",
+      "obeservatory_id": "868"
+    },
+    {
+      "obeservatory_name": "鰐塚山",
+      "group_id": "87",
+      "obeservatory_id": "870"
+    },
+    {
+      "obeservatory_name": "串間",
+      "group_id": "87",
+      "obeservatory_id": "872"
+    },
+    {
+      "obeservatory_name": "古江",
+      "group_id": "87",
+      "obeservatory_id": "1135"
+    },
+    {
+      "obeservatory_name": "深瀬",
+      "group_id": "87",
+      "obeservatory_id": "1164"
+    },
+    {
+      "obeservatory_name": "見立",
+      "group_id": "87",
+      "obeservatory_id": "1275"
+    },
+    {
+      "obeservatory_name": "諸塚",
+      "group_id": "87",
+      "obeservatory_id": "1343"
+    },
+    {
+      "obeservatory_name": "西米良",
+      "group_id": "87",
+      "obeservatory_id": "1345"
+    },
+    {
+      "obeservatory_name": "鞍岡",
+      "group_id": "87",
+      "obeservatory_id": "1348"
+    },
+    {
+      "obeservatory_name": "神門",
+      "group_id": "87",
+      "obeservatory_id": "1353"
+    },
+    {
+      "obeservatory_name": "北方",
+      "group_id": "87",
+      "obeservatory_id": "1432"
+    },
+    {
+      "obeservatory_name": "上椎葉",
+      "group_id": "87",
+      "obeservatory_id": "1433"
+    },
+    {
+      "obeservatory_name": "赤江",
+      "group_id": "87",
+      "obeservatory_id": "1481"
+    },
+    {
+      "obeservatory_name": "都農",
+      "group_id": "87",
+      "obeservatory_id": "1608"
+    },
+    {
+      "obeservatory_name": "日之影",
+      "group_id": "87",
+      "obeservatory_id": "1609"
+    },
+    {
+      "obeservatory_name": "延岡",
+      "group_id": "87",
+      "obeservatory_id": "47822"
+    },
+    {
+      "obeservatory_name": "都城",
+      "group_id": "87",
+      "obeservatory_id": "47829"
+    },
+    {
+      "obeservatory_name": "宮崎",
+      "group_id": "87",
+      "obeservatory_id": "47830"
+    },
+    {
+      "obeservatory_name": "油津",
+      "group_id": "87",
+      "obeservatory_id": "47835"
+    },
+    {
+      "obeservatory_name": "古原野",
+      "group_id": "88",
+      "obeservatory_id": "874"
+    },
+    {
+      "obeservatory_name": "大口",
+      "group_id": "88",
+      "obeservatory_id": "875"
+    },
+    {
+      "obeservatory_name": "魚野越",
+      "group_id": "88",
+      "obeservatory_id": "876"
+    },
+    {
+      "obeservatory_name": "紫尾山",
+      "group_id": "88",
+      "obeservatory_id": "877"
+    },
+    {
+      "obeservatory_name": "さつま柏原",
+      "group_id": "88",
+      "obeservatory_id": "878"
+    },
+    {
+      "obeservatory_name": "中甑",
+      "group_id": "88",
+      "obeservatory_id": "879"
+    },
+    {
+      "obeservatory_name": "川内",
+      "group_id": "88",
+      "obeservatory_id": "880"
+    },
+    {
+      "obeservatory_name": "溝辺",
+      "group_id": "88",
+      "obeservatory_id": "881"
+    },
+    {
+      "obeservatory_name": "八重山",
+      "group_id": "88",
+      "obeservatory_id": "882"
+    },
+    {
+      "obeservatory_name": "東市来",
+      "group_id": "88",
+      "obeservatory_id": "883"
+    },
+    {
+      "obeservatory_name": "権現ケ尾",
+      "group_id": "88",
+      "obeservatory_id": "884"
+    },
+    {
+      "obeservatory_name": "高峠",
+      "group_id": "88",
+      "obeservatory_id": "886"
+    },
+    {
+      "obeservatory_name": "加世田",
+      "group_id": "88",
+      "obeservatory_id": "887"
+    },
+    {
+      "obeservatory_name": "吉ケ別府",
+      "group_id": "88",
+      "obeservatory_id": "888"
+    },
+    {
+      "obeservatory_name": "大浦",
+      "group_id": "88",
+      "obeservatory_id": "889"
+    },
+    {
+      "obeservatory_name": "喜入",
+      "group_id": "88",
+      "obeservatory_id": "890"
+    },
+    {
+      "obeservatory_name": "肝属川",
+      "group_id": "88",
+      "obeservatory_id": "891"
+    },
+    {
+      "obeservatory_name": "指宿",
+      "group_id": "88",
+      "obeservatory_id": "893"
+    },
+    {
+      "obeservatory_name": "甫与志岳",
+      "group_id": "88",
+      "obeservatory_id": "894"
+    },
+    {
+      "obeservatory_name": "内之浦",
+      "group_id": "88",
+      "obeservatory_id": "895"
+    },
+    {
+      "obeservatory_name": "中種子",
+      "group_id": "88",
+      "obeservatory_id": "897"
+    },
+    {
+      "obeservatory_name": "上中",
+      "group_id": "88",
+      "obeservatory_id": "898"
+    },
+    {
+      "obeservatory_name": "尾之間",
+      "group_id": "88",
+      "obeservatory_id": "899"
+    },
+    {
+      "obeservatory_name": "出水",
+      "group_id": "88",
+      "obeservatory_id": "934"
+    },
+    {
+      "obeservatory_name": "牧之原",
+      "group_id": "88",
+      "obeservatory_id": "935"
+    },
+    {
+      "obeservatory_name": "志布志",
+      "group_id": "88",
+      "obeservatory_id": "936"
+    },
+    {
+      "obeservatory_name": "鹿屋",
+      "group_id": "88",
+      "obeservatory_id": "937"
+    },
+    {
+      "obeservatory_name": "古仁屋",
+      "group_id": "88",
+      "obeservatory_id": "980"
+    },
+    {
+      "obeservatory_name": "矢止岳",
+      "group_id": "88",
+      "obeservatory_id": "1104"
+    },
+    {
+      "obeservatory_name": "田代",
+      "group_id": "88",
+      "obeservatory_id": "1136"
+    },
+    {
+      "obeservatory_name": "伊仙",
+      "group_id": "88",
+      "obeservatory_id": "1139"
+    },
+    {
+      "obeservatory_name": "輝北",
+      "group_id": "88",
+      "obeservatory_id": "1146"
+    },
+    {
+      "obeservatory_name": "大隅",
+      "group_id": "88",
+      "obeservatory_id": "1149"
+    },
+    {
+      "obeservatory_name": "佐多",
+      "group_id": "88",
+      "obeservatory_id": "1161"
+    },
+    {
+      "obeservatory_name": "肝付前田",
+      "group_id": "88",
+      "obeservatory_id": "1181"
+    },
+    {
+      "obeservatory_name": "与論島",
+      "group_id": "88",
+      "obeservatory_id": "1277"
+    },
+    {
+      "obeservatory_name": "喜界島",
+      "group_id": "88",
+      "obeservatory_id": "1296"
+    },
+    {
+      "obeservatory_name": "笠利",
+      "group_id": "88",
+      "obeservatory_id": "1520"
+    },
+    {
+      "obeservatory_name": "中之島",
+      "group_id": "88",
+      "obeservatory_id": "1540"
+    },
+    {
+      "obeservatory_name": "天城",
+      "group_id": "88",
+      "obeservatory_id": "1542"
+    },
+    {
+      "obeservatory_name": "阿久根",
+      "group_id": "88",
+      "obeservatory_id": "47823"
+    },
+    {
+      "obeservatory_name": "鹿児島",
+      "group_id": "88",
+      "obeservatory_id": "47827"
+    },
+    {
+      "obeservatory_name": "枕崎",
+      "group_id": "88",
+      "obeservatory_id": "47831"
+    },
+    {
+      "obeservatory_name": "屋久島",
+      "group_id": "88",
+      "obeservatory_id": "47836"
+    },
+    {
+      "obeservatory_name": "種子島",
+      "group_id": "88",
+      "obeservatory_id": "47837"
+    },
+    {
+      "obeservatory_name": "名瀬",
+      "group_id": "88",
+      "obeservatory_id": "47909"
+    },
+    {
+      "obeservatory_name": "沖永良部",
+      "group_id": "88",
+      "obeservatory_id": "47942"
+    },
+    {
+      "obeservatory_name": "奥",
+      "group_id": "91",
+      "obeservatory_id": "901"
+    },
+    {
+      "obeservatory_name": "与那覇岳",
+      "group_id": "91",
+      "obeservatory_id": "902"
+    },
+    {
+      "obeservatory_name": "呉我山",
+      "group_id": "91",
+      "obeservatory_id": "903"
+    },
+    {
+      "obeservatory_name": "名嘉真",
+      "group_id": "91",
+      "obeservatory_id": "905"
+    },
+    {
+      "obeservatory_name": "読谷",
+      "group_id": "91",
+      "obeservatory_id": "906"
+    },
+    {
+      "obeservatory_name": "胡屋",
+      "group_id": "91",
+      "obeservatory_id": "907"
+    },
+    {
+      "obeservatory_name": "糸数",
+      "group_id": "91",
+      "obeservatory_id": "909"
+    },
+    {
+      "obeservatory_name": "金武",
+      "group_id": "91",
+      "obeservatory_id": "1064"
+    },
+    {
+      "obeservatory_name": "伊原間",
+      "group_id": "91",
+      "obeservatory_id": "1145"
+    },
+    {
+      "obeservatory_name": "伊是名",
+      "group_id": "91",
+      "obeservatory_id": "1147"
+    },
+    {
+      "obeservatory_name": "渡嘉敷",
+      "group_id": "91",
+      "obeservatory_id": "1152"
+    },
+    {
+      "obeservatory_name": "伊良部",
+      "group_id": "91",
+      "obeservatory_id": "1246"
+    },
+    {
+      "obeservatory_name": "多良間",
+      "group_id": "91",
+      "obeservatory_id": "1247"
+    },
+    {
+      "obeservatory_name": "城辺",
+      "group_id": "91",
+      "obeservatory_id": "1248"
+    },
+    {
+      "obeservatory_name": "川平",
+      "group_id": "91",
+      "obeservatory_id": "1250"
+    },
+    {
+      "obeservatory_name": "大原",
+      "group_id": "91",
+      "obeservatory_id": "1251"
+    },
+    {
+      "obeservatory_name": "波照間",
+      "group_id": "91",
+      "obeservatory_id": "1354"
+    },
+    {
+      "obeservatory_name": "本部",
+      "group_id": "91",
+      "obeservatory_id": "1373"
+    },
+    {
+      "obeservatory_name": "東",
+      "group_id": "91",
+      "obeservatory_id": "1374"
+    },
+    {
+      "obeservatory_name": "安次嶺",
+      "group_id": "91",
+      "obeservatory_id": "1482"
+    },
+    {
+      "obeservatory_name": "鏡原",
+      "group_id": "91",
+      "obeservatory_id": "1483"
+    },
+    {
+      "obeservatory_name": "真栄里",
+      "group_id": "91",
+      "obeservatory_id": "1484"
+    },
+    {
+      "obeservatory_name": "下地",
+      "group_id": "91",
+      "obeservatory_id": "1490"
+    },
+    {
+      "obeservatory_name": "仲筋",
+      "group_id": "91",
+      "obeservatory_id": "1491"
+    },
+    {
+      "obeservatory_name": "所野",
+      "group_id": "91",
+      "obeservatory_id": "1493"
+    },
+    {
+      "obeservatory_name": "志多阿原",
+      "group_id": "91",
+      "obeservatory_id": "1494"
+    },
+    {
+      "obeservatory_name": "粟国",
+      "group_id": "91",
+      "obeservatory_id": "1515"
+    },
+    {
+      "obeservatory_name": "慶良間",
+      "group_id": "91",
+      "obeservatory_id": "1516"
+    },
+    {
+      "obeservatory_name": "北大東",
+      "group_id": "91",
+      "obeservatory_id": "1517"
+    },
+    {
+      "obeservatory_name": "旧東",
+      "group_id": "91",
+      "obeservatory_id": "1518"
+    },
+    {
+      "obeservatory_name": "北原",
+      "group_id": "91",
+      "obeservatory_id": "1534"
+    },
+    {
+      "obeservatory_name": "国頭",
+      "group_id": "91",
+      "obeservatory_id": "1586"
+    },
+    {
+      "obeservatory_name": "宮城島",
+      "group_id": "91",
+      "obeservatory_id": "1596"
+    },
+    {
+      "obeservatory_name": "与那国島",
+      "group_id": "91",
+      "obeservatory_id": "47912"
+    },
+    {
+      "obeservatory_name": "西表島",
+      "group_id": "91",
+      "obeservatory_id": "47917"
+    },
+    {
+      "obeservatory_name": "石垣島",
+      "group_id": "91",
+      "obeservatory_id": "47918"
+    },
+    {
+      "obeservatory_name": "宮古島",
+      "group_id": "91",
+      "obeservatory_id": "47927"
+    },
+    {
+      "obeservatory_name": "久米島",
+      "group_id": "91",
+      "obeservatory_id": "47929"
+    },
+    {
+      "obeservatory_name": "那覇",
+      "group_id": "91",
+      "obeservatory_id": "47936"
+    },
+    {
+      "obeservatory_name": "名護",
+      "group_id": "91",
+      "obeservatory_id": "47940"
+    },
+    {
+      "obeservatory_name": "南大東(南大東島)",
+      "group_id": "91",
+      "obeservatory_id": "47945"
+    },
+    {
+      "obeservatory_name": "昭和",
+      "group_id": "99",
+      "obeservatory_id": "89532"
+    }
+  ]
+}
