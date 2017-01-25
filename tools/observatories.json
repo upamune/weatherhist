@@ -1,0 +1,8124 @@
+{
+  "observatories": [
+    {
+      "observatory_name": "沓形",
+      "observatory_id": 2,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "浜頓別",
+      "observatory_id": 3,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "歌登",
+      "observatory_id": 5,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "中頓別",
+      "observatory_id": 1051,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "豊富",
+      "observatory_id": 1054,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "沼川",
+      "observatory_id": 1203,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "船泊",
+      "observatory_id": 1207,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "宗谷岬",
+      "observatory_id": 1284,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "浜鬼志別",
+      "observatory_id": 1285,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "本泊",
+      "observatory_id": 1512,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "声問",
+      "observatory_id": 1528,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "礼文",
+      "observatory_id": 1546,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "幌延",
+      "observatory_id": 1573,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "幌泊",
+      "observatory_id": 1593,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "稚内",
+      "observatory_id": 47401,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "北見枝幸",
+      "observatory_id": 47402,
+      "group_id": "11"
+    },
+    {
+      "observatory_name": "美深",
+      "observatory_id": 6,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "ピヤシリ山",
+      "observatory_id": 7,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "名寄",
+      "observatory_id": 8,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "西風連",
+      "observatory_id": 9,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "下川",
+      "observatory_id": 10,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "士別",
+      "observatory_id": 11,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "犬牛別峠",
+      "observatory_id": 12,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "雄鷹峰",
+      "observatory_id": 13,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "蓬莱山",
+      "observatory_id": 14,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "上川",
+      "observatory_id": 15,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "瑞穂",
+      "observatory_id": 17,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "終沢",
+      "observatory_id": 18,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "旭岳",
+      "observatory_id": 19,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "白金",
+      "observatory_id": 20,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "富良野",
+      "observatory_id": 21,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "前富良野岳",
+      "observatory_id": 22,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "前時雨山",
+      "observatory_id": 23,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "朝日",
+      "observatory_id": 1047,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "比布",
+      "observatory_id": 1048,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "層雲峡",
+      "observatory_id": 1049,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "美瑛",
+      "observatory_id": 1052,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "幌加内",
+      "observatory_id": 1053,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "和寒",
+      "observatory_id": 1055,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "東川",
+      "observatory_id": 1184,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "志比内",
+      "observatory_id": 1185,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "幾寅",
+      "observatory_id": 1188,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "占冠",
+      "observatory_id": 1189,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "上富良野",
+      "observatory_id": 1190,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "江丹別",
+      "observatory_id": 1191,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "音威子府",
+      "observatory_id": 1197,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "中川",
+      "observatory_id": 1201,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "朱鞠内",
+      "observatory_id": 1279,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "麓郷",
+      "observatory_id": 1280,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "東神楽",
+      "observatory_id": 1458,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "小車",
+      "observatory_id": 1570,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "剣淵",
+      "observatory_id": 1572,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "金山",
+      "observatory_id": 1574,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "旭川",
+      "observatory_id": 47407,
+      "group_id": "12"
+    },
+    {
+      "observatory_name": "天塩",
+      "observatory_id": 24,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "遠別",
+      "observatory_id": 25,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "増毛",
+      "observatory_id": 28,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "古丹別",
+      "observatory_id": 1112,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "焼尻",
+      "observatory_id": 1213,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "初山別",
+      "observatory_id": 1216,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "達布",
+      "observatory_id": 1217,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "幌糠",
+      "observatory_id": 1218,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "羽幌",
+      "observatory_id": 47404,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "留萌",
+      "observatory_id": 47406,
+      "group_id": "13"
+    },
+    {
+      "observatory_name": "阿曽岩",
+      "observatory_id": 29,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "新篠津",
+      "observatory_id": 30,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "山口",
+      "observatory_id": 31,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "手稲山",
+      "observatory_id": 32,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "小金湯",
+      "observatory_id": 34,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "恵庭島松",
+      "observatory_id": 35,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "島松山",
+      "observatory_id": 36,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "支笏湖畔",
+      "observatory_id": 37,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "西野幌",
+      "observatory_id": 1076,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "石狩",
+      "observatory_id": 1085,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "浜益",
+      "observatory_id": 1193,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "厚田",
+      "observatory_id": 1194,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "千歳",
+      "observatory_id": 1459,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "江別",
+      "observatory_id": 1507,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "札幌",
+      "observatory_id": 47412,
+      "group_id": "14"
+    },
+    {
+      "observatory_name": "石狩沼田",
+      "observatory_id": 38,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "深川",
+      "observatory_id": 39,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "常盤山",
+      "observatory_id": 40,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "滝川",
+      "observatory_id": 41,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "神威岳",
+      "observatory_id": 42,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "芦別",
+      "observatory_id": 43,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "美唄",
+      "observatory_id": 44,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "下桂沢",
+      "observatory_id": 46,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "長沼",
+      "observatory_id": 47,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "丁未山",
+      "observatory_id": 48,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "夕張",
+      "observatory_id": 49,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "登川山",
+      "observatory_id": 50,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "月形",
+      "observatory_id": 999,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "栗沢",
+      "observatory_id": 1068,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "晩生内",
+      "observatory_id": 1270,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "桜山",
+      "observatory_id": 1271,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "空知吉野",
+      "observatory_id": 1287,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "浦臼",
+      "observatory_id": 1400,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "鹿島",
+      "observatory_id": 1401,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "沼の沢",
+      "observatory_id": 1402,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "新城",
+      "observatory_id": 1419,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "赤平",
+      "observatory_id": 1566,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "雨竜",
+      "observatory_id": 1567,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "岩見沢",
+      "observatory_id": 47413,
+      "group_id": "15"
+    },
+    {
+      "observatory_name": "美国",
+      "observatory_id": 51,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "余市",
+      "observatory_id": 52,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "共和",
+      "observatory_id": 54,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "蘭越",
+      "observatory_id": 55,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "脇方台地",
+      "observatory_id": 57,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "桂台",
+      "observatory_id": 59,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "喜茂別",
+      "observatory_id": 60,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "黒松内",
+      "observatory_id": 61,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "真狩",
+      "observatory_id": 1072,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "赤井川",
+      "observatory_id": 1091,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "神恵内",
+      "observatory_id": 1208,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "ニセコ",
+      "observatory_id": 1615,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "小樽",
+      "observatory_id": 47411,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "寿都",
+      "observatory_id": 47421,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "倶知安",
+      "observatory_id": 47433,
+      "group_id": "16"
+    },
+    {
+      "observatory_name": "興部",
+      "observatory_id": 63,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "湧別",
+      "observatory_id": 65,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "滝上",
+      "observatory_id": 66,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "上藻別",
+      "observatory_id": 67,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "常呂",
+      "observatory_id": 68,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "遠軽",
+      "observatory_id": 69,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "佐呂間",
+      "observatory_id": 70,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "生田原",
+      "observatory_id": 72,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "仁頃山",
+      "observatory_id": 73,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "北見",
+      "observatory_id": 74,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "小清水",
+      "observatory_id": 75,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "斜里",
+      "observatory_id": 76,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "留辺蘂",
+      "observatory_id": 77,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "留辺蘂山",
+      "observatory_id": 78,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "美幌",
+      "observatory_id": 79,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "藻琴山",
+      "observatory_id": 80,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "チミケップ山",
+      "observatory_id": 81,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "津別",
+      "observatory_id": 82,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "北見中山",
+      "observatory_id": 83,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "宇登呂",
+      "observatory_id": 981,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "西興部",
+      "observatory_id": 1073,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "白滝",
+      "observatory_id": 1092,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "境野",
+      "observatory_id": 1209,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "東藻琴",
+      "observatory_id": 1263,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "丸瀬布",
+      "observatory_id": 1420,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "女満別",
+      "observatory_id": 1460,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "紋別小向",
+      "observatory_id": 1487,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "津別二又",
+      "observatory_id": 1568,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "置戸常元",
+      "observatory_id": 1569,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "山園",
+      "observatory_id": 1617,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "雄武",
+      "observatory_id": 47405,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "網走",
+      "observatory_id": 47409,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "紋別",
+      "observatory_id": 47435,
+      "group_id": "17"
+    },
+    {
+      "observatory_name": "羅臼",
+      "observatory_id": 84,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "標津",
+      "observatory_id": 85,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "中標津",
+      "observatory_id": 86,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "計根別",
+      "observatory_id": 87,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "別海",
+      "observatory_id": 88,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "納沙布",
+      "observatory_id": 1056,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "厚床",
+      "observatory_id": 1196,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "糸櫛別",
+      "observatory_id": 1266,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "根室中標津",
+      "observatory_id": 1489,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "上標津",
+      "observatory_id": 1547,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "根室",
+      "observatory_id": 47420,
+      "group_id": "18"
+    },
+    {
+      "observatory_name": "川湯",
+      "observatory_id": 90,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "阿寒湖畔",
+      "observatory_id": 91,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "弟子屈",
+      "observatory_id": 92,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "標茶",
+      "observatory_id": 93,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "幌呂台地",
+      "observatory_id": 94,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "中徹別",
+      "observatory_id": 95,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "阿寒",
+      "observatory_id": 96,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "霧多布",
+      "observatory_id": 97,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "白糠",
+      "observatory_id": 98,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "二俣",
+      "observatory_id": 1107,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "鶴居",
+      "observatory_id": 1186,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "弟子屈",
+      "observatory_id": 1187,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "太田",
+      "observatory_id": 1192,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "榊町",
+      "observatory_id": 1195,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "知方学",
+      "observatory_id": 1283,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "塘路",
+      "observatory_id": 1403,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "茶内原野",
+      "observatory_id": 1417,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "鶴丘",
+      "observatory_id": 1461,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "釧路",
+      "observatory_id": 47418,
+      "group_id": "19"
+    },
+    {
+      "observatory_name": "軍艦山",
+      "observatory_id": 100,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "陸別",
+      "observatory_id": 101,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "殖産高地",
+      "observatory_id": 102,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "糠平",
+      "observatory_id": 103,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "小坂山",
+      "observatory_id": 104,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "上足寄",
+      "observatory_id": 105,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "西ヌプカウシ山",
+      "observatory_id": 106,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "上士幌",
+      "observatory_id": 107,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "幌安山",
+      "observatory_id": 108,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "足寄",
+      "observatory_id": 109,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "佐幌岳",
+      "observatory_id": 110,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "三角山",
+      "observatory_id": 111,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "本別",
+      "observatory_id": 112,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "新得",
+      "observatory_id": 113,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "鹿追",
+      "observatory_id": 114,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "芽室",
+      "observatory_id": 115,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "池田",
+      "observatory_id": 117,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "浦幌",
+      "observatory_id": 118,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "帯広岳",
+      "observatory_id": 119,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "ひょうたん沢",
+      "observatory_id": 120,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "大樹",
+      "observatory_id": 121,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "三国山",
+      "observatory_id": 1099,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "駒場",
+      "observatory_id": 1204,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "上札内",
+      "observatory_id": 1210,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "更別",
+      "observatory_id": 1211,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "大津",
+      "observatory_id": 1214,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "糠内",
+      "observatory_id": 1286,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "小利別",
+      "observatory_id": 1404,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "押帯",
+      "observatory_id": 1405,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "柏倉",
+      "observatory_id": 1409,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "上螺湾",
+      "observatory_id": 1410,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "留真",
+      "observatory_id": 1418,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "帯広泉",
+      "observatory_id": 1510,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "三股",
+      "observatory_id": 1571,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "帯広",
+      "observatory_id": 47417,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "広尾",
+      "observatory_id": 47440,
+      "group_id": "20"
+    },
+    {
+      "observatory_name": "安平",
+      "observatory_id": 123,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "厚真",
+      "observatory_id": 124,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "穂別",
+      "observatory_id": 125,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "森野",
+      "observatory_id": 126,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "大岸",
+      "observatory_id": 128,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "有珠山",
+      "observatory_id": 129,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "白老",
+      "observatory_id": 130,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "鵡川",
+      "observatory_id": 131,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "伊達",
+      "observatory_id": 132,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "登別山",
+      "observatory_id": 133,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "登別",
+      "observatory_id": 134,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "大滝",
+      "observatory_id": 1067,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "洞爺湖温泉",
+      "observatory_id": 1329,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "カルルス",
+      "observatory_id": 1429,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "豊浦",
+      "observatory_id": 1496,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "花和",
+      "observatory_id": 1498,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "虻田",
+      "observatory_id": 1499,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "壮瞥",
+      "observatory_id": 1500,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "入江",
+      "observatory_id": 1501,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "月浦",
+      "observatory_id": 1502,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "北有珠",
+      "observatory_id": 1503,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "洞爺湖畔",
+      "observatory_id": 1504,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "室蘭",
+      "observatory_id": 47423,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "苫小牧",
+      "observatory_id": 47424,
+      "group_id": "21"
+    },
+    {
+      "observatory_name": "日高門別",
+      "observatory_id": 136,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "新和",
+      "observatory_id": 137,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "ヌモトル山",
+      "observatory_id": 138,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "笹山",
+      "observatory_id": 139,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "静内",
+      "observatory_id": 140,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "ピセナイ山",
+      "observatory_id": 141,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "仁世宇",
+      "observatory_id": 1097,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "三石",
+      "observatory_id": 1198,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "日高",
+      "observatory_id": 1202,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "幌満",
+      "observatory_id": 1264,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "目黒",
+      "observatory_id": 1276,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "中杵臼",
+      "observatory_id": 1288,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "えりも岬",
+      "observatory_id": 1340,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "旭",
+      "observatory_id": 1430,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "平取",
+      "observatory_id": 1594,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "浦河",
+      "observatory_id": 47426,
+      "group_id": "22"
+    },
+    {
+      "observatory_name": "長万部",
+      "observatory_id": 143,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "八雲",
+      "observatory_id": 144,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "森",
+      "observatory_id": 145,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "大沼",
+      "observatory_id": 146,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "川汲",
+      "observatory_id": 147,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "北斗",
+      "observatory_id": 148,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "汐首",
+      "observatory_id": 150,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "小谷石",
+      "observatory_id": 151,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "松前",
+      "observatory_id": 152,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "熊石",
+      "observatory_id": 155,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "木古内",
+      "observatory_id": 917,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "千軒",
+      "observatory_id": 1265,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "蛾眉野",
+      "observatory_id": 1416,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "高松",
+      "observatory_id": 1462,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "戸井泊",
+      "observatory_id": 1543,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "知内",
+      "observatory_id": 1552,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "函館",
+      "observatory_id": 47430,
+      "group_id": "23"
+    },
+    {
+      "observatory_name": "せたな",
+      "observatory_id": 153,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "今金",
+      "observatory_id": 154,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "潮見",
+      "observatory_id": 156,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "奥尻",
+      "observatory_id": 1199,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "鶉",
+      "observatory_id": 1200,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "石崎",
+      "observatory_id": 1205,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "米岡",
+      "observatory_id": 1513,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "江差",
+      "observatory_id": 47428,
+      "group_id": "24"
+    },
+    {
+      "observatory_name": "障子山",
+      "observatory_id": 158,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "蟹田",
+      "observatory_id": 160,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "野辺地",
+      "observatory_id": 162,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "鰺ケ沢",
+      "observatory_id": 163,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "五所川原",
+      "observatory_id": 164,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "弘前",
+      "observatory_id": 166,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "黒石",
+      "observatory_id": 167,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "八甲田山",
+      "observatory_id": 168,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "三沢",
+      "observatory_id": 169,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "四兵衛森",
+      "observatory_id": 170,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "毛無山",
+      "observatory_id": 171,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "十和田",
+      "observatory_id": 172,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "大鰐",
+      "observatory_id": 174,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "碇ケ関",
+      "observatory_id": 175,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "空岱山",
+      "observatory_id": 176,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "休屋",
+      "observatory_id": 177,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "朝日奈岳",
+      "observatory_id": 178,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "三戸",
+      "observatory_id": 179,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "今別",
+      "observatory_id": 1026,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "六ケ所",
+      "observatory_id": 1027,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "大間",
+      "observatory_id": 1041,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "大和山",
+      "observatory_id": 1042,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "酸ケ湯",
+      "observatory_id": 1079,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "岳",
+      "observatory_id": 1108,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "長慶平",
+      "observatory_id": 1110,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "市浦",
+      "observatory_id": 1119,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "小田野沢",
+      "observatory_id": 1122,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "脇野沢",
+      "observatory_id": 1124,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "七戸",
+      "observatory_id": 1183,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "戸来",
+      "observatory_id": 1272,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "温川",
+      "observatory_id": 1406,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "青森大谷",
+      "observatory_id": 1495,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "湯野川",
+      "observatory_id": 1559,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "深浦",
+      "observatory_id": 47574,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "青森",
+      "observatory_id": 47575,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "むつ",
+      "observatory_id": 47576,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "八戸",
+      "observatory_id": 47581,
+      "group_id": "31"
+    },
+    {
+      "observatory_name": "田代岳",
+      "observatory_id": 180,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "陣場",
+      "observatory_id": 181,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "杉沢山",
+      "observatory_id": 182,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "能代",
+      "observatory_id": 183,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "鷹巣",
+      "observatory_id": 184,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "鹿角",
+      "observatory_id": 185,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "湯瀬",
+      "observatory_id": 186,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "森吉山",
+      "observatory_id": 187,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "五城目",
+      "observatory_id": 188,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "男鹿本山",
+      "observatory_id": 189,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "太平山",
+      "observatory_id": 191,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "岩見三内",
+      "observatory_id": 192,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "角館",
+      "observatory_id": 193,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "田沢湖",
+      "observatory_id": 194,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "大曲",
+      "observatory_id": 195,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "本荘",
+      "observatory_id": 196,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "保呂羽山",
+      "observatory_id": 197,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "横手",
+      "observatory_id": 198,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "象潟",
+      "observatory_id": 199,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "矢島",
+      "observatory_id": 200,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "三森山",
+      "observatory_id": 201,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "湯沢",
+      "observatory_id": 202,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "姥井戸山",
+      "observatory_id": 203,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "湯の岱",
+      "observatory_id": 204,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "大館",
+      "observatory_id": 912,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "大潟",
+      "observatory_id": 1035,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "男鹿",
+      "observatory_id": 1036,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "八森",
+      "observatory_id": 1043,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "大正寺",
+      "observatory_id": 1050,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "東成瀬",
+      "observatory_id": 1109,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "比立内",
+      "observatory_id": 1115,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "東由利",
+      "observatory_id": 1117,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "阿仁合",
+      "observatory_id": 1131,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "鎧畑",
+      "observatory_id": 1167,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "藤里",
+      "observatory_id": 1273,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "桧木内",
+      "observatory_id": 1278,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "八幡平",
+      "observatory_id": 1289,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "笹子",
+      "observatory_id": 1407,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "藤原",
+      "observatory_id": 1408,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "男鹿真山",
+      "observatory_id": 1422,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "仁別",
+      "observatory_id": 1425,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "脇神",
+      "observatory_id": 1463,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "雄和",
+      "observatory_id": 1511,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "秋田",
+      "observatory_id": 47582,
+      "group_id": "32"
+    },
+    {
+      "observatory_name": "種市",
+      "observatory_id": 205,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "軽米",
+      "observatory_id": 206,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "二戸",
+      "observatory_id": 207,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "折爪岳",
+      "observatory_id": 208,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "久慈",
+      "observatory_id": 209,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "西岳",
+      "observatory_id": 210,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "葛巻",
+      "observatory_id": 211,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "袖山",
+      "observatory_id": 212,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "茶臼岳",
+      "observatory_id": 213,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "岩手松尾",
+      "observatory_id": 214,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "岩手山",
+      "observatory_id": 215,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "岩洞",
+      "observatory_id": 216,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "大森山",
+      "observatory_id": 217,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "岩泉",
+      "observatory_id": 218,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "駒ケ岳",
+      "observatory_id": 219,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "害鷹森",
+      "observatory_id": 220,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "雫石",
+      "observatory_id": 221,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "薬師岳",
+      "observatory_id": 224,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "黒森山",
+      "observatory_id": 225,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "豊沢",
+      "observatory_id": 226,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "花巻",
+      "observatory_id": 227,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "大迫",
+      "observatory_id": 228,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "湯田",
+      "observatory_id": 229,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "北上",
+      "observatory_id": 230,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "遠野",
+      "observatory_id": 231,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "五葉山",
+      "observatory_id": 232,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "釜石",
+      "observatory_id": 233,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "岳山",
+      "observatory_id": 234,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "若柳",
+      "observatory_id": 235,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "江刺",
+      "observatory_id": 236,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "一関",
+      "observatory_id": 238,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "千厩",
+      "observatory_id": 239,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "室根山",
+      "observatory_id": 240,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "祭畤",
+      "observatory_id": 1028,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "好摩",
+      "observatory_id": 1032,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "山田",
+      "observatory_id": 1033,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "大野",
+      "observatory_id": 1037,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "衣川",
+      "observatory_id": 1045,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "藪川",
+      "observatory_id": 1078,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "米里",
+      "observatory_id": 1113,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "沢内",
+      "observatory_id": 1118,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "荒屋",
+      "observatory_id": 1120,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "普代",
+      "observatory_id": 1123,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "紫波",
+      "observatory_id": 1128,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "葛根田",
+      "observatory_id": 1168,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "住田",
+      "observatory_id": 1206,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "小本",
+      "observatory_id": 1212,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "奥中山",
+      "observatory_id": 1215,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "山形",
+      "observatory_id": 1219,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "川井",
+      "observatory_id": 1224,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "門馬",
+      "observatory_id": 1225,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "下戸鎖",
+      "observatory_id": 1332,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "区界",
+      "observatory_id": 1447,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "大槌",
+      "observatory_id": 1508,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "大東",
+      "observatory_id": 1557,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "金ヶ崎",
+      "observatory_id": 1558,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "滝沢",
+      "observatory_id": 1560,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "附馬牛",
+      "observatory_id": 1563,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "厳美",
+      "observatory_id": 1598,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "大船渡",
+      "observatory_id": 47512,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "盛岡",
+      "observatory_id": 47584,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "宮古",
+      "observatory_id": 47585,
+      "group_id": "33"
+    },
+    {
+      "observatory_name": "栗駒山",
+      "observatory_id": 241,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "気仙沼",
+      "observatory_id": 242,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "川渡",
+      "observatory_id": 243,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "築館",
+      "observatory_id": 244,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "箕輪山",
+      "observatory_id": 245,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "志津川",
+      "observatory_id": 246,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "古川",
+      "observatory_id": 247,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "大衡",
+      "observatory_id": 248,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "鹿島台",
+      "observatory_id": 249,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "新川",
+      "observatory_id": 251,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "鷹巣山",
+      "observatory_id": 252,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "川崎",
+      "observatory_id": 254,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "不忘山",
+      "observatory_id": 255,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "白石",
+      "observatory_id": 256,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "亘理",
+      "observatory_id": 257,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "雄勝",
+      "observatory_id": 985,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "米山",
+      "observatory_id": 1029,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "塩釜",
+      "observatory_id": 1030,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "駒ノ湯",
+      "observatory_id": 1126,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "丸森",
+      "observatory_id": 1220,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "花山",
+      "observatory_id": 1267,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "江ノ島",
+      "observatory_id": 1290,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "筆甫",
+      "observatory_id": 1298,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "泉ケ岳",
+      "observatory_id": 1365,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "名取",
+      "observatory_id": 1464,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "鴬沢",
+      "observatory_id": 1526,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "加美",
+      "observatory_id": 1561,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "蔵王",
+      "observatory_id": 1564,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "栗駒深山",
+      "observatory_id": 1597,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "栗駒",
+      "observatory_id": 1600,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "仙台",
+      "observatory_id": 47590,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "石巻",
+      "observatory_id": 47592,
+      "group_id": "34"
+    },
+    {
+      "observatory_name": "鳥海山",
+      "observatory_id": 258,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "差首鍋",
+      "observatory_id": 260,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "太平山",
+      "observatory_id": 261,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "金山",
+      "observatory_id": 262,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "鶴岡",
+      "observatory_id": 263,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "狩川",
+      "observatory_id": 264,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "瀬見",
+      "observatory_id": 266,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "温海岳",
+      "observatory_id": 267,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "櫛引",
+      "observatory_id": 268,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "月山",
+      "observatory_id": 269,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "銀山",
+      "observatory_id": 270,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "楯岡",
+      "observatory_id": 271,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "左沢",
+      "observatory_id": 272,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "葉山",
+      "observatory_id": 274,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "長井",
+      "observatory_id": 275,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "蔵王山",
+      "observatory_id": 276,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "小国",
+      "observatory_id": 277,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "高峰",
+      "observatory_id": 278,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "米沢",
+      "observatory_id": 279,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "西吾妻山",
+      "observatory_id": 280,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "向町",
+      "observatory_id": 910,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "上草津",
+      "observatory_id": 1038,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "尾花沢",
+      "observatory_id": 1039,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "鼠ケ関",
+      "observatory_id": 1040,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "山毛欅潰山",
+      "observatory_id": 1103,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "肘折",
+      "observatory_id": 1125,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "高畠",
+      "observatory_id": 1132,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "落合",
+      "observatory_id": 1169,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "飛島",
+      "observatory_id": 1291,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "大井沢",
+      "observatory_id": 1292,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "荒沢",
+      "observatory_id": 1357,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "中津川",
+      "observatory_id": 1372,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "白鷹山",
+      "observatory_id": 1428,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "浜中",
+      "observatory_id": 1465,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "東根",
+      "observatory_id": 1488,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "村山",
+      "observatory_id": 1539,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "上山中山",
+      "observatory_id": 1562,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "新庄",
+      "observatory_id": 47520,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "酒田",
+      "observatory_id": 47587,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "山形",
+      "observatory_id": 47588,
+      "group_id": "35"
+    },
+    {
+      "observatory_name": "梁川",
+      "observatory_id": 281,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "稲荷峠",
+      "observatory_id": 282,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "吾妻山",
+      "observatory_id": 283,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "相馬",
+      "observatory_id": 285,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "喜多方",
+      "observatory_id": 286,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "八木沢",
+      "observatory_id": 287,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "原町",
+      "observatory_id": 288,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "飯谷山",
+      "observatory_id": 289,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "猪苗代",
+      "observatory_id": 290,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "二本松",
+      "observatory_id": 291,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "白馬石山",
+      "observatory_id": 292,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "船引",
+      "observatory_id": 294,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "浪江",
+      "observatory_id": 295,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "浅草岳",
+      "observatory_id": 296,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "只見",
+      "observatory_id": 297,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "博士峠",
+      "observatory_id": 298,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "郡山",
+      "observatory_id": 299,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "富岡",
+      "observatory_id": 300,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "南郷",
+      "observatory_id": 301,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "駒止峠",
+      "observatory_id": 302,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "田島",
+      "observatory_id": 303,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "小野新町",
+      "observatory_id": 304,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "観音山",
+      "observatory_id": 305,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "石川",
+      "observatory_id": 307,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "山王峠",
+      "observatory_id": 308,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "大辷山",
+      "observatory_id": 309,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "平",
+      "observatory_id": 310,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "田代山",
+      "observatory_id": 311,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "東白川",
+      "observatory_id": 312,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "西会津",
+      "observatory_id": 1031,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "広野",
+      "observatory_id": 1034,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "金山",
+      "observatory_id": 1044,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "鷲倉",
+      "observatory_id": 1116,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "上遠野",
+      "observatory_id": 1127,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "川内",
+      "observatory_id": 1129,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "飯舘",
+      "observatory_id": 1130,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "津島",
+      "observatory_id": 1150,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "長沼",
+      "observatory_id": 1268,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "舘岩",
+      "observatory_id": 1269,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "川前",
+      "observatory_id": 1274,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "桧原",
+      "observatory_id": 1282,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "茂庭",
+      "observatory_id": 1293,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "湯本",
+      "observatory_id": 1294,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "桧枝岐",
+      "observatory_id": 1295,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "吉尾峠",
+      "observatory_id": 1359,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "六十里越",
+      "observatory_id": 1364,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "湖南",
+      "observatory_id": 1386,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "玉川",
+      "observatory_id": 1466,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "山田",
+      "observatory_id": 1607,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "若松",
+      "observatory_id": 47570,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "福島",
+      "observatory_id": 47595,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "白河",
+      "observatory_id": 47597,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "小名浜",
+      "observatory_id": 47598,
+      "group_id": "36"
+    },
+    {
+      "observatory_name": "花園",
+      "observatory_id": 314,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "北茨城",
+      "observatory_id": 315,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "大子",
+      "observatory_id": 316,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "神峰山",
+      "observatory_id": 317,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "笠間",
+      "observatory_id": 318,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "古河",
+      "observatory_id": 320,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "愛宕山",
+      "observatory_id": 321,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "下妻",
+      "observatory_id": 322,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "坂東",
+      "observatory_id": 323,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "土浦",
+      "observatory_id": 324,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "鹿嶋",
+      "observatory_id": 325,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "江戸崎",
+      "observatory_id": 911,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "日立",
+      "observatory_id": 1011,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "柿岡",
+      "observatory_id": 1012,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "美野里",
+      "observatory_id": 1013,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "龍ケ崎",
+      "observatory_id": 1014,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "筑波山",
+      "observatory_id": 1082,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "中野",
+      "observatory_id": 1170,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "徳田",
+      "observatory_id": 1173,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "鉾田",
+      "observatory_id": 1245,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "小瀬",
+      "observatory_id": 1331,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "門井",
+      "observatory_id": 1388,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "大能",
+      "observatory_id": 1421,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "下館",
+      "observatory_id": 1530,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "水戸",
+      "observatory_id": 47629,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "つくば(館野)",
+      "observatory_id": 47646,
+      "group_id": "40"
+    },
+    {
+      "observatory_name": "那須",
+      "observatory_id": 326,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "黒田原",
+      "observatory_id": 327,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "八方が原",
+      "observatory_id": 328,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "黒磯",
+      "observatory_id": 329,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "八溝山",
+      "observatory_id": 330,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "大田原",
+      "observatory_id": 331,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "方塞山",
+      "observatory_id": 333,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "高根沢",
+      "observatory_id": 334,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "鹿沼",
+      "observatory_id": 335,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "葛生",
+      "observatory_id": 337,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "真岡",
+      "observatory_id": 338,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "足利",
+      "observatory_id": 339,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "栃木",
+      "observatory_id": 340,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "小山",
+      "observatory_id": 341,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "五十里",
+      "observatory_id": 1015,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "足尾",
+      "observatory_id": 1016,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "烏山",
+      "observatory_id": 1017,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "佐野",
+      "observatory_id": 1018,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "土呂部",
+      "observatory_id": 1221,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "今市",
+      "observatory_id": 1333,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "塩谷",
+      "observatory_id": 1334,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "那須烏山",
+      "observatory_id": 1605,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "宇都宮",
+      "observatory_id": 47615,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "奥日光(日光)",
+      "observatory_id": 47690,
+      "group_id": "41"
+    },
+    {
+      "observatory_name": "前武尊",
+      "observatory_id": 342,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "草津",
+      "observatory_id": 343,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "野反湖",
+      "observatory_id": 344,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "雨見山",
+      "observatory_id": 345,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "沼田",
+      "observatory_id": 346,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "赤城山",
+      "observatory_id": 347,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "田代",
+      "observatory_id": 348,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "榛名山",
+      "observatory_id": 349,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "桐生",
+      "observatory_id": 351,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "一の字山",
+      "observatory_id": 352,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "上里見",
+      "observatory_id": 353,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "西野牧",
+      "observatory_id": 354,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "藤岡",
+      "observatory_id": 355,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "館林",
+      "observatory_id": 356,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "稲含山",
+      "observatory_id": 357,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "みなかみ",
+      "observatory_id": 1019,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "中之条",
+      "observatory_id": 1020,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "伊勢崎",
+      "observatory_id": 1021,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "片品",
+      "observatory_id": 1174,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "藤原",
+      "observatory_id": 1222,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "神流",
+      "observatory_id": 1223,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "黒保根",
+      "observatory_id": 1259,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "高手山",
+      "observatory_id": 1375,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "前橋",
+      "observatory_id": 47624,
+      "group_id": "42"
+    },
+    {
+      "observatory_name": "久喜",
+      "observatory_id": 359,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "堂平",
+      "observatory_id": 361,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "飯能",
+      "observatory_id": 362,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "さいたま",
+      "observatory_id": 363,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "越谷",
+      "observatory_id": 364,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "三峰",
+      "observatory_id": 1000,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "寄居",
+      "observatory_id": 1009,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "鴻巣",
+      "observatory_id": 1069,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "所沢",
+      "observatory_id": 1070,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "浦山",
+      "observatory_id": 1159,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "上吉田",
+      "observatory_id": 1182,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "鳩山",
+      "observatory_id": 1232,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "ときがわ",
+      "observatory_id": 1497,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "熊谷",
+      "observatory_id": 47626,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "秩父",
+      "observatory_id": 47641,
+      "group_id": "43"
+    },
+    {
+      "observatory_name": "小河内",
+      "observatory_id": 365,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "八王子",
+      "observatory_id": 366,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "調布",
+      "observatory_id": 367,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "世田谷",
+      "observatory_id": 368,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "江戸川臨海",
+      "observatory_id": 370,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "羽田",
+      "observatory_id": 371,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "青梅",
+      "observatory_id": 1001,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "練馬",
+      "observatory_id": 1002,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "府中",
+      "observatory_id": 1133,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "新島",
+      "observatory_id": 1134,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "小沢",
+      "observatory_id": 1180,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "大島北ノ山",
+      "observatory_id": 1467,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "八重見ヶ原",
+      "observatory_id": 1468,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "神津島",
+      "observatory_id": 1505,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "三宅坪田",
+      "observatory_id": 1506,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "三宅島阿古",
+      "observatory_id": 1509,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "新島",
+      "observatory_id": 1522,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "神津島",
+      "observatory_id": 1523,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "三宅伊豆",
+      "observatory_id": 1525,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "母島",
+      "observatory_id": 1595,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "東京",
+      "observatory_id": 47662,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "大島",
+      "observatory_id": 47675,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "三宅島",
+      "observatory_id": 47677,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "八丈島",
+      "observatory_id": 47678,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "父島",
+      "observatory_id": 47971,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "南鳥島",
+      "observatory_id": 47991,
+      "group_id": "44"
+    },
+    {
+      "observatory_name": "香取",
+      "observatory_id": 375,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "我孫子",
+      "observatory_id": 376,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "東庄",
+      "observatory_id": 377,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "成田",
+      "observatory_id": 378,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "茂原",
+      "observatory_id": 381,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "木更津",
+      "observatory_id": 382,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "鋸南",
+      "observatory_id": 383,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "鴨川",
+      "observatory_id": 384,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "佐倉",
+      "observatory_id": 916,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "横芝光",
+      "observatory_id": 1003,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "大多喜",
+      "observatory_id": 1004,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "船橋",
+      "observatory_id": 1236,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "牛久",
+      "observatory_id": 1238,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "坂畑",
+      "observatory_id": 1241,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "銚子",
+      "observatory_id": 47648,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "館山",
+      "observatory_id": 47672,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "勝浦",
+      "observatory_id": 47674,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "千葉",
+      "observatory_id": 47682,
+      "group_id": "45"
+    },
+    {
+      "observatory_name": "相模湖",
+      "observatory_id": 387,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "海老名",
+      "observatory_id": 388,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "箱根",
+      "observatory_id": 390,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "江ノ島",
+      "observatory_id": 391,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "三浦",
+      "observatory_id": 392,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "相模原中央",
+      "observatory_id": 1005,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "日吉",
+      "observatory_id": 1006,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "平塚",
+      "observatory_id": 1007,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "小田原",
+      "observatory_id": 1008,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "丹沢湖",
+      "observatory_id": 1096,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "辻堂",
+      "observatory_id": 1443,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "横浜",
+      "observatory_id": 47670,
+      "group_id": "46"
+    },
+    {
+      "observatory_name": "野沢温泉",
+      "observatory_id": 393,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "信濃町",
+      "observatory_id": 394,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "飯山",
+      "observatory_id": 395,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "白馬",
+      "observatory_id": 396,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "笠岳",
+      "observatory_id": 398,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "大町",
+      "observatory_id": 399,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "信州新町",
+      "observatory_id": 400,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "四阿屋山",
+      "observatory_id": 401,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "上田",
+      "observatory_id": 402,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "燕岳",
+      "observatory_id": 403,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "穂高",
+      "observatory_id": 404,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "鹿教湯",
+      "observatory_id": 407,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "佐久",
+      "observatory_id": 408,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "高ボッチ",
+      "observatory_id": 409,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "茂来山",
+      "observatory_id": 410,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "八ケ岳",
+      "observatory_id": 412,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "木曽平沢",
+      "observatory_id": 413,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "原村",
+      "observatory_id": 414,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "野辺山",
+      "observatory_id": 415,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "御嶽山",
+      "observatory_id": 416,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "木曽福島",
+      "observatory_id": 417,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "高遠",
+      "observatory_id": 418,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "入笠山",
+      "observatory_id": 419,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "宮田高原",
+      "observatory_id": 420,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "松峯",
+      "observatory_id": 421,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "須原",
+      "observatory_id": 422,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "摺古木山",
+      "observatory_id": 423,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "飯島",
+      "observatory_id": 424,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "笹山",
+      "observatory_id": 425,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "恵那山",
+      "observatory_id": 427,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "鶯巣",
+      "observatory_id": 428,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "菅平",
+      "observatory_id": 992,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "東御",
+      "observatory_id": 993,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "上高地",
+      "observatory_id": 994,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "南木曽",
+      "observatory_id": 1022,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "南小谷",
+      "observatory_id": 1090,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "鬼無里",
+      "observatory_id": 1162,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "立科",
+      "observatory_id": 1300,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "奈川",
+      "observatory_id": 1312,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "開田高原",
+      "observatory_id": 1314,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "浪合",
+      "observatory_id": 1317,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "辰野",
+      "observatory_id": 1319,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "南信濃",
+      "observatory_id": 1323,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "阿南",
+      "observatory_id": 1339,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "聖高原",
+      "observatory_id": 1360,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "網掛山",
+      "observatory_id": 1392,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "大鹿",
+      "observatory_id": 1394,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "杉島",
+      "observatory_id": 1397,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "十石峠",
+      "observatory_id": 1399,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "小谷",
+      "observatory_id": 1411,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "伊那",
+      "observatory_id": 1445,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "松本今井",
+      "observatory_id": 1529,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "北相木",
+      "observatory_id": 1549,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "白樺湖",
+      "observatory_id": 1550,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "高遠",
+      "observatory_id": 1551,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "宮田",
+      "observatory_id": 1591,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "長野",
+      "observatory_id": 47610,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "松本",
+      "observatory_id": 47618,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "諏訪",
+      "observatory_id": 47620,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "軽井沢",
+      "observatory_id": 47622,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "飯田",
+      "observatory_id": 47637,
+      "group_id": "48"
+    },
+    {
+      "observatory_name": "剣ノ峰",
+      "observatory_id": 429,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "日向山",
+      "observatory_id": 430,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "大菩薩",
+      "observatory_id": 431,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "勝沼",
+      "observatory_id": 433,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "大月",
+      "observatory_id": 434,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "八町山",
+      "observatory_id": 435,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "古関",
+      "observatory_id": 436,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "山中",
+      "observatory_id": 438,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "南部",
+      "observatory_id": 439,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "大泉",
+      "observatory_id": 1023,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "韮崎",
+      "observatory_id": 1024,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "上野原",
+      "observatory_id": 1165,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "切石",
+      "observatory_id": 1234,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "乙女湖",
+      "observatory_id": 1599,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "甲府",
+      "observatory_id": 47638,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "富士山",
+      "observatory_id": 47639,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "河口湖",
+      "observatory_id": 47640,
+      "group_id": "49"
+    },
+    {
+      "observatory_name": "白糸",
+      "observatory_id": 440,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "御殿場",
+      "observatory_id": 441,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "富士",
+      "observatory_id": 442,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "越木平",
+      "observatory_id": 444,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "川根本町",
+      "observatory_id": 445,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "大山",
+      "observatory_id": 446,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "高根山",
+      "observatory_id": 448,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "霧山",
+      "observatory_id": 450,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "天竜",
+      "observatory_id": 451,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "島田",
+      "observatory_id": 452,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "湯ケ島",
+      "observatory_id": 453,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "天城山",
+      "observatory_id": 454,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "松崎",
+      "observatory_id": 456,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "稲取",
+      "observatory_id": 457,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "佐久間",
+      "observatory_id": 986,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "土肥",
+      "observatory_id": 987,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "三ヶ日",
+      "observatory_id": 988,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "掛川",
+      "observatory_id": 989,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "熊",
+      "observatory_id": 1105,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "三倉",
+      "observatory_id": 1106,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "梅ケ島",
+      "observatory_id": 1114,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "清水",
+      "observatory_id": 1243,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "磐田",
+      "observatory_id": 1244,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "菊川牧之原",
+      "observatory_id": 1335,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "井川",
+      "observatory_id": 1338,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "三倉",
+      "observatory_id": 1393,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "鍵穴",
+      "observatory_id": 1440,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "静岡空港",
+      "observatory_id": 1601,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "富士山",
+      "observatory_id": 47639,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "浜松",
+      "observatory_id": 47654,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "御前崎",
+      "observatory_id": 47655,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "静岡",
+      "observatory_id": 47656,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "三島",
+      "observatory_id": 47657,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "石廊崎",
+      "observatory_id": 47666,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "網代",
+      "observatory_id": 47668,
+      "group_id": "50"
+    },
+    {
+      "observatory_name": "一宮",
+      "observatory_id": 460,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "豊山",
+      "observatory_id": 461,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "茶臼山",
+      "observatory_id": 462,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "豊田",
+      "observatory_id": 464,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "東海",
+      "observatory_id": 465,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "出来山",
+      "observatory_id": 466,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "岡崎",
+      "observatory_id": 467,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "作手",
+      "observatory_id": 468,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "一色",
+      "observatory_id": 469,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "豊橋",
+      "observatory_id": 470,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "田原",
+      "observatory_id": 472,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "稲武",
+      "observatory_id": 982,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "蟹江",
+      "observatory_id": 983,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "南知多",
+      "observatory_id": 984,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "小原",
+      "observatory_id": 1166,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "鳳来",
+      "observatory_id": 1341,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "蒲郡",
+      "observatory_id": 1344,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "愛西",
+      "observatory_id": 1346,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "新城",
+      "observatory_id": 1541,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "セントレア",
+      "observatory_id": 1555,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "阿蔵",
+      "observatory_id": 1576,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "名古屋",
+      "observatory_id": 47636,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "伊良湖",
+      "observatory_id": 47653,
+      "group_id": "51"
+    },
+    {
+      "observatory_name": "神岡",
+      "observatory_id": 473,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "流葉山",
+      "observatory_id": 474,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "森茂",
+      "observatory_id": 475,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "乗鞍岳",
+      "observatory_id": 477,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "大日岳",
+      "observatory_id": 478,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "新渕山",
+      "observatory_id": 479,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "船山",
+      "observatory_id": 480,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "白尾山",
+      "observatory_id": 481,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "白鳥",
+      "observatory_id": 482,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "萩原",
+      "observatory_id": 483,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "蕪山",
+      "observatory_id": 484,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "八幡",
+      "observatory_id": 485,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "樽見",
+      "observatory_id": 486,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "金山",
+      "observatory_id": 487,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "三界山",
+      "observatory_id": 488,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "権現山",
+      "observatory_id": 489,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "伽藍",
+      "observatory_id": 490,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "美濃加茂",
+      "observatory_id": 491,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "柄石峠",
+      "observatory_id": 492,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "恵那",
+      "observatory_id": 493,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "中津川",
+      "observatory_id": 494,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "関ケ原",
+      "observatory_id": 495,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "大垣",
+      "observatory_id": 496,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "三森山",
+      "observatory_id": 498,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "美濃",
+      "observatory_id": 1057,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "多治見",
+      "observatory_id": 1058,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "上石津",
+      "observatory_id": 1059,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "栃尾",
+      "observatory_id": 1061,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "宮地",
+      "observatory_id": 1066,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "平井",
+      "observatory_id": 1153,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "長滝",
+      "observatory_id": 1299,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "揖斐川",
+      "observatory_id": 1301,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "六厩",
+      "observatory_id": 1305,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "白川",
+      "observatory_id": 1306,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "河合",
+      "observatory_id": 1308,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "宮之前",
+      "observatory_id": 1311,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "黒川",
+      "observatory_id": 1313,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "大日",
+      "observatory_id": 1363,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "付知",
+      "observatory_id": 1384,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "御母衣",
+      "observatory_id": 1387,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "小津",
+      "observatory_id": 1390,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "十二岳",
+      "observatory_id": 1396,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "ひるがの",
+      "observatory_id": 1436,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "清見",
+      "observatory_id": 1437,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "丹生川",
+      "observatory_id": 1438,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "関市板取",
+      "observatory_id": 1577,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "高山",
+      "observatory_id": 47617,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "岐阜",
+      "observatory_id": 47632,
+      "group_id": "52"
+    },
+    {
+      "observatory_name": "北勢",
+      "observatory_id": 499,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "桑名",
+      "observatory_id": 500,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "雲母峰",
+      "observatory_id": 501,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "亀山",
+      "observatory_id": 503,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "笠取山",
+      "observatory_id": 505,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "名張",
+      "observatory_id": 507,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "国見山",
+      "observatory_id": 508,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "小俣",
+      "observatory_id": 509,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "粥見",
+      "observatory_id": 510,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "藤坂峠",
+      "observatory_id": 511,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "八幡峠",
+      "observatory_id": 513,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "熊野",
+      "observatory_id": 514,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "大台",
+      "observatory_id": 918,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "松阪",
+      "observatory_id": 990,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "磯部",
+      "observatory_id": 991,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "鳥羽",
+      "observatory_id": 1230,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "宮川",
+      "observatory_id": 1255,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "南伊勢",
+      "observatory_id": 1258,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "紀伊長島",
+      "observatory_id": 1349,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "白山",
+      "observatory_id": 1356,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "阿児",
+      "observatory_id": 1381,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "御浜",
+      "observatory_id": 1423,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "熊野新鹿",
+      "observatory_id": 1532,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "上野",
+      "observatory_id": 47649,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "津",
+      "observatory_id": 47651,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "尾鷲",
+      "observatory_id": 47663,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "四日市",
+      "observatory_id": 47684,
+      "group_id": "53"
+    },
+    {
+      "observatory_name": "村上",
+      "observatory_id": 515,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "鷲ケ巣山",
+      "observatory_id": 516,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "両津",
+      "observatory_id": 518,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "二王子岳",
+      "observatory_id": 520,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "新津",
+      "observatory_id": 521,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "巻",
+      "observatory_id": 522,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "宝珠山",
+      "observatory_id": 523,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "寺泊",
+      "observatory_id": 524,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "三条",
+      "observatory_id": 525,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "村松",
+      "observatory_id": 526,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "津川",
+      "observatory_id": 527,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "粟ヶ岳",
+      "observatory_id": 528,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "長岡",
+      "observatory_id": 529,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "栃尾",
+      "observatory_id": 530,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "守門岳",
+      "observatory_id": 531,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "柏崎",
+      "observatory_id": 532,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "桜坂峠",
+      "observatory_id": 533,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "小出",
+      "observatory_id": 534,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "安塚",
+      "observatory_id": 536,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "十日町",
+      "observatory_id": 537,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "枝折峠",
+      "observatory_id": 538,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "糸魚川",
+      "observatory_id": 539,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "能生",
+      "observatory_id": 540,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "光ケ原",
+      "observatory_id": 541,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "大沢峠",
+      "observatory_id": 542,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "津南",
+      "observatory_id": 543,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "湯沢",
+      "observatory_id": 544,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "袴岳",
+      "observatory_id": 545,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "粟島",
+      "observatory_id": 995,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "羽茂",
+      "observatory_id": 996,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "入広瀬",
+      "observatory_id": 997,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "関山",
+      "observatory_id": 998,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "下関",
+      "observatory_id": 1060,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "鍵取",
+      "observatory_id": 1102,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "赤谷",
+      "observatory_id": 1111,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "小国",
+      "observatory_id": 1154,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "松代",
+      "observatory_id": 1155,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "高根",
+      "observatory_id": 1256,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "平岩",
+      "observatory_id": 1297,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "大潟",
+      "observatory_id": 1302,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "弾崎",
+      "observatory_id": 1315,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "中条",
+      "observatory_id": 1318,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "三面",
+      "observatory_id": 1369,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "大湯",
+      "observatory_id": 1370,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "塩沢",
+      "observatory_id": 1395,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "宮寄上",
+      "observatory_id": 1398,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "樽本",
+      "observatory_id": 1424,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "川谷",
+      "observatory_id": 1426,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "筒方",
+      "observatory_id": 1427,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "室谷",
+      "observatory_id": 1444,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "松浜",
+      "observatory_id": 1469,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "秋津",
+      "observatory_id": 1514,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "相川",
+      "observatory_id": 47602,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "新潟",
+      "observatory_id": 47604,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "高田",
+      "observatory_id": 47612,
+      "group_id": "54"
+    },
+    {
+      "observatory_name": "泊",
+      "observatory_id": 546,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "魚津",
+      "observatory_id": 547,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "宇奈月",
+      "observatory_id": 548,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "嘉例沢",
+      "observatory_id": 549,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "砺波",
+      "observatory_id": 552,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "上市",
+      "observatory_id": 553,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "南砺高宮",
+      "observatory_id": 554,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "八尾",
+      "observatory_id": 555,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "小谷",
+      "observatory_id": 556,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "立山",
+      "observatory_id": 557,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "細尾峠",
+      "observatory_id": 558,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "谷折",
+      "observatory_id": 559,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "氷見",
+      "observatory_id": 1309,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "宇奈月",
+      "observatory_id": 1412,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "平",
+      "observatory_id": 1413,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "大山",
+      "observatory_id": 1414,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "細入",
+      "observatory_id": 1415,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "猪谷",
+      "observatory_id": 1455,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "秋ヶ島",
+      "observatory_id": 1533,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "五箇山",
+      "observatory_id": 1553,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "立山芦峅",
+      "observatory_id": 1621,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "伏木",
+      "observatory_id": 47606,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "富山",
+      "observatory_id": 47607,
+      "group_id": "55"
+    },
+    {
+      "observatory_name": "珠洲",
+      "observatory_id": 560,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "門前",
+      "observatory_id": 562,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "木原岳",
+      "observatory_id": 563,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "志賀",
+      "observatory_id": 564,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "七尾",
+      "observatory_id": 565,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "羽咋",
+      "observatory_id": 566,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "かほく",
+      "observatory_id": 567,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "宝達山",
+      "observatory_id": 568,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "医王山",
+      "observatory_id": 570,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "栢野",
+      "observatory_id": 571,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "白山吉野",
+      "observatory_id": 973,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "白山白峰",
+      "observatory_id": 1171,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "小松",
+      "observatory_id": 1324,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "穴水",
+      "observatory_id": 1486,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "三井",
+      "observatory_id": 1544,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "宝達志水",
+      "observatory_id": 1545,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "輪島",
+      "observatory_id": 47600,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "金沢",
+      "observatory_id": 47605,
+      "group_id": "56"
+    },
+    {
+      "observatory_name": "大野",
+      "observatory_id": 573,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "タイラ山",
+      "observatory_id": 574,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "春日野",
+      "observatory_id": 575,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "板垣",
+      "observatory_id": 576,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "今庄",
+      "observatory_id": 577,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "小浜",
+      "observatory_id": 579,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "美山",
+      "observatory_id": 974,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "川上",
+      "observatory_id": 975,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "美浜",
+      "observatory_id": 1010,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "三国",
+      "observatory_id": 1071,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "勝山",
+      "observatory_id": 1226,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "越廼",
+      "observatory_id": 1316,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "九頭竜",
+      "observatory_id": 1382,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "大飯",
+      "observatory_id": 1454,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "春江",
+      "observatory_id": 1537,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "武生",
+      "observatory_id": 1565,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "福井",
+      "observatory_id": 47616,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "敦賀",
+      "observatory_id": 47631,
+      "group_id": "57"
+    },
+    {
+      "observatory_name": "今津",
+      "observatory_id": 580,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "荒川",
+      "observatory_id": 581,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "春照",
+      "observatory_id": 582,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "近江八幡",
+      "observatory_id": 584,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "君ケ畑台地",
+      "observatory_id": 585,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "大津",
+      "observatory_id": 586,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "土山",
+      "observatory_id": 587,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "東近江",
+      "observatory_id": 963,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "信楽",
+      "observatory_id": 964,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "長浜",
+      "observatory_id": 976,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "南小松",
+      "observatory_id": 1083,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "柳ケ瀬",
+      "observatory_id": 1087,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "霜ケ原",
+      "observatory_id": 1361,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "米原",
+      "observatory_id": 1524,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "朽木平良",
+      "observatory_id": 1578,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "伊吹山",
+      "observatory_id": 47751,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "彦根",
+      "observatory_id": 47761,
+      "group_id": "60"
+    },
+    {
+      "observatory_name": "峰山",
+      "observatory_id": 588,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "宮津",
+      "observatory_id": 589,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "仏坂",
+      "observatory_id": 591,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "浅原山",
+      "observatory_id": 592,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "福知山",
+      "observatory_id": 593,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "胡麻",
+      "observatory_id": 594,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "妙高山",
+      "observatory_id": 595,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "園部",
+      "observatory_id": 596,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "京田辺",
+      "observatory_id": 598,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "鷲峰山",
+      "observatory_id": 599,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "花背峠",
+      "observatory_id": 920,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "知井",
+      "observatory_id": 927,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "京北",
+      "observatory_id": 928,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "間人",
+      "observatory_id": 965,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "本庄",
+      "observatory_id": 966,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "長岡京",
+      "observatory_id": 1025,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "故屋岡",
+      "observatory_id": 1160,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "美山",
+      "observatory_id": 1303,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "須知",
+      "observatory_id": 1378,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "三岳",
+      "observatory_id": 1379,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "綾部",
+      "observatory_id": 1380,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "三和",
+      "observatory_id": 1383,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "舞鶴",
+      "observatory_id": 47750,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "京都",
+      "observatory_id": 47759,
+      "group_id": "61"
+    },
+    {
+      "observatory_name": "能勢",
+      "observatory_id": 600,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "箕面",
+      "observatory_id": 601,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "豊中",
+      "observatory_id": 602,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "生駒山",
+      "observatory_id": 604,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "河内長野",
+      "observatory_id": 605,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "熊取",
+      "observatory_id": 606,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "堺",
+      "observatory_id": 1062,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "枚方",
+      "observatory_id": 1065,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "八尾",
+      "observatory_id": 1470,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "関空島",
+      "observatory_id": 1471,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "茨木",
+      "observatory_id": 1602,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "大阪",
+      "observatory_id": 47772,
+      "group_id": "62"
+    },
+    {
+      "observatory_name": "香住",
+      "observatory_id": 607,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "温泉",
+      "observatory_id": 608,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "三川山",
+      "observatory_id": 609,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "八鹿",
+      "observatory_id": 611,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "和田山",
+      "observatory_id": 612,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "生野",
+      "observatory_id": 613,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "柏原",
+      "observatory_id": 614,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "一宮",
+      "observatory_id": 615,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "笠形山",
+      "observatory_id": 616,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "佐用",
+      "observatory_id": 617,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "後川",
+      "observatory_id": 618,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "上郡",
+      "observatory_id": 619,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "的場山",
+      "observatory_id": 620,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "名塩",
+      "observatory_id": 622,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "六甲山",
+      "observatory_id": 623,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "家島",
+      "observatory_id": 624,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "明石",
+      "observatory_id": 625,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "福良",
+      "observatory_id": 628,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "西脇",
+      "observatory_id": 956,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "大屋",
+      "observatory_id": 967,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "福崎",
+      "observatory_id": 968,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "三田",
+      "observatory_id": 969,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "郡家",
+      "observatory_id": 970,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "兎和野高原",
+      "observatory_id": 977,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "三木",
+      "observatory_id": 1227,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "南淡",
+      "observatory_id": 1337,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "淡路町",
+      "observatory_id": 1448,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "芦屋",
+      "observatory_id": 1449,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "神戸塩屋",
+      "observatory_id": 1450,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "神戸空港",
+      "observatory_id": 1587,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "西宮",
+      "observatory_id": 1588,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "豊岡",
+      "observatory_id": 47747,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "姫路",
+      "observatory_id": 47769,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "神戸",
+      "observatory_id": 47770,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "洲本",
+      "observatory_id": 47776,
+      "group_id": "63"
+    },
+    {
+      "observatory_name": "針",
+      "observatory_id": 630,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "田原本",
+      "observatory_id": 631,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "曽爾",
+      "observatory_id": 632,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "大宇陀",
+      "observatory_id": 633,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "高見山",
+      "observatory_id": 634,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "五條",
+      "observatory_id": 635,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "天辻",
+      "observatory_id": 636,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "山上ケ岳",
+      "observatory_id": 637,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "荒神岳",
+      "observatory_id": 638,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "日出岳",
+      "observatory_id": 639,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "上野地",
+      "observatory_id": 640,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "玉置山",
+      "observatory_id": 641,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "上北山",
+      "observatory_id": 957,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "風屋",
+      "observatory_id": 1228,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "高見",
+      "observatory_id": 1366,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "葛城",
+      "observatory_id": 1376,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "壷坂",
+      "observatory_id": 1377,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "吉野",
+      "observatory_id": 1439,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "天川",
+      "observatory_id": 1619,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "奈良",
+      "observatory_id": 47780,
+      "group_id": "64"
+    },
+    {
+      "observatory_name": "葛城山",
+      "observatory_id": 642,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "岩出",
+      "observatory_id": 644,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "高野山",
+      "observatory_id": 645,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "護摩壇山",
+      "observatory_id": 646,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "御坊",
+      "observatory_id": 647,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "虎ケ峰峠",
+      "observatory_id": 648,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "新宮",
+      "observatory_id": 649,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "白浜",
+      "observatory_id": 650,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "日置川",
+      "observatory_id": 651,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "栗栖川",
+      "observatory_id": 971,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "湯浅",
+      "observatory_id": 978,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "清水",
+      "observatory_id": 1063,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "本宮",
+      "observatory_id": 1074,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "龍神",
+      "observatory_id": 1089,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "色川",
+      "observatory_id": 1172,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "かつらぎ",
+      "observatory_id": 1342,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "西川",
+      "observatory_id": 1347,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "友ケ島",
+      "observatory_id": 1457,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "川辺",
+      "observatory_id": 1485,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "南紀白浜",
+      "observatory_id": 1589,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "和歌山",
+      "observatory_id": 47777,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "潮岬",
+      "observatory_id": 47778,
+      "group_id": "65"
+    },
+    {
+      "observatory_name": "大空山",
+      "observatory_id": 653,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "那岐山",
+      "observatory_id": 654,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "今岡",
+      "observatory_id": 655,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "久世",
+      "observatory_id": 656,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "新見",
+      "observatory_id": 658,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "天子山",
+      "observatory_id": 659,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "赤磐",
+      "observatory_id": 660,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "陣山",
+      "observatory_id": 661,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "大平山",
+      "observatory_id": 662,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "福渡",
+      "observatory_id": 663,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "和気",
+      "observatory_id": 664,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "佐屋",
+      "observatory_id": 665,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "矢掛",
+      "observatory_id": 666,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "虫明",
+      "observatory_id": 668,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "倉敷",
+      "observatory_id": 669,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "玉野",
+      "observatory_id": 670,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "笠岡",
+      "observatory_id": 919,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "下呰部",
+      "observatory_id": 929,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "高梁",
+      "observatory_id": 930,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "奈義",
+      "observatory_id": 1140,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "上長田",
+      "observatory_id": 1328,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "千屋",
+      "observatory_id": 1330,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "恩原",
+      "observatory_id": 1371,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "日応寺",
+      "observatory_id": 1531,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "富",
+      "observatory_id": 1584,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "吉備中央",
+      "observatory_id": 1585,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "旭西",
+      "observatory_id": 1618,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "津山",
+      "observatory_id": 47756,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "岡山",
+      "observatory_id": 47768,
+      "group_id": "66"
+    },
+    {
+      "observatory_name": "道後山",
+      "observatory_id": 671,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "安田山",
+      "observatory_id": 672,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "犬伏山",
+      "observatory_id": 673,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "三次",
+      "observatory_id": 674,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "庄原",
+      "observatory_id": 675,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "大朝",
+      "observatory_id": 676,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "加計",
+      "observatory_id": 677,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "海見山",
+      "observatory_id": 678,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "上下",
+      "observatory_id": 679,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "内黒山",
+      "observatory_id": 680,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "世羅",
+      "observatory_id": 681,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "恵下谷山",
+      "observatory_id": 682,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "東広島",
+      "observatory_id": 683,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "竹原",
+      "observatory_id": 686,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "生口島",
+      "observatory_id": 687,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "大竹",
+      "observatory_id": 688,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "倉橋",
+      "observatory_id": 690,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "高野",
+      "observatory_id": 947,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "東城",
+      "observatory_id": 948,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "甲田",
+      "observatory_id": 949,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "三入",
+      "observatory_id": 950,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "府中",
+      "observatory_id": 951,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "河内",
+      "observatory_id": 952,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "久比",
+      "observatory_id": 953,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "志和",
+      "observatory_id": 1163,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "王泊",
+      "observatory_id": 1257,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "八幡",
+      "observatory_id": 1262,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "油木",
+      "observatory_id": 1325,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "廿日市津田",
+      "observatory_id": 1326,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "本郷",
+      "observatory_id": 1472,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "佐伯湯来",
+      "observatory_id": 1575,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "都志見",
+      "observatory_id": 1579,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "君田",
+      "observatory_id": 1582,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "美土里",
+      "observatory_id": 1583,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "安宿",
+      "observatory_id": 1603,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "呉市蒲刈",
+      "observatory_id": 1606,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "広島",
+      "observatory_id": 47765,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "呉",
+      "observatory_id": 47766,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "福山",
+      "observatory_id": 47767,
+      "group_id": "67"
+    },
+    {
+      "observatory_name": "西ノ島",
+      "observatory_id": 692,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "鹿島",
+      "observatory_id": 693,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "斐川",
+      "observatory_id": 694,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "大東",
+      "observatory_id": 696,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "大田",
+      "observatory_id": 697,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "掛合",
+      "observatory_id": 698,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "横田",
+      "observatory_id": 699,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "吾妻山",
+      "observatory_id": 700,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "川本",
+      "observatory_id": 701,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "三隅",
+      "observatory_id": 703,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "益田",
+      "observatory_id": 704,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "聖山",
+      "observatory_id": 705,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "十種峯",
+      "observatory_id": 706,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "津和野",
+      "observatory_id": 707,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "佐田",
+      "observatory_id": 954,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "桜江",
+      "observatory_id": 1093,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "瑞穂",
+      "observatory_id": 1094,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "伯太",
+      "observatory_id": 1095,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "波佐",
+      "observatory_id": 1175,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "匹見",
+      "observatory_id": 1176,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "海士",
+      "observatory_id": 1307,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "出雲",
+      "observatory_id": 1310,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "赤名",
+      "observatory_id": 1320,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "弥栄",
+      "observatory_id": 1321,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "六日市",
+      "observatory_id": 1322,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "福光",
+      "observatory_id": 1336,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "原山",
+      "observatory_id": 1362,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "西郷岬",
+      "observatory_id": 1473,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "高津",
+      "observatory_id": 1474,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "吉賀",
+      "observatory_id": 1592,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "西郷",
+      "observatory_id": 47740,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "松江",
+      "observatory_id": 47741,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "浜田",
+      "observatory_id": 47755,
+      "group_id": "68"
+    },
+    {
+      "observatory_name": "青谷",
+      "observatory_id": 709,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "岩井",
+      "observatory_id": 711,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "倉吉",
+      "observatory_id": 713,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "菅俵原",
+      "observatory_id": 714,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "霊石山",
+      "observatory_id": 715,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "大山",
+      "observatory_id": 716,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "古峠山",
+      "observatory_id": 717,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "智頭",
+      "observatory_id": 718,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "日南",
+      "observatory_id": 938,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "関金",
+      "observatory_id": 1177,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "若桜",
+      "observatory_id": 1178,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "塩津",
+      "observatory_id": 1231,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "茶屋",
+      "observatory_id": 1304,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "佐治",
+      "observatory_id": 1385,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "江尾",
+      "observatory_id": 1389,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "鹿野",
+      "observatory_id": 1391,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "湖山",
+      "observatory_id": 1519,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "境",
+      "observatory_id": 47742,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "米子",
+      "observatory_id": 47744,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "鳥取",
+      "observatory_id": 47746,
+      "group_id": "69"
+    },
+    {
+      "observatory_name": "大山寺",
+      "observatory_id": 719,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "池田",
+      "observatory_id": 720,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "江田山",
+      "observatory_id": 722,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "太竜寺山",
+      "observatory_id": 723,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "日和佐",
+      "observatory_id": 724,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "宍喰",
+      "observatory_id": 725,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "穴吹",
+      "observatory_id": 972,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "福原旭",
+      "observatory_id": 1098,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "蒲生田",
+      "observatory_id": 1242,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "京上",
+      "observatory_id": 1252,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "半田",
+      "observatory_id": 1327,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "木頭",
+      "observatory_id": 1352,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "旭丸",
+      "observatory_id": 1358,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "海陽",
+      "observatory_id": 1604,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "剣山",
+      "observatory_id": 47894,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "徳島",
+      "observatory_id": 47895,
+      "group_id": "71"
+    },
+    {
+      "observatory_name": "内海",
+      "observatory_id": 726,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "滝宮",
+      "observatory_id": 729,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "引田",
+      "observatory_id": 730,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "竜王山",
+      "observatory_id": 731,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "財田",
+      "observatory_id": 1239,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "香南",
+      "observatory_id": 1475,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "多度津",
+      "observatory_id": 47890,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "高松",
+      "observatory_id": 47891,
+      "group_id": "72"
+    },
+    {
+      "observatory_name": "大三島",
+      "observatory_id": 732,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "玉川",
+      "observatory_id": 733,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "新居浜",
+      "observatory_id": 734,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "四国中央",
+      "observatory_id": 735,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "上林",
+      "observatory_id": 737,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "成就社",
+      "observatory_id": 738,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "長浜",
+      "observatory_id": 739,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "中山",
+      "observatory_id": 740,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "久万",
+      "observatory_id": 741,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "獅子越峠",
+      "observatory_id": 742,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "八幡浜",
+      "observatory_id": 743,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "御荘",
+      "observatory_id": 745,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "西条",
+      "observatory_id": 958,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "大洲",
+      "observatory_id": 959,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "三崎",
+      "observatory_id": 960,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "宇和",
+      "observatory_id": 961,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "今治",
+      "observatory_id": 1077,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "富郷",
+      "observatory_id": 1260,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "近永",
+      "observatory_id": 1350,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "瀬戸",
+      "observatory_id": 1456,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "松山南吉田",
+      "observatory_id": 1521,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "松山",
+      "observatory_id": 47887,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "宇和島",
+      "observatory_id": 47892,
+      "group_id": "73"
+    },
+    {
+      "observatory_name": "本山",
+      "observatory_id": 746,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "繁藤",
+      "observatory_id": 747,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "佐川",
+      "observatory_id": 748,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "成山",
+      "observatory_id": 749,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "南国",
+      "observatory_id": 751,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "芸西",
+      "observatory_id": 752,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "鳥形山",
+      "observatory_id": 753,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "船戸",
+      "observatory_id": 754,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "安芸",
+      "observatory_id": 755,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "須崎",
+      "observatory_id": 756,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "佐喜浜",
+      "observatory_id": 757,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "窪川",
+      "observatory_id": 758,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "堂ケ森",
+      "observatory_id": 760,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "大正",
+      "observatory_id": 761,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "中村",
+      "observatory_id": 763,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "梼原",
+      "observatory_id": 921,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "田野",
+      "observatory_id": 955,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "池川",
+      "observatory_id": 1179,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "大栃",
+      "observatory_id": 1229,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "佐賀",
+      "observatory_id": 1233,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "江川崎",
+      "observatory_id": 1235,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "後免",
+      "observatory_id": 1249,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "魚梁瀬",
+      "observatory_id": 1281,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "本川",
+      "observatory_id": 1351,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "南国日章",
+      "observatory_id": 1476,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "三崎",
+      "observatory_id": 1556,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "高知",
+      "observatory_id": 47893,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "宿毛",
+      "observatory_id": 47897,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "清水",
+      "observatory_id": 47898,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "室戸岬",
+      "observatory_id": 47899,
+      "group_id": "74"
+    },
+    {
+      "observatory_name": "須佐",
+      "observatory_id": 765,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "徳佐",
+      "observatory_id": 767,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "鍋提峠",
+      "observatory_id": 768,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "秋吉台",
+      "observatory_id": 769,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "瀬戸原",
+      "observatory_id": 770,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "広瀬",
+      "observatory_id": 771,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "豊田",
+      "observatory_id": 772,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "桜山",
+      "observatory_id": 773,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "防府",
+      "observatory_id": 775,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "下松",
+      "observatory_id": 776,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "宇部",
+      "observatory_id": 778,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "安下庄",
+      "observatory_id": 779,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "玖珂",
+      "observatory_id": 913,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "油谷",
+      "observatory_id": 939,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "岩国",
+      "observatory_id": 940,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "周東",
+      "observatory_id": 941,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "柳井",
+      "observatory_id": 942,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "羅漢山",
+      "observatory_id": 1100,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "長野山",
+      "observatory_id": 1101,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "和田",
+      "observatory_id": 1261,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "篠生",
+      "observatory_id": 1367,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "鹿野",
+      "observatory_id": 1614,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "東厚保",
+      "observatory_id": 1620,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "萩",
+      "observatory_id": 47754,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "下関",
+      "observatory_id": 47762,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "山口",
+      "observatory_id": 47784,
+      "group_id": "81"
+    },
+    {
+      "observatory_name": "八幡",
+      "observatory_id": 780,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "小倉",
+      "observatory_id": 781,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "行橋",
+      "observatory_id": 782,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "篠栗",
+      "observatory_id": 783,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "前原",
+      "observatory_id": 785,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "九千部山",
+      "observatory_id": 787,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "朝倉",
+      "observatory_id": 788,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "英彦山",
+      "observatory_id": 789,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "久留米",
+      "observatory_id": 790,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "耳納山",
+      "observatory_id": 791,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "黒木",
+      "observatory_id": 792,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "大牟田",
+      "observatory_id": 793,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "宗像",
+      "observatory_id": 943,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "頂吉",
+      "observatory_id": 944,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "柳川",
+      "observatory_id": 945,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "添田",
+      "observatory_id": 1046,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "太宰府",
+      "observatory_id": 1141,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "博多",
+      "observatory_id": 1477,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "曽根",
+      "observatory_id": 1527,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "空港北町",
+      "observatory_id": 1590,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "早良脇山",
+      "observatory_id": 1611,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "福岡",
+      "observatory_id": 47807,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "飯塚",
+      "observatory_id": 47809,
+      "group_id": "82"
+    },
+    {
+      "observatory_name": "中津",
+      "observatory_id": 794,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "豊後高田",
+      "observatory_id": 795,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "武蔵",
+      "observatory_id": 796,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "伏木",
+      "observatory_id": 797,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "湯布院",
+      "observatory_id": 799,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "佐賀関",
+      "observatory_id": 801,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "釈迦岳",
+      "observatory_id": 802,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "湯平",
+      "observatory_id": 803,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "温見",
+      "observatory_id": 804,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "犬飼",
+      "observatory_id": 805,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "竹田",
+      "observatory_id": 806,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "出羽",
+      "observatory_id": 807,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "佐伯",
+      "observatory_id": 808,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "倉木",
+      "observatory_id": 809,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "蒲江",
+      "observatory_id": 810,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "院内",
+      "observatory_id": 931,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "玖珠",
+      "observatory_id": 932,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "臼杵",
+      "observatory_id": 933,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "耶馬渓",
+      "observatory_id": 979,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "国見",
+      "observatory_id": 1137,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "宇目",
+      "observatory_id": 1142,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "別府",
+      "observatory_id": 1157,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "杵築",
+      "observatory_id": 1237,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "椿ヶ鼻",
+      "observatory_id": 1554,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "日田",
+      "observatory_id": 47814,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "大分",
+      "observatory_id": 47815,
+      "group_id": "83"
+    },
+    {
+      "observatory_name": "佐須奈",
+      "observatory_id": 811,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "松浦",
+      "observatory_id": 814,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "国見山",
+      "observatory_id": 815,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "大瀬戸",
+      "observatory_id": 817,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "長浦岳",
+      "observatory_id": 818,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "五家原岳",
+      "observatory_id": 819,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "諫早",
+      "observatory_id": 820,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "口之津",
+      "observatory_id": 922,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "島原",
+      "observatory_id": 962,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "有川",
+      "observatory_id": 1080,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "大村",
+      "observatory_id": 1084,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "有川",
+      "observatory_id": 1138,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "芦辺",
+      "observatory_id": 1144,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "野母崎",
+      "observatory_id": 1441,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "深江",
+      "observatory_id": 1442,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "普賢岳",
+      "observatory_id": 1446,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "百花台",
+      "observatory_id": 1451,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "千々石",
+      "observatory_id": 1452,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "鰐浦",
+      "observatory_id": 1453,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "石田",
+      "observatory_id": 1478,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "上大津",
+      "observatory_id": 1479,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "小値賀",
+      "observatory_id": 1535,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "頭ヶ島",
+      "observatory_id": 1536,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "美津島",
+      "observatory_id": 1538,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "厳原",
+      "observatory_id": 47800,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "平戸",
+      "observatory_id": 47805,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "佐世保",
+      "observatory_id": 47812,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "長崎",
+      "observatory_id": 47817,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "雲仙岳",
+      "observatory_id": 47818,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "福江",
+      "observatory_id": 47843,
+      "group_id": "84"
+    },
+    {
+      "observatory_name": "枝去木",
+      "observatory_id": 824,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "和多田",
+      "observatory_id": 825,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "権現山",
+      "observatory_id": 826,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "八幡岳",
+      "observatory_id": 827,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "白石",
+      "observatory_id": 829,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "嬉野",
+      "observatory_id": 830,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "多良岳",
+      "observatory_id": 831,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "伊万里",
+      "observatory_id": 1075,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "川副",
+      "observatory_id": 1480,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "唐津",
+      "observatory_id": 1610,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "鳥栖",
+      "observatory_id": 1612,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "北山",
+      "observatory_id": 1616,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "佐賀",
+      "observatory_id": 47813,
+      "group_id": "85"
+    },
+    {
+      "observatory_name": "鹿北",
+      "observatory_id": 832,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "南小国",
+      "observatory_id": 833,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "岱明",
+      "observatory_id": 834,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "菊池",
+      "observatory_id": 835,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "鞍岳",
+      "observatory_id": 836,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "俵山",
+      "observatory_id": 838,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "高森",
+      "observatory_id": 840,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "間の谷山",
+      "observatory_id": 841,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "甲佐",
+      "observatory_id": 842,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "松島",
+      "observatory_id": 843,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "大金峰",
+      "observatory_id": 844,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "本渡",
+      "observatory_id": 845,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "八代",
+      "observatory_id": 846,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "戦山",
+      "observatory_id": 847,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "一里山",
+      "observatory_id": 850,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "白髪岳",
+      "observatory_id": 851,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "益城",
+      "observatory_id": 923,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "水俣",
+      "observatory_id": 924,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "多良木",
+      "observatory_id": 925,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "上",
+      "observatory_id": 926,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "田浦",
+      "observatory_id": 946,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "三角",
+      "observatory_id": 1081,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "湯前横谷",
+      "observatory_id": 1086,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "茶臼峠",
+      "observatory_id": 1088,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "屋形山",
+      "observatory_id": 1156,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "五家荘",
+      "observatory_id": 1158,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "阿蘇乙姫",
+      "observatory_id": 1240,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "五木",
+      "observatory_id": 1368,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "山江",
+      "observatory_id": 1435,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "宇土",
+      "observatory_id": 1580,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "一勝地",
+      "observatory_id": 1581,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "山都",
+      "observatory_id": 1613,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "熊本",
+      "observatory_id": 47819,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "阿蘇山",
+      "observatory_id": 47821,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "人吉",
+      "observatory_id": 47824,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "牛深",
+      "observatory_id": 47838,
+      "group_id": "86"
+    },
+    {
+      "observatory_name": "高千穂",
+      "observatory_id": 852,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "大中尾",
+      "observatory_id": 853,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "中小屋",
+      "observatory_id": 854,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "猪原",
+      "observatory_id": 856,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "日向",
+      "observatory_id": 857,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "矢櫃岳",
+      "observatory_id": 858,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "高鍋",
+      "observatory_id": 859,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "加久藤",
+      "observatory_id": 860,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "西都",
+      "observatory_id": 861,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "えびの",
+      "observatory_id": 862,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "小林",
+      "observatory_id": 863,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "野尻",
+      "observatory_id": 864,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "国富",
+      "observatory_id": 865,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "霧島御池",
+      "observatory_id": 867,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "青島",
+      "observatory_id": 868,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "鰐塚山",
+      "observatory_id": 870,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "串間",
+      "observatory_id": 872,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "古江",
+      "observatory_id": 1135,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "深瀬",
+      "observatory_id": 1164,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "見立",
+      "observatory_id": 1275,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "諸塚",
+      "observatory_id": 1343,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "西米良",
+      "observatory_id": 1345,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "鞍岡",
+      "observatory_id": 1348,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "神門",
+      "observatory_id": 1353,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "北方",
+      "observatory_id": 1432,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "上椎葉",
+      "observatory_id": 1433,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "赤江",
+      "observatory_id": 1481,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "都農",
+      "observatory_id": 1608,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "日之影",
+      "observatory_id": 1609,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "延岡",
+      "observatory_id": 47822,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "都城",
+      "observatory_id": 47829,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "宮崎",
+      "observatory_id": 47830,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "油津",
+      "observatory_id": 47835,
+      "group_id": "87"
+    },
+    {
+      "observatory_name": "古原野",
+      "observatory_id": 874,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "大口",
+      "observatory_id": 875,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "魚野越",
+      "observatory_id": 876,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "紫尾山",
+      "observatory_id": 877,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "さつま柏原",
+      "observatory_id": 878,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "中甑",
+      "observatory_id": 879,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "川内",
+      "observatory_id": 880,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "溝辺",
+      "observatory_id": 881,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "八重山",
+      "observatory_id": 882,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "東市来",
+      "observatory_id": 883,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "権現ケ尾",
+      "observatory_id": 884,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "高峠",
+      "observatory_id": 886,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "加世田",
+      "observatory_id": 887,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "吉ケ別府",
+      "observatory_id": 888,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "大浦",
+      "observatory_id": 889,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "喜入",
+      "observatory_id": 890,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "肝属川",
+      "observatory_id": 891,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "指宿",
+      "observatory_id": 893,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "甫与志岳",
+      "observatory_id": 894,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "内之浦",
+      "observatory_id": 895,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "中種子",
+      "observatory_id": 897,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "上中",
+      "observatory_id": 898,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "尾之間",
+      "observatory_id": 899,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "出水",
+      "observatory_id": 934,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "牧之原",
+      "observatory_id": 935,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "志布志",
+      "observatory_id": 936,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "鹿屋",
+      "observatory_id": 937,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "古仁屋",
+      "observatory_id": 980,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "矢止岳",
+      "observatory_id": 1104,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "田代",
+      "observatory_id": 1136,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "伊仙",
+      "observatory_id": 1139,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "輝北",
+      "observatory_id": 1146,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "大隅",
+      "observatory_id": 1149,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "佐多",
+      "observatory_id": 1161,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "肝付前田",
+      "observatory_id": 1181,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "与論島",
+      "observatory_id": 1277,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "喜界島",
+      "observatory_id": 1296,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "笠利",
+      "observatory_id": 1520,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "中之島",
+      "observatory_id": 1540,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "天城",
+      "observatory_id": 1542,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "阿久根",
+      "observatory_id": 47823,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "鹿児島",
+      "observatory_id": 47827,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "枕崎",
+      "observatory_id": 47831,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "屋久島",
+      "observatory_id": 47836,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "種子島",
+      "observatory_id": 47837,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "名瀬",
+      "observatory_id": 47909,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "沖永良部",
+      "observatory_id": 47942,
+      "group_id": "88"
+    },
+    {
+      "observatory_name": "奥",
+      "observatory_id": 901,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "与那覇岳",
+      "observatory_id": 902,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "呉我山",
+      "observatory_id": 903,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "名嘉真",
+      "observatory_id": 905,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "読谷",
+      "observatory_id": 906,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "胡屋",
+      "observatory_id": 907,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "糸数",
+      "observatory_id": 909,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "金武",
+      "observatory_id": 1064,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "伊原間",
+      "observatory_id": 1145,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "伊是名",
+      "observatory_id": 1147,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "渡嘉敷",
+      "observatory_id": 1152,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "伊良部",
+      "observatory_id": 1246,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "多良間",
+      "observatory_id": 1247,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "城辺",
+      "observatory_id": 1248,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "川平",
+      "observatory_id": 1250,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "大原",
+      "observatory_id": 1251,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "波照間",
+      "observatory_id": 1354,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "本部",
+      "observatory_id": 1373,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "東",
+      "observatory_id": 1374,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "安次嶺",
+      "observatory_id": 1482,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "鏡原",
+      "observatory_id": 1483,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "真栄里",
+      "observatory_id": 1484,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "下地",
+      "observatory_id": 1490,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "仲筋",
+      "observatory_id": 1491,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "所野",
+      "observatory_id": 1493,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "志多阿原",
+      "observatory_id": 1494,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "粟国",
+      "observatory_id": 1515,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "慶良間",
+      "observatory_id": 1516,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "北大東",
+      "observatory_id": 1517,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "旧東",
+      "observatory_id": 1518,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "北原",
+      "observatory_id": 1534,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "国頭",
+      "observatory_id": 1586,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "宮城島",
+      "observatory_id": 1596,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "与那国島",
+      "observatory_id": 47912,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "西表島",
+      "observatory_id": 47917,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "石垣島",
+      "observatory_id": 47918,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "宮古島",
+      "observatory_id": 47927,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "久米島",
+      "observatory_id": 47929,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "那覇",
+      "observatory_id": 47936,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "名護",
+      "observatory_id": 47940,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "南大東(南大東島)",
+      "observatory_id": 47945,
+      "group_id": "91"
+    },
+    {
+      "observatory_name": "昭和",
+      "observatory_id": 89532,
+      "group_id": "99"
+    }
+  ]
+}

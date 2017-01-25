@@ -1,0 +1,47 @@
+import json
+t = r"""package weatherhist
+// auto generated code
+
+type ObservationID string
+
+func GetObservatoriesKey(id string, groupNumber string) ObservationID {
+	return ObservationID(id + "_" + groupNumber)
+}
+
+func GetAllObservatories() Observatries {
+	return allObservatories
+}
+
+type Observation struct {
+    ID ObservationID
+    GroupNumber string
+    Name string
+}
+
+type Observatries map[ObservationID]Observation
+
+var allObservatories = Observatries{
+%s
+}
+"""
+
+ot = r""""%04d_%s" : Observation{
+ID: ObservationID("%04d"),
+GroupNumber: "%s",
+Name: "%s",
+},"""
+
+f = open('observatories.json')
+dict = json.load(f)
+f.close()
+
+observatories = dict['observatories']
+
+o = []
+
+for ob in observatories:
+    ots = ot % (ob['observatory_id'], ob['group_id'], ob['observatory_id'], ob['group_id'], ob['observatory_name'])
+    o.append(ots)
+
+gocode = t % ('\n'.join(o))
+print(gocode)
