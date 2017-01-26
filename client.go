@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"net/url"
 
-	"encoding/json"
 	"io/ioutil"
 	"path"
 	"strconv"
@@ -37,7 +36,7 @@ func NewClient(urlStrp *string, logger *log.Logger) (*Client, error) {
 		l = logger
 	}
 
-	c := &http.Client{}
+	c := http.DefaultClient
 	return &Client{
 		URL:        url,
 		HTTPClient: c,
@@ -58,10 +57,4 @@ func (c *Client) getFullURL(spath string, ob Observation, targetDate time.Time) 
 	u.RawQuery = q.Encode()
 	u.Path = path.Join(c.URL.Path, spath)
 	return u.String()
-}
-
-func decodeBody(resp *http.Response, out interface{}) error {
-	defer resp.Body.Close()
-	decoder := json.NewDecoder(resp.Body)
-	return decoder.Decode(out)
 }
