@@ -1,11 +1,22 @@
 import json
 t = r"""package weatherhist
 // auto generated code
+import (
+	"fmt"
+
+	"github.com/pkg/errors"
+)
 
 type ObservationID string
 
-func GetObservatoriesKey(id string, groupNumber string) ObservationID {
-	return ObservationID(id + "_" + groupNumber)
+func GetObservatory(id string, groupNumber string) (Observation, error) {
+	oid := ObservationID(id + "_" + groupNumber)
+	ob, ok := allObservatories[oid]
+	if !ok {
+		return ob, errors.New(fmt.Sprintf("failed to find observatory: %s:%s", id, groupNumber))
+	}
+
+	return ob, nil
 }
 
 func GetAllObservatories() Observatries {

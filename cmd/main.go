@@ -1,13 +1,21 @@
 package main
 
 import (
-	"github.com/upamune/weatherhist"
 	"time"
+
+	"github.com/k0kubun/pp"
+	"github.com/upamune/weatherhist"
 )
 
 func main() {
 	client, _ := weatherhist.NewClient(nil, nil)
-	key := weatherhist.GetObservatoriesKey("1519", "69")
-	client.GetDailyData(key, time.Now(), time.Now())
-
+	observation, err := weatherhist.GetObservatory("1519", "69")
+	if err != nil {
+		panic(err)
+	}
+	daily, err := client.GetDailyData(observation, time.Now())
+	if err != nil {
+		panic(err)
+	}
+	pp.Println(daily)
 }

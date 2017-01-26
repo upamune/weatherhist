@@ -5,12 +5,13 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/pkg/errors"
-	"io/ioutil"
-	"context"
-	"io"
 	"encoding/json"
+	"io/ioutil"
 	"path"
+	"strconv"
+	"time"
+
+	"github.com/pkg/errors"
 )
 
 type Client struct {
@@ -44,18 +45,17 @@ func NewClient(urlStrp *string, logger *log.Logger) (*Client, error) {
 	}, nil
 }
 
-func (c *Client)newRequest(ctx context.Context, method, spath string, body io.Reader) (*http.Request, error) {
-	req, err := http.NewRequest(method, c.getFullURL(spath), body)
-	if err != nil {
-		return nil, err
-	}
-	req = req.WithContext(ctx)
+func (c *Client) getFullURL(spath string, ob Observation, targetDate time.Time) string {
+	q := url.Values{}
+	q.Add("block_no", string(ob.ID))
+	q.Add("prec_no", ob.GroupNumber)
+	q.Add("year", strconv.Itoa(targetDate.Year()))
+	q.Add("month", strconv.Itoa(int(targetDate.Month())))
+	q.Add("day", strconv.Itoa(targetDate.Day()))
+	q.Add("view", "")
 
-	return req, nil
-}
-
-func (c *Client) getFullURL(spath string) string {
 	u := *c.URL
+	u.RawQuery = q.Encode()
 	u.Path = path.Join(c.URL.Path, spath)
 	return u.String()
 }

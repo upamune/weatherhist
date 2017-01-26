@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/k0kubun/pp"
 )
 
 const DailyPath = "daily_a1.php"
@@ -77,20 +78,19 @@ func init() {
 	time.Local = loc
 }
 
-func (c *Client) GetDailyData(id ObservationID, begin, end time.Time) (Daily, error) {
-	daily := Daily{}
-
-	c.getDailyDataFromPage()
-
+func (c *Client) GetDailyData(ob Observation, targetDate time.Time) (Daily, error) {
+	daily, err := c.getDailyDataFromPage(ob, targetDate)
+	if err != nil {
+		return daily, err
+	}
 	return daily, nil
 }
 
-func (c *Client) getDailyDataFromPage() (Daily, error) {
-	url := c.getFullURL(DailyPath)
-	year := 2016
-	month := time.Month(1)
+func (c *Client) getDailyDataFromPage(ob Observation, targetDate time.Time) (Daily, error) {
+	url := c.getFullURL(DailyPath, ob, targetDate)
 	daily := Daily{}
-	doc, err := goquery.NewDocument(url + "?prec_no=69&block_no=1519&year=2016&month=1&day=1&view=")
+	pp.Println(url)
+	doc, err := goquery.NewDocument(url)
 	if err != nil {
 		return daily, err
 	}
@@ -103,7 +103,7 @@ func (c *Client) getDailyDataFromPage() (Daily, error) {
 			switch i {
 			case 0:
 				date, _ := strconv.Atoi(s.Text())
-				t := time.Date(year, month, date, 0, 0, 0, 0, time.Local)
+				t := time.Date(targetDate.Year(), targetDate.Month(), date, 0, 0, 0, 0, time.Local)
 				day.Date = t
 			case 1:
 				day.Precipitation.Total = s.Text()
