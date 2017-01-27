@@ -6,10 +6,9 @@ import (
 	"strconv"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/k0kubun/pp"
 )
 
-const DailyPath = "daily_a1.php"
+const DailyPath = "daily_%s1.php"
 
 type Daily struct {
 	Days []Day
@@ -89,7 +88,6 @@ func (c *Client) GetDailyData(ob Observation, targetDate time.Time) (Daily, erro
 func (c *Client) getDailyDataFromPage(ob Observation, targetDate time.Time) (Daily, error) {
 	url := c.getFullURL(DailyPath, ob, targetDate)
 	daily := Daily{}
-	pp.Println(url)
 	doc, err := goquery.NewDocument(url)
 	if err != nil {
 		return daily, err

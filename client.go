@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
+	"fmt"
 )
 
 type Client struct {
@@ -55,6 +56,11 @@ func (c *Client) getFullURL(spath string, ob Observation, targetDate time.Time) 
 
 	u := *c.URL
 	u.RawQuery = q.Encode()
+
+	switch spath {
+	case DailyPath:
+		spath = fmt.Sprintf(DailyPath, ob.Type)
+	}
 	u.Path = path.Join(c.URL.Path, spath)
 	return u.String()
 }
