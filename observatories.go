@@ -7,9863 +7,9863 @@ import (
 	"github.com/pkg/errors"
 )
 
-type ObservationID string
+type StationID string
 
-func GetObservatory(id string, groupNumber string) (Observation, error) {
-	oid := ObservationID(id + "_" + groupNumber)
-	ob, ok := allObservatories[oid]
+func GetStation(id string, groupNumber string) (Station, error) {
+	sid := StationID(id + "_" + groupNumber)
+	s, ok := allStations[sid]
 	if !ok {
-		return ob, errors.New(fmt.Sprintf("failed to find observatory: %s:%s", id, groupNumber))
+		return s, errors.New(fmt.Sprintf("failed to find observatory: %s:%s", id, groupNumber))
 	}
 
-	return ob, nil
+	return s, nil
 }
 
-func GetAllObservatories() Observatries {
-	return allObservatories
+func GetAllStations() Stations {
+	return allStations
 }
 
 const (
-	ObservatoryTypeS = "s"
-	ObservatoryTypeA = "a"
+	StationTypeS = "s"
+	StationTypeA = "a"
 )
 
-type Observation struct {
-	ID          ObservationID
+type Station struct {
+	ID          StationID
 	GroupNumber string
 	Name        string
 	Type        string
 }
 
-type Observatries map[ObservationID]Observation
+type Stations map[StationID]Station
 
-var allObservatories = Observatries{
-	"47401_11": Observation{
-		ID:          ObservationID("47401"),
+var allStations = Stations{
+	"47401_11": Station{
+		ID:          StationID("47401"),
 		GroupNumber: "11",
 		Name:        "稚内",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0002_11": Observation{
-		ID:          ObservationID("0002"),
+	"0002_11": Station{
+		ID:          StationID("0002"),
 		GroupNumber: "11",
 		Name:        "沓形",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0003_11": Observation{
-		ID:          ObservationID("0003"),
+	"0003_11": Station{
+		ID:          StationID("0003"),
 		GroupNumber: "11",
 		Name:        "浜頓別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47402_11": Observation{
-		ID:          ObservationID("47402"),
+	"47402_11": Station{
+		ID:          StationID("47402"),
 		GroupNumber: "11",
 		Name:        "北見枝幸",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0005_11": Observation{
-		ID:          ObservationID("0005"),
+	"0005_11": Station{
+		ID:          StationID("0005"),
 		GroupNumber: "11",
 		Name:        "歌登",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1051_11": Observation{
-		ID:          ObservationID("1051"),
+	"1051_11": Station{
+		ID:          StationID("1051"),
 		GroupNumber: "11",
 		Name:        "中頓別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1054_11": Observation{
-		ID:          ObservationID("1054"),
+	"1054_11": Station{
+		ID:          StationID("1054"),
 		GroupNumber: "11",
 		Name:        "豊富",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1203_11": Observation{
-		ID:          ObservationID("1203"),
+	"1203_11": Station{
+		ID:          StationID("1203"),
 		GroupNumber: "11",
 		Name:        "沼川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1207_11": Observation{
-		ID:          ObservationID("1207"),
+	"1207_11": Station{
+		ID:          StationID("1207"),
 		GroupNumber: "11",
 		Name:        "船泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1284_11": Observation{
-		ID:          ObservationID("1284"),
+	"1284_11": Station{
+		ID:          StationID("1284"),
 		GroupNumber: "11",
 		Name:        "宗谷岬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1285_11": Observation{
-		ID:          ObservationID("1285"),
+	"1285_11": Station{
+		ID:          StationID("1285"),
 		GroupNumber: "11",
 		Name:        "浜鬼志別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1512_11": Observation{
-		ID:          ObservationID("1512"),
+	"1512_11": Station{
+		ID:          StationID("1512"),
 		GroupNumber: "11",
 		Name:        "本泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1528_11": Observation{
-		ID:          ObservationID("1528"),
+	"1528_11": Station{
+		ID:          StationID("1528"),
 		GroupNumber: "11",
 		Name:        "声問",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1546_11": Observation{
-		ID:          ObservationID("1546"),
+	"1546_11": Station{
+		ID:          StationID("1546"),
 		GroupNumber: "11",
 		Name:        "礼文",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1593_11": Observation{
-		ID:          ObservationID("1593"),
+	"1593_11": Station{
+		ID:          StationID("1593"),
 		GroupNumber: "11",
 		Name:        "幌泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1573_11": Observation{
-		ID:          ObservationID("1573"),
+	"1573_11": Station{
+		ID:          StationID("1573"),
 		GroupNumber: "11",
 		Name:        "幌延",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0006_12": Observation{
-		ID:          ObservationID("0006"),
+	"0006_12": Station{
+		ID:          StationID("0006"),
 		GroupNumber: "12",
 		Name:        "美深",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0007_12": Observation{
-		ID:          ObservationID("0007"),
+	"0007_12": Station{
+		ID:          StationID("0007"),
 		GroupNumber: "12",
 		Name:        "ピヤシリ山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0008_12": Observation{
-		ID:          ObservationID("0008"),
+	"0008_12": Station{
+		ID:          StationID("0008"),
 		GroupNumber: "12",
 		Name:        "名寄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0009_12": Observation{
-		ID:          ObservationID("0009"),
+	"0009_12": Station{
+		ID:          StationID("0009"),
 		GroupNumber: "12",
 		Name:        "西風連",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0010_12": Observation{
-		ID:          ObservationID("0010"),
+	"0010_12": Station{
+		ID:          StationID("0010"),
 		GroupNumber: "12",
 		Name:        "下川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0011_12": Observation{
-		ID:          ObservationID("0011"),
+	"0011_12": Station{
+		ID:          StationID("0011"),
 		GroupNumber: "12",
 		Name:        "士別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0012_12": Observation{
-		ID:          ObservationID("0012"),
+	"0012_12": Station{
+		ID:          StationID("0012"),
 		GroupNumber: "12",
 		Name:        "犬牛別峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0013_12": Observation{
-		ID:          ObservationID("0013"),
+	"0013_12": Station{
+		ID:          StationID("0013"),
 		GroupNumber: "12",
 		Name:        "雄鷹峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0014_12": Observation{
-		ID:          ObservationID("0014"),
+	"0014_12": Station{
+		ID:          StationID("0014"),
 		GroupNumber: "12",
 		Name:        "蓬莱山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0015_12": Observation{
-		ID:          ObservationID("0015"),
+	"0015_12": Station{
+		ID:          StationID("0015"),
 		GroupNumber: "12",
 		Name:        "上川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47407_12": Observation{
-		ID:          ObservationID("47407"),
+	"47407_12": Station{
+		ID:          StationID("47407"),
 		GroupNumber: "12",
 		Name:        "旭川",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0017_12": Observation{
-		ID:          ObservationID("0017"),
+	"0017_12": Station{
+		ID:          StationID("0017"),
 		GroupNumber: "12",
 		Name:        "瑞穂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0018_12": Observation{
-		ID:          ObservationID("0018"),
+	"0018_12": Station{
+		ID:          StationID("0018"),
 		GroupNumber: "12",
 		Name:        "終沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0019_12": Observation{
-		ID:          ObservationID("0019"),
+	"0019_12": Station{
+		ID:          StationID("0019"),
 		GroupNumber: "12",
 		Name:        "旭岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0020_12": Observation{
-		ID:          ObservationID("0020"),
+	"0020_12": Station{
+		ID:          StationID("0020"),
 		GroupNumber: "12",
 		Name:        "白金",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0021_12": Observation{
-		ID:          ObservationID("0021"),
+	"0021_12": Station{
+		ID:          StationID("0021"),
 		GroupNumber: "12",
 		Name:        "富良野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0022_12": Observation{
-		ID:          ObservationID("0022"),
+	"0022_12": Station{
+		ID:          StationID("0022"),
 		GroupNumber: "12",
 		Name:        "前富良野岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0023_12": Observation{
-		ID:          ObservationID("0023"),
+	"0023_12": Station{
+		ID:          StationID("0023"),
 		GroupNumber: "12",
 		Name:        "前時雨山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1047_12": Observation{
-		ID:          ObservationID("1047"),
+	"1047_12": Station{
+		ID:          StationID("1047"),
 		GroupNumber: "12",
 		Name:        "朝日",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1048_12": Observation{
-		ID:          ObservationID("1048"),
+	"1048_12": Station{
+		ID:          StationID("1048"),
 		GroupNumber: "12",
 		Name:        "比布",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1049_12": Observation{
-		ID:          ObservationID("1049"),
+	"1049_12": Station{
+		ID:          StationID("1049"),
 		GroupNumber: "12",
 		Name:        "層雲峡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1052_12": Observation{
-		ID:          ObservationID("1052"),
+	"1052_12": Station{
+		ID:          StationID("1052"),
 		GroupNumber: "12",
 		Name:        "美瑛",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1055_12": Observation{
-		ID:          ObservationID("1055"),
+	"1055_12": Station{
+		ID:          StationID("1055"),
 		GroupNumber: "12",
 		Name:        "和寒",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1184_12": Observation{
-		ID:          ObservationID("1184"),
+	"1184_12": Station{
+		ID:          StationID("1184"),
 		GroupNumber: "12",
 		Name:        "東川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1185_12": Observation{
-		ID:          ObservationID("1185"),
+	"1185_12": Station{
+		ID:          StationID("1185"),
 		GroupNumber: "12",
 		Name:        "志比内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1188_12": Observation{
-		ID:          ObservationID("1188"),
+	"1188_12": Station{
+		ID:          StationID("1188"),
 		GroupNumber: "12",
 		Name:        "幾寅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1189_12": Observation{
-		ID:          ObservationID("1189"),
+	"1189_12": Station{
+		ID:          StationID("1189"),
 		GroupNumber: "12",
 		Name:        "占冠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1190_12": Observation{
-		ID:          ObservationID("1190"),
+	"1190_12": Station{
+		ID:          StationID("1190"),
 		GroupNumber: "12",
 		Name:        "上富良野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1191_12": Observation{
-		ID:          ObservationID("1191"),
+	"1191_12": Station{
+		ID:          StationID("1191"),
 		GroupNumber: "12",
 		Name:        "江丹別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1197_12": Observation{
-		ID:          ObservationID("1197"),
+	"1197_12": Station{
+		ID:          StationID("1197"),
 		GroupNumber: "12",
 		Name:        "音威子府",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1201_12": Observation{
-		ID:          ObservationID("1201"),
+	"1201_12": Station{
+		ID:          StationID("1201"),
 		GroupNumber: "12",
 		Name:        "中川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1280_12": Observation{
-		ID:          ObservationID("1280"),
+	"1280_12": Station{
+		ID:          StationID("1280"),
 		GroupNumber: "12",
 		Name:        "麓郷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1458_12": Observation{
-		ID:          ObservationID("1458"),
+	"1458_12": Station{
+		ID:          StationID("1458"),
 		GroupNumber: "12",
 		Name:        "東神楽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1570_12": Observation{
-		ID:          ObservationID("1570"),
+	"1570_12": Station{
+		ID:          StationID("1570"),
 		GroupNumber: "12",
 		Name:        "小車",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1572_12": Observation{
-		ID:          ObservationID("1572"),
+	"1572_12": Station{
+		ID:          StationID("1572"),
 		GroupNumber: "12",
 		Name:        "剣淵",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1574_12": Observation{
-		ID:          ObservationID("1574"),
+	"1574_12": Station{
+		ID:          StationID("1574"),
 		GroupNumber: "12",
 		Name:        "金山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1053_12": Observation{
-		ID:          ObservationID("1053"),
+	"1053_12": Station{
+		ID:          StationID("1053"),
 		GroupNumber: "12",
 		Name:        "幌加内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1279_12": Observation{
-		ID:          ObservationID("1279"),
+	"1279_12": Station{
+		ID:          StationID("1279"),
 		GroupNumber: "12",
 		Name:        "朱鞠内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0024_13": Observation{
-		ID:          ObservationID("0024"),
+	"0024_13": Station{
+		ID:          StationID("0024"),
 		GroupNumber: "13",
 		Name:        "天塩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0025_13": Observation{
-		ID:          ObservationID("0025"),
+	"0025_13": Station{
+		ID:          StationID("0025"),
 		GroupNumber: "13",
 		Name:        "遠別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47404_13": Observation{
-		ID:          ObservationID("47404"),
+	"47404_13": Station{
+		ID:          StationID("47404"),
 		GroupNumber: "13",
 		Name:        "羽幌",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47406_13": Observation{
-		ID:          ObservationID("47406"),
+	"47406_13": Station{
+		ID:          StationID("47406"),
 		GroupNumber: "13",
 		Name:        "留萌",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0028_13": Observation{
-		ID:          ObservationID("0028"),
+	"0028_13": Station{
+		ID:          StationID("0028"),
 		GroupNumber: "13",
 		Name:        "増毛",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1112_13": Observation{
-		ID:          ObservationID("1112"),
+	"1112_13": Station{
+		ID:          StationID("1112"),
 		GroupNumber: "13",
 		Name:        "古丹別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1213_13": Observation{
-		ID:          ObservationID("1213"),
+	"1213_13": Station{
+		ID:          StationID("1213"),
 		GroupNumber: "13",
 		Name:        "焼尻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1216_13": Observation{
-		ID:          ObservationID("1216"),
+	"1216_13": Station{
+		ID:          StationID("1216"),
 		GroupNumber: "13",
 		Name:        "初山別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1217_13": Observation{
-		ID:          ObservationID("1217"),
+	"1217_13": Station{
+		ID:          StationID("1217"),
 		GroupNumber: "13",
 		Name:        "達布",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1218_13": Observation{
-		ID:          ObservationID("1218"),
+	"1218_13": Station{
+		ID:          StationID("1218"),
 		GroupNumber: "13",
 		Name:        "幌糠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0029_14": Observation{
-		ID:          ObservationID("0029"),
+	"0029_14": Station{
+		ID:          StationID("0029"),
 		GroupNumber: "14",
 		Name:        "阿曽岩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0030_14": Observation{
-		ID:          ObservationID("0030"),
+	"0030_14": Station{
+		ID:          StationID("0030"),
 		GroupNumber: "14",
 		Name:        "新篠津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0031_14": Observation{
-		ID:          ObservationID("0031"),
+	"0031_14": Station{
+		ID:          StationID("0031"),
 		GroupNumber: "14",
 		Name:        "山口",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0032_14": Observation{
-		ID:          ObservationID("0032"),
+	"0032_14": Station{
+		ID:          StationID("0032"),
 		GroupNumber: "14",
 		Name:        "手稲山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47412_14": Observation{
-		ID:          ObservationID("47412"),
+	"47412_14": Station{
+		ID:          StationID("47412"),
 		GroupNumber: "14",
 		Name:        "札幌",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0034_14": Observation{
-		ID:          ObservationID("0034"),
+	"0034_14": Station{
+		ID:          StationID("0034"),
 		GroupNumber: "14",
 		Name:        "小金湯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0035_14": Observation{
-		ID:          ObservationID("0035"),
+	"0035_14": Station{
+		ID:          StationID("0035"),
 		GroupNumber: "14",
 		Name:        "恵庭島松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0036_14": Observation{
-		ID:          ObservationID("0036"),
+	"0036_14": Station{
+		ID:          StationID("0036"),
 		GroupNumber: "14",
 		Name:        "島松山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0037_14": Observation{
-		ID:          ObservationID("0037"),
+	"0037_14": Station{
+		ID:          StationID("0037"),
 		GroupNumber: "14",
 		Name:        "支笏湖畔",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1076_14": Observation{
-		ID:          ObservationID("1076"),
+	"1076_14": Station{
+		ID:          StationID("1076"),
 		GroupNumber: "14",
 		Name:        "西野幌",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1085_14": Observation{
-		ID:          ObservationID("1085"),
+	"1085_14": Station{
+		ID:          StationID("1085"),
 		GroupNumber: "14",
 		Name:        "石狩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1193_14": Observation{
-		ID:          ObservationID("1193"),
+	"1193_14": Station{
+		ID:          StationID("1193"),
 		GroupNumber: "14",
 		Name:        "浜益",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1194_14": Observation{
-		ID:          ObservationID("1194"),
+	"1194_14": Station{
+		ID:          StationID("1194"),
 		GroupNumber: "14",
 		Name:        "厚田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1459_14": Observation{
-		ID:          ObservationID("1459"),
+	"1459_14": Station{
+		ID:          StationID("1459"),
 		GroupNumber: "14",
 		Name:        "千歳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1507_14": Observation{
-		ID:          ObservationID("1507"),
+	"1507_14": Station{
+		ID:          StationID("1507"),
 		GroupNumber: "14",
 		Name:        "江別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0038_15": Observation{
-		ID:          ObservationID("0038"),
+	"0038_15": Station{
+		ID:          StationID("0038"),
 		GroupNumber: "15",
 		Name:        "石狩沼田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0039_15": Observation{
-		ID:          ObservationID("0039"),
+	"0039_15": Station{
+		ID:          StationID("0039"),
 		GroupNumber: "15",
 		Name:        "深川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0040_15": Observation{
-		ID:          ObservationID("0040"),
+	"0040_15": Station{
+		ID:          StationID("0040"),
 		GroupNumber: "15",
 		Name:        "常盤山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0041_15": Observation{
-		ID:          ObservationID("0041"),
+	"0041_15": Station{
+		ID:          StationID("0041"),
 		GroupNumber: "15",
 		Name:        "滝川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0042_15": Observation{
-		ID:          ObservationID("0042"),
+	"0042_15": Station{
+		ID:          StationID("0042"),
 		GroupNumber: "15",
 		Name:        "神威岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0043_15": Observation{
-		ID:          ObservationID("0043"),
+	"0043_15": Station{
+		ID:          StationID("0043"),
 		GroupNumber: "15",
 		Name:        "芦別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0044_15": Observation{
-		ID:          ObservationID("0044"),
+	"0044_15": Station{
+		ID:          StationID("0044"),
 		GroupNumber: "15",
 		Name:        "美唄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47413_15": Observation{
-		ID:          ObservationID("47413"),
+	"47413_15": Station{
+		ID:          StationID("47413"),
 		GroupNumber: "15",
 		Name:        "岩見沢",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0046_15": Observation{
-		ID:          ObservationID("0046"),
+	"0046_15": Station{
+		ID:          StationID("0046"),
 		GroupNumber: "15",
 		Name:        "下桂沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0047_15": Observation{
-		ID:          ObservationID("0047"),
+	"0047_15": Station{
+		ID:          StationID("0047"),
 		GroupNumber: "15",
 		Name:        "長沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0048_15": Observation{
-		ID:          ObservationID("0048"),
+	"0048_15": Station{
+		ID:          StationID("0048"),
 		GroupNumber: "15",
 		Name:        "丁未山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0049_15": Observation{
-		ID:          ObservationID("0049"),
+	"0049_15": Station{
+		ID:          StationID("0049"),
 		GroupNumber: "15",
 		Name:        "夕張",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0050_15": Observation{
-		ID:          ObservationID("0050"),
+	"0050_15": Station{
+		ID:          StationID("0050"),
 		GroupNumber: "15",
 		Name:        "登川山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0999_15": Observation{
-		ID:          ObservationID("0999"),
+	"0999_15": Station{
+		ID:          StationID("0999"),
 		GroupNumber: "15",
 		Name:        "月形",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1068_15": Observation{
-		ID:          ObservationID("1068"),
+	"1068_15": Station{
+		ID:          StationID("1068"),
 		GroupNumber: "15",
 		Name:        "栗沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1270_15": Observation{
-		ID:          ObservationID("1270"),
+	"1270_15": Station{
+		ID:          StationID("1270"),
 		GroupNumber: "15",
 		Name:        "晩生内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1271_15": Observation{
-		ID:          ObservationID("1271"),
+	"1271_15": Station{
+		ID:          StationID("1271"),
 		GroupNumber: "15",
 		Name:        "桜山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1287_15": Observation{
-		ID:          ObservationID("1287"),
+	"1287_15": Station{
+		ID:          StationID("1287"),
 		GroupNumber: "15",
 		Name:        "空知吉野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1400_15": Observation{
-		ID:          ObservationID("1400"),
+	"1400_15": Station{
+		ID:          StationID("1400"),
 		GroupNumber: "15",
 		Name:        "浦臼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1401_15": Observation{
-		ID:          ObservationID("1401"),
+	"1401_15": Station{
+		ID:          StationID("1401"),
 		GroupNumber: "15",
 		Name:        "鹿島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1402_15": Observation{
-		ID:          ObservationID("1402"),
+	"1402_15": Station{
+		ID:          StationID("1402"),
 		GroupNumber: "15",
 		Name:        "沼の沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1419_15": Observation{
-		ID:          ObservationID("1419"),
+	"1419_15": Station{
+		ID:          StationID("1419"),
 		GroupNumber: "15",
 		Name:        "新城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1566_15": Observation{
-		ID:          ObservationID("1566"),
+	"1566_15": Station{
+		ID:          StationID("1566"),
 		GroupNumber: "15",
 		Name:        "赤平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1567_15": Observation{
-		ID:          ObservationID("1567"),
+	"1567_15": Station{
+		ID:          StationID("1567"),
 		GroupNumber: "15",
 		Name:        "雨竜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0051_16": Observation{
-		ID:          ObservationID("0051"),
+	"0051_16": Station{
+		ID:          StationID("0051"),
 		GroupNumber: "16",
 		Name:        "美国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0052_16": Observation{
-		ID:          ObservationID("0052"),
+	"0052_16": Station{
+		ID:          StationID("0052"),
 		GroupNumber: "16",
 		Name:        "余市",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47411_16": Observation{
-		ID:          ObservationID("47411"),
+	"47411_16": Station{
+		ID:          StationID("47411"),
 		GroupNumber: "16",
 		Name:        "小樽",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0054_16": Observation{
-		ID:          ObservationID("0054"),
+	"0054_16": Station{
+		ID:          StationID("0054"),
 		GroupNumber: "16",
 		Name:        "共和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0055_16": Observation{
-		ID:          ObservationID("0055"),
+	"0055_16": Station{
+		ID:          StationID("0055"),
 		GroupNumber: "16",
 		Name:        "蘭越",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47433_16": Observation{
-		ID:          ObservationID("47433"),
+	"47433_16": Station{
+		ID:          StationID("47433"),
 		GroupNumber: "16",
 		Name:        "倶知安",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0057_16": Observation{
-		ID:          ObservationID("0057"),
+	"0057_16": Station{
+		ID:          StationID("0057"),
 		GroupNumber: "16",
 		Name:        "脇方台地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47421_16": Observation{
-		ID:          ObservationID("47421"),
+	"47421_16": Station{
+		ID:          StationID("47421"),
 		GroupNumber: "16",
 		Name:        "寿都",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0059_16": Observation{
-		ID:          ObservationID("0059"),
+	"0059_16": Station{
+		ID:          StationID("0059"),
 		GroupNumber: "16",
 		Name:        "桂台",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0060_16": Observation{
-		ID:          ObservationID("0060"),
+	"0060_16": Station{
+		ID:          StationID("0060"),
 		GroupNumber: "16",
 		Name:        "喜茂別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0061_16": Observation{
-		ID:          ObservationID("0061"),
+	"0061_16": Station{
+		ID:          StationID("0061"),
 		GroupNumber: "16",
 		Name:        "黒松内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1072_16": Observation{
-		ID:          ObservationID("1072"),
+	"1072_16": Station{
+		ID:          StationID("1072"),
 		GroupNumber: "16",
 		Name:        "真狩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1091_16": Observation{
-		ID:          ObservationID("1091"),
+	"1091_16": Station{
+		ID:          StationID("1091"),
 		GroupNumber: "16",
 		Name:        "赤井川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1208_16": Observation{
-		ID:          ObservationID("1208"),
+	"1208_16": Station{
+		ID:          StationID("1208"),
 		GroupNumber: "16",
 		Name:        "神恵内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1615_16": Observation{
-		ID:          ObservationID("1615"),
+	"1615_16": Station{
+		ID:          StationID("1615"),
 		GroupNumber: "16",
 		Name:        "ニセコ",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47405_17": Observation{
-		ID:          ObservationID("47405"),
+	"47405_17": Station{
+		ID:          StationID("47405"),
 		GroupNumber: "17",
 		Name:        "雄武",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0063_17": Observation{
-		ID:          ObservationID("0063"),
+	"0063_17": Station{
+		ID:          StationID("0063"),
 		GroupNumber: "17",
 		Name:        "興部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47435_17": Observation{
-		ID:          ObservationID("47435"),
+	"47435_17": Station{
+		ID:          StationID("47435"),
 		GroupNumber: "17",
 		Name:        "紋別",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0065_17": Observation{
-		ID:          ObservationID("0065"),
+	"0065_17": Station{
+		ID:          StationID("0065"),
 		GroupNumber: "17",
 		Name:        "湧別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0066_17": Observation{
-		ID:          ObservationID("0066"),
+	"0066_17": Station{
+		ID:          StationID("0066"),
 		GroupNumber: "17",
 		Name:        "滝上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0067_17": Observation{
-		ID:          ObservationID("0067"),
+	"0067_17": Station{
+		ID:          StationID("0067"),
 		GroupNumber: "17",
 		Name:        "上藻別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0068_17": Observation{
-		ID:          ObservationID("0068"),
+	"0068_17": Station{
+		ID:          StationID("0068"),
 		GroupNumber: "17",
 		Name:        "常呂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0069_17": Observation{
-		ID:          ObservationID("0069"),
+	"0069_17": Station{
+		ID:          StationID("0069"),
 		GroupNumber: "17",
 		Name:        "遠軽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0070_17": Observation{
-		ID:          ObservationID("0070"),
+	"0070_17": Station{
+		ID:          StationID("0070"),
 		GroupNumber: "17",
 		Name:        "佐呂間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47409_17": Observation{
-		ID:          ObservationID("47409"),
+	"47409_17": Station{
+		ID:          StationID("47409"),
 		GroupNumber: "17",
 		Name:        "網走",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0072_17": Observation{
-		ID:          ObservationID("0072"),
+	"0072_17": Station{
+		ID:          StationID("0072"),
 		GroupNumber: "17",
 		Name:        "生田原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0073_17": Observation{
-		ID:          ObservationID("0073"),
+	"0073_17": Station{
+		ID:          StationID("0073"),
 		GroupNumber: "17",
 		Name:        "仁頃山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0074_17": Observation{
-		ID:          ObservationID("0074"),
+	"0074_17": Station{
+		ID:          StationID("0074"),
 		GroupNumber: "17",
 		Name:        "北見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0075_17": Observation{
-		ID:          ObservationID("0075"),
+	"0075_17": Station{
+		ID:          StationID("0075"),
 		GroupNumber: "17",
 		Name:        "小清水",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0076_17": Observation{
-		ID:          ObservationID("0076"),
+	"0076_17": Station{
+		ID:          StationID("0076"),
 		GroupNumber: "17",
 		Name:        "斜里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0077_17": Observation{
-		ID:          ObservationID("0077"),
+	"0077_17": Station{
+		ID:          StationID("0077"),
 		GroupNumber: "17",
 		Name:        "留辺蘂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0078_17": Observation{
-		ID:          ObservationID("0078"),
+	"0078_17": Station{
+		ID:          StationID("0078"),
 		GroupNumber: "17",
 		Name:        "留辺蘂山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0079_17": Observation{
-		ID:          ObservationID("0079"),
+	"0079_17": Station{
+		ID:          StationID("0079"),
 		GroupNumber: "17",
 		Name:        "美幌",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0080_17": Observation{
-		ID:          ObservationID("0080"),
+	"0080_17": Station{
+		ID:          StationID("0080"),
 		GroupNumber: "17",
 		Name:        "藻琴山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0081_17": Observation{
-		ID:          ObservationID("0081"),
+	"0081_17": Station{
+		ID:          StationID("0081"),
 		GroupNumber: "17",
 		Name:        "チミケップ山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0082_17": Observation{
-		ID:          ObservationID("0082"),
+	"0082_17": Station{
+		ID:          StationID("0082"),
 		GroupNumber: "17",
 		Name:        "津別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0083_17": Observation{
-		ID:          ObservationID("0083"),
+	"0083_17": Station{
+		ID:          StationID("0083"),
 		GroupNumber: "17",
 		Name:        "北見中山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0981_17": Observation{
-		ID:          ObservationID("0981"),
+	"0981_17": Station{
+		ID:          StationID("0981"),
 		GroupNumber: "17",
 		Name:        "宇登呂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1073_17": Observation{
-		ID:          ObservationID("1073"),
+	"1073_17": Station{
+		ID:          StationID("1073"),
 		GroupNumber: "17",
 		Name:        "西興部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1092_17": Observation{
-		ID:          ObservationID("1092"),
+	"1092_17": Station{
+		ID:          StationID("1092"),
 		GroupNumber: "17",
 		Name:        "白滝",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1209_17": Observation{
-		ID:          ObservationID("1209"),
+	"1209_17": Station{
+		ID:          StationID("1209"),
 		GroupNumber: "17",
 		Name:        "境野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1263_17": Observation{
-		ID:          ObservationID("1263"),
+	"1263_17": Station{
+		ID:          StationID("1263"),
 		GroupNumber: "17",
 		Name:        "東藻琴",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1420_17": Observation{
-		ID:          ObservationID("1420"),
+	"1420_17": Station{
+		ID:          StationID("1420"),
 		GroupNumber: "17",
 		Name:        "丸瀬布",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1460_17": Observation{
-		ID:          ObservationID("1460"),
+	"1460_17": Station{
+		ID:          StationID("1460"),
 		GroupNumber: "17",
 		Name:        "女満別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1487_17": Observation{
-		ID:          ObservationID("1487"),
+	"1487_17": Station{
+		ID:          StationID("1487"),
 		GroupNumber: "17",
 		Name:        "紋別小向",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1568_17": Observation{
-		ID:          ObservationID("1568"),
+	"1568_17": Station{
+		ID:          StationID("1568"),
 		GroupNumber: "17",
 		Name:        "津別二又",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1569_17": Observation{
-		ID:          ObservationID("1569"),
+	"1569_17": Station{
+		ID:          StationID("1569"),
 		GroupNumber: "17",
 		Name:        "置戸常元",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1617_17": Observation{
-		ID:          ObservationID("1617"),
+	"1617_17": Station{
+		ID:          StationID("1617"),
 		GroupNumber: "17",
 		Name:        "山園",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0084_18": Observation{
-		ID:          ObservationID("0084"),
+	"0084_18": Station{
+		ID:          StationID("0084"),
 		GroupNumber: "18",
 		Name:        "羅臼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0085_18": Observation{
-		ID:          ObservationID("0085"),
+	"0085_18": Station{
+		ID:          StationID("0085"),
 		GroupNumber: "18",
 		Name:        "標津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0086_18": Observation{
-		ID:          ObservationID("0086"),
+	"0086_18": Station{
+		ID:          StationID("0086"),
 		GroupNumber: "18",
 		Name:        "中標津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0087_18": Observation{
-		ID:          ObservationID("0087"),
+	"0087_18": Station{
+		ID:          StationID("0087"),
 		GroupNumber: "18",
 		Name:        "計根別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0088_18": Observation{
-		ID:          ObservationID("0088"),
+	"0088_18": Station{
+		ID:          StationID("0088"),
 		GroupNumber: "18",
 		Name:        "別海",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47420_18": Observation{
-		ID:          ObservationID("47420"),
+	"47420_18": Station{
+		ID:          StationID("47420"),
 		GroupNumber: "18",
 		Name:        "根室",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1056_18": Observation{
-		ID:          ObservationID("1056"),
+	"1056_18": Station{
+		ID:          StationID("1056"),
 		GroupNumber: "18",
 		Name:        "納沙布",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1196_18": Observation{
-		ID:          ObservationID("1196"),
+	"1196_18": Station{
+		ID:          StationID("1196"),
 		GroupNumber: "18",
 		Name:        "厚床",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1266_18": Observation{
-		ID:          ObservationID("1266"),
+	"1266_18": Station{
+		ID:          StationID("1266"),
 		GroupNumber: "18",
 		Name:        "糸櫛別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1489_18": Observation{
-		ID:          ObservationID("1489"),
+	"1489_18": Station{
+		ID:          StationID("1489"),
 		GroupNumber: "18",
 		Name:        "根室中標津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1547_18": Observation{
-		ID:          ObservationID("1547"),
+	"1547_18": Station{
+		ID:          StationID("1547"),
 		GroupNumber: "18",
 		Name:        "上標津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0090_19": Observation{
-		ID:          ObservationID("0090"),
+	"0090_19": Station{
+		ID:          StationID("0090"),
 		GroupNumber: "19",
 		Name:        "川湯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0091_19": Observation{
-		ID:          ObservationID("0091"),
+	"0091_19": Station{
+		ID:          StationID("0091"),
 		GroupNumber: "19",
 		Name:        "阿寒湖畔",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0092_19": Observation{
-		ID:          ObservationID("0092"),
+	"0092_19": Station{
+		ID:          StationID("0092"),
 		GroupNumber: "19",
 		Name:        "弟子屈",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0093_19": Observation{
-		ID:          ObservationID("0093"),
+	"0093_19": Station{
+		ID:          StationID("0093"),
 		GroupNumber: "19",
 		Name:        "標茶",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0094_19": Observation{
-		ID:          ObservationID("0094"),
+	"0094_19": Station{
+		ID:          StationID("0094"),
 		GroupNumber: "19",
 		Name:        "幌呂台地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0095_19": Observation{
-		ID:          ObservationID("0095"),
+	"0095_19": Station{
+		ID:          StationID("0095"),
 		GroupNumber: "19",
 		Name:        "中徹別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0096_19": Observation{
-		ID:          ObservationID("0096"),
+	"0096_19": Station{
+		ID:          StationID("0096"),
 		GroupNumber: "19",
 		Name:        "阿寒",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0097_19": Observation{
-		ID:          ObservationID("0097"),
+	"0097_19": Station{
+		ID:          StationID("0097"),
 		GroupNumber: "19",
 		Name:        "霧多布",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0098_19": Observation{
-		ID:          ObservationID("0098"),
+	"0098_19": Station{
+		ID:          StationID("0098"),
 		GroupNumber: "19",
 		Name:        "白糠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47418_19": Observation{
-		ID:          ObservationID("47418"),
+	"47418_19": Station{
+		ID:          StationID("47418"),
 		GroupNumber: "19",
 		Name:        "釧路",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1107_19": Observation{
-		ID:          ObservationID("1107"),
+	"1107_19": Station{
+		ID:          StationID("1107"),
 		GroupNumber: "19",
 		Name:        "二俣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1186_19": Observation{
-		ID:          ObservationID("1186"),
+	"1186_19": Station{
+		ID:          StationID("1186"),
 		GroupNumber: "19",
 		Name:        "鶴居",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1187_19": Observation{
-		ID:          ObservationID("1187"),
+	"1187_19": Station{
+		ID:          StationID("1187"),
 		GroupNumber: "19",
 		Name:        "弟子屈",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1192_19": Observation{
-		ID:          ObservationID("1192"),
+	"1192_19": Station{
+		ID:          StationID("1192"),
 		GroupNumber: "19",
 		Name:        "太田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1195_19": Observation{
-		ID:          ObservationID("1195"),
+	"1195_19": Station{
+		ID:          StationID("1195"),
 		GroupNumber: "19",
 		Name:        "榊町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1283_19": Observation{
-		ID:          ObservationID("1283"),
+	"1283_19": Station{
+		ID:          StationID("1283"),
 		GroupNumber: "19",
 		Name:        "知方学",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1403_19": Observation{
-		ID:          ObservationID("1403"),
+	"1403_19": Station{
+		ID:          StationID("1403"),
 		GroupNumber: "19",
 		Name:        "塘路",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1417_19": Observation{
-		ID:          ObservationID("1417"),
+	"1417_19": Station{
+		ID:          StationID("1417"),
 		GroupNumber: "19",
 		Name:        "茶内原野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1461_19": Observation{
-		ID:          ObservationID("1461"),
+	"1461_19": Station{
+		ID:          StationID("1461"),
 		GroupNumber: "19",
 		Name:        "鶴丘",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0100_20": Observation{
-		ID:          ObservationID("0100"),
+	"0100_20": Station{
+		ID:          StationID("0100"),
 		GroupNumber: "20",
 		Name:        "軍艦山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0101_20": Observation{
-		ID:          ObservationID("0101"),
+	"0101_20": Station{
+		ID:          StationID("0101"),
 		GroupNumber: "20",
 		Name:        "陸別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0102_20": Observation{
-		ID:          ObservationID("0102"),
+	"0102_20": Station{
+		ID:          StationID("0102"),
 		GroupNumber: "20",
 		Name:        "殖産高地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0103_20": Observation{
-		ID:          ObservationID("0103"),
+	"0103_20": Station{
+		ID:          StationID("0103"),
 		GroupNumber: "20",
 		Name:        "ぬかびら源泉郷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0104_20": Observation{
-		ID:          ObservationID("0104"),
+	"0104_20": Station{
+		ID:          StationID("0104"),
 		GroupNumber: "20",
 		Name:        "小坂山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0105_20": Observation{
-		ID:          ObservationID("0105"),
+	"0105_20": Station{
+		ID:          StationID("0105"),
 		GroupNumber: "20",
 		Name:        "上足寄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0106_20": Observation{
-		ID:          ObservationID("0106"),
+	"0106_20": Station{
+		ID:          StationID("0106"),
 		GroupNumber: "20",
 		Name:        "西ヌプカウシ山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0107_20": Observation{
-		ID:          ObservationID("0107"),
+	"0107_20": Station{
+		ID:          StationID("0107"),
 		GroupNumber: "20",
 		Name:        "上士幌",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0108_20": Observation{
-		ID:          ObservationID("0108"),
+	"0108_20": Station{
+		ID:          StationID("0108"),
 		GroupNumber: "20",
 		Name:        "幌安山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0109_20": Observation{
-		ID:          ObservationID("0109"),
+	"0109_20": Station{
+		ID:          StationID("0109"),
 		GroupNumber: "20",
 		Name:        "足寄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0110_20": Observation{
-		ID:          ObservationID("0110"),
+	"0110_20": Station{
+		ID:          StationID("0110"),
 		GroupNumber: "20",
 		Name:        "佐幌岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0111_20": Observation{
-		ID:          ObservationID("0111"),
+	"0111_20": Station{
+		ID:          StationID("0111"),
 		GroupNumber: "20",
 		Name:        "三角山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0112_20": Observation{
-		ID:          ObservationID("0112"),
+	"0112_20": Station{
+		ID:          StationID("0112"),
 		GroupNumber: "20",
 		Name:        "本別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0113_20": Observation{
-		ID:          ObservationID("0113"),
+	"0113_20": Station{
+		ID:          StationID("0113"),
 		GroupNumber: "20",
 		Name:        "新得",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0114_20": Observation{
-		ID:          ObservationID("0114"),
+	"0114_20": Station{
+		ID:          StationID("0114"),
 		GroupNumber: "20",
 		Name:        "鹿追",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0115_20": Observation{
-		ID:          ObservationID("0115"),
+	"0115_20": Station{
+		ID:          StationID("0115"),
 		GroupNumber: "20",
 		Name:        "芽室",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47417_20": Observation{
-		ID:          ObservationID("47417"),
+	"47417_20": Station{
+		ID:          StationID("47417"),
 		GroupNumber: "20",
 		Name:        "帯広",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0117_20": Observation{
-		ID:          ObservationID("0117"),
+	"0117_20": Station{
+		ID:          StationID("0117"),
 		GroupNumber: "20",
 		Name:        "池田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0118_20": Observation{
-		ID:          ObservationID("0118"),
+	"0118_20": Station{
+		ID:          StationID("0118"),
 		GroupNumber: "20",
 		Name:        "浦幌",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0119_20": Observation{
-		ID:          ObservationID("0119"),
+	"0119_20": Station{
+		ID:          StationID("0119"),
 		GroupNumber: "20",
 		Name:        "帯広岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0120_20": Observation{
-		ID:          ObservationID("0120"),
+	"0120_20": Station{
+		ID:          StationID("0120"),
 		GroupNumber: "20",
 		Name:        "ひょうたん沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0121_20": Observation{
-		ID:          ObservationID("0121"),
+	"0121_20": Station{
+		ID:          StationID("0121"),
 		GroupNumber: "20",
 		Name:        "大樹",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47440_20": Observation{
-		ID:          ObservationID("47440"),
+	"47440_20": Station{
+		ID:          StationID("47440"),
 		GroupNumber: "20",
 		Name:        "広尾",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1099_20": Observation{
-		ID:          ObservationID("1099"),
+	"1099_20": Station{
+		ID:          StationID("1099"),
 		GroupNumber: "20",
 		Name:        "三国山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1204_20": Observation{
-		ID:          ObservationID("1204"),
+	"1204_20": Station{
+		ID:          StationID("1204"),
 		GroupNumber: "20",
 		Name:        "駒場",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1210_20": Observation{
-		ID:          ObservationID("1210"),
+	"1210_20": Station{
+		ID:          StationID("1210"),
 		GroupNumber: "20",
 		Name:        "上札内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1211_20": Observation{
-		ID:          ObservationID("1211"),
+	"1211_20": Station{
+		ID:          StationID("1211"),
 		GroupNumber: "20",
 		Name:        "更別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1214_20": Observation{
-		ID:          ObservationID("1214"),
+	"1214_20": Station{
+		ID:          StationID("1214"),
 		GroupNumber: "20",
 		Name:        "大津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1286_20": Observation{
-		ID:          ObservationID("1286"),
+	"1286_20": Station{
+		ID:          StationID("1286"),
 		GroupNumber: "20",
 		Name:        "糠内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1404_20": Observation{
-		ID:          ObservationID("1404"),
+	"1404_20": Station{
+		ID:          StationID("1404"),
 		GroupNumber: "20",
 		Name:        "小利別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1405_20": Observation{
-		ID:          ObservationID("1405"),
+	"1405_20": Station{
+		ID:          StationID("1405"),
 		GroupNumber: "20",
 		Name:        "押帯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1409_20": Observation{
-		ID:          ObservationID("1409"),
+	"1409_20": Station{
+		ID:          StationID("1409"),
 		GroupNumber: "20",
 		Name:        "柏倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1410_20": Observation{
-		ID:          ObservationID("1410"),
+	"1410_20": Station{
+		ID:          StationID("1410"),
 		GroupNumber: "20",
 		Name:        "上螺湾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1418_20": Observation{
-		ID:          ObservationID("1418"),
+	"1418_20": Station{
+		ID:          StationID("1418"),
 		GroupNumber: "20",
 		Name:        "留真",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1510_20": Observation{
-		ID:          ObservationID("1510"),
+	"1510_20": Station{
+		ID:          StationID("1510"),
 		GroupNumber: "20",
 		Name:        "帯広泉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1571_20": Observation{
-		ID:          ObservationID("1571"),
+	"1571_20": Station{
+		ID:          StationID("1571"),
 		GroupNumber: "20",
 		Name:        "三股",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0123_21": Observation{
-		ID:          ObservationID("0123"),
+	"0123_21": Station{
+		ID:          StationID("0123"),
 		GroupNumber: "21",
 		Name:        "安平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0124_21": Observation{
-		ID:          ObservationID("0124"),
+	"0124_21": Station{
+		ID:          StationID("0124"),
 		GroupNumber: "21",
 		Name:        "厚真",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0125_21": Observation{
-		ID:          ObservationID("0125"),
+	"0125_21": Station{
+		ID:          StationID("0125"),
 		GroupNumber: "21",
 		Name:        "穂別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0126_21": Observation{
-		ID:          ObservationID("0126"),
+	"0126_21": Station{
+		ID:          StationID("0126"),
 		GroupNumber: "21",
 		Name:        "森野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47424_21": Observation{
-		ID:          ObservationID("47424"),
+	"47424_21": Station{
+		ID:          StationID("47424"),
 		GroupNumber: "21",
 		Name:        "苫小牧",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0128_21": Observation{
-		ID:          ObservationID("0128"),
+	"0128_21": Station{
+		ID:          StationID("0128"),
 		GroupNumber: "21",
 		Name:        "大岸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0129_21": Observation{
-		ID:          ObservationID("0129"),
+	"0129_21": Station{
+		ID:          StationID("0129"),
 		GroupNumber: "21",
 		Name:        "有珠山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0130_21": Observation{
-		ID:          ObservationID("0130"),
+	"0130_21": Station{
+		ID:          StationID("0130"),
 		GroupNumber: "21",
 		Name:        "白老",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0131_21": Observation{
-		ID:          ObservationID("0131"),
+	"0131_21": Station{
+		ID:          StationID("0131"),
 		GroupNumber: "21",
 		Name:        "鵡川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0132_21": Observation{
-		ID:          ObservationID("0132"),
+	"0132_21": Station{
+		ID:          StationID("0132"),
 		GroupNumber: "21",
 		Name:        "伊達",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0133_21": Observation{
-		ID:          ObservationID("0133"),
+	"0133_21": Station{
+		ID:          StationID("0133"),
 		GroupNumber: "21",
 		Name:        "登別山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0134_21": Observation{
-		ID:          ObservationID("0134"),
+	"0134_21": Station{
+		ID:          StationID("0134"),
 		GroupNumber: "21",
 		Name:        "登別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47423_21": Observation{
-		ID:          ObservationID("47423"),
+	"47423_21": Station{
+		ID:          StationID("47423"),
 		GroupNumber: "21",
 		Name:        "室蘭",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1067_21": Observation{
-		ID:          ObservationID("1067"),
+	"1067_21": Station{
+		ID:          StationID("1067"),
 		GroupNumber: "21",
 		Name:        "大滝",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1329_21": Observation{
-		ID:          ObservationID("1329"),
+	"1329_21": Station{
+		ID:          StationID("1329"),
 		GroupNumber: "21",
 		Name:        "洞爺湖温泉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1429_21": Observation{
-		ID:          ObservationID("1429"),
+	"1429_21": Station{
+		ID:          StationID("1429"),
 		GroupNumber: "21",
 		Name:        "カルルス",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1496_21": Observation{
-		ID:          ObservationID("1496"),
+	"1496_21": Station{
+		ID:          StationID("1496"),
 		GroupNumber: "21",
 		Name:        "豊浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1498_21": Observation{
-		ID:          ObservationID("1498"),
+	"1498_21": Station{
+		ID:          StationID("1498"),
 		GroupNumber: "21",
 		Name:        "花和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1499_21": Observation{
-		ID:          ObservationID("1499"),
+	"1499_21": Station{
+		ID:          StationID("1499"),
 		GroupNumber: "21",
 		Name:        "虻田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1500_21": Observation{
-		ID:          ObservationID("1500"),
+	"1500_21": Station{
+		ID:          StationID("1500"),
 		GroupNumber: "21",
 		Name:        "壮瞥",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1501_21": Observation{
-		ID:          ObservationID("1501"),
+	"1501_21": Station{
+		ID:          StationID("1501"),
 		GroupNumber: "21",
 		Name:        "入江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1502_21": Observation{
-		ID:          ObservationID("1502"),
+	"1502_21": Station{
+		ID:          StationID("1502"),
 		GroupNumber: "21",
 		Name:        "月浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1503_21": Observation{
-		ID:          ObservationID("1503"),
+	"1503_21": Station{
+		ID:          StationID("1503"),
 		GroupNumber: "21",
 		Name:        "北有珠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1504_21": Observation{
-		ID:          ObservationID("1504"),
+	"1504_21": Station{
+		ID:          StationID("1504"),
 		GroupNumber: "21",
 		Name:        "洞爺湖畔",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0136_22": Observation{
-		ID:          ObservationID("0136"),
+	"0136_22": Station{
+		ID:          StationID("0136"),
 		GroupNumber: "22",
 		Name:        "日高門別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0137_22": Observation{
-		ID:          ObservationID("0137"),
+	"0137_22": Station{
+		ID:          StationID("0137"),
 		GroupNumber: "22",
 		Name:        "新和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0138_22": Observation{
-		ID:          ObservationID("0138"),
+	"0138_22": Station{
+		ID:          StationID("0138"),
 		GroupNumber: "22",
 		Name:        "ヌモトル山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0139_22": Observation{
-		ID:          ObservationID("0139"),
+	"0139_22": Station{
+		ID:          StationID("0139"),
 		GroupNumber: "22",
 		Name:        "笹山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0140_22": Observation{
-		ID:          ObservationID("0140"),
+	"0140_22": Station{
+		ID:          StationID("0140"),
 		GroupNumber: "22",
 		Name:        "静内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0141_22": Observation{
-		ID:          ObservationID("0141"),
+	"0141_22": Station{
+		ID:          StationID("0141"),
 		GroupNumber: "22",
 		Name:        "ピセナイ山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47426_22": Observation{
-		ID:          ObservationID("47426"),
+	"47426_22": Station{
+		ID:          StationID("47426"),
 		GroupNumber: "22",
 		Name:        "浦河",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1097_22": Observation{
-		ID:          ObservationID("1097"),
+	"1097_22": Station{
+		ID:          StationID("1097"),
 		GroupNumber: "22",
 		Name:        "仁世宇",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1198_22": Observation{
-		ID:          ObservationID("1198"),
+	"1198_22": Station{
+		ID:          StationID("1198"),
 		GroupNumber: "22",
 		Name:        "三石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1202_22": Observation{
-		ID:          ObservationID("1202"),
+	"1202_22": Station{
+		ID:          StationID("1202"),
 		GroupNumber: "22",
 		Name:        "日高",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1264_22": Observation{
-		ID:          ObservationID("1264"),
+	"1264_22": Station{
+		ID:          StationID("1264"),
 		GroupNumber: "22",
 		Name:        "幌満",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1276_22": Observation{
-		ID:          ObservationID("1276"),
+	"1276_22": Station{
+		ID:          StationID("1276"),
 		GroupNumber: "22",
 		Name:        "目黒",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1288_22": Observation{
-		ID:          ObservationID("1288"),
+	"1288_22": Station{
+		ID:          StationID("1288"),
 		GroupNumber: "22",
 		Name:        "中杵臼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1340_22": Observation{
-		ID:          ObservationID("1340"),
+	"1340_22": Station{
+		ID:          StationID("1340"),
 		GroupNumber: "22",
 		Name:        "えりも岬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1430_22": Observation{
-		ID:          ObservationID("1430"),
+	"1430_22": Station{
+		ID:          StationID("1430"),
 		GroupNumber: "22",
 		Name:        "旭",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1594_22": Observation{
-		ID:          ObservationID("1594"),
+	"1594_22": Station{
+		ID:          StationID("1594"),
 		GroupNumber: "22",
 		Name:        "平取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0143_23": Observation{
-		ID:          ObservationID("0143"),
+	"0143_23": Station{
+		ID:          StationID("0143"),
 		GroupNumber: "23",
 		Name:        "長万部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0144_23": Observation{
-		ID:          ObservationID("0144"),
+	"0144_23": Station{
+		ID:          StationID("0144"),
 		GroupNumber: "23",
 		Name:        "八雲",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0145_23": Observation{
-		ID:          ObservationID("0145"),
+	"0145_23": Station{
+		ID:          StationID("0145"),
 		GroupNumber: "23",
 		Name:        "森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0146_23": Observation{
-		ID:          ObservationID("0146"),
+	"0146_23": Station{
+		ID:          StationID("0146"),
 		GroupNumber: "23",
 		Name:        "大沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0147_23": Observation{
-		ID:          ObservationID("0147"),
+	"0147_23": Station{
+		ID:          StationID("0147"),
 		GroupNumber: "23",
 		Name:        "川汲",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0148_23": Observation{
-		ID:          ObservationID("0148"),
+	"0148_23": Station{
+		ID:          StationID("0148"),
 		GroupNumber: "23",
 		Name:        "北斗",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47430_23": Observation{
-		ID:          ObservationID("47430"),
+	"47430_23": Station{
+		ID:          StationID("47430"),
 		GroupNumber: "23",
 		Name:        "函館",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0150_23": Observation{
-		ID:          ObservationID("0150"),
+	"0150_23": Station{
+		ID:          StationID("0150"),
 		GroupNumber: "23",
 		Name:        "汐首",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0151_23": Observation{
-		ID:          ObservationID("0151"),
+	"0151_23": Station{
+		ID:          StationID("0151"),
 		GroupNumber: "23",
 		Name:        "小谷石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0152_23": Observation{
-		ID:          ObservationID("0152"),
+	"0152_23": Station{
+		ID:          StationID("0152"),
 		GroupNumber: "23",
 		Name:        "松前",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0917_23": Observation{
-		ID:          ObservationID("0917"),
+	"0917_23": Station{
+		ID:          StationID("0917"),
 		GroupNumber: "23",
 		Name:        "木古内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1265_23": Observation{
-		ID:          ObservationID("1265"),
+	"1265_23": Station{
+		ID:          StationID("1265"),
 		GroupNumber: "23",
 		Name:        "千軒",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1416_23": Observation{
-		ID:          ObservationID("1416"),
+	"1416_23": Station{
+		ID:          StationID("1416"),
 		GroupNumber: "23",
 		Name:        "蛾眉野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1462_23": Observation{
-		ID:          ObservationID("1462"),
+	"1462_23": Station{
+		ID:          StationID("1462"),
 		GroupNumber: "23",
 		Name:        "高松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1543_23": Observation{
-		ID:          ObservationID("1543"),
+	"1543_23": Station{
+		ID:          StationID("1543"),
 		GroupNumber: "23",
 		Name:        "戸井泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1552_23": Observation{
-		ID:          ObservationID("1552"),
+	"1552_23": Station{
+		ID:          StationID("1552"),
 		GroupNumber: "23",
 		Name:        "知内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0155_23": Observation{
-		ID:          ObservationID("0155"),
+	"0155_23": Station{
+		ID:          StationID("0155"),
 		GroupNumber: "23",
 		Name:        "熊石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0153_24": Observation{
-		ID:          ObservationID("0153"),
+	"0153_24": Station{
+		ID:          StationID("0153"),
 		GroupNumber: "24",
 		Name:        "せたな",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0154_24": Observation{
-		ID:          ObservationID("0154"),
+	"0154_24": Station{
+		ID:          StationID("0154"),
 		GroupNumber: "24",
 		Name:        "今金",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0156_24": Observation{
-		ID:          ObservationID("0156"),
+	"0156_24": Station{
+		ID:          StationID("0156"),
 		GroupNumber: "24",
 		Name:        "潮見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47428_24": Observation{
-		ID:          ObservationID("47428"),
+	"47428_24": Station{
+		ID:          StationID("47428"),
 		GroupNumber: "24",
 		Name:        "江差",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1199_24": Observation{
-		ID:          ObservationID("1199"),
+	"1199_24": Station{
+		ID:          StationID("1199"),
 		GroupNumber: "24",
 		Name:        "奥尻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1200_24": Observation{
-		ID:          ObservationID("1200"),
+	"1200_24": Station{
+		ID:          StationID("1200"),
 		GroupNumber: "24",
 		Name:        "鶉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1205_24": Observation{
-		ID:          ObservationID("1205"),
+	"1205_24": Station{
+		ID:          StationID("1205"),
 		GroupNumber: "24",
 		Name:        "石崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1513_24": Observation{
-		ID:          ObservationID("1513"),
+	"1513_24": Station{
+		ID:          StationID("1513"),
 		GroupNumber: "24",
 		Name:        "米岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0158_31": Observation{
-		ID:          ObservationID("0158"),
+	"0158_31": Station{
+		ID:          StationID("0158"),
 		GroupNumber: "31",
 		Name:        "障子山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47576_31": Observation{
-		ID:          ObservationID("47576"),
+	"47576_31": Station{
+		ID:          StationID("47576"),
 		GroupNumber: "31",
 		Name:        "むつ",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0160_31": Observation{
-		ID:          ObservationID("0160"),
+	"0160_31": Station{
+		ID:          StationID("0160"),
 		GroupNumber: "31",
 		Name:        "蟹田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47575_31": Observation{
-		ID:          ObservationID("47575"),
+	"47575_31": Station{
+		ID:          StationID("47575"),
 		GroupNumber: "31",
 		Name:        "青森",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0162_31": Observation{
-		ID:          ObservationID("0162"),
+	"0162_31": Station{
+		ID:          StationID("0162"),
 		GroupNumber: "31",
 		Name:        "野辺地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0163_31": Observation{
-		ID:          ObservationID("0163"),
+	"0163_31": Station{
+		ID:          StationID("0163"),
 		GroupNumber: "31",
 		Name:        "鰺ケ沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0164_31": Observation{
-		ID:          ObservationID("0164"),
+	"0164_31": Station{
+		ID:          StationID("0164"),
 		GroupNumber: "31",
 		Name:        "五所川原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47574_31": Observation{
-		ID:          ObservationID("47574"),
+	"47574_31": Station{
+		ID:          StationID("47574"),
 		GroupNumber: "31",
 		Name:        "深浦",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0166_31": Observation{
-		ID:          ObservationID("0166"),
+	"0166_31": Station{
+		ID:          StationID("0166"),
 		GroupNumber: "31",
 		Name:        "弘前",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0167_31": Observation{
-		ID:          ObservationID("0167"),
+	"0167_31": Station{
+		ID:          StationID("0167"),
 		GroupNumber: "31",
 		Name:        "黒石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0168_31": Observation{
-		ID:          ObservationID("0168"),
+	"0168_31": Station{
+		ID:          StationID("0168"),
 		GroupNumber: "31",
 		Name:        "八甲田山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0169_31": Observation{
-		ID:          ObservationID("0169"),
+	"0169_31": Station{
+		ID:          StationID("0169"),
 		GroupNumber: "31",
 		Name:        "三沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0170_31": Observation{
-		ID:          ObservationID("0170"),
+	"0170_31": Station{
+		ID:          StationID("0170"),
 		GroupNumber: "31",
 		Name:        "四兵衛森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0171_31": Observation{
-		ID:          ObservationID("0171"),
+	"0171_31": Station{
+		ID:          StationID("0171"),
 		GroupNumber: "31",
 		Name:        "毛無山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0172_31": Observation{
-		ID:          ObservationID("0172"),
+	"0172_31": Station{
+		ID:          StationID("0172"),
 		GroupNumber: "31",
 		Name:        "十和田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47581_31": Observation{
-		ID:          ObservationID("47581"),
+	"47581_31": Station{
+		ID:          StationID("47581"),
 		GroupNumber: "31",
 		Name:        "八戸",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0174_31": Observation{
-		ID:          ObservationID("0174"),
+	"0174_31": Station{
+		ID:          StationID("0174"),
 		GroupNumber: "31",
 		Name:        "大鰐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0175_31": Observation{
-		ID:          ObservationID("0175"),
+	"0175_31": Station{
+		ID:          StationID("0175"),
 		GroupNumber: "31",
 		Name:        "碇ケ関",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0176_31": Observation{
-		ID:          ObservationID("0176"),
+	"0176_31": Station{
+		ID:          StationID("0176"),
 		GroupNumber: "31",
 		Name:        "空岱山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0177_31": Observation{
-		ID:          ObservationID("0177"),
+	"0177_31": Station{
+		ID:          StationID("0177"),
 		GroupNumber: "31",
 		Name:        "休屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0178_31": Observation{
-		ID:          ObservationID("0178"),
+	"0178_31": Station{
+		ID:          StationID("0178"),
 		GroupNumber: "31",
 		Name:        "朝日奈岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0179_31": Observation{
-		ID:          ObservationID("0179"),
+	"0179_31": Station{
+		ID:          StationID("0179"),
 		GroupNumber: "31",
 		Name:        "三戸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1026_31": Observation{
-		ID:          ObservationID("1026"),
+	"1026_31": Station{
+		ID:          StationID("1026"),
 		GroupNumber: "31",
 		Name:        "今別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1027_31": Observation{
-		ID:          ObservationID("1027"),
+	"1027_31": Station{
+		ID:          StationID("1027"),
 		GroupNumber: "31",
 		Name:        "六ケ所",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1041_31": Observation{
-		ID:          ObservationID("1041"),
+	"1041_31": Station{
+		ID:          StationID("1041"),
 		GroupNumber: "31",
 		Name:        "大間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1042_31": Observation{
-		ID:          ObservationID("1042"),
+	"1042_31": Station{
+		ID:          StationID("1042"),
 		GroupNumber: "31",
 		Name:        "大和山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1079_31": Observation{
-		ID:          ObservationID("1079"),
+	"1079_31": Station{
+		ID:          StationID("1079"),
 		GroupNumber: "31",
 		Name:        "酸ケ湯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1108_31": Observation{
-		ID:          ObservationID("1108"),
+	"1108_31": Station{
+		ID:          StationID("1108"),
 		GroupNumber: "31",
 		Name:        "岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1110_31": Observation{
-		ID:          ObservationID("1110"),
+	"1110_31": Station{
+		ID:          StationID("1110"),
 		GroupNumber: "31",
 		Name:        "長慶平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1119_31": Observation{
-		ID:          ObservationID("1119"),
+	"1119_31": Station{
+		ID:          StationID("1119"),
 		GroupNumber: "31",
 		Name:        "市浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1122_31": Observation{
-		ID:          ObservationID("1122"),
+	"1122_31": Station{
+		ID:          StationID("1122"),
 		GroupNumber: "31",
 		Name:        "小田野沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1124_31": Observation{
-		ID:          ObservationID("1124"),
+	"1124_31": Station{
+		ID:          StationID("1124"),
 		GroupNumber: "31",
 		Name:        "脇野沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1183_31": Observation{
-		ID:          ObservationID("1183"),
+	"1183_31": Station{
+		ID:          StationID("1183"),
 		GroupNumber: "31",
 		Name:        "七戸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1272_31": Observation{
-		ID:          ObservationID("1272"),
+	"1272_31": Station{
+		ID:          StationID("1272"),
 		GroupNumber: "31",
 		Name:        "戸来",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1406_31": Observation{
-		ID:          ObservationID("1406"),
+	"1406_31": Station{
+		ID:          StationID("1406"),
 		GroupNumber: "31",
 		Name:        "温川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1495_31": Observation{
-		ID:          ObservationID("1495"),
+	"1495_31": Station{
+		ID:          StationID("1495"),
 		GroupNumber: "31",
 		Name:        "青森大谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1559_31": Observation{
-		ID:          ObservationID("1559"),
+	"1559_31": Station{
+		ID:          StationID("1559"),
 		GroupNumber: "31",
 		Name:        "湯野川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0180_32": Observation{
-		ID:          ObservationID("0180"),
+	"0180_32": Station{
+		ID:          StationID("0180"),
 		GroupNumber: "32",
 		Name:        "田代岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0181_32": Observation{
-		ID:          ObservationID("0181"),
+	"0181_32": Station{
+		ID:          StationID("0181"),
 		GroupNumber: "32",
 		Name:        "陣場",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0182_32": Observation{
-		ID:          ObservationID("0182"),
+	"0182_32": Station{
+		ID:          StationID("0182"),
 		GroupNumber: "32",
 		Name:        "杉沢山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0183_32": Observation{
-		ID:          ObservationID("0183"),
+	"0183_32": Station{
+		ID:          StationID("0183"),
 		GroupNumber: "32",
 		Name:        "能代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0184_32": Observation{
-		ID:          ObservationID("0184"),
+	"0184_32": Station{
+		ID:          StationID("0184"),
 		GroupNumber: "32",
 		Name:        "鷹巣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0185_32": Observation{
-		ID:          ObservationID("0185"),
+	"0185_32": Station{
+		ID:          StationID("0185"),
 		GroupNumber: "32",
 		Name:        "鹿角",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0186_32": Observation{
-		ID:          ObservationID("0186"),
+	"0186_32": Station{
+		ID:          StationID("0186"),
 		GroupNumber: "32",
 		Name:        "湯瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0187_32": Observation{
-		ID:          ObservationID("0187"),
+	"0187_32": Station{
+		ID:          StationID("0187"),
 		GroupNumber: "32",
 		Name:        "森吉山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0188_32": Observation{
-		ID:          ObservationID("0188"),
+	"0188_32": Station{
+		ID:          StationID("0188"),
 		GroupNumber: "32",
 		Name:        "五城目",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0189_32": Observation{
-		ID:          ObservationID("0189"),
+	"0189_32": Station{
+		ID:          StationID("0189"),
 		GroupNumber: "32",
 		Name:        "男鹿本山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47582_32": Observation{
-		ID:          ObservationID("47582"),
+	"47582_32": Station{
+		ID:          StationID("47582"),
 		GroupNumber: "32",
 		Name:        "秋田",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0191_32": Observation{
-		ID:          ObservationID("0191"),
+	"0191_32": Station{
+		ID:          StationID("0191"),
 		GroupNumber: "32",
 		Name:        "太平山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0192_32": Observation{
-		ID:          ObservationID("0192"),
+	"0192_32": Station{
+		ID:          StationID("0192"),
 		GroupNumber: "32",
 		Name:        "岩見三内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0193_32": Observation{
-		ID:          ObservationID("0193"),
+	"0193_32": Station{
+		ID:          StationID("0193"),
 		GroupNumber: "32",
 		Name:        "角館",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0194_32": Observation{
-		ID:          ObservationID("0194"),
+	"0194_32": Station{
+		ID:          StationID("0194"),
 		GroupNumber: "32",
 		Name:        "田沢湖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0195_32": Observation{
-		ID:          ObservationID("0195"),
+	"0195_32": Station{
+		ID:          StationID("0195"),
 		GroupNumber: "32",
 		Name:        "大曲",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0196_32": Observation{
-		ID:          ObservationID("0196"),
+	"0196_32": Station{
+		ID:          StationID("0196"),
 		GroupNumber: "32",
 		Name:        "本荘",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0197_32": Observation{
-		ID:          ObservationID("0197"),
+	"0197_32": Station{
+		ID:          StationID("0197"),
 		GroupNumber: "32",
 		Name:        "保呂羽山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0198_32": Observation{
-		ID:          ObservationID("0198"),
+	"0198_32": Station{
+		ID:          StationID("0198"),
 		GroupNumber: "32",
 		Name:        "横手",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0199_32": Observation{
-		ID:          ObservationID("0199"),
+	"0199_32": Station{
+		ID:          StationID("0199"),
 		GroupNumber: "32",
 		Name:        "象潟",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0200_32": Observation{
-		ID:          ObservationID("0200"),
+	"0200_32": Station{
+		ID:          StationID("0200"),
 		GroupNumber: "32",
 		Name:        "矢島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0201_32": Observation{
-		ID:          ObservationID("0201"),
+	"0201_32": Station{
+		ID:          StationID("0201"),
 		GroupNumber: "32",
 		Name:        "三森山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0202_32": Observation{
-		ID:          ObservationID("0202"),
+	"0202_32": Station{
+		ID:          StationID("0202"),
 		GroupNumber: "32",
 		Name:        "湯沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0203_32": Observation{
-		ID:          ObservationID("0203"),
+	"0203_32": Station{
+		ID:          StationID("0203"),
 		GroupNumber: "32",
 		Name:        "姥井戸山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0204_32": Observation{
-		ID:          ObservationID("0204"),
+	"0204_32": Station{
+		ID:          StationID("0204"),
 		GroupNumber: "32",
 		Name:        "湯の岱",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0912_32": Observation{
-		ID:          ObservationID("0912"),
+	"0912_32": Station{
+		ID:          StationID("0912"),
 		GroupNumber: "32",
 		Name:        "大館",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1035_32": Observation{
-		ID:          ObservationID("1035"),
+	"1035_32": Station{
+		ID:          StationID("1035"),
 		GroupNumber: "32",
 		Name:        "大潟",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1036_32": Observation{
-		ID:          ObservationID("1036"),
+	"1036_32": Station{
+		ID:          StationID("1036"),
 		GroupNumber: "32",
 		Name:        "男鹿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1043_32": Observation{
-		ID:          ObservationID("1043"),
+	"1043_32": Station{
+		ID:          StationID("1043"),
 		GroupNumber: "32",
 		Name:        "八森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1050_32": Observation{
-		ID:          ObservationID("1050"),
+	"1050_32": Station{
+		ID:          StationID("1050"),
 		GroupNumber: "32",
 		Name:        "大正寺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1109_32": Observation{
-		ID:          ObservationID("1109"),
+	"1109_32": Station{
+		ID:          StationID("1109"),
 		GroupNumber: "32",
 		Name:        "東成瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1115_32": Observation{
-		ID:          ObservationID("1115"),
+	"1115_32": Station{
+		ID:          StationID("1115"),
 		GroupNumber: "32",
 		Name:        "比立内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1117_32": Observation{
-		ID:          ObservationID("1117"),
+	"1117_32": Station{
+		ID:          StationID("1117"),
 		GroupNumber: "32",
 		Name:        "東由利",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1131_32": Observation{
-		ID:          ObservationID("1131"),
+	"1131_32": Station{
+		ID:          StationID("1131"),
 		GroupNumber: "32",
 		Name:        "阿仁合",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1167_32": Observation{
-		ID:          ObservationID("1167"),
+	"1167_32": Station{
+		ID:          StationID("1167"),
 		GroupNumber: "32",
 		Name:        "鎧畑",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1273_32": Observation{
-		ID:          ObservationID("1273"),
+	"1273_32": Station{
+		ID:          StationID("1273"),
 		GroupNumber: "32",
 		Name:        "藤里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1278_32": Observation{
-		ID:          ObservationID("1278"),
+	"1278_32": Station{
+		ID:          StationID("1278"),
 		GroupNumber: "32",
 		Name:        "桧木内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1289_32": Observation{
-		ID:          ObservationID("1289"),
+	"1289_32": Station{
+		ID:          StationID("1289"),
 		GroupNumber: "32",
 		Name:        "八幡平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1407_32": Observation{
-		ID:          ObservationID("1407"),
+	"1407_32": Station{
+		ID:          StationID("1407"),
 		GroupNumber: "32",
 		Name:        "笹子",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1408_32": Observation{
-		ID:          ObservationID("1408"),
+	"1408_32": Station{
+		ID:          StationID("1408"),
 		GroupNumber: "32",
 		Name:        "藤原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1422_32": Observation{
-		ID:          ObservationID("1422"),
+	"1422_32": Station{
+		ID:          StationID("1422"),
 		GroupNumber: "32",
 		Name:        "男鹿真山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1425_32": Observation{
-		ID:          ObservationID("1425"),
+	"1425_32": Station{
+		ID:          StationID("1425"),
 		GroupNumber: "32",
 		Name:        "仁別",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1463_32": Observation{
-		ID:          ObservationID("1463"),
+	"1463_32": Station{
+		ID:          StationID("1463"),
 		GroupNumber: "32",
 		Name:        "脇神",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1511_32": Observation{
-		ID:          ObservationID("1511"),
+	"1511_32": Station{
+		ID:          StationID("1511"),
 		GroupNumber: "32",
 		Name:        "雄和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0205_33": Observation{
-		ID:          ObservationID("0205"),
+	"0205_33": Station{
+		ID:          StationID("0205"),
 		GroupNumber: "33",
 		Name:        "種市",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0206_33": Observation{
-		ID:          ObservationID("0206"),
+	"0206_33": Station{
+		ID:          StationID("0206"),
 		GroupNumber: "33",
 		Name:        "軽米",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0207_33": Observation{
-		ID:          ObservationID("0207"),
+	"0207_33": Station{
+		ID:          StationID("0207"),
 		GroupNumber: "33",
 		Name:        "二戸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0208_33": Observation{
-		ID:          ObservationID("0208"),
+	"0208_33": Station{
+		ID:          StationID("0208"),
 		GroupNumber: "33",
 		Name:        "折爪岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0209_33": Observation{
-		ID:          ObservationID("0209"),
+	"0209_33": Station{
+		ID:          StationID("0209"),
 		GroupNumber: "33",
 		Name:        "久慈",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0210_33": Observation{
-		ID:          ObservationID("0210"),
+	"0210_33": Station{
+		ID:          StationID("0210"),
 		GroupNumber: "33",
 		Name:        "西岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0211_33": Observation{
-		ID:          ObservationID("0211"),
+	"0211_33": Station{
+		ID:          StationID("0211"),
 		GroupNumber: "33",
 		Name:        "葛巻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0212_33": Observation{
-		ID:          ObservationID("0212"),
+	"0212_33": Station{
+		ID:          StationID("0212"),
 		GroupNumber: "33",
 		Name:        "袖山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0213_33": Observation{
-		ID:          ObservationID("0213"),
+	"0213_33": Station{
+		ID:          StationID("0213"),
 		GroupNumber: "33",
 		Name:        "茶臼岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0214_33": Observation{
-		ID:          ObservationID("0214"),
+	"0214_33": Station{
+		ID:          StationID("0214"),
 		GroupNumber: "33",
 		Name:        "岩手松尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0215_33": Observation{
-		ID:          ObservationID("0215"),
+	"0215_33": Station{
+		ID:          StationID("0215"),
 		GroupNumber: "33",
 		Name:        "岩手山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0216_33": Observation{
-		ID:          ObservationID("0216"),
+	"0216_33": Station{
+		ID:          StationID("0216"),
 		GroupNumber: "33",
 		Name:        "岩洞",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0217_33": Observation{
-		ID:          ObservationID("0217"),
+	"0217_33": Station{
+		ID:          StationID("0217"),
 		GroupNumber: "33",
 		Name:        "大森山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0218_33": Observation{
-		ID:          ObservationID("0218"),
+	"0218_33": Station{
+		ID:          StationID("0218"),
 		GroupNumber: "33",
 		Name:        "岩泉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0219_33": Observation{
-		ID:          ObservationID("0219"),
+	"0219_33": Station{
+		ID:          StationID("0219"),
 		GroupNumber: "33",
 		Name:        "駒ケ岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0220_33": Observation{
-		ID:          ObservationID("0220"),
+	"0220_33": Station{
+		ID:          StationID("0220"),
 		GroupNumber: "33",
 		Name:        "害鷹森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0221_33": Observation{
-		ID:          ObservationID("0221"),
+	"0221_33": Station{
+		ID:          StationID("0221"),
 		GroupNumber: "33",
 		Name:        "雫石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47584_33": Observation{
-		ID:          ObservationID("47584"),
+	"47584_33": Station{
+		ID:          StationID("47584"),
 		GroupNumber: "33",
 		Name:        "盛岡",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47585_33": Observation{
-		ID:          ObservationID("47585"),
+	"47585_33": Station{
+		ID:          StationID("47585"),
 		GroupNumber: "33",
 		Name:        "宮古",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0224_33": Observation{
-		ID:          ObservationID("0224"),
+	"0224_33": Station{
+		ID:          StationID("0224"),
 		GroupNumber: "33",
 		Name:        "薬師岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0225_33": Observation{
-		ID:          ObservationID("0225"),
+	"0225_33": Station{
+		ID:          StationID("0225"),
 		GroupNumber: "33",
 		Name:        "黒森山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0226_33": Observation{
-		ID:          ObservationID("0226"),
+	"0226_33": Station{
+		ID:          StationID("0226"),
 		GroupNumber: "33",
 		Name:        "豊沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0227_33": Observation{
-		ID:          ObservationID("0227"),
+	"0227_33": Station{
+		ID:          StationID("0227"),
 		GroupNumber: "33",
 		Name:        "花巻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0228_33": Observation{
-		ID:          ObservationID("0228"),
+	"0228_33": Station{
+		ID:          StationID("0228"),
 		GroupNumber: "33",
 		Name:        "大迫",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0229_33": Observation{
-		ID:          ObservationID("0229"),
+	"0229_33": Station{
+		ID:          StationID("0229"),
 		GroupNumber: "33",
 		Name:        "湯田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0230_33": Observation{
-		ID:          ObservationID("0230"),
+	"0230_33": Station{
+		ID:          StationID("0230"),
 		GroupNumber: "33",
 		Name:        "北上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0231_33": Observation{
-		ID:          ObservationID("0231"),
+	"0231_33": Station{
+		ID:          StationID("0231"),
 		GroupNumber: "33",
 		Name:        "遠野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0232_33": Observation{
-		ID:          ObservationID("0232"),
+	"0232_33": Station{
+		ID:          StationID("0232"),
 		GroupNumber: "33",
 		Name:        "五葉山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0233_33": Observation{
-		ID:          ObservationID("0233"),
+	"0233_33": Station{
+		ID:          StationID("0233"),
 		GroupNumber: "33",
 		Name:        "釜石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0234_33": Observation{
-		ID:          ObservationID("0234"),
+	"0234_33": Station{
+		ID:          StationID("0234"),
 		GroupNumber: "33",
 		Name:        "岳山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0235_33": Observation{
-		ID:          ObservationID("0235"),
+	"0235_33": Station{
+		ID:          StationID("0235"),
 		GroupNumber: "33",
 		Name:        "若柳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0236_33": Observation{
-		ID:          ObservationID("0236"),
+	"0236_33": Station{
+		ID:          StationID("0236"),
 		GroupNumber: "33",
 		Name:        "江刺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47512_33": Observation{
-		ID:          ObservationID("47512"),
+	"47512_33": Station{
+		ID:          StationID("47512"),
 		GroupNumber: "33",
 		Name:        "大船渡",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0238_33": Observation{
-		ID:          ObservationID("0238"),
+	"0238_33": Station{
+		ID:          StationID("0238"),
 		GroupNumber: "33",
 		Name:        "一関",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0239_33": Observation{
-		ID:          ObservationID("0239"),
+	"0239_33": Station{
+		ID:          StationID("0239"),
 		GroupNumber: "33",
 		Name:        "千厩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0240_33": Observation{
-		ID:          ObservationID("0240"),
+	"0240_33": Station{
+		ID:          StationID("0240"),
 		GroupNumber: "33",
 		Name:        "室根山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1028_33": Observation{
-		ID:          ObservationID("1028"),
+	"1028_33": Station{
+		ID:          StationID("1028"),
 		GroupNumber: "33",
 		Name:        "祭畤",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1032_33": Observation{
-		ID:          ObservationID("1032"),
+	"1032_33": Station{
+		ID:          StationID("1032"),
 		GroupNumber: "33",
 		Name:        "好摩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1033_33": Observation{
-		ID:          ObservationID("1033"),
+	"1033_33": Station{
+		ID:          StationID("1033"),
 		GroupNumber: "33",
 		Name:        "山田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1037_33": Observation{
-		ID:          ObservationID("1037"),
+	"1037_33": Station{
+		ID:          StationID("1037"),
 		GroupNumber: "33",
 		Name:        "大野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1045_33": Observation{
-		ID:          ObservationID("1045"),
+	"1045_33": Station{
+		ID:          StationID("1045"),
 		GroupNumber: "33",
 		Name:        "衣川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1078_33": Observation{
-		ID:          ObservationID("1078"),
+	"1078_33": Station{
+		ID:          StationID("1078"),
 		GroupNumber: "33",
 		Name:        "薮川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1113_33": Observation{
-		ID:          ObservationID("1113"),
+	"1113_33": Station{
+		ID:          StationID("1113"),
 		GroupNumber: "33",
 		Name:        "米里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1118_33": Observation{
-		ID:          ObservationID("1118"),
+	"1118_33": Station{
+		ID:          StationID("1118"),
 		GroupNumber: "33",
 		Name:        "沢内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1120_33": Observation{
-		ID:          ObservationID("1120"),
+	"1120_33": Station{
+		ID:          StationID("1120"),
 		GroupNumber: "33",
 		Name:        "荒屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1123_33": Observation{
-		ID:          ObservationID("1123"),
+	"1123_33": Station{
+		ID:          StationID("1123"),
 		GroupNumber: "33",
 		Name:        "普代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1128_33": Observation{
-		ID:          ObservationID("1128"),
+	"1128_33": Station{
+		ID:          StationID("1128"),
 		GroupNumber: "33",
 		Name:        "紫波",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1168_33": Observation{
-		ID:          ObservationID("1168"),
+	"1168_33": Station{
+		ID:          StationID("1168"),
 		GroupNumber: "33",
 		Name:        "葛根田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1206_33": Observation{
-		ID:          ObservationID("1206"),
+	"1206_33": Station{
+		ID:          StationID("1206"),
 		GroupNumber: "33",
 		Name:        "住田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1212_33": Observation{
-		ID:          ObservationID("1212"),
+	"1212_33": Station{
+		ID:          StationID("1212"),
 		GroupNumber: "33",
 		Name:        "小本",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1215_33": Observation{
-		ID:          ObservationID("1215"),
+	"1215_33": Station{
+		ID:          StationID("1215"),
 		GroupNumber: "33",
 		Name:        "奥中山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1219_33": Observation{
-		ID:          ObservationID("1219"),
+	"1219_33": Station{
+		ID:          StationID("1219"),
 		GroupNumber: "33",
 		Name:        "山形",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1224_33": Observation{
-		ID:          ObservationID("1224"),
+	"1224_33": Station{
+		ID:          StationID("1224"),
 		GroupNumber: "33",
 		Name:        "川井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1225_33": Observation{
-		ID:          ObservationID("1225"),
+	"1225_33": Station{
+		ID:          StationID("1225"),
 		GroupNumber: "33",
 		Name:        "門馬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1332_33": Observation{
-		ID:          ObservationID("1332"),
+	"1332_33": Station{
+		ID:          StationID("1332"),
 		GroupNumber: "33",
 		Name:        "下戸鎖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1447_33": Observation{
-		ID:          ObservationID("1447"),
+	"1447_33": Station{
+		ID:          StationID("1447"),
 		GroupNumber: "33",
 		Name:        "区界",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1508_33": Observation{
-		ID:          ObservationID("1508"),
+	"1508_33": Station{
+		ID:          StationID("1508"),
 		GroupNumber: "33",
 		Name:        "大槌",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1557_33": Observation{
-		ID:          ObservationID("1557"),
+	"1557_33": Station{
+		ID:          StationID("1557"),
 		GroupNumber: "33",
 		Name:        "大東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1558_33": Observation{
-		ID:          ObservationID("1558"),
+	"1558_33": Station{
+		ID:          StationID("1558"),
 		GroupNumber: "33",
 		Name:        "金ヶ崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1560_33": Observation{
-		ID:          ObservationID("1560"),
+	"1560_33": Station{
+		ID:          StationID("1560"),
 		GroupNumber: "33",
 		Name:        "滝沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1563_33": Observation{
-		ID:          ObservationID("1563"),
+	"1563_33": Station{
+		ID:          StationID("1563"),
 		GroupNumber: "33",
 		Name:        "附馬牛",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1598_33": Observation{
-		ID:          ObservationID("1598"),
+	"1598_33": Station{
+		ID:          StationID("1598"),
 		GroupNumber: "33",
 		Name:        "厳美",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1627_33": Observation{
-		ID:          ObservationID("1627"),
+	"1627_33": Station{
+		ID:          StationID("1627"),
 		GroupNumber: "33",
 		Name:        "刈屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1628_33": Observation{
-		ID:          ObservationID("1628"),
+	"1628_33": Station{
+		ID:          StationID("1628"),
 		GroupNumber: "33",
 		Name:        "小鎚",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1629_33": Observation{
-		ID:          ObservationID("1629"),
+	"1629_33": Station{
+		ID:          StationID("1629"),
 		GroupNumber: "33",
 		Name:        "陸前高田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0241_34": Observation{
-		ID:          ObservationID("0241"),
+	"0241_34": Station{
+		ID:          StationID("0241"),
 		GroupNumber: "34",
 		Name:        "栗駒山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0242_34": Observation{
-		ID:          ObservationID("0242"),
+	"0242_34": Station{
+		ID:          StationID("0242"),
 		GroupNumber: "34",
 		Name:        "気仙沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0243_34": Observation{
-		ID:          ObservationID("0243"),
+	"0243_34": Station{
+		ID:          StationID("0243"),
 		GroupNumber: "34",
 		Name:        "川渡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0244_34": Observation{
-		ID:          ObservationID("0244"),
+	"0244_34": Station{
+		ID:          StationID("0244"),
 		GroupNumber: "34",
 		Name:        "築館",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0245_34": Observation{
-		ID:          ObservationID("0245"),
+	"0245_34": Station{
+		ID:          StationID("0245"),
 		GroupNumber: "34",
 		Name:        "箕輪山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0246_34": Observation{
-		ID:          ObservationID("0246"),
+	"0246_34": Station{
+		ID:          StationID("0246"),
 		GroupNumber: "34",
 		Name:        "志津川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0247_34": Observation{
-		ID:          ObservationID("0247"),
+	"0247_34": Station{
+		ID:          StationID("0247"),
 		GroupNumber: "34",
 		Name:        "古川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0248_34": Observation{
-		ID:          ObservationID("0248"),
+	"0248_34": Station{
+		ID:          StationID("0248"),
 		GroupNumber: "34",
 		Name:        "大衡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0249_34": Observation{
-		ID:          ObservationID("0249"),
+	"0249_34": Station{
+		ID:          StationID("0249"),
 		GroupNumber: "34",
 		Name:        "鹿島台",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47592_34": Observation{
-		ID:          ObservationID("47592"),
+	"47592_34": Station{
+		ID:          StationID("47592"),
 		GroupNumber: "34",
 		Name:        "石巻",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0251_34": Observation{
-		ID:          ObservationID("0251"),
+	"0251_34": Station{
+		ID:          StationID("0251"),
 		GroupNumber: "34",
 		Name:        "新川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0252_34": Observation{
-		ID:          ObservationID("0252"),
+	"0252_34": Station{
+		ID:          StationID("0252"),
 		GroupNumber: "34",
 		Name:        "鷹巣山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47590_34": Observation{
-		ID:          ObservationID("47590"),
+	"47590_34": Station{
+		ID:          StationID("47590"),
 		GroupNumber: "34",
 		Name:        "仙台",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0254_34": Observation{
-		ID:          ObservationID("0254"),
+	"0254_34": Station{
+		ID:          StationID("0254"),
 		GroupNumber: "34",
 		Name:        "川崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0255_34": Observation{
-		ID:          ObservationID("0255"),
+	"0255_34": Station{
+		ID:          StationID("0255"),
 		GroupNumber: "34",
 		Name:        "不忘山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0256_34": Observation{
-		ID:          ObservationID("0256"),
+	"0256_34": Station{
+		ID:          StationID("0256"),
 		GroupNumber: "34",
 		Name:        "白石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0257_34": Observation{
-		ID:          ObservationID("0257"),
+	"0257_34": Station{
+		ID:          StationID("0257"),
 		GroupNumber: "34",
 		Name:        "亘理",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0985_34": Observation{
-		ID:          ObservationID("0985"),
+	"0985_34": Station{
+		ID:          StationID("0985"),
 		GroupNumber: "34",
 		Name:        "雄勝",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1029_34": Observation{
-		ID:          ObservationID("1029"),
+	"1029_34": Station{
+		ID:          StationID("1029"),
 		GroupNumber: "34",
 		Name:        "米山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1030_34": Observation{
-		ID:          ObservationID("1030"),
+	"1030_34": Station{
+		ID:          StationID("1030"),
 		GroupNumber: "34",
 		Name:        "塩釜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1126_34": Observation{
-		ID:          ObservationID("1126"),
+	"1126_34": Station{
+		ID:          StationID("1126"),
 		GroupNumber: "34",
 		Name:        "駒ノ湯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1220_34": Observation{
-		ID:          ObservationID("1220"),
+	"1220_34": Station{
+		ID:          StationID("1220"),
 		GroupNumber: "34",
 		Name:        "丸森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1267_34": Observation{
-		ID:          ObservationID("1267"),
+	"1267_34": Station{
+		ID:          StationID("1267"),
 		GroupNumber: "34",
 		Name:        "花山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1290_34": Observation{
-		ID:          ObservationID("1290"),
+	"1290_34": Station{
+		ID:          StationID("1290"),
 		GroupNumber: "34",
 		Name:        "江ノ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1298_34": Observation{
-		ID:          ObservationID("1298"),
+	"1298_34": Station{
+		ID:          StationID("1298"),
 		GroupNumber: "34",
 		Name:        "筆甫",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1365_34": Observation{
-		ID:          ObservationID("1365"),
+	"1365_34": Station{
+		ID:          StationID("1365"),
 		GroupNumber: "34",
 		Name:        "泉ケ岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1464_34": Observation{
-		ID:          ObservationID("1464"),
+	"1464_34": Station{
+		ID:          StationID("1464"),
 		GroupNumber: "34",
 		Name:        "名取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1526_34": Observation{
-		ID:          ObservationID("1526"),
+	"1526_34": Station{
+		ID:          StationID("1526"),
 		GroupNumber: "34",
 		Name:        "鴬沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1561_34": Observation{
-		ID:          ObservationID("1561"),
+	"1561_34": Station{
+		ID:          StationID("1561"),
 		GroupNumber: "34",
 		Name:        "加美",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1564_34": Observation{
-		ID:          ObservationID("1564"),
+	"1564_34": Station{
+		ID:          StationID("1564"),
 		GroupNumber: "34",
 		Name:        "蔵王",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1597_34": Observation{
-		ID:          ObservationID("1597"),
+	"1597_34": Station{
+		ID:          StationID("1597"),
 		GroupNumber: "34",
 		Name:        "栗駒深山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1600_34": Observation{
-		ID:          ObservationID("1600"),
+	"1600_34": Station{
+		ID:          StationID("1600"),
 		GroupNumber: "34",
 		Name:        "栗駒",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1626_34": Observation{
-		ID:          ObservationID("1626"),
+	"1626_34": Station{
+		ID:          StationID("1626"),
 		GroupNumber: "34",
 		Name:        "女川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1630_34": Observation{
-		ID:          ObservationID("1630"),
+	"1630_34": Station{
+		ID:          StationID("1630"),
 		GroupNumber: "34",
 		Name:        "桃生",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1631_34": Observation{
-		ID:          ObservationID("1631"),
+	"1631_34": Station{
+		ID:          StationID("1631"),
 		GroupNumber: "34",
 		Name:        "東松島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1632_34": Observation{
-		ID:          ObservationID("1632"),
+	"1632_34": Station{
+		ID:          StationID("1632"),
 		GroupNumber: "34",
 		Name:        "岩沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0258_35": Observation{
-		ID:          ObservationID("0258"),
+	"0258_35": Station{
+		ID:          StationID("0258"),
 		GroupNumber: "35",
 		Name:        "鳥海山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47587_35": Observation{
-		ID:          ObservationID("47587"),
+	"47587_35": Station{
+		ID:          StationID("47587"),
 		GroupNumber: "35",
 		Name:        "酒田",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0260_35": Observation{
-		ID:          ObservationID("0260"),
+	"0260_35": Station{
+		ID:          StationID("0260"),
 		GroupNumber: "35",
 		Name:        "差首鍋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0261_35": Observation{
-		ID:          ObservationID("0261"),
+	"0261_35": Station{
+		ID:          StationID("0261"),
 		GroupNumber: "35",
 		Name:        "太平山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0262_35": Observation{
-		ID:          ObservationID("0262"),
+	"0262_35": Station{
+		ID:          StationID("0262"),
 		GroupNumber: "35",
 		Name:        "金山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0263_35": Observation{
-		ID:          ObservationID("0263"),
+	"0263_35": Station{
+		ID:          StationID("0263"),
 		GroupNumber: "35",
 		Name:        "鶴岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0264_35": Observation{
-		ID:          ObservationID("0264"),
+	"0264_35": Station{
+		ID:          StationID("0264"),
 		GroupNumber: "35",
 		Name:        "狩川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47520_35": Observation{
-		ID:          ObservationID("47520"),
+	"47520_35": Station{
+		ID:          StationID("47520"),
 		GroupNumber: "35",
 		Name:        "新庄",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0266_35": Observation{
-		ID:          ObservationID("0266"),
+	"0266_35": Station{
+		ID:          StationID("0266"),
 		GroupNumber: "35",
 		Name:        "瀬見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0267_35": Observation{
-		ID:          ObservationID("0267"),
+	"0267_35": Station{
+		ID:          StationID("0267"),
 		GroupNumber: "35",
 		Name:        "温海岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0268_35": Observation{
-		ID:          ObservationID("0268"),
+	"0268_35": Station{
+		ID:          StationID("0268"),
 		GroupNumber: "35",
 		Name:        "櫛引",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0269_35": Observation{
-		ID:          ObservationID("0269"),
+	"0269_35": Station{
+		ID:          StationID("0269"),
 		GroupNumber: "35",
 		Name:        "月山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0270_35": Observation{
-		ID:          ObservationID("0270"),
+	"0270_35": Station{
+		ID:          StationID("0270"),
 		GroupNumber: "35",
 		Name:        "銀山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0271_35": Observation{
-		ID:          ObservationID("0271"),
+	"0271_35": Station{
+		ID:          StationID("0271"),
 		GroupNumber: "35",
 		Name:        "楯岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0272_35": Observation{
-		ID:          ObservationID("0272"),
+	"0272_35": Station{
+		ID:          StationID("0272"),
 		GroupNumber: "35",
 		Name:        "左沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47588_35": Observation{
-		ID:          ObservationID("47588"),
+	"47588_35": Station{
+		ID:          StationID("47588"),
 		GroupNumber: "35",
 		Name:        "山形",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0274_35": Observation{
-		ID:          ObservationID("0274"),
+	"0274_35": Station{
+		ID:          StationID("0274"),
 		GroupNumber: "35",
 		Name:        "葉山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0275_35": Observation{
-		ID:          ObservationID("0275"),
+	"0275_35": Station{
+		ID:          StationID("0275"),
 		GroupNumber: "35",
 		Name:        "長井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0276_35": Observation{
-		ID:          ObservationID("0276"),
+	"0276_35": Station{
+		ID:          StationID("0276"),
 		GroupNumber: "35",
 		Name:        "蔵王山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0277_35": Observation{
-		ID:          ObservationID("0277"),
+	"0277_35": Station{
+		ID:          StationID("0277"),
 		GroupNumber: "35",
 		Name:        "小国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0278_35": Observation{
-		ID:          ObservationID("0278"),
+	"0278_35": Station{
+		ID:          StationID("0278"),
 		GroupNumber: "35",
 		Name:        "高峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0279_35": Observation{
-		ID:          ObservationID("0279"),
+	"0279_35": Station{
+		ID:          StationID("0279"),
 		GroupNumber: "35",
 		Name:        "米沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0280_35": Observation{
-		ID:          ObservationID("0280"),
+	"0280_35": Station{
+		ID:          StationID("0280"),
 		GroupNumber: "35",
 		Name:        "西吾妻山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0910_35": Observation{
-		ID:          ObservationID("0910"),
+	"0910_35": Station{
+		ID:          StationID("0910"),
 		GroupNumber: "35",
 		Name:        "向町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1038_35": Observation{
-		ID:          ObservationID("1038"),
+	"1038_35": Station{
+		ID:          StationID("1038"),
 		GroupNumber: "35",
 		Name:        "上草津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1039_35": Observation{
-		ID:          ObservationID("1039"),
+	"1039_35": Station{
+		ID:          StationID("1039"),
 		GroupNumber: "35",
 		Name:        "尾花沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1040_35": Observation{
-		ID:          ObservationID("1040"),
+	"1040_35": Station{
+		ID:          StationID("1040"),
 		GroupNumber: "35",
 		Name:        "鼠ケ関",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1103_35": Observation{
-		ID:          ObservationID("1103"),
+	"1103_35": Station{
+		ID:          StationID("1103"),
 		GroupNumber: "35",
 		Name:        "山毛欅潰山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1125_35": Observation{
-		ID:          ObservationID("1125"),
+	"1125_35": Station{
+		ID:          StationID("1125"),
 		GroupNumber: "35",
 		Name:        "肘折",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1132_35": Observation{
-		ID:          ObservationID("1132"),
+	"1132_35": Station{
+		ID:          StationID("1132"),
 		GroupNumber: "35",
 		Name:        "高畠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1169_35": Observation{
-		ID:          ObservationID("1169"),
+	"1169_35": Station{
+		ID:          StationID("1169"),
 		GroupNumber: "35",
 		Name:        "落合",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1291_35": Observation{
-		ID:          ObservationID("1291"),
+	"1291_35": Station{
+		ID:          StationID("1291"),
 		GroupNumber: "35",
 		Name:        "飛島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1292_35": Observation{
-		ID:          ObservationID("1292"),
+	"1292_35": Station{
+		ID:          StationID("1292"),
 		GroupNumber: "35",
 		Name:        "大井沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1357_35": Observation{
-		ID:          ObservationID("1357"),
+	"1357_35": Station{
+		ID:          StationID("1357"),
 		GroupNumber: "35",
 		Name:        "荒沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1372_35": Observation{
-		ID:          ObservationID("1372"),
+	"1372_35": Station{
+		ID:          StationID("1372"),
 		GroupNumber: "35",
 		Name:        "中津川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1428_35": Observation{
-		ID:          ObservationID("1428"),
+	"1428_35": Station{
+		ID:          StationID("1428"),
 		GroupNumber: "35",
 		Name:        "白鷹山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1465_35": Observation{
-		ID:          ObservationID("1465"),
+	"1465_35": Station{
+		ID:          StationID("1465"),
 		GroupNumber: "35",
 		Name:        "浜中",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1488_35": Observation{
-		ID:          ObservationID("1488"),
+	"1488_35": Station{
+		ID:          StationID("1488"),
 		GroupNumber: "35",
 		Name:        "東根",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1539_35": Observation{
-		ID:          ObservationID("1539"),
+	"1539_35": Station{
+		ID:          StationID("1539"),
 		GroupNumber: "35",
 		Name:        "村山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1562_35": Observation{
-		ID:          ObservationID("1562"),
+	"1562_35": Station{
+		ID:          StationID("1562"),
 		GroupNumber: "35",
 		Name:        "上山中山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0295_36": Observation{
-		ID:          ObservationID("0295"),
+	"0295_36": Station{
+		ID:          StationID("0295"),
 		GroupNumber: "36",
 		Name:        "浪江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0304_36": Observation{
-		ID:          ObservationID("0304"),
+	"0304_36": Station{
+		ID:          StationID("0304"),
 		GroupNumber: "36",
 		Name:        "小野新町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1034_36": Observation{
-		ID:          ObservationID("1034"),
+	"1034_36": Station{
+		ID:          StationID("1034"),
 		GroupNumber: "36",
 		Name:        "広野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1129_36": Observation{
-		ID:          ObservationID("1129"),
+	"1129_36": Station{
+		ID:          StationID("1129"),
 		GroupNumber: "36",
 		Name:        "川内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0285_36": Observation{
-		ID:          ObservationID("0285"),
+	"0285_36": Station{
+		ID:          StationID("0285"),
 		GroupNumber: "36",
 		Name:        "相馬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0299_36": Observation{
-		ID:          ObservationID("0299"),
+	"0299_36": Station{
+		ID:          StationID("0299"),
 		GroupNumber: "36",
 		Name:        "郡山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0281_36": Observation{
-		ID:          ObservationID("0281"),
+	"0281_36": Station{
+		ID:          StationID("0281"),
 		GroupNumber: "36",
 		Name:        "梁川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0282_36": Observation{
-		ID:          ObservationID("0282"),
+	"0282_36": Station{
+		ID:          StationID("0282"),
 		GroupNumber: "36",
 		Name:        "稲荷峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0283_36": Observation{
-		ID:          ObservationID("0283"),
+	"0283_36": Station{
+		ID:          StationID("0283"),
 		GroupNumber: "36",
 		Name:        "吾妻山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47595_36": Observation{
-		ID:          ObservationID("47595"),
+	"47595_36": Station{
+		ID:          StationID("47595"),
 		GroupNumber: "36",
 		Name:        "福島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0286_36": Observation{
-		ID:          ObservationID("0286"),
+	"0286_36": Station{
+		ID:          StationID("0286"),
 		GroupNumber: "36",
 		Name:        "喜多方",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0287_36": Observation{
-		ID:          ObservationID("0287"),
+	"0287_36": Station{
+		ID:          StationID("0287"),
 		GroupNumber: "36",
 		Name:        "八木沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0288_36": Observation{
-		ID:          ObservationID("0288"),
+	"0288_36": Station{
+		ID:          StationID("0288"),
 		GroupNumber: "36",
 		Name:        "原町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0289_36": Observation{
-		ID:          ObservationID("0289"),
+	"0289_36": Station{
+		ID:          StationID("0289"),
 		GroupNumber: "36",
 		Name:        "飯谷山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0290_36": Observation{
-		ID:          ObservationID("0290"),
+	"0290_36": Station{
+		ID:          StationID("0290"),
 		GroupNumber: "36",
 		Name:        "猪苗代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0291_36": Observation{
-		ID:          ObservationID("0291"),
+	"0291_36": Station{
+		ID:          StationID("0291"),
 		GroupNumber: "36",
 		Name:        "二本松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0292_36": Observation{
-		ID:          ObservationID("0292"),
+	"0292_36": Station{
+		ID:          StationID("0292"),
 		GroupNumber: "36",
 		Name:        "白馬石山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47570_36": Observation{
-		ID:          ObservationID("47570"),
+	"47570_36": Station{
+		ID:          StationID("47570"),
 		GroupNumber: "36",
 		Name:        "若松",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0294_36": Observation{
-		ID:          ObservationID("0294"),
+	"0294_36": Station{
+		ID:          StationID("0294"),
 		GroupNumber: "36",
 		Name:        "船引",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0296_36": Observation{
-		ID:          ObservationID("0296"),
+	"0296_36": Station{
+		ID:          StationID("0296"),
 		GroupNumber: "36",
 		Name:        "浅草岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0297_36": Observation{
-		ID:          ObservationID("0297"),
+	"0297_36": Station{
+		ID:          StationID("0297"),
 		GroupNumber: "36",
 		Name:        "只見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0298_36": Observation{
-		ID:          ObservationID("0298"),
+	"0298_36": Station{
+		ID:          StationID("0298"),
 		GroupNumber: "36",
 		Name:        "博士峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0300_36": Observation{
-		ID:          ObservationID("0300"),
+	"0300_36": Station{
+		ID:          StationID("0300"),
 		GroupNumber: "36",
 		Name:        "富岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0301_36": Observation{
-		ID:          ObservationID("0301"),
+	"0301_36": Station{
+		ID:          StationID("0301"),
 		GroupNumber: "36",
 		Name:        "南郷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0302_36": Observation{
-		ID:          ObservationID("0302"),
+	"0302_36": Station{
+		ID:          StationID("0302"),
 		GroupNumber: "36",
 		Name:        "駒止峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0303_36": Observation{
-		ID:          ObservationID("0303"),
+	"0303_36": Station{
+		ID:          StationID("0303"),
 		GroupNumber: "36",
 		Name:        "田島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0305_36": Observation{
-		ID:          ObservationID("0305"),
+	"0305_36": Station{
+		ID:          StationID("0305"),
 		GroupNumber: "36",
 		Name:        "観音山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47597_36": Observation{
-		ID:          ObservationID("47597"),
+	"47597_36": Station{
+		ID:          StationID("47597"),
 		GroupNumber: "36",
 		Name:        "白河",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0307_36": Observation{
-		ID:          ObservationID("0307"),
+	"0307_36": Station{
+		ID:          StationID("0307"),
 		GroupNumber: "36",
 		Name:        "石川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0308_36": Observation{
-		ID:          ObservationID("0308"),
+	"0308_36": Station{
+		ID:          StationID("0308"),
 		GroupNumber: "36",
 		Name:        "山王峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0309_36": Observation{
-		ID:          ObservationID("0309"),
+	"0309_36": Station{
+		ID:          StationID("0309"),
 		GroupNumber: "36",
 		Name:        "大辷山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0310_36": Observation{
-		ID:          ObservationID("0310"),
+	"0310_36": Station{
+		ID:          StationID("0310"),
 		GroupNumber: "36",
 		Name:        "平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0311_36": Observation{
-		ID:          ObservationID("0311"),
+	"0311_36": Station{
+		ID:          StationID("0311"),
 		GroupNumber: "36",
 		Name:        "田代山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0312_36": Observation{
-		ID:          ObservationID("0312"),
+	"0312_36": Station{
+		ID:          StationID("0312"),
 		GroupNumber: "36",
 		Name:        "東白川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47598_36": Observation{
-		ID:          ObservationID("47598"),
+	"47598_36": Station{
+		ID:          StationID("47598"),
 		GroupNumber: "36",
 		Name:        "小名浜",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1031_36": Observation{
-		ID:          ObservationID("1031"),
+	"1031_36": Station{
+		ID:          StationID("1031"),
 		GroupNumber: "36",
 		Name:        "西会津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1044_36": Observation{
-		ID:          ObservationID("1044"),
+	"1044_36": Station{
+		ID:          StationID("1044"),
 		GroupNumber: "36",
 		Name:        "金山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1116_36": Observation{
-		ID:          ObservationID("1116"),
+	"1116_36": Station{
+		ID:          StationID("1116"),
 		GroupNumber: "36",
 		Name:        "鷲倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1127_36": Observation{
-		ID:          ObservationID("1127"),
+	"1127_36": Station{
+		ID:          StationID("1127"),
 		GroupNumber: "36",
 		Name:        "上遠野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1130_36": Observation{
-		ID:          ObservationID("1130"),
+	"1130_36": Station{
+		ID:          StationID("1130"),
 		GroupNumber: "36",
 		Name:        "飯舘",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1150_36": Observation{
-		ID:          ObservationID("1150"),
+	"1150_36": Station{
+		ID:          StationID("1150"),
 		GroupNumber: "36",
 		Name:        "津島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1268_36": Observation{
-		ID:          ObservationID("1268"),
+	"1268_36": Station{
+		ID:          StationID("1268"),
 		GroupNumber: "36",
 		Name:        "長沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1269_36": Observation{
-		ID:          ObservationID("1269"),
+	"1269_36": Station{
+		ID:          StationID("1269"),
 		GroupNumber: "36",
 		Name:        "舘岩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1274_36": Observation{
-		ID:          ObservationID("1274"),
+	"1274_36": Station{
+		ID:          StationID("1274"),
 		GroupNumber: "36",
 		Name:        "川前",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1282_36": Observation{
-		ID:          ObservationID("1282"),
+	"1282_36": Station{
+		ID:          StationID("1282"),
 		GroupNumber: "36",
 		Name:        "桧原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1293_36": Observation{
-		ID:          ObservationID("1293"),
+	"1293_36": Station{
+		ID:          StationID("1293"),
 		GroupNumber: "36",
 		Name:        "茂庭",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1294_36": Observation{
-		ID:          ObservationID("1294"),
+	"1294_36": Station{
+		ID:          StationID("1294"),
 		GroupNumber: "36",
 		Name:        "湯本",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1295_36": Observation{
-		ID:          ObservationID("1295"),
+	"1295_36": Station{
+		ID:          StationID("1295"),
 		GroupNumber: "36",
 		Name:        "桧枝岐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1359_36": Observation{
-		ID:          ObservationID("1359"),
+	"1359_36": Station{
+		ID:          StationID("1359"),
 		GroupNumber: "36",
 		Name:        "吉尾峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1364_36": Observation{
-		ID:          ObservationID("1364"),
+	"1364_36": Station{
+		ID:          StationID("1364"),
 		GroupNumber: "36",
 		Name:        "六十里越",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1386_36": Observation{
-		ID:          ObservationID("1386"),
+	"1386_36": Station{
+		ID:          StationID("1386"),
 		GroupNumber: "36",
 		Name:        "湖南",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1466_36": Observation{
-		ID:          ObservationID("1466"),
+	"1466_36": Station{
+		ID:          StationID("1466"),
 		GroupNumber: "36",
 		Name:        "玉川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1607_36": Observation{
-		ID:          ObservationID("1607"),
+	"1607_36": Station{
+		ID:          StationID("1607"),
 		GroupNumber: "36",
 		Name:        "山田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1633_36": Observation{
-		ID:          ObservationID("1633"),
+	"1633_36": Station{
+		ID:          StationID("1633"),
 		GroupNumber: "36",
 		Name:        "新地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1634_36": Observation{
-		ID:          ObservationID("1634"),
+	"1634_36": Station{
+		ID:          StationID("1634"),
 		GroupNumber: "36",
 		Name:        "古殿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0314_40": Observation{
-		ID:          ObservationID("0314"),
+	"0314_40": Station{
+		ID:          StationID("0314"),
 		GroupNumber: "40",
 		Name:        "花園",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0315_40": Observation{
-		ID:          ObservationID("0315"),
+	"0315_40": Station{
+		ID:          StationID("0315"),
 		GroupNumber: "40",
 		Name:        "北茨城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0316_40": Observation{
-		ID:          ObservationID("0316"),
+	"0316_40": Station{
+		ID:          StationID("0316"),
 		GroupNumber: "40",
 		Name:        "大子",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0317_40": Observation{
-		ID:          ObservationID("0317"),
+	"0317_40": Station{
+		ID:          StationID("0317"),
 		GroupNumber: "40",
 		Name:        "神峰山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0318_40": Observation{
-		ID:          ObservationID("0318"),
+	"0318_40": Station{
+		ID:          StationID("0318"),
 		GroupNumber: "40",
 		Name:        "笠間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47629_40": Observation{
-		ID:          ObservationID("47629"),
+	"47629_40": Station{
+		ID:          StationID("47629"),
 		GroupNumber: "40",
 		Name:        "水戸",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0320_40": Observation{
-		ID:          ObservationID("0320"),
+	"0320_40": Station{
+		ID:          StationID("0320"),
 		GroupNumber: "40",
 		Name:        "古河",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0321_40": Observation{
-		ID:          ObservationID("0321"),
+	"0321_40": Station{
+		ID:          StationID("0321"),
 		GroupNumber: "40",
 		Name:        "愛宕山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0322_40": Observation{
-		ID:          ObservationID("0322"),
+	"0322_40": Station{
+		ID:          StationID("0322"),
 		GroupNumber: "40",
 		Name:        "下妻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0323_40": Observation{
-		ID:          ObservationID("0323"),
+	"0323_40": Station{
+		ID:          StationID("0323"),
 		GroupNumber: "40",
 		Name:        "坂東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0324_40": Observation{
-		ID:          ObservationID("0324"),
+	"0324_40": Station{
+		ID:          StationID("0324"),
 		GroupNumber: "40",
 		Name:        "土浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0325_40": Observation{
-		ID:          ObservationID("0325"),
+	"0325_40": Station{
+		ID:          StationID("0325"),
 		GroupNumber: "40",
 		Name:        "鹿嶋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0911_40": Observation{
-		ID:          ObservationID("0911"),
+	"0911_40": Station{
+		ID:          StationID("0911"),
 		GroupNumber: "40",
 		Name:        "江戸崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1011_40": Observation{
-		ID:          ObservationID("1011"),
+	"1011_40": Station{
+		ID:          StationID("1011"),
 		GroupNumber: "40",
 		Name:        "日立",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1012_40": Observation{
-		ID:          ObservationID("1012"),
+	"1012_40": Station{
+		ID:          StationID("1012"),
 		GroupNumber: "40",
 		Name:        "柿岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1013_40": Observation{
-		ID:          ObservationID("1013"),
+	"1013_40": Station{
+		ID:          StationID("1013"),
 		GroupNumber: "40",
 		Name:        "美野里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1014_40": Observation{
-		ID:          ObservationID("1014"),
+	"1014_40": Station{
+		ID:          StationID("1014"),
 		GroupNumber: "40",
 		Name:        "龍ケ崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1082_40": Observation{
-		ID:          ObservationID("1082"),
+	"1082_40": Station{
+		ID:          StationID("1082"),
 		GroupNumber: "40",
 		Name:        "筑波山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1170_40": Observation{
-		ID:          ObservationID("1170"),
+	"1170_40": Station{
+		ID:          StationID("1170"),
 		GroupNumber: "40",
 		Name:        "中野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1173_40": Observation{
-		ID:          ObservationID("1173"),
+	"1173_40": Station{
+		ID:          StationID("1173"),
 		GroupNumber: "40",
 		Name:        "徳田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1245_40": Observation{
-		ID:          ObservationID("1245"),
+	"1245_40": Station{
+		ID:          StationID("1245"),
 		GroupNumber: "40",
 		Name:        "鉾田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1331_40": Observation{
-		ID:          ObservationID("1331"),
+	"1331_40": Station{
+		ID:          StationID("1331"),
 		GroupNumber: "40",
 		Name:        "常陸大宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1388_40": Observation{
-		ID:          ObservationID("1388"),
+	"1388_40": Station{
+		ID:          StationID("1388"),
 		GroupNumber: "40",
 		Name:        "門井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1421_40": Observation{
-		ID:          ObservationID("1421"),
+	"1421_40": Station{
+		ID:          StationID("1421"),
 		GroupNumber: "40",
 		Name:        "大能",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47646_40": Observation{
-		ID:          ObservationID("47646"),
+	"47646_40": Station{
+		ID:          StationID("47646"),
 		GroupNumber: "40",
 		Name:        "つくば(館野)",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1530_40": Observation{
-		ID:          ObservationID("1530"),
+	"1530_40": Station{
+		ID:          StationID("1530"),
 		GroupNumber: "40",
 		Name:        "下館",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1635_40": Observation{
-		ID:          ObservationID("1635"),
+	"1635_40": Station{
+		ID:          StationID("1635"),
 		GroupNumber: "40",
 		Name:        "高萩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0326_41": Observation{
-		ID:          ObservationID("0326"),
+	"0326_41": Station{
+		ID:          StationID("0326"),
 		GroupNumber: "41",
 		Name:        "那須",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0327_41": Observation{
-		ID:          ObservationID("0327"),
+	"0327_41": Station{
+		ID:          StationID("0327"),
 		GroupNumber: "41",
 		Name:        "黒田原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0328_41": Observation{
-		ID:          ObservationID("0328"),
+	"0328_41": Station{
+		ID:          StationID("0328"),
 		GroupNumber: "41",
 		Name:        "八方が原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0329_41": Observation{
-		ID:          ObservationID("0329"),
+	"0329_41": Station{
+		ID:          StationID("0329"),
 		GroupNumber: "41",
 		Name:        "黒磯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0330_41": Observation{
-		ID:          ObservationID("0330"),
+	"0330_41": Station{
+		ID:          StationID("0330"),
 		GroupNumber: "41",
 		Name:        "八溝山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0331_41": Observation{
-		ID:          ObservationID("0331"),
+	"0331_41": Station{
+		ID:          StationID("0331"),
 		GroupNumber: "41",
 		Name:        "大田原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47690_41": Observation{
-		ID:          ObservationID("47690"),
+	"47690_41": Station{
+		ID:          StationID("47690"),
 		GroupNumber: "41",
 		Name:        "奥日光(日光)",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0333_41": Observation{
-		ID:          ObservationID("0333"),
+	"0333_41": Station{
+		ID:          StationID("0333"),
 		GroupNumber: "41",
 		Name:        "方塞山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0334_41": Observation{
-		ID:          ObservationID("0334"),
+	"0334_41": Station{
+		ID:          StationID("0334"),
 		GroupNumber: "41",
 		Name:        "高根沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0335_41": Observation{
-		ID:          ObservationID("0335"),
+	"0335_41": Station{
+		ID:          StationID("0335"),
 		GroupNumber: "41",
 		Name:        "鹿沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47615_41": Observation{
-		ID:          ObservationID("47615"),
+	"47615_41": Station{
+		ID:          StationID("47615"),
 		GroupNumber: "41",
 		Name:        "宇都宮",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0337_41": Observation{
-		ID:          ObservationID("0337"),
+	"0337_41": Station{
+		ID:          StationID("0337"),
 		GroupNumber: "41",
 		Name:        "葛生",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0338_41": Observation{
-		ID:          ObservationID("0338"),
+	"0338_41": Station{
+		ID:          StationID("0338"),
 		GroupNumber: "41",
 		Name:        "真岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0339_41": Observation{
-		ID:          ObservationID("0339"),
+	"0339_41": Station{
+		ID:          StationID("0339"),
 		GroupNumber: "41",
 		Name:        "足利",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0340_41": Observation{
-		ID:          ObservationID("0340"),
+	"0340_41": Station{
+		ID:          StationID("0340"),
 		GroupNumber: "41",
 		Name:        "栃木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0341_41": Observation{
-		ID:          ObservationID("0341"),
+	"0341_41": Station{
+		ID:          StationID("0341"),
 		GroupNumber: "41",
 		Name:        "小山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1015_41": Observation{
-		ID:          ObservationID("1015"),
+	"1015_41": Station{
+		ID:          StationID("1015"),
 		GroupNumber: "41",
 		Name:        "五十里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1016_41": Observation{
-		ID:          ObservationID("1016"),
+	"1016_41": Station{
+		ID:          StationID("1016"),
 		GroupNumber: "41",
 		Name:        "足尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1017_41": Observation{
-		ID:          ObservationID("1017"),
+	"1017_41": Station{
+		ID:          StationID("1017"),
 		GroupNumber: "41",
 		Name:        "烏山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1018_41": Observation{
-		ID:          ObservationID("1018"),
+	"1018_41": Station{
+		ID:          StationID("1018"),
 		GroupNumber: "41",
 		Name:        "佐野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1221_41": Observation{
-		ID:          ObservationID("1221"),
+	"1221_41": Station{
+		ID:          StationID("1221"),
 		GroupNumber: "41",
 		Name:        "土呂部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1333_41": Observation{
-		ID:          ObservationID("1333"),
+	"1333_41": Station{
+		ID:          StationID("1333"),
 		GroupNumber: "41",
 		Name:        "今市",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1334_41": Observation{
-		ID:          ObservationID("1334"),
+	"1334_41": Station{
+		ID:          StationID("1334"),
 		GroupNumber: "41",
 		Name:        "塩谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1605_41": Observation{
-		ID:          ObservationID("1605"),
+	"1605_41": Station{
+		ID:          StationID("1605"),
 		GroupNumber: "41",
 		Name:        "那須烏山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0342_42": Observation{
-		ID:          ObservationID("0342"),
+	"0342_42": Station{
+		ID:          StationID("0342"),
 		GroupNumber: "42",
 		Name:        "前武尊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0343_42": Observation{
-		ID:          ObservationID("0343"),
+	"0343_42": Station{
+		ID:          StationID("0343"),
 		GroupNumber: "42",
 		Name:        "草津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0344_42": Observation{
-		ID:          ObservationID("0344"),
+	"0344_42": Station{
+		ID:          StationID("0344"),
 		GroupNumber: "42",
 		Name:        "野反湖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0345_42": Observation{
-		ID:          ObservationID("0345"),
+	"0345_42": Station{
+		ID:          StationID("0345"),
 		GroupNumber: "42",
 		Name:        "雨見山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0346_42": Observation{
-		ID:          ObservationID("0346"),
+	"0346_42": Station{
+		ID:          StationID("0346"),
 		GroupNumber: "42",
 		Name:        "沼田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0347_42": Observation{
-		ID:          ObservationID("0347"),
+	"0347_42": Station{
+		ID:          StationID("0347"),
 		GroupNumber: "42",
 		Name:        "赤城山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0348_42": Observation{
-		ID:          ObservationID("0348"),
+	"0348_42": Station{
+		ID:          StationID("0348"),
 		GroupNumber: "42",
 		Name:        "田代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0349_42": Observation{
-		ID:          ObservationID("0349"),
+	"0349_42": Station{
+		ID:          StationID("0349"),
 		GroupNumber: "42",
 		Name:        "榛名山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47624_42": Observation{
-		ID:          ObservationID("47624"),
+	"47624_42": Station{
+		ID:          StationID("47624"),
 		GroupNumber: "42",
 		Name:        "前橋",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0351_42": Observation{
-		ID:          ObservationID("0351"),
+	"0351_42": Station{
+		ID:          StationID("0351"),
 		GroupNumber: "42",
 		Name:        "桐生",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0352_42": Observation{
-		ID:          ObservationID("0352"),
+	"0352_42": Station{
+		ID:          StationID("0352"),
 		GroupNumber: "42",
 		Name:        "一の字山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0353_42": Observation{
-		ID:          ObservationID("0353"),
+	"0353_42": Station{
+		ID:          StationID("0353"),
 		GroupNumber: "42",
 		Name:        "上里見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0354_42": Observation{
-		ID:          ObservationID("0354"),
+	"0354_42": Station{
+		ID:          StationID("0354"),
 		GroupNumber: "42",
 		Name:        "西野牧",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0355_42": Observation{
-		ID:          ObservationID("0355"),
+	"0355_42": Station{
+		ID:          StationID("0355"),
 		GroupNumber: "42",
 		Name:        "藤岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0356_42": Observation{
-		ID:          ObservationID("0356"),
+	"0356_42": Station{
+		ID:          StationID("0356"),
 		GroupNumber: "42",
 		Name:        "館林",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0357_42": Observation{
-		ID:          ObservationID("0357"),
+	"0357_42": Station{
+		ID:          StationID("0357"),
 		GroupNumber: "42",
 		Name:        "稲含山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1019_42": Observation{
-		ID:          ObservationID("1019"),
+	"1019_42": Station{
+		ID:          StationID("1019"),
 		GroupNumber: "42",
 		Name:        "みなかみ",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1020_42": Observation{
-		ID:          ObservationID("1020"),
+	"1020_42": Station{
+		ID:          StationID("1020"),
 		GroupNumber: "42",
 		Name:        "中之条",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1021_42": Observation{
-		ID:          ObservationID("1021"),
+	"1021_42": Station{
+		ID:          StationID("1021"),
 		GroupNumber: "42",
 		Name:        "伊勢崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1174_42": Observation{
-		ID:          ObservationID("1174"),
+	"1174_42": Station{
+		ID:          StationID("1174"),
 		GroupNumber: "42",
 		Name:        "片品",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1222_42": Observation{
-		ID:          ObservationID("1222"),
+	"1222_42": Station{
+		ID:          StationID("1222"),
 		GroupNumber: "42",
 		Name:        "藤原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1223_42": Observation{
-		ID:          ObservationID("1223"),
+	"1223_42": Station{
+		ID:          StationID("1223"),
 		GroupNumber: "42",
 		Name:        "神流",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1259_42": Observation{
-		ID:          ObservationID("1259"),
+	"1259_42": Station{
+		ID:          StationID("1259"),
 		GroupNumber: "42",
 		Name:        "黒保根",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1375_42": Observation{
-		ID:          ObservationID("1375"),
+	"1375_42": Station{
+		ID:          StationID("1375"),
 		GroupNumber: "42",
 		Name:        "高手山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47626_43": Observation{
-		ID:          ObservationID("47626"),
+	"47626_43": Station{
+		ID:          StationID("47626"),
 		GroupNumber: "43",
 		Name:        "熊谷",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0359_43": Observation{
-		ID:          ObservationID("0359"),
+	"0359_43": Station{
+		ID:          StationID("0359"),
 		GroupNumber: "43",
 		Name:        "久喜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47641_43": Observation{
-		ID:          ObservationID("47641"),
+	"47641_43": Station{
+		ID:          StationID("47641"),
 		GroupNumber: "43",
 		Name:        "秩父",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0361_43": Observation{
-		ID:          ObservationID("0361"),
+	"0361_43": Station{
+		ID:          StationID("0361"),
 		GroupNumber: "43",
 		Name:        "堂平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0362_43": Observation{
-		ID:          ObservationID("0362"),
+	"0362_43": Station{
+		ID:          StationID("0362"),
 		GroupNumber: "43",
 		Name:        "飯能",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0363_43": Observation{
-		ID:          ObservationID("0363"),
+	"0363_43": Station{
+		ID:          StationID("0363"),
 		GroupNumber: "43",
 		Name:        "さいたま",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0364_43": Observation{
-		ID:          ObservationID("0364"),
+	"0364_43": Station{
+		ID:          StationID("0364"),
 		GroupNumber: "43",
 		Name:        "越谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1000_43": Observation{
-		ID:          ObservationID("1000"),
+	"1000_43": Station{
+		ID:          StationID("1000"),
 		GroupNumber: "43",
 		Name:        "三峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1009_43": Observation{
-		ID:          ObservationID("1009"),
+	"1009_43": Station{
+		ID:          StationID("1009"),
 		GroupNumber: "43",
 		Name:        "寄居",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1069_43": Observation{
-		ID:          ObservationID("1069"),
+	"1069_43": Station{
+		ID:          StationID("1069"),
 		GroupNumber: "43",
 		Name:        "鴻巣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1070_43": Observation{
-		ID:          ObservationID("1070"),
+	"1070_43": Station{
+		ID:          StationID("1070"),
 		GroupNumber: "43",
 		Name:        "所沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1159_43": Observation{
-		ID:          ObservationID("1159"),
+	"1159_43": Station{
+		ID:          StationID("1159"),
 		GroupNumber: "43",
 		Name:        "浦山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1182_43": Observation{
-		ID:          ObservationID("1182"),
+	"1182_43": Station{
+		ID:          StationID("1182"),
 		GroupNumber: "43",
 		Name:        "上吉田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1232_43": Observation{
-		ID:          ObservationID("1232"),
+	"1232_43": Station{
+		ID:          StationID("1232"),
 		GroupNumber: "43",
 		Name:        "鳩山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1497_43": Observation{
-		ID:          ObservationID("1497"),
+	"1497_43": Station{
+		ID:          StationID("1497"),
 		GroupNumber: "43",
 		Name:        "ときがわ",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0365_44": Observation{
-		ID:          ObservationID("0365"),
+	"0365_44": Station{
+		ID:          StationID("0365"),
 		GroupNumber: "44",
 		Name:        "小河内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0366_44": Observation{
-		ID:          ObservationID("0366"),
+	"0366_44": Station{
+		ID:          StationID("0366"),
 		GroupNumber: "44",
 		Name:        "八王子",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0367_44": Observation{
-		ID:          ObservationID("0367"),
+	"0367_44": Station{
+		ID:          StationID("0367"),
 		GroupNumber: "44",
 		Name:        "調布",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0368_44": Observation{
-		ID:          ObservationID("0368"),
+	"0368_44": Station{
+		ID:          StationID("0368"),
 		GroupNumber: "44",
 		Name:        "世田谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47662_44": Observation{
-		ID:          ObservationID("47662"),
+	"47662_44": Station{
+		ID:          StationID("47662"),
 		GroupNumber: "44",
 		Name:        "東京",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0370_44": Observation{
-		ID:          ObservationID("0370"),
+	"0370_44": Station{
+		ID:          StationID("0370"),
 		GroupNumber: "44",
 		Name:        "江戸川臨海",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0371_44": Observation{
-		ID:          ObservationID("0371"),
+	"0371_44": Station{
+		ID:          StationID("0371"),
 		GroupNumber: "44",
 		Name:        "羽田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47675_44": Observation{
-		ID:          ObservationID("47675"),
+	"47675_44": Station{
+		ID:          StationID("47675"),
 		GroupNumber: "44",
 		Name:        "大島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47677_44": Observation{
-		ID:          ObservationID("47677"),
+	"47677_44": Station{
+		ID:          StationID("47677"),
 		GroupNumber: "44",
 		Name:        "三宅島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47678_44": Observation{
-		ID:          ObservationID("47678"),
+	"47678_44": Station{
+		ID:          StationID("47678"),
 		GroupNumber: "44",
 		Name:        "八丈島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1001_44": Observation{
-		ID:          ObservationID("1001"),
+	"1001_44": Station{
+		ID:          StationID("1001"),
 		GroupNumber: "44",
 		Name:        "青梅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1002_44": Observation{
-		ID:          ObservationID("1002"),
+	"1002_44": Station{
+		ID:          StationID("1002"),
 		GroupNumber: "44",
 		Name:        "練馬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1133_44": Observation{
-		ID:          ObservationID("1133"),
+	"1133_44": Station{
+		ID:          StationID("1133"),
 		GroupNumber: "44",
 		Name:        "府中",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1134_44": Observation{
-		ID:          ObservationID("1134"),
+	"1134_44": Station{
+		ID:          StationID("1134"),
 		GroupNumber: "44",
 		Name:        "新島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1180_44": Observation{
-		ID:          ObservationID("1180"),
+	"1180_44": Station{
+		ID:          StationID("1180"),
 		GroupNumber: "44",
 		Name:        "小沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47971_44": Observation{
-		ID:          ObservationID("47971"),
+	"47971_44": Station{
+		ID:          StationID("47971"),
 		GroupNumber: "44",
 		Name:        "父島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1467_44": Observation{
-		ID:          ObservationID("1467"),
+	"1467_44": Station{
+		ID:          StationID("1467"),
 		GroupNumber: "44",
 		Name:        "大島北ノ山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1468_44": Observation{
-		ID:          ObservationID("1468"),
+	"1468_44": Station{
+		ID:          StationID("1468"),
 		GroupNumber: "44",
 		Name:        "八重見ヶ原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1505_44": Observation{
-		ID:          ObservationID("1505"),
+	"1505_44": Station{
+		ID:          StationID("1505"),
 		GroupNumber: "44",
 		Name:        "神津島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1506_44": Observation{
-		ID:          ObservationID("1506"),
+	"1506_44": Station{
+		ID:          StationID("1506"),
 		GroupNumber: "44",
 		Name:        "三宅坪田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1509_44": Observation{
-		ID:          ObservationID("1509"),
+	"1509_44": Station{
+		ID:          StationID("1509"),
 		GroupNumber: "44",
 		Name:        "三宅島阿古",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1522_44": Observation{
-		ID:          ObservationID("1522"),
+	"1522_44": Station{
+		ID:          StationID("1522"),
 		GroupNumber: "44",
 		Name:        "新島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1523_44": Observation{
-		ID:          ObservationID("1523"),
+	"1523_44": Station{
+		ID:          StationID("1523"),
 		GroupNumber: "44",
 		Name:        "神津島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1525_44": Observation{
-		ID:          ObservationID("1525"),
+	"1525_44": Station{
+		ID:          StationID("1525"),
 		GroupNumber: "44",
 		Name:        "三宅伊豆",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47991_44": Observation{
-		ID:          ObservationID("47991"),
+	"47991_44": Station{
+		ID:          StationID("47991"),
 		GroupNumber: "44",
 		Name:        "南鳥島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1595_44": Observation{
-		ID:          ObservationID("1595"),
+	"1595_44": Station{
+		ID:          StationID("1595"),
 		GroupNumber: "44",
 		Name:        "母島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0375_45": Observation{
-		ID:          ObservationID("0375"),
+	"0375_45": Station{
+		ID:          StationID("0375"),
 		GroupNumber: "45",
 		Name:        "香取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0376_45": Observation{
-		ID:          ObservationID("0376"),
+	"0376_45": Station{
+		ID:          StationID("0376"),
 		GroupNumber: "45",
 		Name:        "我孫子",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0377_45": Observation{
-		ID:          ObservationID("0377"),
+	"0377_45": Station{
+		ID:          StationID("0377"),
 		GroupNumber: "45",
 		Name:        "東庄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0378_45": Observation{
-		ID:          ObservationID("0378"),
+	"0378_45": Station{
+		ID:          StationID("0378"),
 		GroupNumber: "45",
 		Name:        "成田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47648_45": Observation{
-		ID:          ObservationID("47648"),
+	"47648_45": Station{
+		ID:          StationID("47648"),
 		GroupNumber: "45",
 		Name:        "銚子",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47682_45": Observation{
-		ID:          ObservationID("47682"),
+	"47682_45": Station{
+		ID:          StationID("47682"),
 		GroupNumber: "45",
 		Name:        "千葉",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0381_45": Observation{
-		ID:          ObservationID("0381"),
+	"0381_45": Station{
+		ID:          StationID("0381"),
 		GroupNumber: "45",
 		Name:        "茂原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0382_45": Observation{
-		ID:          ObservationID("0382"),
+	"0382_45": Station{
+		ID:          StationID("0382"),
 		GroupNumber: "45",
 		Name:        "木更津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0383_45": Observation{
-		ID:          ObservationID("0383"),
+	"0383_45": Station{
+		ID:          StationID("0383"),
 		GroupNumber: "45",
 		Name:        "鋸南",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0384_45": Observation{
-		ID:          ObservationID("0384"),
+	"0384_45": Station{
+		ID:          StationID("0384"),
 		GroupNumber: "45",
 		Name:        "鴨川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47674_45": Observation{
-		ID:          ObservationID("47674"),
+	"47674_45": Station{
+		ID:          StationID("47674"),
 		GroupNumber: "45",
 		Name:        "勝浦",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47672_45": Observation{
-		ID:          ObservationID("47672"),
+	"47672_45": Station{
+		ID:          StationID("47672"),
 		GroupNumber: "45",
 		Name:        "館山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0916_45": Observation{
-		ID:          ObservationID("0916"),
+	"0916_45": Station{
+		ID:          StationID("0916"),
 		GroupNumber: "45",
 		Name:        "佐倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1003_45": Observation{
-		ID:          ObservationID("1003"),
+	"1003_45": Station{
+		ID:          StationID("1003"),
 		GroupNumber: "45",
 		Name:        "横芝光",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1004_45": Observation{
-		ID:          ObservationID("1004"),
+	"1004_45": Station{
+		ID:          StationID("1004"),
 		GroupNumber: "45",
 		Name:        "大多喜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1236_45": Observation{
-		ID:          ObservationID("1236"),
+	"1236_45": Station{
+		ID:          StationID("1236"),
 		GroupNumber: "45",
 		Name:        "船橋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1238_45": Observation{
-		ID:          ObservationID("1238"),
+	"1238_45": Station{
+		ID:          StationID("1238"),
 		GroupNumber: "45",
 		Name:        "牛久",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1241_45": Observation{
-		ID:          ObservationID("1241"),
+	"1241_45": Station{
+		ID:          StationID("1241"),
 		GroupNumber: "45",
 		Name:        "坂畑",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0387_46": Observation{
-		ID:          ObservationID("0387"),
+	"0387_46": Station{
+		ID:          StationID("0387"),
 		GroupNumber: "46",
 		Name:        "相模湖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0388_46": Observation{
-		ID:          ObservationID("0388"),
+	"0388_46": Station{
+		ID:          StationID("0388"),
 		GroupNumber: "46",
 		Name:        "海老名",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47670_46": Observation{
-		ID:          ObservationID("47670"),
+	"47670_46": Station{
+		ID:          StationID("47670"),
 		GroupNumber: "46",
 		Name:        "横浜",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0390_46": Observation{
-		ID:          ObservationID("0390"),
+	"0390_46": Station{
+		ID:          StationID("0390"),
 		GroupNumber: "46",
 		Name:        "箱根",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0391_46": Observation{
-		ID:          ObservationID("0391"),
+	"0391_46": Station{
+		ID:          StationID("0391"),
 		GroupNumber: "46",
 		Name:        "江ノ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0392_46": Observation{
-		ID:          ObservationID("0392"),
+	"0392_46": Station{
+		ID:          StationID("0392"),
 		GroupNumber: "46",
 		Name:        "三浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1005_46": Observation{
-		ID:          ObservationID("1005"),
+	"1005_46": Station{
+		ID:          StationID("1005"),
 		GroupNumber: "46",
 		Name:        "相模原中央",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1006_46": Observation{
-		ID:          ObservationID("1006"),
+	"1006_46": Station{
+		ID:          StationID("1006"),
 		GroupNumber: "46",
 		Name:        "日吉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1007_46": Observation{
-		ID:          ObservationID("1007"),
+	"1007_46": Station{
+		ID:          StationID("1007"),
 		GroupNumber: "46",
 		Name:        "平塚",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1008_46": Observation{
-		ID:          ObservationID("1008"),
+	"1008_46": Station{
+		ID:          StationID("1008"),
 		GroupNumber: "46",
 		Name:        "小田原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1096_46": Observation{
-		ID:          ObservationID("1096"),
+	"1096_46": Station{
+		ID:          StationID("1096"),
 		GroupNumber: "46",
 		Name:        "丹沢湖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1443_46": Observation{
-		ID:          ObservationID("1443"),
+	"1443_46": Station{
+		ID:          StationID("1443"),
 		GroupNumber: "46",
 		Name:        "辻堂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0393_48": Observation{
-		ID:          ObservationID("0393"),
+	"0393_48": Station{
+		ID:          StationID("0393"),
 		GroupNumber: "48",
 		Name:        "野沢温泉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0394_48": Observation{
-		ID:          ObservationID("0394"),
+	"0394_48": Station{
+		ID:          StationID("0394"),
 		GroupNumber: "48",
 		Name:        "信濃町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0395_48": Observation{
-		ID:          ObservationID("0395"),
+	"0395_48": Station{
+		ID:          StationID("0395"),
 		GroupNumber: "48",
 		Name:        "飯山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0396_48": Observation{
-		ID:          ObservationID("0396"),
+	"0396_48": Station{
+		ID:          StationID("0396"),
 		GroupNumber: "48",
 		Name:        "白馬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47610_48": Observation{
-		ID:          ObservationID("47610"),
+	"47610_48": Station{
+		ID:          StationID("47610"),
 		GroupNumber: "48",
 		Name:        "長野",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0398_48": Observation{
-		ID:          ObservationID("0398"),
+	"0398_48": Station{
+		ID:          StationID("0398"),
 		GroupNumber: "48",
 		Name:        "笠岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0399_48": Observation{
-		ID:          ObservationID("0399"),
+	"0399_48": Station{
+		ID:          StationID("0399"),
 		GroupNumber: "48",
 		Name:        "大町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0400_48": Observation{
-		ID:          ObservationID("0400"),
+	"0400_48": Station{
+		ID:          StationID("0400"),
 		GroupNumber: "48",
 		Name:        "信州新町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0401_48": Observation{
-		ID:          ObservationID("0401"),
+	"0401_48": Station{
+		ID:          StationID("0401"),
 		GroupNumber: "48",
 		Name:        "四阿屋山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0402_48": Observation{
-		ID:          ObservationID("0402"),
+	"0402_48": Station{
+		ID:          StationID("0402"),
 		GroupNumber: "48",
 		Name:        "上田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0403_48": Observation{
-		ID:          ObservationID("0403"),
+	"0403_48": Station{
+		ID:          StationID("0403"),
 		GroupNumber: "48",
 		Name:        "燕岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0404_48": Observation{
-		ID:          ObservationID("0404"),
+	"0404_48": Station{
+		ID:          StationID("0404"),
 		GroupNumber: "48",
 		Name:        "穂高",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47622_48": Observation{
-		ID:          ObservationID("47622"),
+	"47622_48": Station{
+		ID:          StationID("47622"),
 		GroupNumber: "48",
 		Name:        "軽井沢",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47618_48": Observation{
-		ID:          ObservationID("47618"),
+	"47618_48": Station{
+		ID:          StationID("47618"),
 		GroupNumber: "48",
 		Name:        "松本",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0407_48": Observation{
-		ID:          ObservationID("0407"),
+	"0407_48": Station{
+		ID:          StationID("0407"),
 		GroupNumber: "48",
 		Name:        "鹿教湯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0408_48": Observation{
-		ID:          ObservationID("0408"),
+	"0408_48": Station{
+		ID:          StationID("0408"),
 		GroupNumber: "48",
 		Name:        "佐久",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0409_48": Observation{
-		ID:          ObservationID("0409"),
+	"0409_48": Station{
+		ID:          StationID("0409"),
 		GroupNumber: "48",
 		Name:        "高ボッチ",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0410_48": Observation{
-		ID:          ObservationID("0410"),
+	"0410_48": Station{
+		ID:          StationID("0410"),
 		GroupNumber: "48",
 		Name:        "茂来山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47620_48": Observation{
-		ID:          ObservationID("47620"),
+	"47620_48": Station{
+		ID:          StationID("47620"),
 		GroupNumber: "48",
 		Name:        "諏訪",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0412_48": Observation{
-		ID:          ObservationID("0412"),
+	"0412_48": Station{
+		ID:          StationID("0412"),
 		GroupNumber: "48",
 		Name:        "八ケ岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0413_48": Observation{
-		ID:          ObservationID("0413"),
+	"0413_48": Station{
+		ID:          StationID("0413"),
 		GroupNumber: "48",
 		Name:        "木曽平沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0414_48": Observation{
-		ID:          ObservationID("0414"),
+	"0414_48": Station{
+		ID:          StationID("0414"),
 		GroupNumber: "48",
 		Name:        "原村",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0415_48": Observation{
-		ID:          ObservationID("0415"),
+	"0415_48": Station{
+		ID:          StationID("0415"),
 		GroupNumber: "48",
 		Name:        "野辺山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0416_48": Observation{
-		ID:          ObservationID("0416"),
+	"0416_48": Station{
+		ID:          StationID("0416"),
 		GroupNumber: "48",
 		Name:        "御嶽山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0417_48": Observation{
-		ID:          ObservationID("0417"),
+	"0417_48": Station{
+		ID:          StationID("0417"),
 		GroupNumber: "48",
 		Name:        "木曽福島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0418_48": Observation{
-		ID:          ObservationID("0418"),
+	"0418_48": Station{
+		ID:          StationID("0418"),
 		GroupNumber: "48",
 		Name:        "高遠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0419_48": Observation{
-		ID:          ObservationID("0419"),
+	"0419_48": Station{
+		ID:          StationID("0419"),
 		GroupNumber: "48",
 		Name:        "入笠山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0420_48": Observation{
-		ID:          ObservationID("0420"),
+	"0420_48": Station{
+		ID:          StationID("0420"),
 		GroupNumber: "48",
 		Name:        "宮田高原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0421_48": Observation{
-		ID:          ObservationID("0421"),
+	"0421_48": Station{
+		ID:          StationID("0421"),
 		GroupNumber: "48",
 		Name:        "松峯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0422_48": Observation{
-		ID:          ObservationID("0422"),
+	"0422_48": Station{
+		ID:          StationID("0422"),
 		GroupNumber: "48",
 		Name:        "須原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0423_48": Observation{
-		ID:          ObservationID("0423"),
+	"0423_48": Station{
+		ID:          StationID("0423"),
 		GroupNumber: "48",
 		Name:        "摺古木山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0424_48": Observation{
-		ID:          ObservationID("0424"),
+	"0424_48": Station{
+		ID:          StationID("0424"),
 		GroupNumber: "48",
 		Name:        "飯島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0425_48": Observation{
-		ID:          ObservationID("0425"),
+	"0425_48": Station{
+		ID:          StationID("0425"),
 		GroupNumber: "48",
 		Name:        "笹山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47637_48": Observation{
-		ID:          ObservationID("47637"),
+	"47637_48": Station{
+		ID:          StationID("47637"),
 		GroupNumber: "48",
 		Name:        "飯田",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0427_48": Observation{
-		ID:          ObservationID("0427"),
+	"0427_48": Station{
+		ID:          StationID("0427"),
 		GroupNumber: "48",
 		Name:        "恵那山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0428_48": Observation{
-		ID:          ObservationID("0428"),
+	"0428_48": Station{
+		ID:          StationID("0428"),
 		GroupNumber: "48",
 		Name:        "鶯巣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0992_48": Observation{
-		ID:          ObservationID("0992"),
+	"0992_48": Station{
+		ID:          StationID("0992"),
 		GroupNumber: "48",
 		Name:        "菅平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0993_48": Observation{
-		ID:          ObservationID("0993"),
+	"0993_48": Station{
+		ID:          StationID("0993"),
 		GroupNumber: "48",
 		Name:        "東御",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0994_48": Observation{
-		ID:          ObservationID("0994"),
+	"0994_48": Station{
+		ID:          StationID("0994"),
 		GroupNumber: "48",
 		Name:        "上高地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1022_48": Observation{
-		ID:          ObservationID("1022"),
+	"1022_48": Station{
+		ID:          StationID("1022"),
 		GroupNumber: "48",
 		Name:        "南木曽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1090_48": Observation{
-		ID:          ObservationID("1090"),
+	"1090_48": Station{
+		ID:          StationID("1090"),
 		GroupNumber: "48",
 		Name:        "南小谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1162_48": Observation{
-		ID:          ObservationID("1162"),
+	"1162_48": Station{
+		ID:          StationID("1162"),
 		GroupNumber: "48",
 		Name:        "鬼無里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1300_48": Observation{
-		ID:          ObservationID("1300"),
+	"1300_48": Station{
+		ID:          StationID("1300"),
 		GroupNumber: "48",
 		Name:        "立科",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1312_48": Observation{
-		ID:          ObservationID("1312"),
+	"1312_48": Station{
+		ID:          StationID("1312"),
 		GroupNumber: "48",
 		Name:        "奈川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1314_48": Observation{
-		ID:          ObservationID("1314"),
+	"1314_48": Station{
+		ID:          StationID("1314"),
 		GroupNumber: "48",
 		Name:        "開田高原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1317_48": Observation{
-		ID:          ObservationID("1317"),
+	"1317_48": Station{
+		ID:          StationID("1317"),
 		GroupNumber: "48",
 		Name:        "浪合",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1319_48": Observation{
-		ID:          ObservationID("1319"),
+	"1319_48": Station{
+		ID:          StationID("1319"),
 		GroupNumber: "48",
 		Name:        "辰野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1323_48": Observation{
-		ID:          ObservationID("1323"),
+	"1323_48": Station{
+		ID:          StationID("1323"),
 		GroupNumber: "48",
 		Name:        "南信濃",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1339_48": Observation{
-		ID:          ObservationID("1339"),
+	"1339_48": Station{
+		ID:          StationID("1339"),
 		GroupNumber: "48",
 		Name:        "阿南",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1360_48": Observation{
-		ID:          ObservationID("1360"),
+	"1360_48": Station{
+		ID:          StationID("1360"),
 		GroupNumber: "48",
 		Name:        "聖高原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1392_48": Observation{
-		ID:          ObservationID("1392"),
+	"1392_48": Station{
+		ID:          StationID("1392"),
 		GroupNumber: "48",
 		Name:        "網掛山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1394_48": Observation{
-		ID:          ObservationID("1394"),
+	"1394_48": Station{
+		ID:          StationID("1394"),
 		GroupNumber: "48",
 		Name:        "大鹿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1397_48": Observation{
-		ID:          ObservationID("1397"),
+	"1397_48": Station{
+		ID:          StationID("1397"),
 		GroupNumber: "48",
 		Name:        "杉島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1399_48": Observation{
-		ID:          ObservationID("1399"),
+	"1399_48": Station{
+		ID:          StationID("1399"),
 		GroupNumber: "48",
 		Name:        "十石峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1411_48": Observation{
-		ID:          ObservationID("1411"),
+	"1411_48": Station{
+		ID:          StationID("1411"),
 		GroupNumber: "48",
 		Name:        "小谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1445_48": Observation{
-		ID:          ObservationID("1445"),
+	"1445_48": Station{
+		ID:          StationID("1445"),
 		GroupNumber: "48",
 		Name:        "伊那",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1529_48": Observation{
-		ID:          ObservationID("1529"),
+	"1529_48": Station{
+		ID:          StationID("1529"),
 		GroupNumber: "48",
 		Name:        "松本今井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1549_48": Observation{
-		ID:          ObservationID("1549"),
+	"1549_48": Station{
+		ID:          StationID("1549"),
 		GroupNumber: "48",
 		Name:        "北相木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1550_48": Observation{
-		ID:          ObservationID("1550"),
+	"1550_48": Station{
+		ID:          StationID("1550"),
 		GroupNumber: "48",
 		Name:        "白樺湖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1551_48": Observation{
-		ID:          ObservationID("1551"),
+	"1551_48": Station{
+		ID:          StationID("1551"),
 		GroupNumber: "48",
 		Name:        "高遠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1591_48": Observation{
-		ID:          ObservationID("1591"),
+	"1591_48": Station{
+		ID:          StationID("1591"),
 		GroupNumber: "48",
 		Name:        "宮田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0429_49": Observation{
-		ID:          ObservationID("0429"),
+	"0429_49": Station{
+		ID:          StationID("0429"),
 		GroupNumber: "49",
 		Name:        "剣ノ峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0430_49": Observation{
-		ID:          ObservationID("0430"),
+	"0430_49": Station{
+		ID:          StationID("0430"),
 		GroupNumber: "49",
 		Name:        "日向山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0431_49": Observation{
-		ID:          ObservationID("0431"),
+	"0431_49": Station{
+		ID:          StationID("0431"),
 		GroupNumber: "49",
 		Name:        "大菩薩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47638_49": Observation{
-		ID:          ObservationID("47638"),
+	"47638_49": Station{
+		ID:          StationID("47638"),
 		GroupNumber: "49",
 		Name:        "甲府",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0433_49": Observation{
-		ID:          ObservationID("0433"),
+	"0433_49": Station{
+		ID:          StationID("0433"),
 		GroupNumber: "49",
 		Name:        "勝沼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0434_49": Observation{
-		ID:          ObservationID("0434"),
+	"0434_49": Station{
+		ID:          StationID("0434"),
 		GroupNumber: "49",
 		Name:        "大月",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0435_49": Observation{
-		ID:          ObservationID("0435"),
+	"0435_49": Station{
+		ID:          StationID("0435"),
 		GroupNumber: "49",
 		Name:        "八町山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0436_49": Observation{
-		ID:          ObservationID("0436"),
+	"0436_49": Station{
+		ID:          StationID("0436"),
 		GroupNumber: "49",
 		Name:        "古関",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47640_49": Observation{
-		ID:          ObservationID("47640"),
+	"47640_49": Station{
+		ID:          StationID("47640"),
 		GroupNumber: "49",
 		Name:        "河口湖",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0438_49": Observation{
-		ID:          ObservationID("0438"),
+	"0438_49": Station{
+		ID:          StationID("0438"),
 		GroupNumber: "49",
 		Name:        "山中",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0439_49": Observation{
-		ID:          ObservationID("0439"),
+	"0439_49": Station{
+		ID:          StationID("0439"),
 		GroupNumber: "49",
 		Name:        "南部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1023_49": Observation{
-		ID:          ObservationID("1023"),
+	"1023_49": Station{
+		ID:          StationID("1023"),
 		GroupNumber: "49",
 		Name:        "大泉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1024_49": Observation{
-		ID:          ObservationID("1024"),
+	"1024_49": Station{
+		ID:          StationID("1024"),
 		GroupNumber: "49",
 		Name:        "韮崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1165_49": Observation{
-		ID:          ObservationID("1165"),
+	"1165_49": Station{
+		ID:          StationID("1165"),
 		GroupNumber: "49",
 		Name:        "上野原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1234_49": Observation{
-		ID:          ObservationID("1234"),
+	"1234_49": Station{
+		ID:          StationID("1234"),
 		GroupNumber: "49",
 		Name:        "切石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47639_49": Observation{
-		ID:          ObservationID("47639"),
+	"47639_49": Station{
+		ID:          StationID("47639"),
 		GroupNumber: "49",
 		Name:        "富士山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1599_49": Observation{
-		ID:          ObservationID("1599"),
+	"1599_49": Station{
+		ID:          StationID("1599"),
 		GroupNumber: "49",
 		Name:        "乙女湖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0440_50": Observation{
-		ID:          ObservationID("0440"),
+	"0440_50": Station{
+		ID:          StationID("0440"),
 		GroupNumber: "50",
 		Name:        "白糸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0441_50": Observation{
-		ID:          ObservationID("0441"),
+	"0441_50": Station{
+		ID:          StationID("0441"),
 		GroupNumber: "50",
 		Name:        "御殿場",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0442_50": Observation{
-		ID:          ObservationID("0442"),
+	"0442_50": Station{
+		ID:          StationID("0442"),
 		GroupNumber: "50",
 		Name:        "富士",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47657_50": Observation{
-		ID:          ObservationID("47657"),
+	"47657_50": Station{
+		ID:          StationID("47657"),
 		GroupNumber: "50",
 		Name:        "三島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0444_50": Observation{
-		ID:          ObservationID("0444"),
+	"0444_50": Station{
+		ID:          StationID("0444"),
 		GroupNumber: "50",
 		Name:        "越木平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0445_50": Observation{
-		ID:          ObservationID("0445"),
+	"0445_50": Station{
+		ID:          StationID("0445"),
 		GroupNumber: "50",
 		Name:        "川根本町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0446_50": Observation{
-		ID:          ObservationID("0446"),
+	"0446_50": Station{
+		ID:          StationID("0446"),
 		GroupNumber: "50",
 		Name:        "大山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47668_50": Observation{
-		ID:          ObservationID("47668"),
+	"47668_50": Station{
+		ID:          StationID("47668"),
 		GroupNumber: "50",
 		Name:        "網代",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0448_50": Observation{
-		ID:          ObservationID("0448"),
+	"0448_50": Station{
+		ID:          StationID("0448"),
 		GroupNumber: "50",
 		Name:        "高根山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47656_50": Observation{
-		ID:          ObservationID("47656"),
+	"47656_50": Station{
+		ID:          StationID("47656"),
 		GroupNumber: "50",
 		Name:        "静岡",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0450_50": Observation{
-		ID:          ObservationID("0450"),
+	"0450_50": Station{
+		ID:          StationID("0450"),
 		GroupNumber: "50",
 		Name:        "霧山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0451_50": Observation{
-		ID:          ObservationID("0451"),
+	"0451_50": Station{
+		ID:          StationID("0451"),
 		GroupNumber: "50",
 		Name:        "天竜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0452_50": Observation{
-		ID:          ObservationID("0452"),
+	"0452_50": Station{
+		ID:          StationID("0452"),
 		GroupNumber: "50",
 		Name:        "島田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0453_50": Observation{
-		ID:          ObservationID("0453"),
+	"0453_50": Station{
+		ID:          StationID("0453"),
 		GroupNumber: "50",
 		Name:        "湯ケ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0454_50": Observation{
-		ID:          ObservationID("0454"),
+	"0454_50": Station{
+		ID:          StationID("0454"),
 		GroupNumber: "50",
 		Name:        "天城山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47654_50": Observation{
-		ID:          ObservationID("47654"),
+	"47654_50": Station{
+		ID:          StationID("47654"),
 		GroupNumber: "50",
 		Name:        "浜松",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0456_50": Observation{
-		ID:          ObservationID("0456"),
+	"0456_50": Station{
+		ID:          StationID("0456"),
 		GroupNumber: "50",
 		Name:        "松崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0457_50": Observation{
-		ID:          ObservationID("0457"),
+	"0457_50": Station{
+		ID:          StationID("0457"),
 		GroupNumber: "50",
 		Name:        "稲取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47655_50": Observation{
-		ID:          ObservationID("47655"),
+	"47655_50": Station{
+		ID:          StationID("47655"),
 		GroupNumber: "50",
 		Name:        "御前崎",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47666_50": Observation{
-		ID:          ObservationID("47666"),
+	"47666_50": Station{
+		ID:          StationID("47666"),
 		GroupNumber: "50",
 		Name:        "石廊崎",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0986_50": Observation{
-		ID:          ObservationID("0986"),
+	"0986_50": Station{
+		ID:          StationID("0986"),
 		GroupNumber: "50",
 		Name:        "佐久間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0987_50": Observation{
-		ID:          ObservationID("0987"),
+	"0987_50": Station{
+		ID:          StationID("0987"),
 		GroupNumber: "50",
 		Name:        "土肥",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0988_50": Observation{
-		ID:          ObservationID("0988"),
+	"0988_50": Station{
+		ID:          StationID("0988"),
 		GroupNumber: "50",
 		Name:        "三ヶ日",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0989_50": Observation{
-		ID:          ObservationID("0989"),
+	"0989_50": Station{
+		ID:          StationID("0989"),
 		GroupNumber: "50",
 		Name:        "掛川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1105_50": Observation{
-		ID:          ObservationID("1105"),
+	"1105_50": Station{
+		ID:          StationID("1105"),
 		GroupNumber: "50",
 		Name:        "熊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1106_50": Observation{
-		ID:          ObservationID("1106"),
+	"1106_50": Station{
+		ID:          StationID("1106"),
 		GroupNumber: "50",
 		Name:        "三倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1114_50": Observation{
-		ID:          ObservationID("1114"),
+	"1114_50": Station{
+		ID:          StationID("1114"),
 		GroupNumber: "50",
 		Name:        "梅ケ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1243_50": Observation{
-		ID:          ObservationID("1243"),
+	"1243_50": Station{
+		ID:          StationID("1243"),
 		GroupNumber: "50",
 		Name:        "清水",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1244_50": Observation{
-		ID:          ObservationID("1244"),
+	"1244_50": Station{
+		ID:          StationID("1244"),
 		GroupNumber: "50",
 		Name:        "磐田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1335_50": Observation{
-		ID:          ObservationID("1335"),
+	"1335_50": Station{
+		ID:          StationID("1335"),
 		GroupNumber: "50",
 		Name:        "菊川牧之原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1338_50": Observation{
-		ID:          ObservationID("1338"),
+	"1338_50": Station{
+		ID:          StationID("1338"),
 		GroupNumber: "50",
 		Name:        "井川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1393_50": Observation{
-		ID:          ObservationID("1393"),
+	"1393_50": Station{
+		ID:          StationID("1393"),
 		GroupNumber: "50",
 		Name:        "三倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1440_50": Observation{
-		ID:          ObservationID("1440"),
+	"1440_50": Station{
+		ID:          StationID("1440"),
 		GroupNumber: "50",
 		Name:        "鍵穴",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47639_50": Observation{
-		ID:          ObservationID("47639"),
+	"47639_50": Station{
+		ID:          StationID("47639"),
 		GroupNumber: "50",
 		Name:        "富士山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1601_50": Observation{
-		ID:          ObservationID("1601"),
+	"1601_50": Station{
+		ID:          StationID("1601"),
 		GroupNumber: "50",
 		Name:        "静岡空港",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0460_51": Observation{
-		ID:          ObservationID("0460"),
+	"0460_51": Station{
+		ID:          StationID("0460"),
 		GroupNumber: "51",
 		Name:        "一宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0461_51": Observation{
-		ID:          ObservationID("0461"),
+	"0461_51": Station{
+		ID:          StationID("0461"),
 		GroupNumber: "51",
 		Name:        "豊山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0462_51": Observation{
-		ID:          ObservationID("0462"),
+	"0462_51": Station{
+		ID:          StationID("0462"),
 		GroupNumber: "51",
 		Name:        "茶臼山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47636_51": Observation{
-		ID:          ObservationID("47636"),
+	"47636_51": Station{
+		ID:          StationID("47636"),
 		GroupNumber: "51",
 		Name:        "名古屋",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0464_51": Observation{
-		ID:          ObservationID("0464"),
+	"0464_51": Station{
+		ID:          StationID("0464"),
 		GroupNumber: "51",
 		Name:        "豊田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0465_51": Observation{
-		ID:          ObservationID("0465"),
+	"0465_51": Station{
+		ID:          StationID("0465"),
 		GroupNumber: "51",
 		Name:        "東海",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0466_51": Observation{
-		ID:          ObservationID("0466"),
+	"0466_51": Station{
+		ID:          StationID("0466"),
 		GroupNumber: "51",
 		Name:        "出来山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0467_51": Observation{
-		ID:          ObservationID("0467"),
+	"0467_51": Station{
+		ID:          StationID("0467"),
 		GroupNumber: "51",
 		Name:        "岡崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0468_51": Observation{
-		ID:          ObservationID("0468"),
+	"0468_51": Station{
+		ID:          StationID("0468"),
 		GroupNumber: "51",
 		Name:        "作手",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0469_51": Observation{
-		ID:          ObservationID("0469"),
+	"0469_51": Station{
+		ID:          StationID("0469"),
 		GroupNumber: "51",
 		Name:        "一色",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0470_51": Observation{
-		ID:          ObservationID("0470"),
+	"0470_51": Station{
+		ID:          StationID("0470"),
 		GroupNumber: "51",
 		Name:        "豊橋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47653_51": Observation{
-		ID:          ObservationID("47653"),
+	"47653_51": Station{
+		ID:          StationID("47653"),
 		GroupNumber: "51",
 		Name:        "伊良湖",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0472_51": Observation{
-		ID:          ObservationID("0472"),
+	"0472_51": Station{
+		ID:          StationID("0472"),
 		GroupNumber: "51",
 		Name:        "田原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0982_51": Observation{
-		ID:          ObservationID("0982"),
+	"0982_51": Station{
+		ID:          StationID("0982"),
 		GroupNumber: "51",
 		Name:        "稲武",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0983_51": Observation{
-		ID:          ObservationID("0983"),
+	"0983_51": Station{
+		ID:          StationID("0983"),
 		GroupNumber: "51",
 		Name:        "蟹江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0984_51": Observation{
-		ID:          ObservationID("0984"),
+	"0984_51": Station{
+		ID:          StationID("0984"),
 		GroupNumber: "51",
 		Name:        "南知多",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1166_51": Observation{
-		ID:          ObservationID("1166"),
+	"1166_51": Station{
+		ID:          StationID("1166"),
 		GroupNumber: "51",
 		Name:        "小原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1341_51": Observation{
-		ID:          ObservationID("1341"),
+	"1341_51": Station{
+		ID:          StationID("1341"),
 		GroupNumber: "51",
 		Name:        "鳳来",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1344_51": Observation{
-		ID:          ObservationID("1344"),
+	"1344_51": Station{
+		ID:          StationID("1344"),
 		GroupNumber: "51",
 		Name:        "蒲郡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1346_51": Observation{
-		ID:          ObservationID("1346"),
+	"1346_51": Station{
+		ID:          StationID("1346"),
 		GroupNumber: "51",
 		Name:        "愛西",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1541_51": Observation{
-		ID:          ObservationID("1541"),
+	"1541_51": Station{
+		ID:          StationID("1541"),
 		GroupNumber: "51",
 		Name:        "新城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1555_51": Observation{
-		ID:          ObservationID("1555"),
+	"1555_51": Station{
+		ID:          StationID("1555"),
 		GroupNumber: "51",
 		Name:        "セントレア",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1576_51": Observation{
-		ID:          ObservationID("1576"),
+	"1576_51": Station{
+		ID:          StationID("1576"),
 		GroupNumber: "51",
 		Name:        "阿蔵",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0473_52": Observation{
-		ID:          ObservationID("0473"),
+	"0473_52": Station{
+		ID:          StationID("0473"),
 		GroupNumber: "52",
 		Name:        "神岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0474_52": Observation{
-		ID:          ObservationID("0474"),
+	"0474_52": Station{
+		ID:          StationID("0474"),
 		GroupNumber: "52",
 		Name:        "流葉山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0475_52": Observation{
-		ID:          ObservationID("0475"),
+	"0475_52": Station{
+		ID:          StationID("0475"),
 		GroupNumber: "52",
 		Name:        "森茂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47617_52": Observation{
-		ID:          ObservationID("47617"),
+	"47617_52": Station{
+		ID:          StationID("47617"),
 		GroupNumber: "52",
 		Name:        "高山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0477_52": Observation{
-		ID:          ObservationID("0477"),
+	"0477_52": Station{
+		ID:          StationID("0477"),
 		GroupNumber: "52",
 		Name:        "乗鞍岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0478_52": Observation{
-		ID:          ObservationID("0478"),
+	"0478_52": Station{
+		ID:          StationID("0478"),
 		GroupNumber: "52",
 		Name:        "大日岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0479_52": Observation{
-		ID:          ObservationID("0479"),
+	"0479_52": Station{
+		ID:          StationID("0479"),
 		GroupNumber: "52",
 		Name:        "新渕山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0480_52": Observation{
-		ID:          ObservationID("0480"),
+	"0480_52": Station{
+		ID:          StationID("0480"),
 		GroupNumber: "52",
 		Name:        "船山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0481_52": Observation{
-		ID:          ObservationID("0481"),
+	"0481_52": Station{
+		ID:          StationID("0481"),
 		GroupNumber: "52",
 		Name:        "白尾山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0482_52": Observation{
-		ID:          ObservationID("0482"),
+	"0482_52": Station{
+		ID:          StationID("0482"),
 		GroupNumber: "52",
 		Name:        "白鳥",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0483_52": Observation{
-		ID:          ObservationID("0483"),
+	"0483_52": Station{
+		ID:          StationID("0483"),
 		GroupNumber: "52",
 		Name:        "萩原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0484_52": Observation{
-		ID:          ObservationID("0484"),
+	"0484_52": Station{
+		ID:          StationID("0484"),
 		GroupNumber: "52",
 		Name:        "蕪山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0485_52": Observation{
-		ID:          ObservationID("0485"),
+	"0485_52": Station{
+		ID:          StationID("0485"),
 		GroupNumber: "52",
 		Name:        "八幡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0486_52": Observation{
-		ID:          ObservationID("0486"),
+	"0486_52": Station{
+		ID:          StationID("0486"),
 		GroupNumber: "52",
 		Name:        "樽見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0487_52": Observation{
-		ID:          ObservationID("0487"),
+	"0487_52": Station{
+		ID:          StationID("0487"),
 		GroupNumber: "52",
 		Name:        "金山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0488_52": Observation{
-		ID:          ObservationID("0488"),
+	"0488_52": Station{
+		ID:          StationID("0488"),
 		GroupNumber: "52",
 		Name:        "三界山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0489_52": Observation{
-		ID:          ObservationID("0489"),
+	"0489_52": Station{
+		ID:          StationID("0489"),
 		GroupNumber: "52",
 		Name:        "権現山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0490_52": Observation{
-		ID:          ObservationID("0490"),
+	"0490_52": Station{
+		ID:          StationID("0490"),
 		GroupNumber: "52",
 		Name:        "伽藍",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0491_52": Observation{
-		ID:          ObservationID("0491"),
+	"0491_52": Station{
+		ID:          StationID("0491"),
 		GroupNumber: "52",
 		Name:        "美濃加茂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0492_52": Observation{
-		ID:          ObservationID("0492"),
+	"0492_52": Station{
+		ID:          StationID("0492"),
 		GroupNumber: "52",
 		Name:        "柄石峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0493_52": Observation{
-		ID:          ObservationID("0493"),
+	"0493_52": Station{
+		ID:          StationID("0493"),
 		GroupNumber: "52",
 		Name:        "恵那",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0494_52": Observation{
-		ID:          ObservationID("0494"),
+	"0494_52": Station{
+		ID:          StationID("0494"),
 		GroupNumber: "52",
 		Name:        "中津川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0495_52": Observation{
-		ID:          ObservationID("0495"),
+	"0495_52": Station{
+		ID:          StationID("0495"),
 		GroupNumber: "52",
 		Name:        "関ケ原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0496_52": Observation{
-		ID:          ObservationID("0496"),
+	"0496_52": Station{
+		ID:          StationID("0496"),
 		GroupNumber: "52",
 		Name:        "大垣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47632_52": Observation{
-		ID:          ObservationID("47632"),
+	"47632_52": Station{
+		ID:          StationID("47632"),
 		GroupNumber: "52",
 		Name:        "岐阜",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0498_52": Observation{
-		ID:          ObservationID("0498"),
+	"0498_52": Station{
+		ID:          StationID("0498"),
 		GroupNumber: "52",
 		Name:        "三森山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1057_52": Observation{
-		ID:          ObservationID("1057"),
+	"1057_52": Station{
+		ID:          StationID("1057"),
 		GroupNumber: "52",
 		Name:        "美濃",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1058_52": Observation{
-		ID:          ObservationID("1058"),
+	"1058_52": Station{
+		ID:          StationID("1058"),
 		GroupNumber: "52",
 		Name:        "多治見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1059_52": Observation{
-		ID:          ObservationID("1059"),
+	"1059_52": Station{
+		ID:          StationID("1059"),
 		GroupNumber: "52",
 		Name:        "上石津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1061_52": Observation{
-		ID:          ObservationID("1061"),
+	"1061_52": Station{
+		ID:          StationID("1061"),
 		GroupNumber: "52",
 		Name:        "栃尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1066_52": Observation{
-		ID:          ObservationID("1066"),
+	"1066_52": Station{
+		ID:          StationID("1066"),
 		GroupNumber: "52",
 		Name:        "宮地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1153_52": Observation{
-		ID:          ObservationID("1153"),
+	"1153_52": Station{
+		ID:          StationID("1153"),
 		GroupNumber: "52",
 		Name:        "平井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1299_52": Observation{
-		ID:          ObservationID("1299"),
+	"1299_52": Station{
+		ID:          StationID("1299"),
 		GroupNumber: "52",
 		Name:        "長滝",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1301_52": Observation{
-		ID:          ObservationID("1301"),
+	"1301_52": Station{
+		ID:          StationID("1301"),
 		GroupNumber: "52",
 		Name:        "揖斐川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1305_52": Observation{
-		ID:          ObservationID("1305"),
+	"1305_52": Station{
+		ID:          StationID("1305"),
 		GroupNumber: "52",
 		Name:        "六厩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1306_52": Observation{
-		ID:          ObservationID("1306"),
+	"1306_52": Station{
+		ID:          StationID("1306"),
 		GroupNumber: "52",
 		Name:        "白川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1308_52": Observation{
-		ID:          ObservationID("1308"),
+	"1308_52": Station{
+		ID:          StationID("1308"),
 		GroupNumber: "52",
 		Name:        "河合",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1311_52": Observation{
-		ID:          ObservationID("1311"),
+	"1311_52": Station{
+		ID:          StationID("1311"),
 		GroupNumber: "52",
 		Name:        "宮之前",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1313_52": Observation{
-		ID:          ObservationID("1313"),
+	"1313_52": Station{
+		ID:          StationID("1313"),
 		GroupNumber: "52",
 		Name:        "黒川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1363_52": Observation{
-		ID:          ObservationID("1363"),
+	"1363_52": Station{
+		ID:          StationID("1363"),
 		GroupNumber: "52",
 		Name:        "大日",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1384_52": Observation{
-		ID:          ObservationID("1384"),
+	"1384_52": Station{
+		ID:          StationID("1384"),
 		GroupNumber: "52",
 		Name:        "付知",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1387_52": Observation{
-		ID:          ObservationID("1387"),
+	"1387_52": Station{
+		ID:          StationID("1387"),
 		GroupNumber: "52",
 		Name:        "御母衣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1390_52": Observation{
-		ID:          ObservationID("1390"),
+	"1390_52": Station{
+		ID:          StationID("1390"),
 		GroupNumber: "52",
 		Name:        "小津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1396_52": Observation{
-		ID:          ObservationID("1396"),
+	"1396_52": Station{
+		ID:          StationID("1396"),
 		GroupNumber: "52",
 		Name:        "十二岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1436_52": Observation{
-		ID:          ObservationID("1436"),
+	"1436_52": Station{
+		ID:          StationID("1436"),
 		GroupNumber: "52",
 		Name:        "ひるがの",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1437_52": Observation{
-		ID:          ObservationID("1437"),
+	"1437_52": Station{
+		ID:          StationID("1437"),
 		GroupNumber: "52",
 		Name:        "清見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1438_52": Observation{
-		ID:          ObservationID("1438"),
+	"1438_52": Station{
+		ID:          StationID("1438"),
 		GroupNumber: "52",
 		Name:        "丹生川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1577_52": Observation{
-		ID:          ObservationID("1577"),
+	"1577_52": Station{
+		ID:          StationID("1577"),
 		GroupNumber: "52",
 		Name:        "関市板取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0499_53": Observation{
-		ID:          ObservationID("0499"),
+	"0499_53": Station{
+		ID:          StationID("0499"),
 		GroupNumber: "53",
 		Name:        "北勢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0500_53": Observation{
-		ID:          ObservationID("0500"),
+	"0500_53": Station{
+		ID:          StationID("0500"),
 		GroupNumber: "53",
 		Name:        "桑名",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0501_53": Observation{
-		ID:          ObservationID("0501"),
+	"0501_53": Station{
+		ID:          StationID("0501"),
 		GroupNumber: "53",
 		Name:        "雲母峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47684_53": Observation{
-		ID:          ObservationID("47684"),
+	"47684_53": Station{
+		ID:          StationID("47684"),
 		GroupNumber: "53",
 		Name:        "四日市",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0503_53": Observation{
-		ID:          ObservationID("0503"),
+	"0503_53": Station{
+		ID:          StationID("0503"),
 		GroupNumber: "53",
 		Name:        "亀山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47649_53": Observation{
-		ID:          ObservationID("47649"),
+	"47649_53": Station{
+		ID:          StationID("47649"),
 		GroupNumber: "53",
 		Name:        "上野",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0505_53": Observation{
-		ID:          ObservationID("0505"),
+	"0505_53": Station{
+		ID:          StationID("0505"),
 		GroupNumber: "53",
 		Name:        "笠取山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47651_53": Observation{
-		ID:          ObservationID("47651"),
+	"47651_53": Station{
+		ID:          StationID("47651"),
 		GroupNumber: "53",
 		Name:        "津",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0507_53": Observation{
-		ID:          ObservationID("0507"),
+	"0507_53": Station{
+		ID:          StationID("0507"),
 		GroupNumber: "53",
 		Name:        "名張",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0508_53": Observation{
-		ID:          ObservationID("0508"),
+	"0508_53": Station{
+		ID:          StationID("0508"),
 		GroupNumber: "53",
 		Name:        "国見山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0509_53": Observation{
-		ID:          ObservationID("0509"),
+	"0509_53": Station{
+		ID:          StationID("0509"),
 		GroupNumber: "53",
 		Name:        "小俣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0510_53": Observation{
-		ID:          ObservationID("0510"),
+	"0510_53": Station{
+		ID:          StationID("0510"),
 		GroupNumber: "53",
 		Name:        "粥見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0511_53": Observation{
-		ID:          ObservationID("0511"),
+	"0511_53": Station{
+		ID:          StationID("0511"),
 		GroupNumber: "53",
 		Name:        "藤坂峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47663_53": Observation{
-		ID:          ObservationID("47663"),
+	"47663_53": Station{
+		ID:          StationID("47663"),
 		GroupNumber: "53",
 		Name:        "尾鷲",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0513_53": Observation{
-		ID:          ObservationID("0513"),
+	"0513_53": Station{
+		ID:          StationID("0513"),
 		GroupNumber: "53",
 		Name:        "八幡峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0514_53": Observation{
-		ID:          ObservationID("0514"),
+	"0514_53": Station{
+		ID:          StationID("0514"),
 		GroupNumber: "53",
 		Name:        "熊野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0918_53": Observation{
-		ID:          ObservationID("0918"),
+	"0918_53": Station{
+		ID:          StationID("0918"),
 		GroupNumber: "53",
 		Name:        "大台",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0990_53": Observation{
-		ID:          ObservationID("0990"),
+	"0990_53": Station{
+		ID:          StationID("0990"),
 		GroupNumber: "53",
 		Name:        "松阪",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0991_53": Observation{
-		ID:          ObservationID("0991"),
+	"0991_53": Station{
+		ID:          StationID("0991"),
 		GroupNumber: "53",
 		Name:        "磯部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1230_53": Observation{
-		ID:          ObservationID("1230"),
+	"1230_53": Station{
+		ID:          StationID("1230"),
 		GroupNumber: "53",
 		Name:        "鳥羽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1255_53": Observation{
-		ID:          ObservationID("1255"),
+	"1255_53": Station{
+		ID:          StationID("1255"),
 		GroupNumber: "53",
 		Name:        "宮川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1258_53": Observation{
-		ID:          ObservationID("1258"),
+	"1258_53": Station{
+		ID:          StationID("1258"),
 		GroupNumber: "53",
 		Name:        "南伊勢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1349_53": Observation{
-		ID:          ObservationID("1349"),
+	"1349_53": Station{
+		ID:          StationID("1349"),
 		GroupNumber: "53",
 		Name:        "紀伊長島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1356_53": Observation{
-		ID:          ObservationID("1356"),
+	"1356_53": Station{
+		ID:          StationID("1356"),
 		GroupNumber: "53",
 		Name:        "白山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1381_53": Observation{
-		ID:          ObservationID("1381"),
+	"1381_53": Station{
+		ID:          StationID("1381"),
 		GroupNumber: "53",
 		Name:        "阿児",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1423_53": Observation{
-		ID:          ObservationID("1423"),
+	"1423_53": Station{
+		ID:          StationID("1423"),
 		GroupNumber: "53",
 		Name:        "御浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1532_53": Observation{
-		ID:          ObservationID("1532"),
+	"1532_53": Station{
+		ID:          StationID("1532"),
 		GroupNumber: "53",
 		Name:        "熊野新鹿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0515_54": Observation{
-		ID:          ObservationID("0515"),
+	"0515_54": Station{
+		ID:          StationID("0515"),
 		GroupNumber: "54",
 		Name:        "村上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0516_54": Observation{
-		ID:          ObservationID("0516"),
+	"0516_54": Station{
+		ID:          StationID("0516"),
 		GroupNumber: "54",
 		Name:        "鷲ケ巣山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47602_54": Observation{
-		ID:          ObservationID("47602"),
+	"47602_54": Station{
+		ID:          StationID("47602"),
 		GroupNumber: "54",
 		Name:        "相川",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0518_54": Observation{
-		ID:          ObservationID("0518"),
+	"0518_54": Station{
+		ID:          StationID("0518"),
 		GroupNumber: "54",
 		Name:        "両津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47604_54": Observation{
-		ID:          ObservationID("47604"),
+	"47604_54": Station{
+		ID:          StationID("47604"),
 		GroupNumber: "54",
 		Name:        "新潟",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0520_54": Observation{
-		ID:          ObservationID("0520"),
+	"0520_54": Station{
+		ID:          StationID("0520"),
 		GroupNumber: "54",
 		Name:        "二王子岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0521_54": Observation{
-		ID:          ObservationID("0521"),
+	"0521_54": Station{
+		ID:          StationID("0521"),
 		GroupNumber: "54",
 		Name:        "新津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0522_54": Observation{
-		ID:          ObservationID("0522"),
+	"0522_54": Station{
+		ID:          StationID("0522"),
 		GroupNumber: "54",
 		Name:        "巻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0523_54": Observation{
-		ID:          ObservationID("0523"),
+	"0523_54": Station{
+		ID:          StationID("0523"),
 		GroupNumber: "54",
 		Name:        "宝珠山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0524_54": Observation{
-		ID:          ObservationID("0524"),
+	"0524_54": Station{
+		ID:          StationID("0524"),
 		GroupNumber: "54",
 		Name:        "寺泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0525_54": Observation{
-		ID:          ObservationID("0525"),
+	"0525_54": Station{
+		ID:          StationID("0525"),
 		GroupNumber: "54",
 		Name:        "三条",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0526_54": Observation{
-		ID:          ObservationID("0526"),
+	"0526_54": Station{
+		ID:          StationID("0526"),
 		GroupNumber: "54",
 		Name:        "村松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0527_54": Observation{
-		ID:          ObservationID("0527"),
+	"0527_54": Station{
+		ID:          StationID("0527"),
 		GroupNumber: "54",
 		Name:        "津川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0528_54": Observation{
-		ID:          ObservationID("0528"),
+	"0528_54": Station{
+		ID:          StationID("0528"),
 		GroupNumber: "54",
 		Name:        "粟ヶ岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0529_54": Observation{
-		ID:          ObservationID("0529"),
+	"0529_54": Station{
+		ID:          StationID("0529"),
 		GroupNumber: "54",
 		Name:        "長岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0530_54": Observation{
-		ID:          ObservationID("0530"),
+	"0530_54": Station{
+		ID:          StationID("0530"),
 		GroupNumber: "54",
 		Name:        "栃尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0531_54": Observation{
-		ID:          ObservationID("0531"),
+	"0531_54": Station{
+		ID:          StationID("0531"),
 		GroupNumber: "54",
 		Name:        "守門岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0532_54": Observation{
-		ID:          ObservationID("0532"),
+	"0532_54": Station{
+		ID:          StationID("0532"),
 		GroupNumber: "54",
 		Name:        "柏崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0533_54": Observation{
-		ID:          ObservationID("0533"),
+	"0533_54": Station{
+		ID:          StationID("0533"),
 		GroupNumber: "54",
 		Name:        "桜坂峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0534_54": Observation{
-		ID:          ObservationID("0534"),
+	"0534_54": Station{
+		ID:          StationID("0534"),
 		GroupNumber: "54",
 		Name:        "小出",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47612_54": Observation{
-		ID:          ObservationID("47612"),
+	"47612_54": Station{
+		ID:          StationID("47612"),
 		GroupNumber: "54",
 		Name:        "高田",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0536_54": Observation{
-		ID:          ObservationID("0536"),
+	"0536_54": Station{
+		ID:          StationID("0536"),
 		GroupNumber: "54",
 		Name:        "安塚",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0537_54": Observation{
-		ID:          ObservationID("0537"),
+	"0537_54": Station{
+		ID:          StationID("0537"),
 		GroupNumber: "54",
 		Name:        "十日町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0538_54": Observation{
-		ID:          ObservationID("0538"),
+	"0538_54": Station{
+		ID:          StationID("0538"),
 		GroupNumber: "54",
 		Name:        "枝折峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0539_54": Observation{
-		ID:          ObservationID("0539"),
+	"0539_54": Station{
+		ID:          StationID("0539"),
 		GroupNumber: "54",
 		Name:        "糸魚川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0540_54": Observation{
-		ID:          ObservationID("0540"),
+	"0540_54": Station{
+		ID:          StationID("0540"),
 		GroupNumber: "54",
 		Name:        "能生",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0541_54": Observation{
-		ID:          ObservationID("0541"),
+	"0541_54": Station{
+		ID:          StationID("0541"),
 		GroupNumber: "54",
 		Name:        "光ケ原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0542_54": Observation{
-		ID:          ObservationID("0542"),
+	"0542_54": Station{
+		ID:          StationID("0542"),
 		GroupNumber: "54",
 		Name:        "大沢峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0543_54": Observation{
-		ID:          ObservationID("0543"),
+	"0543_54": Station{
+		ID:          StationID("0543"),
 		GroupNumber: "54",
 		Name:        "津南",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0544_54": Observation{
-		ID:          ObservationID("0544"),
+	"0544_54": Station{
+		ID:          StationID("0544"),
 		GroupNumber: "54",
 		Name:        "湯沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0545_54": Observation{
-		ID:          ObservationID("0545"),
+	"0545_54": Station{
+		ID:          StationID("0545"),
 		GroupNumber: "54",
 		Name:        "袴岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0995_54": Observation{
-		ID:          ObservationID("0995"),
+	"0995_54": Station{
+		ID:          StationID("0995"),
 		GroupNumber: "54",
 		Name:        "粟島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0996_54": Observation{
-		ID:          ObservationID("0996"),
+	"0996_54": Station{
+		ID:          StationID("0996"),
 		GroupNumber: "54",
 		Name:        "羽茂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0997_54": Observation{
-		ID:          ObservationID("0997"),
+	"0997_54": Station{
+		ID:          StationID("0997"),
 		GroupNumber: "54",
 		Name:        "入広瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0998_54": Observation{
-		ID:          ObservationID("0998"),
+	"0998_54": Station{
+		ID:          StationID("0998"),
 		GroupNumber: "54",
 		Name:        "関山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1060_54": Observation{
-		ID:          ObservationID("1060"),
+	"1060_54": Station{
+		ID:          StationID("1060"),
 		GroupNumber: "54",
 		Name:        "下関",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1102_54": Observation{
-		ID:          ObservationID("1102"),
+	"1102_54": Station{
+		ID:          StationID("1102"),
 		GroupNumber: "54",
 		Name:        "鍵取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1111_54": Observation{
-		ID:          ObservationID("1111"),
+	"1111_54": Station{
+		ID:          StationID("1111"),
 		GroupNumber: "54",
 		Name:        "赤谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1154_54": Observation{
-		ID:          ObservationID("1154"),
+	"1154_54": Station{
+		ID:          StationID("1154"),
 		GroupNumber: "54",
 		Name:        "小国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1155_54": Observation{
-		ID:          ObservationID("1155"),
+	"1155_54": Station{
+		ID:          StationID("1155"),
 		GroupNumber: "54",
 		Name:        "松代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1256_54": Observation{
-		ID:          ObservationID("1256"),
+	"1256_54": Station{
+		ID:          StationID("1256"),
 		GroupNumber: "54",
 		Name:        "高根",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1297_54": Observation{
-		ID:          ObservationID("1297"),
+	"1297_54": Station{
+		ID:          StationID("1297"),
 		GroupNumber: "54",
 		Name:        "平岩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1302_54": Observation{
-		ID:          ObservationID("1302"),
+	"1302_54": Station{
+		ID:          StationID("1302"),
 		GroupNumber: "54",
 		Name:        "大潟",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1315_54": Observation{
-		ID:          ObservationID("1315"),
+	"1315_54": Station{
+		ID:          StationID("1315"),
 		GroupNumber: "54",
 		Name:        "弾崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1318_54": Observation{
-		ID:          ObservationID("1318"),
+	"1318_54": Station{
+		ID:          StationID("1318"),
 		GroupNumber: "54",
 		Name:        "中条",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1369_54": Observation{
-		ID:          ObservationID("1369"),
+	"1369_54": Station{
+		ID:          StationID("1369"),
 		GroupNumber: "54",
 		Name:        "三面",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1370_54": Observation{
-		ID:          ObservationID("1370"),
+	"1370_54": Station{
+		ID:          StationID("1370"),
 		GroupNumber: "54",
 		Name:        "大湯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1395_54": Observation{
-		ID:          ObservationID("1395"),
+	"1395_54": Station{
+		ID:          StationID("1395"),
 		GroupNumber: "54",
 		Name:        "塩沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1398_54": Observation{
-		ID:          ObservationID("1398"),
+	"1398_54": Station{
+		ID:          StationID("1398"),
 		GroupNumber: "54",
 		Name:        "宮寄上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1424_54": Observation{
-		ID:          ObservationID("1424"),
+	"1424_54": Station{
+		ID:          StationID("1424"),
 		GroupNumber: "54",
 		Name:        "樽本",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1426_54": Observation{
-		ID:          ObservationID("1426"),
+	"1426_54": Station{
+		ID:          StationID("1426"),
 		GroupNumber: "54",
 		Name:        "川谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1427_54": Observation{
-		ID:          ObservationID("1427"),
+	"1427_54": Station{
+		ID:          StationID("1427"),
 		GroupNumber: "54",
 		Name:        "筒方",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1444_54": Observation{
-		ID:          ObservationID("1444"),
+	"1444_54": Station{
+		ID:          StationID("1444"),
 		GroupNumber: "54",
 		Name:        "室谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1469_54": Observation{
-		ID:          ObservationID("1469"),
+	"1469_54": Station{
+		ID:          StationID("1469"),
 		GroupNumber: "54",
 		Name:        "松浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1514_54": Observation{
-		ID:          ObservationID("1514"),
+	"1514_54": Station{
+		ID:          StationID("1514"),
 		GroupNumber: "54",
 		Name:        "秋津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0546_55": Observation{
-		ID:          ObservationID("0546"),
+	"0546_55": Station{
+		ID:          StationID("0546"),
 		GroupNumber: "55",
 		Name:        "泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0547_55": Observation{
-		ID:          ObservationID("0547"),
+	"0547_55": Station{
+		ID:          StationID("0547"),
 		GroupNumber: "55",
 		Name:        "魚津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0548_55": Observation{
-		ID:          ObservationID("0548"),
+	"0548_55": Station{
+		ID:          StationID("0548"),
 		GroupNumber: "55",
 		Name:        "宇奈月",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0549_55": Observation{
-		ID:          ObservationID("0549"),
+	"0549_55": Station{
+		ID:          StationID("0549"),
 		GroupNumber: "55",
 		Name:        "嘉例沢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47606_55": Observation{
-		ID:          ObservationID("47606"),
+	"47606_55": Station{
+		ID:          StationID("47606"),
 		GroupNumber: "55",
 		Name:        "伏木",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47607_55": Observation{
-		ID:          ObservationID("47607"),
+	"47607_55": Station{
+		ID:          StationID("47607"),
 		GroupNumber: "55",
 		Name:        "富山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0552_55": Observation{
-		ID:          ObservationID("0552"),
+	"0552_55": Station{
+		ID:          StationID("0552"),
 		GroupNumber: "55",
 		Name:        "砺波",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0553_55": Observation{
-		ID:          ObservationID("0553"),
+	"0553_55": Station{
+		ID:          StationID("0553"),
 		GroupNumber: "55",
 		Name:        "上市",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0554_55": Observation{
-		ID:          ObservationID("0554"),
+	"0554_55": Station{
+		ID:          StationID("0554"),
 		GroupNumber: "55",
 		Name:        "南砺高宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0555_55": Observation{
-		ID:          ObservationID("0555"),
+	"0555_55": Station{
+		ID:          StationID("0555"),
 		GroupNumber: "55",
 		Name:        "八尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0556_55": Observation{
-		ID:          ObservationID("0556"),
+	"0556_55": Station{
+		ID:          StationID("0556"),
 		GroupNumber: "55",
 		Name:        "小谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0557_55": Observation{
-		ID:          ObservationID("0557"),
+	"0557_55": Station{
+		ID:          StationID("0557"),
 		GroupNumber: "55",
 		Name:        "立山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0558_55": Observation{
-		ID:          ObservationID("0558"),
+	"0558_55": Station{
+		ID:          StationID("0558"),
 		GroupNumber: "55",
 		Name:        "細尾峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0559_55": Observation{
-		ID:          ObservationID("0559"),
+	"0559_55": Station{
+		ID:          StationID("0559"),
 		GroupNumber: "55",
 		Name:        "谷折",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1309_55": Observation{
-		ID:          ObservationID("1309"),
+	"1309_55": Station{
+		ID:          StationID("1309"),
 		GroupNumber: "55",
 		Name:        "氷見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1412_55": Observation{
-		ID:          ObservationID("1412"),
+	"1412_55": Station{
+		ID:          StationID("1412"),
 		GroupNumber: "55",
 		Name:        "宇奈月",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1413_55": Observation{
-		ID:          ObservationID("1413"),
+	"1413_55": Station{
+		ID:          StationID("1413"),
 		GroupNumber: "55",
 		Name:        "平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1414_55": Observation{
-		ID:          ObservationID("1414"),
+	"1414_55": Station{
+		ID:          StationID("1414"),
 		GroupNumber: "55",
 		Name:        "大山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1415_55": Observation{
-		ID:          ObservationID("1415"),
+	"1415_55": Station{
+		ID:          StationID("1415"),
 		GroupNumber: "55",
 		Name:        "細入",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1455_55": Observation{
-		ID:          ObservationID("1455"),
+	"1455_55": Station{
+		ID:          StationID("1455"),
 		GroupNumber: "55",
 		Name:        "猪谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1533_55": Observation{
-		ID:          ObservationID("1533"),
+	"1533_55": Station{
+		ID:          StationID("1533"),
 		GroupNumber: "55",
 		Name:        "秋ヶ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1553_55": Observation{
-		ID:          ObservationID("1553"),
+	"1553_55": Station{
+		ID:          StationID("1553"),
 		GroupNumber: "55",
 		Name:        "五箇山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1621_55": Observation{
-		ID:          ObservationID("1621"),
+	"1621_55": Station{
+		ID:          StationID("1621"),
 		GroupNumber: "55",
 		Name:        "立山芦峅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0560_56": Observation{
-		ID:          ObservationID("0560"),
+	"0560_56": Station{
+		ID:          StationID("0560"),
 		GroupNumber: "56",
 		Name:        "珠洲",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47600_56": Observation{
-		ID:          ObservationID("47600"),
+	"47600_56": Station{
+		ID:          StationID("47600"),
 		GroupNumber: "56",
 		Name:        "輪島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0562_56": Observation{
-		ID:          ObservationID("0562"),
+	"0562_56": Station{
+		ID:          StationID("0562"),
 		GroupNumber: "56",
 		Name:        "門前",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0563_56": Observation{
-		ID:          ObservationID("0563"),
+	"0563_56": Station{
+		ID:          StationID("0563"),
 		GroupNumber: "56",
 		Name:        "木原岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0564_56": Observation{
-		ID:          ObservationID("0564"),
+	"0564_56": Station{
+		ID:          StationID("0564"),
 		GroupNumber: "56",
 		Name:        "志賀",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0565_56": Observation{
-		ID:          ObservationID("0565"),
+	"0565_56": Station{
+		ID:          StationID("0565"),
 		GroupNumber: "56",
 		Name:        "七尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0566_56": Observation{
-		ID:          ObservationID("0566"),
+	"0566_56": Station{
+		ID:          StationID("0566"),
 		GroupNumber: "56",
 		Name:        "羽咋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0567_56": Observation{
-		ID:          ObservationID("0567"),
+	"0567_56": Station{
+		ID:          StationID("0567"),
 		GroupNumber: "56",
 		Name:        "かほく",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0568_56": Observation{
-		ID:          ObservationID("0568"),
+	"0568_56": Station{
+		ID:          StationID("0568"),
 		GroupNumber: "56",
 		Name:        "宝達山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47605_56": Observation{
-		ID:          ObservationID("47605"),
+	"47605_56": Station{
+		ID:          StationID("47605"),
 		GroupNumber: "56",
 		Name:        "金沢",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0570_56": Observation{
-		ID:          ObservationID("0570"),
+	"0570_56": Station{
+		ID:          StationID("0570"),
 		GroupNumber: "56",
 		Name:        "医王山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0571_56": Observation{
-		ID:          ObservationID("0571"),
+	"0571_56": Station{
+		ID:          StationID("0571"),
 		GroupNumber: "56",
 		Name:        "栢野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0973_56": Observation{
-		ID:          ObservationID("0973"),
+	"0973_56": Station{
+		ID:          StationID("0973"),
 		GroupNumber: "56",
 		Name:        "白山吉野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1171_56": Observation{
-		ID:          ObservationID("1171"),
+	"1171_56": Station{
+		ID:          StationID("1171"),
 		GroupNumber: "56",
 		Name:        "白山白峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1324_56": Observation{
-		ID:          ObservationID("1324"),
+	"1324_56": Station{
+		ID:          StationID("1324"),
 		GroupNumber: "56",
 		Name:        "小松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1486_56": Observation{
-		ID:          ObservationID("1486"),
+	"1486_56": Station{
+		ID:          StationID("1486"),
 		GroupNumber: "56",
 		Name:        "穴水",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1544_56": Observation{
-		ID:          ObservationID("1544"),
+	"1544_56": Station{
+		ID:          StationID("1544"),
 		GroupNumber: "56",
 		Name:        "三井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1545_56": Observation{
-		ID:          ObservationID("1545"),
+	"1545_56": Station{
+		ID:          StationID("1545"),
 		GroupNumber: "56",
 		Name:        "宝達志水",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47616_57": Observation{
-		ID:          ObservationID("47616"),
+	"47616_57": Station{
+		ID:          StationID("47616"),
 		GroupNumber: "57",
 		Name:        "福井",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0573_57": Observation{
-		ID:          ObservationID("0573"),
+	"0573_57": Station{
+		ID:          StationID("0573"),
 		GroupNumber: "57",
 		Name:        "大野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0574_57": Observation{
-		ID:          ObservationID("0574"),
+	"0574_57": Station{
+		ID:          StationID("0574"),
 		GroupNumber: "57",
 		Name:        "タイラ山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0575_57": Observation{
-		ID:          ObservationID("0575"),
+	"0575_57": Station{
+		ID:          StationID("0575"),
 		GroupNumber: "57",
 		Name:        "春日野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0576_57": Observation{
-		ID:          ObservationID("0576"),
+	"0576_57": Station{
+		ID:          StationID("0576"),
 		GroupNumber: "57",
 		Name:        "板垣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0577_57": Observation{
-		ID:          ObservationID("0577"),
+	"0577_57": Station{
+		ID:          StationID("0577"),
 		GroupNumber: "57",
 		Name:        "今庄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47631_57": Observation{
-		ID:          ObservationID("47631"),
+	"47631_57": Station{
+		ID:          StationID("47631"),
 		GroupNumber: "57",
 		Name:        "敦賀",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0579_57": Observation{
-		ID:          ObservationID("0579"),
+	"0579_57": Station{
+		ID:          StationID("0579"),
 		GroupNumber: "57",
 		Name:        "小浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0974_57": Observation{
-		ID:          ObservationID("0974"),
+	"0974_57": Station{
+		ID:          StationID("0974"),
 		GroupNumber: "57",
 		Name:        "美山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0975_57": Observation{
-		ID:          ObservationID("0975"),
+	"0975_57": Station{
+		ID:          StationID("0975"),
 		GroupNumber: "57",
 		Name:        "川上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1010_57": Observation{
-		ID:          ObservationID("1010"),
+	"1010_57": Station{
+		ID:          StationID("1010"),
 		GroupNumber: "57",
 		Name:        "美浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1071_57": Observation{
-		ID:          ObservationID("1071"),
+	"1071_57": Station{
+		ID:          StationID("1071"),
 		GroupNumber: "57",
 		Name:        "三国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1226_57": Observation{
-		ID:          ObservationID("1226"),
+	"1226_57": Station{
+		ID:          StationID("1226"),
 		GroupNumber: "57",
 		Name:        "勝山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1316_57": Observation{
-		ID:          ObservationID("1316"),
+	"1316_57": Station{
+		ID:          StationID("1316"),
 		GroupNumber: "57",
 		Name:        "越廼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1382_57": Observation{
-		ID:          ObservationID("1382"),
+	"1382_57": Station{
+		ID:          StationID("1382"),
 		GroupNumber: "57",
 		Name:        "九頭竜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1454_57": Observation{
-		ID:          ObservationID("1454"),
+	"1454_57": Station{
+		ID:          StationID("1454"),
 		GroupNumber: "57",
 		Name:        "大飯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1537_57": Observation{
-		ID:          ObservationID("1537"),
+	"1537_57": Station{
+		ID:          StationID("1537"),
 		GroupNumber: "57",
 		Name:        "春江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1565_57": Observation{
-		ID:          ObservationID("1565"),
+	"1565_57": Station{
+		ID:          StationID("1565"),
 		GroupNumber: "57",
 		Name:        "武生",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0580_60": Observation{
-		ID:          ObservationID("0580"),
+	"0580_60": Station{
+		ID:          StationID("0580"),
 		GroupNumber: "60",
 		Name:        "今津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0581_60": Observation{
-		ID:          ObservationID("0581"),
+	"0581_60": Station{
+		ID:          StationID("0581"),
 		GroupNumber: "60",
 		Name:        "荒川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0582_60": Observation{
-		ID:          ObservationID("0582"),
+	"0582_60": Station{
+		ID:          StationID("0582"),
 		GroupNumber: "60",
 		Name:        "春照",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47761_60": Observation{
-		ID:          ObservationID("47761"),
+	"47761_60": Station{
+		ID:          StationID("47761"),
 		GroupNumber: "60",
 		Name:        "彦根",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0584_60": Observation{
-		ID:          ObservationID("0584"),
+	"0584_60": Station{
+		ID:          StationID("0584"),
 		GroupNumber: "60",
 		Name:        "近江八幡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0585_60": Observation{
-		ID:          ObservationID("0585"),
+	"0585_60": Station{
+		ID:          StationID("0585"),
 		GroupNumber: "60",
 		Name:        "君ケ畑台地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0586_60": Observation{
-		ID:          ObservationID("0586"),
+	"0586_60": Station{
+		ID:          StationID("0586"),
 		GroupNumber: "60",
 		Name:        "大津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0587_60": Observation{
-		ID:          ObservationID("0587"),
+	"0587_60": Station{
+		ID:          StationID("0587"),
 		GroupNumber: "60",
 		Name:        "土山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0963_60": Observation{
-		ID:          ObservationID("0963"),
+	"0963_60": Station{
+		ID:          StationID("0963"),
 		GroupNumber: "60",
 		Name:        "東近江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0964_60": Observation{
-		ID:          ObservationID("0964"),
+	"0964_60": Station{
+		ID:          StationID("0964"),
 		GroupNumber: "60",
 		Name:        "信楽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0976_60": Observation{
-		ID:          ObservationID("0976"),
+	"0976_60": Station{
+		ID:          StationID("0976"),
 		GroupNumber: "60",
 		Name:        "長浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1083_60": Observation{
-		ID:          ObservationID("1083"),
+	"1083_60": Station{
+		ID:          StationID("1083"),
 		GroupNumber: "60",
 		Name:        "南小松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1087_60": Observation{
-		ID:          ObservationID("1087"),
+	"1087_60": Station{
+		ID:          StationID("1087"),
 		GroupNumber: "60",
 		Name:        "柳ケ瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1361_60": Observation{
-		ID:          ObservationID("1361"),
+	"1361_60": Station{
+		ID:          StationID("1361"),
 		GroupNumber: "60",
 		Name:        "霜ケ原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1524_60": Observation{
-		ID:          ObservationID("1524"),
+	"1524_60": Station{
+		ID:          StationID("1524"),
 		GroupNumber: "60",
 		Name:        "米原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1578_60": Observation{
-		ID:          ObservationID("1578"),
+	"1578_60": Station{
+		ID:          StationID("1578"),
 		GroupNumber: "60",
 		Name:        "朽木平良",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47751_60": Observation{
-		ID:          ObservationID("47751"),
+	"47751_60": Station{
+		ID:          StationID("47751"),
 		GroupNumber: "60",
 		Name:        "伊吹山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0588_61": Observation{
-		ID:          ObservationID("0588"),
+	"0588_61": Station{
+		ID:          StationID("0588"),
 		GroupNumber: "61",
 		Name:        "峰山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0589_61": Observation{
-		ID:          ObservationID("0589"),
+	"0589_61": Station{
+		ID:          StationID("0589"),
 		GroupNumber: "61",
 		Name:        "宮津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47750_61": Observation{
-		ID:          ObservationID("47750"),
+	"47750_61": Station{
+		ID:          StationID("47750"),
 		GroupNumber: "61",
 		Name:        "舞鶴",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0591_61": Observation{
-		ID:          ObservationID("0591"),
+	"0591_61": Station{
+		ID:          StationID("0591"),
 		GroupNumber: "61",
 		Name:        "仏坂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0592_61": Observation{
-		ID:          ObservationID("0592"),
+	"0592_61": Station{
+		ID:          StationID("0592"),
 		GroupNumber: "61",
 		Name:        "浅原山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0593_61": Observation{
-		ID:          ObservationID("0593"),
+	"0593_61": Station{
+		ID:          StationID("0593"),
 		GroupNumber: "61",
 		Name:        "福知山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0594_61": Observation{
-		ID:          ObservationID("0594"),
+	"0594_61": Station{
+		ID:          StationID("0594"),
 		GroupNumber: "61",
 		Name:        "胡麻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0595_61": Observation{
-		ID:          ObservationID("0595"),
+	"0595_61": Station{
+		ID:          StationID("0595"),
 		GroupNumber: "61",
 		Name:        "妙高山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0596_61": Observation{
-		ID:          ObservationID("0596"),
+	"0596_61": Station{
+		ID:          StationID("0596"),
 		GroupNumber: "61",
 		Name:        "園部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47759_61": Observation{
-		ID:          ObservationID("47759"),
+	"47759_61": Station{
+		ID:          StationID("47759"),
 		GroupNumber: "61",
 		Name:        "京都",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0598_61": Observation{
-		ID:          ObservationID("0598"),
+	"0598_61": Station{
+		ID:          StationID("0598"),
 		GroupNumber: "61",
 		Name:        "京田辺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0599_61": Observation{
-		ID:          ObservationID("0599"),
+	"0599_61": Station{
+		ID:          StationID("0599"),
 		GroupNumber: "61",
 		Name:        "鷲峰山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0920_61": Observation{
-		ID:          ObservationID("0920"),
+	"0920_61": Station{
+		ID:          StationID("0920"),
 		GroupNumber: "61",
 		Name:        "花背峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0927_61": Observation{
-		ID:          ObservationID("0927"),
+	"0927_61": Station{
+		ID:          StationID("0927"),
 		GroupNumber: "61",
 		Name:        "知井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0928_61": Observation{
-		ID:          ObservationID("0928"),
+	"0928_61": Station{
+		ID:          StationID("0928"),
 		GroupNumber: "61",
 		Name:        "京北",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0965_61": Observation{
-		ID:          ObservationID("0965"),
+	"0965_61": Station{
+		ID:          StationID("0965"),
 		GroupNumber: "61",
 		Name:        "間人",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0966_61": Observation{
-		ID:          ObservationID("0966"),
+	"0966_61": Station{
+		ID:          StationID("0966"),
 		GroupNumber: "61",
 		Name:        "本庄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1025_61": Observation{
-		ID:          ObservationID("1025"),
+	"1025_61": Station{
+		ID:          StationID("1025"),
 		GroupNumber: "61",
 		Name:        "長岡京",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1160_61": Observation{
-		ID:          ObservationID("1160"),
+	"1160_61": Station{
+		ID:          StationID("1160"),
 		GroupNumber: "61",
 		Name:        "故屋岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1303_61": Observation{
-		ID:          ObservationID("1303"),
+	"1303_61": Station{
+		ID:          StationID("1303"),
 		GroupNumber: "61",
 		Name:        "美山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1378_61": Observation{
-		ID:          ObservationID("1378"),
+	"1378_61": Station{
+		ID:          StationID("1378"),
 		GroupNumber: "61",
 		Name:        "須知",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1379_61": Observation{
-		ID:          ObservationID("1379"),
+	"1379_61": Station{
+		ID:          StationID("1379"),
 		GroupNumber: "61",
 		Name:        "三岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1380_61": Observation{
-		ID:          ObservationID("1380"),
+	"1380_61": Station{
+		ID:          StationID("1380"),
 		GroupNumber: "61",
 		Name:        "綾部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1383_61": Observation{
-		ID:          ObservationID("1383"),
+	"1383_61": Station{
+		ID:          StationID("1383"),
 		GroupNumber: "61",
 		Name:        "三和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0600_62": Observation{
-		ID:          ObservationID("0600"),
+	"0600_62": Station{
+		ID:          StationID("0600"),
 		GroupNumber: "62",
 		Name:        "能勢",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0601_62": Observation{
-		ID:          ObservationID("0601"),
+	"0601_62": Station{
+		ID:          StationID("0601"),
 		GroupNumber: "62",
 		Name:        "箕面",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0602_62": Observation{
-		ID:          ObservationID("0602"),
+	"0602_62": Station{
+		ID:          StationID("0602"),
 		GroupNumber: "62",
 		Name:        "豊中",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47772_62": Observation{
-		ID:          ObservationID("47772"),
+	"47772_62": Station{
+		ID:          StationID("47772"),
 		GroupNumber: "62",
 		Name:        "大阪",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0604_62": Observation{
-		ID:          ObservationID("0604"),
+	"0604_62": Station{
+		ID:          StationID("0604"),
 		GroupNumber: "62",
 		Name:        "生駒山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0605_62": Observation{
-		ID:          ObservationID("0605"),
+	"0605_62": Station{
+		ID:          StationID("0605"),
 		GroupNumber: "62",
 		Name:        "河内長野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0606_62": Observation{
-		ID:          ObservationID("0606"),
+	"0606_62": Station{
+		ID:          StationID("0606"),
 		GroupNumber: "62",
 		Name:        "熊取",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1062_62": Observation{
-		ID:          ObservationID("1062"),
+	"1062_62": Station{
+		ID:          StationID("1062"),
 		GroupNumber: "62",
 		Name:        "堺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1065_62": Observation{
-		ID:          ObservationID("1065"),
+	"1065_62": Station{
+		ID:          StationID("1065"),
 		GroupNumber: "62",
 		Name:        "枚方",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1470_62": Observation{
-		ID:          ObservationID("1470"),
+	"1470_62": Station{
+		ID:          StationID("1470"),
 		GroupNumber: "62",
 		Name:        "八尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1471_62": Observation{
-		ID:          ObservationID("1471"),
+	"1471_62": Station{
+		ID:          StationID("1471"),
 		GroupNumber: "62",
 		Name:        "関空島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1602_62": Observation{
-		ID:          ObservationID("1602"),
+	"1602_62": Station{
+		ID:          StationID("1602"),
 		GroupNumber: "62",
 		Name:        "茨木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0607_63": Observation{
-		ID:          ObservationID("0607"),
+	"0607_63": Station{
+		ID:          StationID("0607"),
 		GroupNumber: "63",
 		Name:        "香住",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0608_63": Observation{
-		ID:          ObservationID("0608"),
+	"0608_63": Station{
+		ID:          StationID("0608"),
 		GroupNumber: "63",
 		Name:        "温泉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0609_63": Observation{
-		ID:          ObservationID("0609"),
+	"0609_63": Station{
+		ID:          StationID("0609"),
 		GroupNumber: "63",
 		Name:        "三川山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47747_63": Observation{
-		ID:          ObservationID("47747"),
+	"47747_63": Station{
+		ID:          StationID("47747"),
 		GroupNumber: "63",
 		Name:        "豊岡",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0611_63": Observation{
-		ID:          ObservationID("0611"),
+	"0611_63": Station{
+		ID:          StationID("0611"),
 		GroupNumber: "63",
 		Name:        "八鹿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0612_63": Observation{
-		ID:          ObservationID("0612"),
+	"0612_63": Station{
+		ID:          StationID("0612"),
 		GroupNumber: "63",
 		Name:        "和田山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0613_63": Observation{
-		ID:          ObservationID("0613"),
+	"0613_63": Station{
+		ID:          StationID("0613"),
 		GroupNumber: "63",
 		Name:        "生野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0614_63": Observation{
-		ID:          ObservationID("0614"),
+	"0614_63": Station{
+		ID:          StationID("0614"),
 		GroupNumber: "63",
 		Name:        "柏原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0615_63": Observation{
-		ID:          ObservationID("0615"),
+	"0615_63": Station{
+		ID:          StationID("0615"),
 		GroupNumber: "63",
 		Name:        "一宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0616_63": Observation{
-		ID:          ObservationID("0616"),
+	"0616_63": Station{
+		ID:          StationID("0616"),
 		GroupNumber: "63",
 		Name:        "笠形山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0617_63": Observation{
-		ID:          ObservationID("0617"),
+	"0617_63": Station{
+		ID:          StationID("0617"),
 		GroupNumber: "63",
 		Name:        "佐用",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0618_63": Observation{
-		ID:          ObservationID("0618"),
+	"0618_63": Station{
+		ID:          StationID("0618"),
 		GroupNumber: "63",
 		Name:        "後川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0619_63": Observation{
-		ID:          ObservationID("0619"),
+	"0619_63": Station{
+		ID:          StationID("0619"),
 		GroupNumber: "63",
 		Name:        "上郡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0620_63": Observation{
-		ID:          ObservationID("0620"),
+	"0620_63": Station{
+		ID:          StationID("0620"),
 		GroupNumber: "63",
 		Name:        "的場山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47769_63": Observation{
-		ID:          ObservationID("47769"),
+	"47769_63": Station{
+		ID:          StationID("47769"),
 		GroupNumber: "63",
 		Name:        "姫路",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0622_63": Observation{
-		ID:          ObservationID("0622"),
+	"0622_63": Station{
+		ID:          StationID("0622"),
 		GroupNumber: "63",
 		Name:        "名塩",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0623_63": Observation{
-		ID:          ObservationID("0623"),
+	"0623_63": Station{
+		ID:          StationID("0623"),
 		GroupNumber: "63",
 		Name:        "六甲山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0624_63": Observation{
-		ID:          ObservationID("0624"),
+	"0624_63": Station{
+		ID:          StationID("0624"),
 		GroupNumber: "63",
 		Name:        "家島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0625_63": Observation{
-		ID:          ObservationID("0625"),
+	"0625_63": Station{
+		ID:          StationID("0625"),
 		GroupNumber: "63",
 		Name:        "明石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47770_63": Observation{
-		ID:          ObservationID("47770"),
+	"47770_63": Station{
+		ID:          StationID("47770"),
 		GroupNumber: "63",
 		Name:        "神戸",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47776_63": Observation{
-		ID:          ObservationID("47776"),
+	"47776_63": Station{
+		ID:          StationID("47776"),
 		GroupNumber: "63",
 		Name:        "洲本",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0628_63": Observation{
-		ID:          ObservationID("0628"),
+	"0628_63": Station{
+		ID:          StationID("0628"),
 		GroupNumber: "63",
 		Name:        "福良",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0956_63": Observation{
-		ID:          ObservationID("0956"),
+	"0956_63": Station{
+		ID:          StationID("0956"),
 		GroupNumber: "63",
 		Name:        "西脇",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0967_63": Observation{
-		ID:          ObservationID("0967"),
+	"0967_63": Station{
+		ID:          StationID("0967"),
 		GroupNumber: "63",
 		Name:        "大屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0968_63": Observation{
-		ID:          ObservationID("0968"),
+	"0968_63": Station{
+		ID:          StationID("0968"),
 		GroupNumber: "63",
 		Name:        "福崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0969_63": Observation{
-		ID:          ObservationID("0969"),
+	"0969_63": Station{
+		ID:          StationID("0969"),
 		GroupNumber: "63",
 		Name:        "三田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0970_63": Observation{
-		ID:          ObservationID("0970"),
+	"0970_63": Station{
+		ID:          StationID("0970"),
 		GroupNumber: "63",
 		Name:        "郡家",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0977_63": Observation{
-		ID:          ObservationID("0977"),
+	"0977_63": Station{
+		ID:          StationID("0977"),
 		GroupNumber: "63",
 		Name:        "兎和野高原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1227_63": Observation{
-		ID:          ObservationID("1227"),
+	"1227_63": Station{
+		ID:          StationID("1227"),
 		GroupNumber: "63",
 		Name:        "三木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1337_63": Observation{
-		ID:          ObservationID("1337"),
+	"1337_63": Station{
+		ID:          StationID("1337"),
 		GroupNumber: "63",
 		Name:        "南淡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1448_63": Observation{
-		ID:          ObservationID("1448"),
+	"1448_63": Station{
+		ID:          StationID("1448"),
 		GroupNumber: "63",
 		Name:        "淡路町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1449_63": Observation{
-		ID:          ObservationID("1449"),
+	"1449_63": Station{
+		ID:          StationID("1449"),
 		GroupNumber: "63",
 		Name:        "芦屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1450_63": Observation{
-		ID:          ObservationID("1450"),
+	"1450_63": Station{
+		ID:          StationID("1450"),
 		GroupNumber: "63",
 		Name:        "神戸塩屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1587_63": Observation{
-		ID:          ObservationID("1587"),
+	"1587_63": Station{
+		ID:          StationID("1587"),
 		GroupNumber: "63",
 		Name:        "神戸空港",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1588_63": Observation{
-		ID:          ObservationID("1588"),
+	"1588_63": Station{
+		ID:          StationID("1588"),
 		GroupNumber: "63",
 		Name:        "西宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47780_64": Observation{
-		ID:          ObservationID("47780"),
+	"47780_64": Station{
+		ID:          StationID("47780"),
 		GroupNumber: "64",
 		Name:        "奈良",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0630_64": Observation{
-		ID:          ObservationID("0630"),
+	"0630_64": Station{
+		ID:          StationID("0630"),
 		GroupNumber: "64",
 		Name:        "針",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0631_64": Observation{
-		ID:          ObservationID("0631"),
+	"0631_64": Station{
+		ID:          StationID("0631"),
 		GroupNumber: "64",
 		Name:        "田原本",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0632_64": Observation{
-		ID:          ObservationID("0632"),
+	"0632_64": Station{
+		ID:          StationID("0632"),
 		GroupNumber: "64",
 		Name:        "曽爾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0633_64": Observation{
-		ID:          ObservationID("0633"),
+	"0633_64": Station{
+		ID:          StationID("0633"),
 		GroupNumber: "64",
 		Name:        "大宇陀",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0634_64": Observation{
-		ID:          ObservationID("0634"),
+	"0634_64": Station{
+		ID:          StationID("0634"),
 		GroupNumber: "64",
 		Name:        "高見山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0635_64": Observation{
-		ID:          ObservationID("0635"),
+	"0635_64": Station{
+		ID:          StationID("0635"),
 		GroupNumber: "64",
 		Name:        "五條",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0636_64": Observation{
-		ID:          ObservationID("0636"),
+	"0636_64": Station{
+		ID:          StationID("0636"),
 		GroupNumber: "64",
 		Name:        "天辻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0637_64": Observation{
-		ID:          ObservationID("0637"),
+	"0637_64": Station{
+		ID:          StationID("0637"),
 		GroupNumber: "64",
 		Name:        "山上ケ岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0638_64": Observation{
-		ID:          ObservationID("0638"),
+	"0638_64": Station{
+		ID:          StationID("0638"),
 		GroupNumber: "64",
 		Name:        "荒神岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0639_64": Observation{
-		ID:          ObservationID("0639"),
+	"0639_64": Station{
+		ID:          StationID("0639"),
 		GroupNumber: "64",
 		Name:        "日出岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0640_64": Observation{
-		ID:          ObservationID("0640"),
+	"0640_64": Station{
+		ID:          StationID("0640"),
 		GroupNumber: "64",
 		Name:        "上野地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0641_64": Observation{
-		ID:          ObservationID("0641"),
+	"0641_64": Station{
+		ID:          StationID("0641"),
 		GroupNumber: "64",
 		Name:        "玉置山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0957_64": Observation{
-		ID:          ObservationID("0957"),
+	"0957_64": Station{
+		ID:          StationID("0957"),
 		GroupNumber: "64",
 		Name:        "上北山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1228_64": Observation{
-		ID:          ObservationID("1228"),
+	"1228_64": Station{
+		ID:          StationID("1228"),
 		GroupNumber: "64",
 		Name:        "風屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1366_64": Observation{
-		ID:          ObservationID("1366"),
+	"1366_64": Station{
+		ID:          StationID("1366"),
 		GroupNumber: "64",
 		Name:        "高見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1376_64": Observation{
-		ID:          ObservationID("1376"),
+	"1376_64": Station{
+		ID:          StationID("1376"),
 		GroupNumber: "64",
 		Name:        "葛城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1377_64": Observation{
-		ID:          ObservationID("1377"),
+	"1377_64": Station{
+		ID:          StationID("1377"),
 		GroupNumber: "64",
 		Name:        "壷坂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1439_64": Observation{
-		ID:          ObservationID("1439"),
+	"1439_64": Station{
+		ID:          StationID("1439"),
 		GroupNumber: "64",
 		Name:        "吉野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1619_64": Observation{
-		ID:          ObservationID("1619"),
+	"1619_64": Station{
+		ID:          StationID("1619"),
 		GroupNumber: "64",
 		Name:        "天川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0642_65": Observation{
-		ID:          ObservationID("0642"),
+	"0642_65": Station{
+		ID:          StationID("0642"),
 		GroupNumber: "65",
 		Name:        "葛城山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47777_65": Observation{
-		ID:          ObservationID("47777"),
+	"47777_65": Station{
+		ID:          StationID("47777"),
 		GroupNumber: "65",
 		Name:        "和歌山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0644_65": Observation{
-		ID:          ObservationID("0644"),
+	"0644_65": Station{
+		ID:          StationID("0644"),
 		GroupNumber: "65",
 		Name:        "岩出",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0645_65": Observation{
-		ID:          ObservationID("0645"),
+	"0645_65": Station{
+		ID:          StationID("0645"),
 		GroupNumber: "65",
 		Name:        "高野山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0646_65": Observation{
-		ID:          ObservationID("0646"),
+	"0646_65": Station{
+		ID:          StationID("0646"),
 		GroupNumber: "65",
 		Name:        "護摩壇山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0647_65": Observation{
-		ID:          ObservationID("0647"),
+	"0647_65": Station{
+		ID:          StationID("0647"),
 		GroupNumber: "65",
 		Name:        "御坊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0648_65": Observation{
-		ID:          ObservationID("0648"),
+	"0648_65": Station{
+		ID:          StationID("0648"),
 		GroupNumber: "65",
 		Name:        "虎ケ峰峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0649_65": Observation{
-		ID:          ObservationID("0649"),
+	"0649_65": Station{
+		ID:          StationID("0649"),
 		GroupNumber: "65",
 		Name:        "新宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0650_65": Observation{
-		ID:          ObservationID("0650"),
+	"0650_65": Station{
+		ID:          StationID("0650"),
 		GroupNumber: "65",
 		Name:        "白浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0651_65": Observation{
-		ID:          ObservationID("0651"),
+	"0651_65": Station{
+		ID:          StationID("0651"),
 		GroupNumber: "65",
 		Name:        "日置川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47778_65": Observation{
-		ID:          ObservationID("47778"),
+	"47778_65": Station{
+		ID:          StationID("47778"),
 		GroupNumber: "65",
 		Name:        "潮岬",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0971_65": Observation{
-		ID:          ObservationID("0971"),
+	"0971_65": Station{
+		ID:          StationID("0971"),
 		GroupNumber: "65",
 		Name:        "栗栖川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0978_65": Observation{
-		ID:          ObservationID("0978"),
+	"0978_65": Station{
+		ID:          StationID("0978"),
 		GroupNumber: "65",
 		Name:        "湯浅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1063_65": Observation{
-		ID:          ObservationID("1063"),
+	"1063_65": Station{
+		ID:          StationID("1063"),
 		GroupNumber: "65",
 		Name:        "清水",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1074_65": Observation{
-		ID:          ObservationID("1074"),
+	"1074_65": Station{
+		ID:          StationID("1074"),
 		GroupNumber: "65",
 		Name:        "本宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1089_65": Observation{
-		ID:          ObservationID("1089"),
+	"1089_65": Station{
+		ID:          StationID("1089"),
 		GroupNumber: "65",
 		Name:        "龍神",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1172_65": Observation{
-		ID:          ObservationID("1172"),
+	"1172_65": Station{
+		ID:          StationID("1172"),
 		GroupNumber: "65",
 		Name:        "色川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1342_65": Observation{
-		ID:          ObservationID("1342"),
+	"1342_65": Station{
+		ID:          StationID("1342"),
 		GroupNumber: "65",
 		Name:        "かつらぎ",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1347_65": Observation{
-		ID:          ObservationID("1347"),
+	"1347_65": Station{
+		ID:          StationID("1347"),
 		GroupNumber: "65",
 		Name:        "西川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1457_65": Observation{
-		ID:          ObservationID("1457"),
+	"1457_65": Station{
+		ID:          StationID("1457"),
 		GroupNumber: "65",
 		Name:        "友ケ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1485_65": Observation{
-		ID:          ObservationID("1485"),
+	"1485_65": Station{
+		ID:          StationID("1485"),
 		GroupNumber: "65",
 		Name:        "川辺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1589_65": Observation{
-		ID:          ObservationID("1589"),
+	"1589_65": Station{
+		ID:          StationID("1589"),
 		GroupNumber: "65",
 		Name:        "南紀白浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0653_66": Observation{
-		ID:          ObservationID("0653"),
+	"0653_66": Station{
+		ID:          StationID("0653"),
 		GroupNumber: "66",
 		Name:        "大空山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0654_66": Observation{
-		ID:          ObservationID("0654"),
+	"0654_66": Station{
+		ID:          StationID("0654"),
 		GroupNumber: "66",
 		Name:        "那岐山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0655_66": Observation{
-		ID:          ObservationID("0655"),
+	"0655_66": Station{
+		ID:          StationID("0655"),
 		GroupNumber: "66",
 		Name:        "今岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0656_66": Observation{
-		ID:          ObservationID("0656"),
+	"0656_66": Station{
+		ID:          StationID("0656"),
 		GroupNumber: "66",
 		Name:        "久世",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47756_66": Observation{
-		ID:          ObservationID("47756"),
+	"47756_66": Station{
+		ID:          StationID("47756"),
 		GroupNumber: "66",
 		Name:        "津山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0658_66": Observation{
-		ID:          ObservationID("0658"),
+	"0658_66": Station{
+		ID:          StationID("0658"),
 		GroupNumber: "66",
 		Name:        "新見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0659_66": Observation{
-		ID:          ObservationID("0659"),
+	"0659_66": Station{
+		ID:          StationID("0659"),
 		GroupNumber: "66",
 		Name:        "天子山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0660_66": Observation{
-		ID:          ObservationID("0660"),
+	"0660_66": Station{
+		ID:          StationID("0660"),
 		GroupNumber: "66",
 		Name:        "赤磐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0661_66": Observation{
-		ID:          ObservationID("0661"),
+	"0661_66": Station{
+		ID:          StationID("0661"),
 		GroupNumber: "66",
 		Name:        "陣山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0662_66": Observation{
-		ID:          ObservationID("0662"),
+	"0662_66": Station{
+		ID:          StationID("0662"),
 		GroupNumber: "66",
 		Name:        "大平山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0663_66": Observation{
-		ID:          ObservationID("0663"),
+	"0663_66": Station{
+		ID:          StationID("0663"),
 		GroupNumber: "66",
 		Name:        "福渡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0664_66": Observation{
-		ID:          ObservationID("0664"),
+	"0664_66": Station{
+		ID:          StationID("0664"),
 		GroupNumber: "66",
 		Name:        "和気",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0665_66": Observation{
-		ID:          ObservationID("0665"),
+	"0665_66": Station{
+		ID:          StationID("0665"),
 		GroupNumber: "66",
 		Name:        "佐屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0666_66": Observation{
-		ID:          ObservationID("0666"),
+	"0666_66": Station{
+		ID:          StationID("0666"),
 		GroupNumber: "66",
 		Name:        "矢掛",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47768_66": Observation{
-		ID:          ObservationID("47768"),
+	"47768_66": Station{
+		ID:          StationID("47768"),
 		GroupNumber: "66",
 		Name:        "岡山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0668_66": Observation{
-		ID:          ObservationID("0668"),
+	"0668_66": Station{
+		ID:          StationID("0668"),
 		GroupNumber: "66",
 		Name:        "虫明",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0669_66": Observation{
-		ID:          ObservationID("0669"),
+	"0669_66": Station{
+		ID:          StationID("0669"),
 		GroupNumber: "66",
 		Name:        "倉敷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0670_66": Observation{
-		ID:          ObservationID("0670"),
+	"0670_66": Station{
+		ID:          StationID("0670"),
 		GroupNumber: "66",
 		Name:        "玉野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0919_66": Observation{
-		ID:          ObservationID("0919"),
+	"0919_66": Station{
+		ID:          StationID("0919"),
 		GroupNumber: "66",
 		Name:        "笠岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0929_66": Observation{
-		ID:          ObservationID("0929"),
+	"0929_66": Station{
+		ID:          StationID("0929"),
 		GroupNumber: "66",
 		Name:        "下呰部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0930_66": Observation{
-		ID:          ObservationID("0930"),
+	"0930_66": Station{
+		ID:          StationID("0930"),
 		GroupNumber: "66",
 		Name:        "高梁",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1140_66": Observation{
-		ID:          ObservationID("1140"),
+	"1140_66": Station{
+		ID:          StationID("1140"),
 		GroupNumber: "66",
 		Name:        "奈義",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1328_66": Observation{
-		ID:          ObservationID("1328"),
+	"1328_66": Station{
+		ID:          StationID("1328"),
 		GroupNumber: "66",
 		Name:        "上長田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1330_66": Observation{
-		ID:          ObservationID("1330"),
+	"1330_66": Station{
+		ID:          StationID("1330"),
 		GroupNumber: "66",
 		Name:        "千屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1371_66": Observation{
-		ID:          ObservationID("1371"),
+	"1371_66": Station{
+		ID:          StationID("1371"),
 		GroupNumber: "66",
 		Name:        "恩原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1531_66": Observation{
-		ID:          ObservationID("1531"),
+	"1531_66": Station{
+		ID:          StationID("1531"),
 		GroupNumber: "66",
 		Name:        "日応寺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1584_66": Observation{
-		ID:          ObservationID("1584"),
+	"1584_66": Station{
+		ID:          StationID("1584"),
 		GroupNumber: "66",
 		Name:        "富",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1585_66": Observation{
-		ID:          ObservationID("1585"),
+	"1585_66": Station{
+		ID:          StationID("1585"),
 		GroupNumber: "66",
 		Name:        "吉備中央",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1618_66": Observation{
-		ID:          ObservationID("1618"),
+	"1618_66": Station{
+		ID:          StationID("1618"),
 		GroupNumber: "66",
 		Name:        "旭西",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0671_67": Observation{
-		ID:          ObservationID("0671"),
+	"0671_67": Station{
+		ID:          StationID("0671"),
 		GroupNumber: "67",
 		Name:        "道後山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0672_67": Observation{
-		ID:          ObservationID("0672"),
+	"0672_67": Station{
+		ID:          StationID("0672"),
 		GroupNumber: "67",
 		Name:        "安田山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0673_67": Observation{
-		ID:          ObservationID("0673"),
+	"0673_67": Station{
+		ID:          StationID("0673"),
 		GroupNumber: "67",
 		Name:        "犬伏山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0674_67": Observation{
-		ID:          ObservationID("0674"),
+	"0674_67": Station{
+		ID:          StationID("0674"),
 		GroupNumber: "67",
 		Name:        "三次",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0675_67": Observation{
-		ID:          ObservationID("0675"),
+	"0675_67": Station{
+		ID:          StationID("0675"),
 		GroupNumber: "67",
 		Name:        "庄原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0676_67": Observation{
-		ID:          ObservationID("0676"),
+	"0676_67": Station{
+		ID:          StationID("0676"),
 		GroupNumber: "67",
 		Name:        "大朝",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0677_67": Observation{
-		ID:          ObservationID("0677"),
+	"0677_67": Station{
+		ID:          StationID("0677"),
 		GroupNumber: "67",
 		Name:        "加計",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0678_67": Observation{
-		ID:          ObservationID("0678"),
+	"0678_67": Station{
+		ID:          StationID("0678"),
 		GroupNumber: "67",
 		Name:        "海見山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0679_67": Observation{
-		ID:          ObservationID("0679"),
+	"0679_67": Station{
+		ID:          StationID("0679"),
 		GroupNumber: "67",
 		Name:        "上下",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0680_67": Observation{
-		ID:          ObservationID("0680"),
+	"0680_67": Station{
+		ID:          StationID("0680"),
 		GroupNumber: "67",
 		Name:        "内黒山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0681_67": Observation{
-		ID:          ObservationID("0681"),
+	"0681_67": Station{
+		ID:          StationID("0681"),
 		GroupNumber: "67",
 		Name:        "世羅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0682_67": Observation{
-		ID:          ObservationID("0682"),
+	"0682_67": Station{
+		ID:          StationID("0682"),
 		GroupNumber: "67",
 		Name:        "恵下谷山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0683_67": Observation{
-		ID:          ObservationID("0683"),
+	"0683_67": Station{
+		ID:          StationID("0683"),
 		GroupNumber: "67",
 		Name:        "東広島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47767_67": Observation{
-		ID:          ObservationID("47767"),
+	"47767_67": Station{
+		ID:          StationID("47767"),
 		GroupNumber: "67",
 		Name:        "福山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47765_67": Observation{
-		ID:          ObservationID("47765"),
+	"47765_67": Station{
+		ID:          StationID("47765"),
 		GroupNumber: "67",
 		Name:        "広島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0686_67": Observation{
-		ID:          ObservationID("0686"),
+	"0686_67": Station{
+		ID:          StationID("0686"),
 		GroupNumber: "67",
 		Name:        "竹原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0687_67": Observation{
-		ID:          ObservationID("0687"),
+	"0687_67": Station{
+		ID:          StationID("0687"),
 		GroupNumber: "67",
 		Name:        "生口島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0688_67": Observation{
-		ID:          ObservationID("0688"),
+	"0688_67": Station{
+		ID:          StationID("0688"),
 		GroupNumber: "67",
 		Name:        "大竹",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47766_67": Observation{
-		ID:          ObservationID("47766"),
+	"47766_67": Station{
+		ID:          StationID("47766"),
 		GroupNumber: "67",
 		Name:        "呉",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0690_67": Observation{
-		ID:          ObservationID("0690"),
+	"0690_67": Station{
+		ID:          StationID("0690"),
 		GroupNumber: "67",
 		Name:        "倉橋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0947_67": Observation{
-		ID:          ObservationID("0947"),
+	"0947_67": Station{
+		ID:          StationID("0947"),
 		GroupNumber: "67",
 		Name:        "高野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0948_67": Observation{
-		ID:          ObservationID("0948"),
+	"0948_67": Station{
+		ID:          StationID("0948"),
 		GroupNumber: "67",
 		Name:        "東城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0949_67": Observation{
-		ID:          ObservationID("0949"),
+	"0949_67": Station{
+		ID:          StationID("0949"),
 		GroupNumber: "67",
 		Name:        "甲田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0950_67": Observation{
-		ID:          ObservationID("0950"),
+	"0950_67": Station{
+		ID:          StationID("0950"),
 		GroupNumber: "67",
 		Name:        "三入",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0951_67": Observation{
-		ID:          ObservationID("0951"),
+	"0951_67": Station{
+		ID:          StationID("0951"),
 		GroupNumber: "67",
 		Name:        "府中",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0952_67": Observation{
-		ID:          ObservationID("0952"),
+	"0952_67": Station{
+		ID:          StationID("0952"),
 		GroupNumber: "67",
 		Name:        "河内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0953_67": Observation{
-		ID:          ObservationID("0953"),
+	"0953_67": Station{
+		ID:          StationID("0953"),
 		GroupNumber: "67",
 		Name:        "久比",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1163_67": Observation{
-		ID:          ObservationID("1163"),
+	"1163_67": Station{
+		ID:          StationID("1163"),
 		GroupNumber: "67",
 		Name:        "志和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1257_67": Observation{
-		ID:          ObservationID("1257"),
+	"1257_67": Station{
+		ID:          StationID("1257"),
 		GroupNumber: "67",
 		Name:        "王泊",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1262_67": Observation{
-		ID:          ObservationID("1262"),
+	"1262_67": Station{
+		ID:          StationID("1262"),
 		GroupNumber: "67",
 		Name:        "八幡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1325_67": Observation{
-		ID:          ObservationID("1325"),
+	"1325_67": Station{
+		ID:          StationID("1325"),
 		GroupNumber: "67",
 		Name:        "油木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1326_67": Observation{
-		ID:          ObservationID("1326"),
+	"1326_67": Station{
+		ID:          StationID("1326"),
 		GroupNumber: "67",
 		Name:        "廿日市津田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1472_67": Observation{
-		ID:          ObservationID("1472"),
+	"1472_67": Station{
+		ID:          StationID("1472"),
 		GroupNumber: "67",
 		Name:        "本郷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1575_67": Observation{
-		ID:          ObservationID("1575"),
+	"1575_67": Station{
+		ID:          StationID("1575"),
 		GroupNumber: "67",
 		Name:        "佐伯湯来",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1579_67": Observation{
-		ID:          ObservationID("1579"),
+	"1579_67": Station{
+		ID:          StationID("1579"),
 		GroupNumber: "67",
 		Name:        "都志見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1582_67": Observation{
-		ID:          ObservationID("1582"),
+	"1582_67": Station{
+		ID:          StationID("1582"),
 		GroupNumber: "67",
 		Name:        "君田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1583_67": Observation{
-		ID:          ObservationID("1583"),
+	"1583_67": Station{
+		ID:          StationID("1583"),
 		GroupNumber: "67",
 		Name:        "美土里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1603_67": Observation{
-		ID:          ObservationID("1603"),
+	"1603_67": Station{
+		ID:          StationID("1603"),
 		GroupNumber: "67",
 		Name:        "安宿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1606_67": Observation{
-		ID:          ObservationID("1606"),
+	"1606_67": Station{
+		ID:          StationID("1606"),
 		GroupNumber: "67",
 		Name:        "呉市蒲刈",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47740_68": Observation{
-		ID:          ObservationID("47740"),
+	"47740_68": Station{
+		ID:          StationID("47740"),
 		GroupNumber: "68",
 		Name:        "西郷",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0692_68": Observation{
-		ID:          ObservationID("0692"),
+	"0692_68": Station{
+		ID:          StationID("0692"),
 		GroupNumber: "68",
 		Name:        "西ノ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0693_68": Observation{
-		ID:          ObservationID("0693"),
+	"0693_68": Station{
+		ID:          StationID("0693"),
 		GroupNumber: "68",
 		Name:        "鹿島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0694_68": Observation{
-		ID:          ObservationID("0694"),
+	"0694_68": Station{
+		ID:          StationID("0694"),
 		GroupNumber: "68",
 		Name:        "斐川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47741_68": Observation{
-		ID:          ObservationID("47741"),
+	"47741_68": Station{
+		ID:          StationID("47741"),
 		GroupNumber: "68",
 		Name:        "松江",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0696_68": Observation{
-		ID:          ObservationID("0696"),
+	"0696_68": Station{
+		ID:          StationID("0696"),
 		GroupNumber: "68",
 		Name:        "大東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0697_68": Observation{
-		ID:          ObservationID("0697"),
+	"0697_68": Station{
+		ID:          StationID("0697"),
 		GroupNumber: "68",
 		Name:        "大田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0698_68": Observation{
-		ID:          ObservationID("0698"),
+	"0698_68": Station{
+		ID:          StationID("0698"),
 		GroupNumber: "68",
 		Name:        "掛合",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0699_68": Observation{
-		ID:          ObservationID("0699"),
+	"0699_68": Station{
+		ID:          StationID("0699"),
 		GroupNumber: "68",
 		Name:        "横田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0700_68": Observation{
-		ID:          ObservationID("0700"),
+	"0700_68": Station{
+		ID:          StationID("0700"),
 		GroupNumber: "68",
 		Name:        "吾妻山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0701_68": Observation{
-		ID:          ObservationID("0701"),
+	"0701_68": Station{
+		ID:          StationID("0701"),
 		GroupNumber: "68",
 		Name:        "川本",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47755_68": Observation{
-		ID:          ObservationID("47755"),
+	"47755_68": Station{
+		ID:          StationID("47755"),
 		GroupNumber: "68",
 		Name:        "浜田",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0703_68": Observation{
-		ID:          ObservationID("0703"),
+	"0703_68": Station{
+		ID:          StationID("0703"),
 		GroupNumber: "68",
 		Name:        "三隅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0704_68": Observation{
-		ID:          ObservationID("0704"),
+	"0704_68": Station{
+		ID:          StationID("0704"),
 		GroupNumber: "68",
 		Name:        "益田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0705_68": Observation{
-		ID:          ObservationID("0705"),
+	"0705_68": Station{
+		ID:          StationID("0705"),
 		GroupNumber: "68",
 		Name:        "聖山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0706_68": Observation{
-		ID:          ObservationID("0706"),
+	"0706_68": Station{
+		ID:          StationID("0706"),
 		GroupNumber: "68",
 		Name:        "十種峯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0707_68": Observation{
-		ID:          ObservationID("0707"),
+	"0707_68": Station{
+		ID:          StationID("0707"),
 		GroupNumber: "68",
 		Name:        "津和野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0954_68": Observation{
-		ID:          ObservationID("0954"),
+	"0954_68": Station{
+		ID:          StationID("0954"),
 		GroupNumber: "68",
 		Name:        "佐田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1093_68": Observation{
-		ID:          ObservationID("1093"),
+	"1093_68": Station{
+		ID:          StationID("1093"),
 		GroupNumber: "68",
 		Name:        "桜江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1094_68": Observation{
-		ID:          ObservationID("1094"),
+	"1094_68": Station{
+		ID:          StationID("1094"),
 		GroupNumber: "68",
 		Name:        "瑞穂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1095_68": Observation{
-		ID:          ObservationID("1095"),
+	"1095_68": Station{
+		ID:          StationID("1095"),
 		GroupNumber: "68",
 		Name:        "伯太",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1175_68": Observation{
-		ID:          ObservationID("1175"),
+	"1175_68": Station{
+		ID:          StationID("1175"),
 		GroupNumber: "68",
 		Name:        "波佐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1176_68": Observation{
-		ID:          ObservationID("1176"),
+	"1176_68": Station{
+		ID:          StationID("1176"),
 		GroupNumber: "68",
 		Name:        "匹見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1307_68": Observation{
-		ID:          ObservationID("1307"),
+	"1307_68": Station{
+		ID:          StationID("1307"),
 		GroupNumber: "68",
 		Name:        "海士",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1310_68": Observation{
-		ID:          ObservationID("1310"),
+	"1310_68": Station{
+		ID:          StationID("1310"),
 		GroupNumber: "68",
 		Name:        "出雲",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1320_68": Observation{
-		ID:          ObservationID("1320"),
+	"1320_68": Station{
+		ID:          StationID("1320"),
 		GroupNumber: "68",
 		Name:        "赤名",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1321_68": Observation{
-		ID:          ObservationID("1321"),
+	"1321_68": Station{
+		ID:          StationID("1321"),
 		GroupNumber: "68",
 		Name:        "弥栄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1322_68": Observation{
-		ID:          ObservationID("1322"),
+	"1322_68": Station{
+		ID:          StationID("1322"),
 		GroupNumber: "68",
 		Name:        "六日市",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1336_68": Observation{
-		ID:          ObservationID("1336"),
+	"1336_68": Station{
+		ID:          StationID("1336"),
 		GroupNumber: "68",
 		Name:        "福光",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1362_68": Observation{
-		ID:          ObservationID("1362"),
+	"1362_68": Station{
+		ID:          StationID("1362"),
 		GroupNumber: "68",
 		Name:        "原山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1473_68": Observation{
-		ID:          ObservationID("1473"),
+	"1473_68": Station{
+		ID:          StationID("1473"),
 		GroupNumber: "68",
 		Name:        "西郷岬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1474_68": Observation{
-		ID:          ObservationID("1474"),
+	"1474_68": Station{
+		ID:          StationID("1474"),
 		GroupNumber: "68",
 		Name:        "高津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1592_68": Observation{
-		ID:          ObservationID("1592"),
+	"1592_68": Station{
+		ID:          StationID("1592"),
 		GroupNumber: "68",
 		Name:        "吉賀",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47742_69": Observation{
-		ID:          ObservationID("47742"),
+	"47742_69": Station{
+		ID:          StationID("47742"),
 		GroupNumber: "69",
 		Name:        "境",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0709_69": Observation{
-		ID:          ObservationID("0709"),
+	"0709_69": Station{
+		ID:          StationID("0709"),
 		GroupNumber: "69",
 		Name:        "青谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47746_69": Observation{
-		ID:          ObservationID("47746"),
+	"47746_69": Station{
+		ID:          StationID("47746"),
 		GroupNumber: "69",
 		Name:        "鳥取",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0711_69": Observation{
-		ID:          ObservationID("0711"),
+	"0711_69": Station{
+		ID:          StationID("0711"),
 		GroupNumber: "69",
 		Name:        "岩井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47744_69": Observation{
-		ID:          ObservationID("47744"),
+	"47744_69": Station{
+		ID:          StationID("47744"),
 		GroupNumber: "69",
 		Name:        "米子",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0713_69": Observation{
-		ID:          ObservationID("0713"),
+	"0713_69": Station{
+		ID:          StationID("0713"),
 		GroupNumber: "69",
 		Name:        "倉吉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0714_69": Observation{
-		ID:          ObservationID("0714"),
+	"0714_69": Station{
+		ID:          StationID("0714"),
 		GroupNumber: "69",
 		Name:        "菅俵原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0715_69": Observation{
-		ID:          ObservationID("0715"),
+	"0715_69": Station{
+		ID:          StationID("0715"),
 		GroupNumber: "69",
 		Name:        "霊石山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0716_69": Observation{
-		ID:          ObservationID("0716"),
+	"0716_69": Station{
+		ID:          StationID("0716"),
 		GroupNumber: "69",
 		Name:        "大山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0717_69": Observation{
-		ID:          ObservationID("0717"),
+	"0717_69": Station{
+		ID:          StationID("0717"),
 		GroupNumber: "69",
 		Name:        "古峠山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0718_69": Observation{
-		ID:          ObservationID("0718"),
+	"0718_69": Station{
+		ID:          StationID("0718"),
 		GroupNumber: "69",
 		Name:        "智頭",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0938_69": Observation{
-		ID:          ObservationID("0938"),
+	"0938_69": Station{
+		ID:          StationID("0938"),
 		GroupNumber: "69",
 		Name:        "日南",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1177_69": Observation{
-		ID:          ObservationID("1177"),
+	"1177_69": Station{
+		ID:          StationID("1177"),
 		GroupNumber: "69",
 		Name:        "関金",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1178_69": Observation{
-		ID:          ObservationID("1178"),
+	"1178_69": Station{
+		ID:          StationID("1178"),
 		GroupNumber: "69",
 		Name:        "若桜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1231_69": Observation{
-		ID:          ObservationID("1231"),
+	"1231_69": Station{
+		ID:          StationID("1231"),
 		GroupNumber: "69",
 		Name:        "塩津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1304_69": Observation{
-		ID:          ObservationID("1304"),
+	"1304_69": Station{
+		ID:          StationID("1304"),
 		GroupNumber: "69",
 		Name:        "茶屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1385_69": Observation{
-		ID:          ObservationID("1385"),
+	"1385_69": Station{
+		ID:          StationID("1385"),
 		GroupNumber: "69",
 		Name:        "佐治",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1389_69": Observation{
-		ID:          ObservationID("1389"),
+	"1389_69": Station{
+		ID:          StationID("1389"),
 		GroupNumber: "69",
 		Name:        "江尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1391_69": Observation{
-		ID:          ObservationID("1391"),
+	"1391_69": Station{
+		ID:          StationID("1391"),
 		GroupNumber: "69",
 		Name:        "鹿野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1519_69": Observation{
-		ID:          ObservationID("1519"),
+	"1519_69": Station{
+		ID:          StationID("1519"),
 		GroupNumber: "69",
 		Name:        "湖山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0719_71": Observation{
-		ID:          ObservationID("0719"),
+	"0719_71": Station{
+		ID:          StationID("0719"),
 		GroupNumber: "71",
 		Name:        "大山寺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0720_71": Observation{
-		ID:          ObservationID("0720"),
+	"0720_71": Station{
+		ID:          StationID("0720"),
 		GroupNumber: "71",
 		Name:        "池田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47895_71": Observation{
-		ID:          ObservationID("47895"),
+	"47895_71": Station{
+		ID:          StationID("47895"),
 		GroupNumber: "71",
 		Name:        "徳島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0722_71": Observation{
-		ID:          ObservationID("0722"),
+	"0722_71": Station{
+		ID:          StationID("0722"),
 		GroupNumber: "71",
 		Name:        "江田山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0723_71": Observation{
-		ID:          ObservationID("0723"),
+	"0723_71": Station{
+		ID:          StationID("0723"),
 		GroupNumber: "71",
 		Name:        "太竜寺山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0724_71": Observation{
-		ID:          ObservationID("0724"),
+	"0724_71": Station{
+		ID:          StationID("0724"),
 		GroupNumber: "71",
 		Name:        "日和佐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0725_71": Observation{
-		ID:          ObservationID("0725"),
+	"0725_71": Station{
+		ID:          StationID("0725"),
 		GroupNumber: "71",
 		Name:        "宍喰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0972_71": Observation{
-		ID:          ObservationID("0972"),
+	"0972_71": Station{
+		ID:          StationID("0972"),
 		GroupNumber: "71",
 		Name:        "穴吹",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1098_71": Observation{
-		ID:          ObservationID("1098"),
+	"1098_71": Station{
+		ID:          StationID("1098"),
 		GroupNumber: "71",
 		Name:        "福原旭",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1242_71": Observation{
-		ID:          ObservationID("1242"),
+	"1242_71": Station{
+		ID:          StationID("1242"),
 		GroupNumber: "71",
 		Name:        "蒲生田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1252_71": Observation{
-		ID:          ObservationID("1252"),
+	"1252_71": Station{
+		ID:          StationID("1252"),
 		GroupNumber: "71",
 		Name:        "京上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1327_71": Observation{
-		ID:          ObservationID("1327"),
+	"1327_71": Station{
+		ID:          StationID("1327"),
 		GroupNumber: "71",
 		Name:        "半田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1352_71": Observation{
-		ID:          ObservationID("1352"),
+	"1352_71": Station{
+		ID:          StationID("1352"),
 		GroupNumber: "71",
 		Name:        "木頭",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1358_71": Observation{
-		ID:          ObservationID("1358"),
+	"1358_71": Station{
+		ID:          StationID("1358"),
 		GroupNumber: "71",
 		Name:        "旭丸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47894_71": Observation{
-		ID:          ObservationID("47894"),
+	"47894_71": Station{
+		ID:          StationID("47894"),
 		GroupNumber: "71",
 		Name:        "剣山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1604_71": Observation{
-		ID:          ObservationID("1604"),
+	"1604_71": Station{
+		ID:          StationID("1604"),
 		GroupNumber: "71",
 		Name:        "海陽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0726_72": Observation{
-		ID:          ObservationID("0726"),
+	"0726_72": Station{
+		ID:          StationID("0726"),
 		GroupNumber: "72",
 		Name:        "内海",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47891_72": Observation{
-		ID:          ObservationID("47891"),
+	"47891_72": Station{
+		ID:          StationID("47891"),
 		GroupNumber: "72",
 		Name:        "高松",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47890_72": Observation{
-		ID:          ObservationID("47890"),
+	"47890_72": Station{
+		ID:          StationID("47890"),
 		GroupNumber: "72",
 		Name:        "多度津",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0729_72": Observation{
-		ID:          ObservationID("0729"),
+	"0729_72": Station{
+		ID:          StationID("0729"),
 		GroupNumber: "72",
 		Name:        "滝宮",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0730_72": Observation{
-		ID:          ObservationID("0730"),
+	"0730_72": Station{
+		ID:          StationID("0730"),
 		GroupNumber: "72",
 		Name:        "引田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0731_72": Observation{
-		ID:          ObservationID("0731"),
+	"0731_72": Station{
+		ID:          StationID("0731"),
 		GroupNumber: "72",
 		Name:        "竜王山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1239_72": Observation{
-		ID:          ObservationID("1239"),
+	"1239_72": Station{
+		ID:          StationID("1239"),
 		GroupNumber: "72",
 		Name:        "財田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1475_72": Observation{
-		ID:          ObservationID("1475"),
+	"1475_72": Station{
+		ID:          StationID("1475"),
 		GroupNumber: "72",
 		Name:        "香南",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0732_73": Observation{
-		ID:          ObservationID("0732"),
+	"0732_73": Station{
+		ID:          StationID("0732"),
 		GroupNumber: "73",
 		Name:        "大三島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0733_73": Observation{
-		ID:          ObservationID("0733"),
+	"0733_73": Station{
+		ID:          StationID("0733"),
 		GroupNumber: "73",
 		Name:        "玉川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0734_73": Observation{
-		ID:          ObservationID("0734"),
+	"0734_73": Station{
+		ID:          StationID("0734"),
 		GroupNumber: "73",
 		Name:        "新居浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0735_73": Observation{
-		ID:          ObservationID("0735"),
+	"0735_73": Station{
+		ID:          StationID("0735"),
 		GroupNumber: "73",
 		Name:        "四国中央",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47887_73": Observation{
-		ID:          ObservationID("47887"),
+	"47887_73": Station{
+		ID:          StationID("47887"),
 		GroupNumber: "73",
 		Name:        "松山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0737_73": Observation{
-		ID:          ObservationID("0737"),
+	"0737_73": Station{
+		ID:          StationID("0737"),
 		GroupNumber: "73",
 		Name:        "上林",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0738_73": Observation{
-		ID:          ObservationID("0738"),
+	"0738_73": Station{
+		ID:          StationID("0738"),
 		GroupNumber: "73",
 		Name:        "成就社",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0739_73": Observation{
-		ID:          ObservationID("0739"),
+	"0739_73": Station{
+		ID:          StationID("0739"),
 		GroupNumber: "73",
 		Name:        "長浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0740_73": Observation{
-		ID:          ObservationID("0740"),
+	"0740_73": Station{
+		ID:          StationID("0740"),
 		GroupNumber: "73",
 		Name:        "中山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0741_73": Observation{
-		ID:          ObservationID("0741"),
+	"0741_73": Station{
+		ID:          StationID("0741"),
 		GroupNumber: "73",
 		Name:        "久万",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0742_73": Observation{
-		ID:          ObservationID("0742"),
+	"0742_73": Station{
+		ID:          StationID("0742"),
 		GroupNumber: "73",
 		Name:        "獅子越峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0743_73": Observation{
-		ID:          ObservationID("0743"),
+	"0743_73": Station{
+		ID:          StationID("0743"),
 		GroupNumber: "73",
 		Name:        "八幡浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47892_73": Observation{
-		ID:          ObservationID("47892"),
+	"47892_73": Station{
+		ID:          StationID("47892"),
 		GroupNumber: "73",
 		Name:        "宇和島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0745_73": Observation{
-		ID:          ObservationID("0745"),
+	"0745_73": Station{
+		ID:          StationID("0745"),
 		GroupNumber: "73",
 		Name:        "御荘",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0958_73": Observation{
-		ID:          ObservationID("0958"),
+	"0958_73": Station{
+		ID:          StationID("0958"),
 		GroupNumber: "73",
 		Name:        "西条",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0959_73": Observation{
-		ID:          ObservationID("0959"),
+	"0959_73": Station{
+		ID:          StationID("0959"),
 		GroupNumber: "73",
 		Name:        "大洲",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0960_73": Observation{
-		ID:          ObservationID("0960"),
+	"0960_73": Station{
+		ID:          StationID("0960"),
 		GroupNumber: "73",
 		Name:        "三崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0961_73": Observation{
-		ID:          ObservationID("0961"),
+	"0961_73": Station{
+		ID:          StationID("0961"),
 		GroupNumber: "73",
 		Name:        "宇和",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1077_73": Observation{
-		ID:          ObservationID("1077"),
+	"1077_73": Station{
+		ID:          StationID("1077"),
 		GroupNumber: "73",
 		Name:        "今治",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1260_73": Observation{
-		ID:          ObservationID("1260"),
+	"1260_73": Station{
+		ID:          StationID("1260"),
 		GroupNumber: "73",
 		Name:        "富郷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1350_73": Observation{
-		ID:          ObservationID("1350"),
+	"1350_73": Station{
+		ID:          StationID("1350"),
 		GroupNumber: "73",
 		Name:        "近永",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1456_73": Observation{
-		ID:          ObservationID("1456"),
+	"1456_73": Station{
+		ID:          StationID("1456"),
 		GroupNumber: "73",
 		Name:        "瀬戸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1521_73": Observation{
-		ID:          ObservationID("1521"),
+	"1521_73": Station{
+		ID:          StationID("1521"),
 		GroupNumber: "73",
 		Name:        "松山南吉田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0746_74": Observation{
-		ID:          ObservationID("0746"),
+	"0746_74": Station{
+		ID:          StationID("0746"),
 		GroupNumber: "74",
 		Name:        "本山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0747_74": Observation{
-		ID:          ObservationID("0747"),
+	"0747_74": Station{
+		ID:          StationID("0747"),
 		GroupNumber: "74",
 		Name:        "繁藤",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0748_74": Observation{
-		ID:          ObservationID("0748"),
+	"0748_74": Station{
+		ID:          StationID("0748"),
 		GroupNumber: "74",
 		Name:        "佐川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0749_74": Observation{
-		ID:          ObservationID("0749"),
+	"0749_74": Station{
+		ID:          StationID("0749"),
 		GroupNumber: "74",
 		Name:        "成山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47893_74": Observation{
-		ID:          ObservationID("47893"),
+	"47893_74": Station{
+		ID:          StationID("47893"),
 		GroupNumber: "74",
 		Name:        "高知",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0751_74": Observation{
-		ID:          ObservationID("0751"),
+	"0751_74": Station{
+		ID:          StationID("0751"),
 		GroupNumber: "74",
 		Name:        "南国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0752_74": Observation{
-		ID:          ObservationID("0752"),
+	"0752_74": Station{
+		ID:          StationID("0752"),
 		GroupNumber: "74",
 		Name:        "芸西",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0753_74": Observation{
-		ID:          ObservationID("0753"),
+	"0753_74": Station{
+		ID:          StationID("0753"),
 		GroupNumber: "74",
 		Name:        "鳥形山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0754_74": Observation{
-		ID:          ObservationID("0754"),
+	"0754_74": Station{
+		ID:          StationID("0754"),
 		GroupNumber: "74",
 		Name:        "船戸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0755_74": Observation{
-		ID:          ObservationID("0755"),
+	"0755_74": Station{
+		ID:          StationID("0755"),
 		GroupNumber: "74",
 		Name:        "安芸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0756_74": Observation{
-		ID:          ObservationID("0756"),
+	"0756_74": Station{
+		ID:          StationID("0756"),
 		GroupNumber: "74",
 		Name:        "須崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0757_74": Observation{
-		ID:          ObservationID("0757"),
+	"0757_74": Station{
+		ID:          StationID("0757"),
 		GroupNumber: "74",
 		Name:        "佐喜浜",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0758_74": Observation{
-		ID:          ObservationID("0758"),
+	"0758_74": Station{
+		ID:          StationID("0758"),
 		GroupNumber: "74",
 		Name:        "窪川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47899_74": Observation{
-		ID:          ObservationID("47899"),
+	"47899_74": Station{
+		ID:          StationID("47899"),
 		GroupNumber: "74",
 		Name:        "室戸岬",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0760_74": Observation{
-		ID:          ObservationID("0760"),
+	"0760_74": Station{
+		ID:          StationID("0760"),
 		GroupNumber: "74",
 		Name:        "堂ケ森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0761_74": Observation{
-		ID:          ObservationID("0761"),
+	"0761_74": Station{
+		ID:          StationID("0761"),
 		GroupNumber: "74",
 		Name:        "大正",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47897_74": Observation{
-		ID:          ObservationID("47897"),
+	"47897_74": Station{
+		ID:          StationID("47897"),
 		GroupNumber: "74",
 		Name:        "宿毛",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0763_74": Observation{
-		ID:          ObservationID("0763"),
+	"0763_74": Station{
+		ID:          StationID("0763"),
 		GroupNumber: "74",
 		Name:        "中村",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47898_74": Observation{
-		ID:          ObservationID("47898"),
+	"47898_74": Station{
+		ID:          StationID("47898"),
 		GroupNumber: "74",
 		Name:        "清水",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0921_74": Observation{
-		ID:          ObservationID("0921"),
+	"0921_74": Station{
+		ID:          StationID("0921"),
 		GroupNumber: "74",
 		Name:        "梼原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0955_74": Observation{
-		ID:          ObservationID("0955"),
+	"0955_74": Station{
+		ID:          StationID("0955"),
 		GroupNumber: "74",
 		Name:        "田野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1179_74": Observation{
-		ID:          ObservationID("1179"),
+	"1179_74": Station{
+		ID:          StationID("1179"),
 		GroupNumber: "74",
 		Name:        "池川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1229_74": Observation{
-		ID:          ObservationID("1229"),
+	"1229_74": Station{
+		ID:          StationID("1229"),
 		GroupNumber: "74",
 		Name:        "大栃",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1233_74": Observation{
-		ID:          ObservationID("1233"),
+	"1233_74": Station{
+		ID:          StationID("1233"),
 		GroupNumber: "74",
 		Name:        "佐賀",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1235_74": Observation{
-		ID:          ObservationID("1235"),
+	"1235_74": Station{
+		ID:          StationID("1235"),
 		GroupNumber: "74",
 		Name:        "江川崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1249_74": Observation{
-		ID:          ObservationID("1249"),
+	"1249_74": Station{
+		ID:          StationID("1249"),
 		GroupNumber: "74",
 		Name:        "後免",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1281_74": Observation{
-		ID:          ObservationID("1281"),
+	"1281_74": Station{
+		ID:          StationID("1281"),
 		GroupNumber: "74",
 		Name:        "魚梁瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1351_74": Observation{
-		ID:          ObservationID("1351"),
+	"1351_74": Station{
+		ID:          StationID("1351"),
 		GroupNumber: "74",
 		Name:        "本川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1476_74": Observation{
-		ID:          ObservationID("1476"),
+	"1476_74": Station{
+		ID:          StationID("1476"),
 		GroupNumber: "74",
 		Name:        "南国日章",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1556_74": Observation{
-		ID:          ObservationID("1556"),
+	"1556_74": Station{
+		ID:          StationID("1556"),
 		GroupNumber: "74",
 		Name:        "三崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0765_81": Observation{
-		ID:          ObservationID("0765"),
+	"0765_81": Station{
+		ID:          StationID("0765"),
 		GroupNumber: "81",
 		Name:        "須佐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47754_81": Observation{
-		ID:          ObservationID("47754"),
+	"47754_81": Station{
+		ID:          StationID("47754"),
 		GroupNumber: "81",
 		Name:        "萩",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0767_81": Observation{
-		ID:          ObservationID("0767"),
+	"0767_81": Station{
+		ID:          StationID("0767"),
 		GroupNumber: "81",
 		Name:        "徳佐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0768_81": Observation{
-		ID:          ObservationID("0768"),
+	"0768_81": Station{
+		ID:          StationID("0768"),
 		GroupNumber: "81",
 		Name:        "鍋提峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0769_81": Observation{
-		ID:          ObservationID("0769"),
+	"0769_81": Station{
+		ID:          StationID("0769"),
 		GroupNumber: "81",
 		Name:        "秋吉台",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0770_81": Observation{
-		ID:          ObservationID("0770"),
+	"0770_81": Station{
+		ID:          StationID("0770"),
 		GroupNumber: "81",
 		Name:        "瀬戸原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0771_81": Observation{
-		ID:          ObservationID("0771"),
+	"0771_81": Station{
+		ID:          StationID("0771"),
 		GroupNumber: "81",
 		Name:        "広瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0772_81": Observation{
-		ID:          ObservationID("0772"),
+	"0772_81": Station{
+		ID:          StationID("0772"),
 		GroupNumber: "81",
 		Name:        "豊田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0773_81": Observation{
-		ID:          ObservationID("0773"),
+	"0773_81": Station{
+		ID:          StationID("0773"),
 		GroupNumber: "81",
 		Name:        "桜山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47784_81": Observation{
-		ID:          ObservationID("47784"),
+	"47784_81": Station{
+		ID:          StationID("47784"),
 		GroupNumber: "81",
 		Name:        "山口",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0775_81": Observation{
-		ID:          ObservationID("0775"),
+	"0775_81": Station{
+		ID:          StationID("0775"),
 		GroupNumber: "81",
 		Name:        "防府",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0776_81": Observation{
-		ID:          ObservationID("0776"),
+	"0776_81": Station{
+		ID:          StationID("0776"),
 		GroupNumber: "81",
 		Name:        "下松",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47762_81": Observation{
-		ID:          ObservationID("47762"),
+	"47762_81": Station{
+		ID:          StationID("47762"),
 		GroupNumber: "81",
 		Name:        "下関",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0778_81": Observation{
-		ID:          ObservationID("0778"),
+	"0778_81": Station{
+		ID:          StationID("0778"),
 		GroupNumber: "81",
 		Name:        "宇部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0779_81": Observation{
-		ID:          ObservationID("0779"),
+	"0779_81": Station{
+		ID:          StationID("0779"),
 		GroupNumber: "81",
 		Name:        "安下庄",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0913_81": Observation{
-		ID:          ObservationID("0913"),
+	"0913_81": Station{
+		ID:          StationID("0913"),
 		GroupNumber: "81",
 		Name:        "玖珂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0939_81": Observation{
-		ID:          ObservationID("0939"),
+	"0939_81": Station{
+		ID:          StationID("0939"),
 		GroupNumber: "81",
 		Name:        "油谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0940_81": Observation{
-		ID:          ObservationID("0940"),
+	"0940_81": Station{
+		ID:          StationID("0940"),
 		GroupNumber: "81",
 		Name:        "岩国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0941_81": Observation{
-		ID:          ObservationID("0941"),
+	"0941_81": Station{
+		ID:          StationID("0941"),
 		GroupNumber: "81",
 		Name:        "周東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0942_81": Observation{
-		ID:          ObservationID("0942"),
+	"0942_81": Station{
+		ID:          StationID("0942"),
 		GroupNumber: "81",
 		Name:        "柳井",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1100_81": Observation{
-		ID:          ObservationID("1100"),
+	"1100_81": Station{
+		ID:          StationID("1100"),
 		GroupNumber: "81",
 		Name:        "羅漢山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1101_81": Observation{
-		ID:          ObservationID("1101"),
+	"1101_81": Station{
+		ID:          StationID("1101"),
 		GroupNumber: "81",
 		Name:        "長野山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1261_81": Observation{
-		ID:          ObservationID("1261"),
+	"1261_81": Station{
+		ID:          StationID("1261"),
 		GroupNumber: "81",
 		Name:        "和田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1367_81": Observation{
-		ID:          ObservationID("1367"),
+	"1367_81": Station{
+		ID:          StationID("1367"),
 		GroupNumber: "81",
 		Name:        "篠生",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1614_81": Observation{
-		ID:          ObservationID("1614"),
+	"1614_81": Station{
+		ID:          StationID("1614"),
 		GroupNumber: "81",
 		Name:        "鹿野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1620_81": Observation{
-		ID:          ObservationID("1620"),
+	"1620_81": Station{
+		ID:          StationID("1620"),
 		GroupNumber: "81",
 		Name:        "東厚保",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0780_82": Observation{
-		ID:          ObservationID("0780"),
+	"0780_82": Station{
+		ID:          StationID("0780"),
 		GroupNumber: "82",
 		Name:        "八幡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0781_82": Observation{
-		ID:          ObservationID("0781"),
+	"0781_82": Station{
+		ID:          StationID("0781"),
 		GroupNumber: "82",
 		Name:        "小倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0782_82": Observation{
-		ID:          ObservationID("0782"),
+	"0782_82": Station{
+		ID:          StationID("0782"),
 		GroupNumber: "82",
 		Name:        "行橋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0783_82": Observation{
-		ID:          ObservationID("0783"),
+	"0783_82": Station{
+		ID:          StationID("0783"),
 		GroupNumber: "82",
 		Name:        "篠栗",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47809_82": Observation{
-		ID:          ObservationID("47809"),
+	"47809_82": Station{
+		ID:          StationID("47809"),
 		GroupNumber: "82",
 		Name:        "飯塚",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0785_82": Observation{
-		ID:          ObservationID("0785"),
+	"0785_82": Station{
+		ID:          StationID("0785"),
 		GroupNumber: "82",
 		Name:        "前原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47807_82": Observation{
-		ID:          ObservationID("47807"),
+	"47807_82": Station{
+		ID:          StationID("47807"),
 		GroupNumber: "82",
 		Name:        "福岡",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0787_82": Observation{
-		ID:          ObservationID("0787"),
+	"0787_82": Station{
+		ID:          StationID("0787"),
 		GroupNumber: "82",
 		Name:        "九千部山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0788_82": Observation{
-		ID:          ObservationID("0788"),
+	"0788_82": Station{
+		ID:          StationID("0788"),
 		GroupNumber: "82",
 		Name:        "朝倉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0789_82": Observation{
-		ID:          ObservationID("0789"),
+	"0789_82": Station{
+		ID:          StationID("0789"),
 		GroupNumber: "82",
 		Name:        "英彦山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0790_82": Observation{
-		ID:          ObservationID("0790"),
+	"0790_82": Station{
+		ID:          StationID("0790"),
 		GroupNumber: "82",
 		Name:        "久留米",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0791_82": Observation{
-		ID:          ObservationID("0791"),
+	"0791_82": Station{
+		ID:          StationID("0791"),
 		GroupNumber: "82",
 		Name:        "耳納山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0792_82": Observation{
-		ID:          ObservationID("0792"),
+	"0792_82": Station{
+		ID:          StationID("0792"),
 		GroupNumber: "82",
 		Name:        "黒木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0793_82": Observation{
-		ID:          ObservationID("0793"),
+	"0793_82": Station{
+		ID:          StationID("0793"),
 		GroupNumber: "82",
 		Name:        "大牟田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0943_82": Observation{
-		ID:          ObservationID("0943"),
+	"0943_82": Station{
+		ID:          StationID("0943"),
 		GroupNumber: "82",
 		Name:        "宗像",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0944_82": Observation{
-		ID:          ObservationID("0944"),
+	"0944_82": Station{
+		ID:          StationID("0944"),
 		GroupNumber: "82",
 		Name:        "頂吉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0945_82": Observation{
-		ID:          ObservationID("0945"),
+	"0945_82": Station{
+		ID:          StationID("0945"),
 		GroupNumber: "82",
 		Name:        "柳川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1046_82": Observation{
-		ID:          ObservationID("1046"),
+	"1046_82": Station{
+		ID:          StationID("1046"),
 		GroupNumber: "82",
 		Name:        "添田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1141_82": Observation{
-		ID:          ObservationID("1141"),
+	"1141_82": Station{
+		ID:          StationID("1141"),
 		GroupNumber: "82",
 		Name:        "太宰府",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1477_82": Observation{
-		ID:          ObservationID("1477"),
+	"1477_82": Station{
+		ID:          StationID("1477"),
 		GroupNumber: "82",
 		Name:        "博多",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1527_82": Observation{
-		ID:          ObservationID("1527"),
+	"1527_82": Station{
+		ID:          StationID("1527"),
 		GroupNumber: "82",
 		Name:        "曽根",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1590_82": Observation{
-		ID:          ObservationID("1590"),
+	"1590_82": Station{
+		ID:          StationID("1590"),
 		GroupNumber: "82",
 		Name:        "空港北町",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1611_82": Observation{
-		ID:          ObservationID("1611"),
+	"1611_82": Station{
+		ID:          StationID("1611"),
 		GroupNumber: "82",
 		Name:        "早良脇山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1637_82": Observation{
-		ID:          ObservationID("1637"),
+	"1637_82": Station{
+		ID:          StationID("1637"),
 		GroupNumber: "82",
 		Name:        "東谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0794_83": Observation{
-		ID:          ObservationID("0794"),
+	"0794_83": Station{
+		ID:          StationID("0794"),
 		GroupNumber: "83",
 		Name:        "中津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0795_83": Observation{
-		ID:          ObservationID("0795"),
+	"0795_83": Station{
+		ID:          StationID("0795"),
 		GroupNumber: "83",
 		Name:        "豊後高田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0796_83": Observation{
-		ID:          ObservationID("0796"),
+	"0796_83": Station{
+		ID:          StationID("0796"),
 		GroupNumber: "83",
 		Name:        "武蔵",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0797_83": Observation{
-		ID:          ObservationID("0797"),
+	"0797_83": Station{
+		ID:          StationID("0797"),
 		GroupNumber: "83",
 		Name:        "伏木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47814_83": Observation{
-		ID:          ObservationID("47814"),
+	"47814_83": Station{
+		ID:          StationID("47814"),
 		GroupNumber: "83",
 		Name:        "日田",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0799_83": Observation{
-		ID:          ObservationID("0799"),
+	"0799_83": Station{
+		ID:          StationID("0799"),
 		GroupNumber: "83",
 		Name:        "湯布院",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47815_83": Observation{
-		ID:          ObservationID("47815"),
+	"47815_83": Station{
+		ID:          StationID("47815"),
 		GroupNumber: "83",
 		Name:        "大分",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0801_83": Observation{
-		ID:          ObservationID("0801"),
+	"0801_83": Station{
+		ID:          StationID("0801"),
 		GroupNumber: "83",
 		Name:        "佐賀関",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0802_83": Observation{
-		ID:          ObservationID("0802"),
+	"0802_83": Station{
+		ID:          StationID("0802"),
 		GroupNumber: "83",
 		Name:        "釈迦岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0803_83": Observation{
-		ID:          ObservationID("0803"),
+	"0803_83": Station{
+		ID:          StationID("0803"),
 		GroupNumber: "83",
 		Name:        "湯平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0804_83": Observation{
-		ID:          ObservationID("0804"),
+	"0804_83": Station{
+		ID:          StationID("0804"),
 		GroupNumber: "83",
 		Name:        "温見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0805_83": Observation{
-		ID:          ObservationID("0805"),
+	"0805_83": Station{
+		ID:          StationID("0805"),
 		GroupNumber: "83",
 		Name:        "犬飼",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0806_83": Observation{
-		ID:          ObservationID("0806"),
+	"0806_83": Station{
+		ID:          StationID("0806"),
 		GroupNumber: "83",
 		Name:        "竹田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0807_83": Observation{
-		ID:          ObservationID("0807"),
+	"0807_83": Station{
+		ID:          StationID("0807"),
 		GroupNumber: "83",
 		Name:        "出羽",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0808_83": Observation{
-		ID:          ObservationID("0808"),
+	"0808_83": Station{
+		ID:          StationID("0808"),
 		GroupNumber: "83",
 		Name:        "佐伯",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0809_83": Observation{
-		ID:          ObservationID("0809"),
+	"0809_83": Station{
+		ID:          StationID("0809"),
 		GroupNumber: "83",
 		Name:        "倉木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0810_83": Observation{
-		ID:          ObservationID("0810"),
+	"0810_83": Station{
+		ID:          StationID("0810"),
 		GroupNumber: "83",
 		Name:        "蒲江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0931_83": Observation{
-		ID:          ObservationID("0931"),
+	"0931_83": Station{
+		ID:          StationID("0931"),
 		GroupNumber: "83",
 		Name:        "院内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0932_83": Observation{
-		ID:          ObservationID("0932"),
+	"0932_83": Station{
+		ID:          StationID("0932"),
 		GroupNumber: "83",
 		Name:        "玖珠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0933_83": Observation{
-		ID:          ObservationID("0933"),
+	"0933_83": Station{
+		ID:          StationID("0933"),
 		GroupNumber: "83",
 		Name:        "臼杵",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0979_83": Observation{
-		ID:          ObservationID("0979"),
+	"0979_83": Station{
+		ID:          StationID("0979"),
 		GroupNumber: "83",
 		Name:        "耶馬渓",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1137_83": Observation{
-		ID:          ObservationID("1137"),
+	"1137_83": Station{
+		ID:          StationID("1137"),
 		GroupNumber: "83",
 		Name:        "国見",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1142_83": Observation{
-		ID:          ObservationID("1142"),
+	"1142_83": Station{
+		ID:          StationID("1142"),
 		GroupNumber: "83",
 		Name:        "宇目",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1157_83": Observation{
-		ID:          ObservationID("1157"),
+	"1157_83": Station{
+		ID:          StationID("1157"),
 		GroupNumber: "83",
 		Name:        "別府",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1237_83": Observation{
-		ID:          ObservationID("1237"),
+	"1237_83": Station{
+		ID:          StationID("1237"),
 		GroupNumber: "83",
 		Name:        "杵築",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1554_83": Observation{
-		ID:          ObservationID("1554"),
+	"1554_83": Station{
+		ID:          StationID("1554"),
 		GroupNumber: "83",
 		Name:        "椿ヶ鼻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0811_84": Observation{
-		ID:          ObservationID("0811"),
+	"0811_84": Station{
+		ID:          StationID("0811"),
 		GroupNumber: "84",
 		Name:        "佐須奈",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47800_84": Observation{
-		ID:          ObservationID("47800"),
+	"47800_84": Station{
+		ID:          StationID("47800"),
 		GroupNumber: "84",
 		Name:        "厳原",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47805_84": Observation{
-		ID:          ObservationID("47805"),
+	"47805_84": Station{
+		ID:          StationID("47805"),
 		GroupNumber: "84",
 		Name:        "平戸",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0814_84": Observation{
-		ID:          ObservationID("0814"),
+	"0814_84": Station{
+		ID:          StationID("0814"),
 		GroupNumber: "84",
 		Name:        "松浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0815_84": Observation{
-		ID:          ObservationID("0815"),
+	"0815_84": Station{
+		ID:          StationID("0815"),
 		GroupNumber: "84",
 		Name:        "国見山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47812_84": Observation{
-		ID:          ObservationID("47812"),
+	"47812_84": Station{
+		ID:          StationID("47812"),
 		GroupNumber: "84",
 		Name:        "佐世保",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0817_84": Observation{
-		ID:          ObservationID("0817"),
+	"0817_84": Station{
+		ID:          StationID("0817"),
 		GroupNumber: "84",
 		Name:        "大瀬戸",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0818_84": Observation{
-		ID:          ObservationID("0818"),
+	"0818_84": Station{
+		ID:          StationID("0818"),
 		GroupNumber: "84",
 		Name:        "長浦岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0819_84": Observation{
-		ID:          ObservationID("0819"),
+	"0819_84": Station{
+		ID:          StationID("0819"),
 		GroupNumber: "84",
 		Name:        "五家原岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0820_84": Observation{
-		ID:          ObservationID("0820"),
+	"0820_84": Station{
+		ID:          StationID("0820"),
 		GroupNumber: "84",
 		Name:        "諫早",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47817_84": Observation{
-		ID:          ObservationID("47817"),
+	"47817_84": Station{
+		ID:          StationID("47817"),
 		GroupNumber: "84",
 		Name:        "長崎",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47818_84": Observation{
-		ID:          ObservationID("47818"),
+	"47818_84": Station{
+		ID:          StationID("47818"),
 		GroupNumber: "84",
 		Name:        "雲仙岳",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47843_84": Observation{
-		ID:          ObservationID("47843"),
+	"47843_84": Station{
+		ID:          StationID("47843"),
 		GroupNumber: "84",
 		Name:        "福江",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0922_84": Observation{
-		ID:          ObservationID("0922"),
+	"0922_84": Station{
+		ID:          StationID("0922"),
 		GroupNumber: "84",
 		Name:        "口之津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0962_84": Observation{
-		ID:          ObservationID("0962"),
+	"0962_84": Station{
+		ID:          StationID("0962"),
 		GroupNumber: "84",
 		Name:        "島原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1080_84": Observation{
-		ID:          ObservationID("1080"),
+	"1080_84": Station{
+		ID:          StationID("1080"),
 		GroupNumber: "84",
 		Name:        "有川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1084_84": Observation{
-		ID:          ObservationID("1084"),
+	"1084_84": Station{
+		ID:          StationID("1084"),
 		GroupNumber: "84",
 		Name:        "大村",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1138_84": Observation{
-		ID:          ObservationID("1138"),
+	"1138_84": Station{
+		ID:          StationID("1138"),
 		GroupNumber: "84",
 		Name:        "有川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1144_84": Observation{
-		ID:          ObservationID("1144"),
+	"1144_84": Station{
+		ID:          StationID("1144"),
 		GroupNumber: "84",
 		Name:        "芦辺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1441_84": Observation{
-		ID:          ObservationID("1441"),
+	"1441_84": Station{
+		ID:          StationID("1441"),
 		GroupNumber: "84",
 		Name:        "野母崎",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1442_84": Observation{
-		ID:          ObservationID("1442"),
+	"1442_84": Station{
+		ID:          StationID("1442"),
 		GroupNumber: "84",
 		Name:        "深江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1446_84": Observation{
-		ID:          ObservationID("1446"),
+	"1446_84": Station{
+		ID:          StationID("1446"),
 		GroupNumber: "84",
 		Name:        "普賢岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1451_84": Observation{
-		ID:          ObservationID("1451"),
+	"1451_84": Station{
+		ID:          StationID("1451"),
 		GroupNumber: "84",
 		Name:        "百花台",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1452_84": Observation{
-		ID:          ObservationID("1452"),
+	"1452_84": Station{
+		ID:          StationID("1452"),
 		GroupNumber: "84",
 		Name:        "千々石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1453_84": Observation{
-		ID:          ObservationID("1453"),
+	"1453_84": Station{
+		ID:          StationID("1453"),
 		GroupNumber: "84",
 		Name:        "鰐浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1478_84": Observation{
-		ID:          ObservationID("1478"),
+	"1478_84": Station{
+		ID:          StationID("1478"),
 		GroupNumber: "84",
 		Name:        "石田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1479_84": Observation{
-		ID:          ObservationID("1479"),
+	"1479_84": Station{
+		ID:          StationID("1479"),
 		GroupNumber: "84",
 		Name:        "上大津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1535_84": Observation{
-		ID:          ObservationID("1535"),
+	"1535_84": Station{
+		ID:          StationID("1535"),
 		GroupNumber: "84",
 		Name:        "小値賀",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1536_84": Observation{
-		ID:          ObservationID("1536"),
+	"1536_84": Station{
+		ID:          StationID("1536"),
 		GroupNumber: "84",
 		Name:        "頭ヶ島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1538_84": Observation{
-		ID:          ObservationID("1538"),
+	"1538_84": Station{
+		ID:          StationID("1538"),
 		GroupNumber: "84",
 		Name:        "美津島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0824_85": Observation{
-		ID:          ObservationID("0824"),
+	"0824_85": Station{
+		ID:          StationID("0824"),
 		GroupNumber: "85",
 		Name:        "枝去木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0825_85": Observation{
-		ID:          ObservationID("0825"),
+	"0825_85": Station{
+		ID:          StationID("0825"),
 		GroupNumber: "85",
 		Name:        "和多田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0826_85": Observation{
-		ID:          ObservationID("0826"),
+	"0826_85": Station{
+		ID:          StationID("0826"),
 		GroupNumber: "85",
 		Name:        "権現山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0827_85": Observation{
-		ID:          ObservationID("0827"),
+	"0827_85": Station{
+		ID:          StationID("0827"),
 		GroupNumber: "85",
 		Name:        "八幡岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47813_85": Observation{
-		ID:          ObservationID("47813"),
+	"47813_85": Station{
+		ID:          StationID("47813"),
 		GroupNumber: "85",
 		Name:        "佐賀",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0829_85": Observation{
-		ID:          ObservationID("0829"),
+	"0829_85": Station{
+		ID:          StationID("0829"),
 		GroupNumber: "85",
 		Name:        "白石",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0830_85": Observation{
-		ID:          ObservationID("0830"),
+	"0830_85": Station{
+		ID:          StationID("0830"),
 		GroupNumber: "85",
 		Name:        "嬉野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0831_85": Observation{
-		ID:          ObservationID("0831"),
+	"0831_85": Station{
+		ID:          StationID("0831"),
 		GroupNumber: "85",
 		Name:        "多良岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1075_85": Observation{
-		ID:          ObservationID("1075"),
+	"1075_85": Station{
+		ID:          StationID("1075"),
 		GroupNumber: "85",
 		Name:        "伊万里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1480_85": Observation{
-		ID:          ObservationID("1480"),
+	"1480_85": Station{
+		ID:          StationID("1480"),
 		GroupNumber: "85",
 		Name:        "川副",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1610_85": Observation{
-		ID:          ObservationID("1610"),
+	"1610_85": Station{
+		ID:          StationID("1610"),
 		GroupNumber: "85",
 		Name:        "唐津",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1612_85": Observation{
-		ID:          ObservationID("1612"),
+	"1612_85": Station{
+		ID:          StationID("1612"),
 		GroupNumber: "85",
 		Name:        "鳥栖",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1616_85": Observation{
-		ID:          ObservationID("1616"),
+	"1616_85": Station{
+		ID:          StationID("1616"),
 		GroupNumber: "85",
 		Name:        "北山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0832_86": Observation{
-		ID:          ObservationID("0832"),
+	"0832_86": Station{
+		ID:          StationID("0832"),
 		GroupNumber: "86",
 		Name:        "鹿北",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0833_86": Observation{
-		ID:          ObservationID("0833"),
+	"0833_86": Station{
+		ID:          StationID("0833"),
 		GroupNumber: "86",
 		Name:        "南小国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0834_86": Observation{
-		ID:          ObservationID("0834"),
+	"0834_86": Station{
+		ID:          StationID("0834"),
 		GroupNumber: "86",
 		Name:        "岱明",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0835_86": Observation{
-		ID:          ObservationID("0835"),
+	"0835_86": Station{
+		ID:          StationID("0835"),
 		GroupNumber: "86",
 		Name:        "菊池",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0836_86": Observation{
-		ID:          ObservationID("0836"),
+	"0836_86": Station{
+		ID:          StationID("0836"),
 		GroupNumber: "86",
 		Name:        "鞍岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47819_86": Observation{
-		ID:          ObservationID("47819"),
+	"47819_86": Station{
+		ID:          StationID("47819"),
 		GroupNumber: "86",
 		Name:        "熊本",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0838_86": Observation{
-		ID:          ObservationID("0838"),
+	"0838_86": Station{
+		ID:          StationID("0838"),
 		GroupNumber: "86",
 		Name:        "俵山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47821_86": Observation{
-		ID:          ObservationID("47821"),
+	"47821_86": Station{
+		ID:          StationID("47821"),
 		GroupNumber: "86",
 		Name:        "阿蘇山",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0840_86": Observation{
-		ID:          ObservationID("0840"),
+	"0840_86": Station{
+		ID:          StationID("0840"),
 		GroupNumber: "86",
 		Name:        "高森",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0841_86": Observation{
-		ID:          ObservationID("0841"),
+	"0841_86": Station{
+		ID:          StationID("0841"),
 		GroupNumber: "86",
 		Name:        "間の谷山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0842_86": Observation{
-		ID:          ObservationID("0842"),
+	"0842_86": Station{
+		ID:          StationID("0842"),
 		GroupNumber: "86",
 		Name:        "甲佐",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0843_86": Observation{
-		ID:          ObservationID("0843"),
+	"0843_86": Station{
+		ID:          StationID("0843"),
 		GroupNumber: "86",
 		Name:        "松島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0844_86": Observation{
-		ID:          ObservationID("0844"),
+	"0844_86": Station{
+		ID:          StationID("0844"),
 		GroupNumber: "86",
 		Name:        "大金峰",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0845_86": Observation{
-		ID:          ObservationID("0845"),
+	"0845_86": Station{
+		ID:          StationID("0845"),
 		GroupNumber: "86",
 		Name:        "本渡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0846_86": Observation{
-		ID:          ObservationID("0846"),
+	"0846_86": Station{
+		ID:          StationID("0846"),
 		GroupNumber: "86",
 		Name:        "八代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47824_86": Observation{
-		ID:          ObservationID("47824"),
+	"47824_86": Station{
+		ID:          StationID("47824"),
 		GroupNumber: "86",
 		Name:        "人吉",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47838_86": Observation{
-		ID:          ObservationID("47838"),
+	"47838_86": Station{
+		ID:          StationID("47838"),
 		GroupNumber: "86",
 		Name:        "牛深",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0850_86": Observation{
-		ID:          ObservationID("0850"),
+	"0850_86": Station{
+		ID:          StationID("0850"),
 		GroupNumber: "86",
 		Name:        "一里山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0851_86": Observation{
-		ID:          ObservationID("0851"),
+	"0851_86": Station{
+		ID:          StationID("0851"),
 		GroupNumber: "86",
 		Name:        "白髪岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0923_86": Observation{
-		ID:          ObservationID("0923"),
+	"0923_86": Station{
+		ID:          StationID("0923"),
 		GroupNumber: "86",
 		Name:        "益城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0924_86": Observation{
-		ID:          ObservationID("0924"),
+	"0924_86": Station{
+		ID:          StationID("0924"),
 		GroupNumber: "86",
 		Name:        "水俣",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0925_86": Observation{
-		ID:          ObservationID("0925"),
+	"0925_86": Station{
+		ID:          StationID("0925"),
 		GroupNumber: "86",
 		Name:        "多良木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0926_86": Observation{
-		ID:          ObservationID("0926"),
+	"0926_86": Station{
+		ID:          StationID("0926"),
 		GroupNumber: "86",
 		Name:        "上",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0946_86": Observation{
-		ID:          ObservationID("0946"),
+	"0946_86": Station{
+		ID:          StationID("0946"),
 		GroupNumber: "86",
 		Name:        "田浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1081_86": Observation{
-		ID:          ObservationID("1081"),
+	"1081_86": Station{
+		ID:          StationID("1081"),
 		GroupNumber: "86",
 		Name:        "三角",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1086_86": Observation{
-		ID:          ObservationID("1086"),
+	"1086_86": Station{
+		ID:          StationID("1086"),
 		GroupNumber: "86",
 		Name:        "湯前横谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1088_86": Observation{
-		ID:          ObservationID("1088"),
+	"1088_86": Station{
+		ID:          StationID("1088"),
 		GroupNumber: "86",
 		Name:        "茶臼峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1156_86": Observation{
-		ID:          ObservationID("1156"),
+	"1156_86": Station{
+		ID:          StationID("1156"),
 		GroupNumber: "86",
 		Name:        "屋形山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1158_86": Observation{
-		ID:          ObservationID("1158"),
+	"1158_86": Station{
+		ID:          StationID("1158"),
 		GroupNumber: "86",
 		Name:        "五家荘",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1240_86": Observation{
-		ID:          ObservationID("1240"),
+	"1240_86": Station{
+		ID:          StationID("1240"),
 		GroupNumber: "86",
 		Name:        "阿蘇乙姫",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1368_86": Observation{
-		ID:          ObservationID("1368"),
+	"1368_86": Station{
+		ID:          StationID("1368"),
 		GroupNumber: "86",
 		Name:        "五木",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1435_86": Observation{
-		ID:          ObservationID("1435"),
+	"1435_86": Station{
+		ID:          StationID("1435"),
 		GroupNumber: "86",
 		Name:        "山江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1580_86": Observation{
-		ID:          ObservationID("1580"),
+	"1580_86": Station{
+		ID:          StationID("1580"),
 		GroupNumber: "86",
 		Name:        "宇土",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1581_86": Observation{
-		ID:          ObservationID("1581"),
+	"1581_86": Station{
+		ID:          StationID("1581"),
 		GroupNumber: "86",
 		Name:        "一勝地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0847_86": Observation{
-		ID:          ObservationID("0847"),
+	"0847_86": Station{
+		ID:          StationID("0847"),
 		GroupNumber: "86",
 		Name:        "戦山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1613_86": Observation{
-		ID:          ObservationID("1613"),
+	"1613_86": Station{
+		ID:          StationID("1613"),
 		GroupNumber: "86",
 		Name:        "山都",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0852_87": Observation{
-		ID:          ObservationID("0852"),
+	"0852_87": Station{
+		ID:          StationID("0852"),
 		GroupNumber: "87",
 		Name:        "高千穂",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0853_87": Observation{
-		ID:          ObservationID("0853"),
+	"0853_87": Station{
+		ID:          StationID("0853"),
 		GroupNumber: "87",
 		Name:        "大中尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0854_87": Observation{
-		ID:          ObservationID("0854"),
+	"0854_87": Station{
+		ID:          StationID("0854"),
 		GroupNumber: "87",
 		Name:        "中小屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47822_87": Observation{
-		ID:          ObservationID("47822"),
+	"47822_87": Station{
+		ID:          StationID("47822"),
 		GroupNumber: "87",
 		Name:        "延岡",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0856_87": Observation{
-		ID:          ObservationID("0856"),
+	"0856_87": Station{
+		ID:          StationID("0856"),
 		GroupNumber: "87",
 		Name:        "猪原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0857_87": Observation{
-		ID:          ObservationID("0857"),
+	"0857_87": Station{
+		ID:          StationID("0857"),
 		GroupNumber: "87",
 		Name:        "日向",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0858_87": Observation{
-		ID:          ObservationID("0858"),
+	"0858_87": Station{
+		ID:          StationID("0858"),
 		GroupNumber: "87",
 		Name:        "矢櫃岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0859_87": Observation{
-		ID:          ObservationID("0859"),
+	"0859_87": Station{
+		ID:          StationID("0859"),
 		GroupNumber: "87",
 		Name:        "高鍋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0860_87": Observation{
-		ID:          ObservationID("0860"),
+	"0860_87": Station{
+		ID:          StationID("0860"),
 		GroupNumber: "87",
 		Name:        "加久藤",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0861_87": Observation{
-		ID:          ObservationID("0861"),
+	"0861_87": Station{
+		ID:          StationID("0861"),
 		GroupNumber: "87",
 		Name:        "西都",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0862_87": Observation{
-		ID:          ObservationID("0862"),
+	"0862_87": Station{
+		ID:          StationID("0862"),
 		GroupNumber: "87",
 		Name:        "えびの",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0863_87": Observation{
-		ID:          ObservationID("0863"),
+	"0863_87": Station{
+		ID:          StationID("0863"),
 		GroupNumber: "87",
 		Name:        "小林",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0864_87": Observation{
-		ID:          ObservationID("0864"),
+	"0864_87": Station{
+		ID:          StationID("0864"),
 		GroupNumber: "87",
 		Name:        "野尻",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0865_87": Observation{
-		ID:          ObservationID("0865"),
+	"0865_87": Station{
+		ID:          StationID("0865"),
 		GroupNumber: "87",
 		Name:        "国富",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47830_87": Observation{
-		ID:          ObservationID("47830"),
+	"47830_87": Station{
+		ID:          StationID("47830"),
 		GroupNumber: "87",
 		Name:        "宮崎",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0867_87": Observation{
-		ID:          ObservationID("0867"),
+	"0867_87": Station{
+		ID:          StationID("0867"),
 		GroupNumber: "87",
 		Name:        "霧島御池",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0868_87": Observation{
-		ID:          ObservationID("0868"),
+	"0868_87": Station{
+		ID:          StationID("0868"),
 		GroupNumber: "87",
 		Name:        "青島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47829_87": Observation{
-		ID:          ObservationID("47829"),
+	"47829_87": Station{
+		ID:          StationID("47829"),
 		GroupNumber: "87",
 		Name:        "都城",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0870_87": Observation{
-		ID:          ObservationID("0870"),
+	"0870_87": Station{
+		ID:          StationID("0870"),
 		GroupNumber: "87",
 		Name:        "鰐塚山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47835_87": Observation{
-		ID:          ObservationID("47835"),
+	"47835_87": Station{
+		ID:          StationID("47835"),
 		GroupNumber: "87",
 		Name:        "油津",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0872_87": Observation{
-		ID:          ObservationID("0872"),
+	"0872_87": Station{
+		ID:          StationID("0872"),
 		GroupNumber: "87",
 		Name:        "串間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1135_87": Observation{
-		ID:          ObservationID("1135"),
+	"1135_87": Station{
+		ID:          StationID("1135"),
 		GroupNumber: "87",
 		Name:        "古江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1164_87": Observation{
-		ID:          ObservationID("1164"),
+	"1164_87": Station{
+		ID:          StationID("1164"),
 		GroupNumber: "87",
 		Name:        "深瀬",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1275_87": Observation{
-		ID:          ObservationID("1275"),
+	"1275_87": Station{
+		ID:          StationID("1275"),
 		GroupNumber: "87",
 		Name:        "見立",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1343_87": Observation{
-		ID:          ObservationID("1343"),
+	"1343_87": Station{
+		ID:          StationID("1343"),
 		GroupNumber: "87",
 		Name:        "諸塚",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1345_87": Observation{
-		ID:          ObservationID("1345"),
+	"1345_87": Station{
+		ID:          StationID("1345"),
 		GroupNumber: "87",
 		Name:        "西米良",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1348_87": Observation{
-		ID:          ObservationID("1348"),
+	"1348_87": Station{
+		ID:          StationID("1348"),
 		GroupNumber: "87",
 		Name:        "鞍岡",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1353_87": Observation{
-		ID:          ObservationID("1353"),
+	"1353_87": Station{
+		ID:          StationID("1353"),
 		GroupNumber: "87",
 		Name:        "神門",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1432_87": Observation{
-		ID:          ObservationID("1432"),
+	"1432_87": Station{
+		ID:          StationID("1432"),
 		GroupNumber: "87",
 		Name:        "北方",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1433_87": Observation{
-		ID:          ObservationID("1433"),
+	"1433_87": Station{
+		ID:          StationID("1433"),
 		GroupNumber: "87",
 		Name:        "上椎葉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1481_87": Observation{
-		ID:          ObservationID("1481"),
+	"1481_87": Station{
+		ID:          StationID("1481"),
 		GroupNumber: "87",
 		Name:        "赤江",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1608_87": Observation{
-		ID:          ObservationID("1608"),
+	"1608_87": Station{
+		ID:          StationID("1608"),
 		GroupNumber: "87",
 		Name:        "都農",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1609_87": Observation{
-		ID:          ObservationID("1609"),
+	"1609_87": Station{
+		ID:          StationID("1609"),
 		GroupNumber: "87",
 		Name:        "日之影",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1623_87": Observation{
-		ID:          ObservationID("1623"),
+	"1623_87": Station{
+		ID:          StationID("1623"),
 		GroupNumber: "87",
 		Name:        "高原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1624_87": Observation{
-		ID:          ObservationID("1624"),
+	"1624_87": Station{
+		ID:          StationID("1624"),
 		GroupNumber: "87",
 		Name:        "山田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1636_87": Observation{
-		ID:          ObservationID("1636"),
+	"1636_87": Station{
+		ID:          StationID("1636"),
 		GroupNumber: "87",
 		Name:        "椎葉",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47823_88": Observation{
-		ID:          ObservationID("47823"),
+	"47823_88": Station{
+		ID:          StationID("47823"),
 		GroupNumber: "88",
 		Name:        "阿久根",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0874_88": Observation{
-		ID:          ObservationID("0874"),
+	"0874_88": Station{
+		ID:          StationID("0874"),
 		GroupNumber: "88",
 		Name:        "古原野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0875_88": Observation{
-		ID:          ObservationID("0875"),
+	"0875_88": Station{
+		ID:          StationID("0875"),
 		GroupNumber: "88",
 		Name:        "大口",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0876_88": Observation{
-		ID:          ObservationID("0876"),
+	"0876_88": Station{
+		ID:          StationID("0876"),
 		GroupNumber: "88",
 		Name:        "魚野越",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0877_88": Observation{
-		ID:          ObservationID("0877"),
+	"0877_88": Station{
+		ID:          StationID("0877"),
 		GroupNumber: "88",
 		Name:        "紫尾山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0878_88": Observation{
-		ID:          ObservationID("0878"),
+	"0878_88": Station{
+		ID:          StationID("0878"),
 		GroupNumber: "88",
 		Name:        "さつま柏原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0879_88": Observation{
-		ID:          ObservationID("0879"),
+	"0879_88": Station{
+		ID:          StationID("0879"),
 		GroupNumber: "88",
 		Name:        "中甑",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0880_88": Observation{
-		ID:          ObservationID("0880"),
+	"0880_88": Station{
+		ID:          StationID("0880"),
 		GroupNumber: "88",
 		Name:        "川内",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0881_88": Observation{
-		ID:          ObservationID("0881"),
+	"0881_88": Station{
+		ID:          StationID("0881"),
 		GroupNumber: "88",
 		Name:        "溝辺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0882_88": Observation{
-		ID:          ObservationID("0882"),
+	"0882_88": Station{
+		ID:          StationID("0882"),
 		GroupNumber: "88",
 		Name:        "八重山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0883_88": Observation{
-		ID:          ObservationID("0883"),
+	"0883_88": Station{
+		ID:          StationID("0883"),
 		GroupNumber: "88",
 		Name:        "東市来",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0884_88": Observation{
-		ID:          ObservationID("0884"),
+	"0884_88": Station{
+		ID:          StationID("0884"),
 		GroupNumber: "88",
 		Name:        "権現ケ尾",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47827_88": Observation{
-		ID:          ObservationID("47827"),
+	"47827_88": Station{
+		ID:          StationID("47827"),
 		GroupNumber: "88",
 		Name:        "鹿児島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0886_88": Observation{
-		ID:          ObservationID("0886"),
+	"0886_88": Station{
+		ID:          StationID("0886"),
 		GroupNumber: "88",
 		Name:        "高峠",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0887_88": Observation{
-		ID:          ObservationID("0887"),
+	"0887_88": Station{
+		ID:          StationID("0887"),
 		GroupNumber: "88",
 		Name:        "加世田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0888_88": Observation{
-		ID:          ObservationID("0888"),
+	"0888_88": Station{
+		ID:          StationID("0888"),
 		GroupNumber: "88",
 		Name:        "吉ケ別府",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0889_88": Observation{
-		ID:          ObservationID("0889"),
+	"0889_88": Station{
+		ID:          StationID("0889"),
 		GroupNumber: "88",
 		Name:        "大浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0890_88": Observation{
-		ID:          ObservationID("0890"),
+	"0890_88": Station{
+		ID:          StationID("0890"),
 		GroupNumber: "88",
 		Name:        "喜入",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0891_88": Observation{
-		ID:          ObservationID("0891"),
+	"0891_88": Station{
+		ID:          StationID("0891"),
 		GroupNumber: "88",
 		Name:        "肝属川",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47831_88": Observation{
-		ID:          ObservationID("47831"),
+	"47831_88": Station{
+		ID:          StationID("47831"),
 		GroupNumber: "88",
 		Name:        "枕崎",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0893_88": Observation{
-		ID:          ObservationID("0893"),
+	"0893_88": Station{
+		ID:          StationID("0893"),
 		GroupNumber: "88",
 		Name:        "指宿",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0894_88": Observation{
-		ID:          ObservationID("0894"),
+	"0894_88": Station{
+		ID:          StationID("0894"),
 		GroupNumber: "88",
 		Name:        "甫与志岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0895_88": Observation{
-		ID:          ObservationID("0895"),
+	"0895_88": Station{
+		ID:          StationID("0895"),
 		GroupNumber: "88",
 		Name:        "内之浦",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47837_88": Observation{
-		ID:          ObservationID("47837"),
+	"47837_88": Station{
+		ID:          StationID("47837"),
 		GroupNumber: "88",
 		Name:        "種子島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0897_88": Observation{
-		ID:          ObservationID("0897"),
+	"0897_88": Station{
+		ID:          StationID("0897"),
 		GroupNumber: "88",
 		Name:        "中種子",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0898_88": Observation{
-		ID:          ObservationID("0898"),
+	"0898_88": Station{
+		ID:          StationID("0898"),
 		GroupNumber: "88",
 		Name:        "上中",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0899_88": Observation{
-		ID:          ObservationID("0899"),
+	"0899_88": Station{
+		ID:          StationID("0899"),
 		GroupNumber: "88",
 		Name:        "尾之間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47909_88": Observation{
-		ID:          ObservationID("47909"),
+	"47909_88": Station{
+		ID:          StationID("47909"),
 		GroupNumber: "88",
 		Name:        "名瀬",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47836_88": Observation{
-		ID:          ObservationID("47836"),
+	"47836_88": Station{
+		ID:          StationID("47836"),
 		GroupNumber: "88",
 		Name:        "屋久島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47942_88": Observation{
-		ID:          ObservationID("47942"),
+	"47942_88": Station{
+		ID:          StationID("47942"),
 		GroupNumber: "88",
 		Name:        "沖永良部",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0934_88": Observation{
-		ID:          ObservationID("0934"),
+	"0934_88": Station{
+		ID:          StationID("0934"),
 		GroupNumber: "88",
 		Name:        "出水",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0935_88": Observation{
-		ID:          ObservationID("0935"),
+	"0935_88": Station{
+		ID:          StationID("0935"),
 		GroupNumber: "88",
 		Name:        "牧之原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0936_88": Observation{
-		ID:          ObservationID("0936"),
+	"0936_88": Station{
+		ID:          StationID("0936"),
 		GroupNumber: "88",
 		Name:        "志布志",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0937_88": Observation{
-		ID:          ObservationID("0937"),
+	"0937_88": Station{
+		ID:          StationID("0937"),
 		GroupNumber: "88",
 		Name:        "鹿屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0980_88": Observation{
-		ID:          ObservationID("0980"),
+	"0980_88": Station{
+		ID:          StationID("0980"),
 		GroupNumber: "88",
 		Name:        "古仁屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1104_88": Observation{
-		ID:          ObservationID("1104"),
+	"1104_88": Station{
+		ID:          StationID("1104"),
 		GroupNumber: "88",
 		Name:        "矢止岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1136_88": Observation{
-		ID:          ObservationID("1136"),
+	"1136_88": Station{
+		ID:          StationID("1136"),
 		GroupNumber: "88",
 		Name:        "田代",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1139_88": Observation{
-		ID:          ObservationID("1139"),
+	"1139_88": Station{
+		ID:          StationID("1139"),
 		GroupNumber: "88",
 		Name:        "伊仙",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1146_88": Observation{
-		ID:          ObservationID("1146"),
+	"1146_88": Station{
+		ID:          StationID("1146"),
 		GroupNumber: "88",
 		Name:        "輝北",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1149_88": Observation{
-		ID:          ObservationID("1149"),
+	"1149_88": Station{
+		ID:          StationID("1149"),
 		GroupNumber: "88",
 		Name:        "大隅",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1161_88": Observation{
-		ID:          ObservationID("1161"),
+	"1161_88": Station{
+		ID:          StationID("1161"),
 		GroupNumber: "88",
 		Name:        "佐多",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1181_88": Observation{
-		ID:          ObservationID("1181"),
+	"1181_88": Station{
+		ID:          StationID("1181"),
 		GroupNumber: "88",
 		Name:        "肝付前田",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1277_88": Observation{
-		ID:          ObservationID("1277"),
+	"1277_88": Station{
+		ID:          StationID("1277"),
 		GroupNumber: "88",
 		Name:        "与論島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1296_88": Observation{
-		ID:          ObservationID("1296"),
+	"1296_88": Station{
+		ID:          StationID("1296"),
 		GroupNumber: "88",
 		Name:        "喜界島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1520_88": Observation{
-		ID:          ObservationID("1520"),
+	"1520_88": Station{
+		ID:          StationID("1520"),
 		GroupNumber: "88",
 		Name:        "笠利",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1540_88": Observation{
-		ID:          ObservationID("1540"),
+	"1540_88": Station{
+		ID:          StationID("1540"),
 		GroupNumber: "88",
 		Name:        "中之島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1542_88": Observation{
-		ID:          ObservationID("1542"),
+	"1542_88": Station{
+		ID:          StationID("1542"),
 		GroupNumber: "88",
 		Name:        "天城",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1625_88": Observation{
-		ID:          ObservationID("1625"),
+	"1625_88": Station{
+		ID:          StationID("1625"),
 		GroupNumber: "88",
 		Name:        "霧島牧園",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0901_91": Observation{
-		ID:          ObservationID("0901"),
+	"0901_91": Station{
+		ID:          StationID("0901"),
 		GroupNumber: "91",
 		Name:        "奥",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0902_91": Observation{
-		ID:          ObservationID("0902"),
+	"0902_91": Station{
+		ID:          StationID("0902"),
 		GroupNumber: "91",
 		Name:        "与那覇岳",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0903_91": Observation{
-		ID:          ObservationID("0903"),
+	"0903_91": Station{
+		ID:          StationID("0903"),
 		GroupNumber: "91",
 		Name:        "呉我山",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47940_91": Observation{
-		ID:          ObservationID("47940"),
+	"47940_91": Station{
+		ID:          StationID("47940"),
 		GroupNumber: "91",
 		Name:        "名護",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0905_91": Observation{
-		ID:          ObservationID("0905"),
+	"0905_91": Station{
+		ID:          StationID("0905"),
 		GroupNumber: "91",
 		Name:        "名嘉真",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0906_91": Observation{
-		ID:          ObservationID("0906"),
+	"0906_91": Station{
+		ID:          StationID("0906"),
 		GroupNumber: "91",
 		Name:        "読谷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"0907_91": Observation{
-		ID:          ObservationID("0907"),
+	"0907_91": Station{
+		ID:          StationID("0907"),
 		GroupNumber: "91",
 		Name:        "胡屋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47936_91": Observation{
-		ID:          ObservationID("47936"),
+	"47936_91": Station{
+		ID:          StationID("47936"),
 		GroupNumber: "91",
 		Name:        "那覇",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"0909_91": Observation{
-		ID:          ObservationID("0909"),
+	"0909_91": Station{
+		ID:          StationID("0909"),
 		GroupNumber: "91",
 		Name:        "糸数",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1064_91": Observation{
-		ID:          ObservationID("1064"),
+	"1064_91": Station{
+		ID:          StationID("1064"),
 		GroupNumber: "91",
 		Name:        "金武",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47918_91": Observation{
-		ID:          ObservationID("47918"),
+	"47918_91": Station{
+		ID:          StationID("47918"),
 		GroupNumber: "91",
 		Name:        "石垣島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1145_91": Observation{
-		ID:          ObservationID("1145"),
+	"1145_91": Station{
+		ID:          StationID("1145"),
 		GroupNumber: "91",
 		Name:        "伊原間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1147_91": Observation{
-		ID:          ObservationID("1147"),
+	"1147_91": Station{
+		ID:          StationID("1147"),
 		GroupNumber: "91",
 		Name:        "伊是名",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47927_91": Observation{
-		ID:          ObservationID("47927"),
+	"47927_91": Station{
+		ID:          StationID("47927"),
 		GroupNumber: "91",
 		Name:        "宮古島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47929_91": Observation{
-		ID:          ObservationID("47929"),
+	"47929_91": Station{
+		ID:          StationID("47929"),
 		GroupNumber: "91",
 		Name:        "久米島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1152_91": Observation{
-		ID:          ObservationID("1152"),
+	"1152_91": Station{
+		ID:          StationID("1152"),
 		GroupNumber: "91",
 		Name:        "渡嘉敷",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1246_91": Observation{
-		ID:          ObservationID("1246"),
+	"1246_91": Station{
+		ID:          StationID("1246"),
 		GroupNumber: "91",
 		Name:        "伊良部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1247_91": Observation{
-		ID:          ObservationID("1247"),
+	"1247_91": Station{
+		ID:          StationID("1247"),
 		GroupNumber: "91",
 		Name:        "多良間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1248_91": Observation{
-		ID:          ObservationID("1248"),
+	"1248_91": Station{
+		ID:          StationID("1248"),
 		GroupNumber: "91",
 		Name:        "城辺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1250_91": Observation{
-		ID:          ObservationID("1250"),
+	"1250_91": Station{
+		ID:          StationID("1250"),
 		GroupNumber: "91",
 		Name:        "川平",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1251_91": Observation{
-		ID:          ObservationID("1251"),
+	"1251_91": Station{
+		ID:          StationID("1251"),
 		GroupNumber: "91",
 		Name:        "大原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47917_91": Observation{
-		ID:          ObservationID("47917"),
+	"47917_91": Station{
+		ID:          StationID("47917"),
 		GroupNumber: "91",
 		Name:        "西表島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"47912_91": Observation{
-		ID:          ObservationID("47912"),
+	"47912_91": Station{
+		ID:          StationID("47912"),
 		GroupNumber: "91",
 		Name:        "与那国島",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1354_91": Observation{
-		ID:          ObservationID("1354"),
+	"1354_91": Station{
+		ID:          StationID("1354"),
 		GroupNumber: "91",
 		Name:        "波照間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"47945_91": Observation{
-		ID:          ObservationID("47945"),
+	"47945_91": Station{
+		ID:          StationID("47945"),
 		GroupNumber: "91",
 		Name:        "南大東(南大東島)",
-		Type:        ObservatoryTypeS,
+		Type:        StationTypeS,
 	},
-	"1373_91": Observation{
-		ID:          ObservationID("1373"),
+	"1373_91": Station{
+		ID:          StationID("1373"),
 		GroupNumber: "91",
 		Name:        "本部",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1374_91": Observation{
-		ID:          ObservationID("1374"),
+	"1374_91": Station{
+		ID:          StationID("1374"),
 		GroupNumber: "91",
 		Name:        "東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1482_91": Observation{
-		ID:          ObservationID("1482"),
+	"1482_91": Station{
+		ID:          StationID("1482"),
 		GroupNumber: "91",
 		Name:        "安次嶺",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1483_91": Observation{
-		ID:          ObservationID("1483"),
+	"1483_91": Station{
+		ID:          StationID("1483"),
 		GroupNumber: "91",
 		Name:        "鏡原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1484_91": Observation{
-		ID:          ObservationID("1484"),
+	"1484_91": Station{
+		ID:          StationID("1484"),
 		GroupNumber: "91",
 		Name:        "真栄里",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1490_91": Observation{
-		ID:          ObservationID("1490"),
+	"1490_91": Station{
+		ID:          StationID("1490"),
 		GroupNumber: "91",
 		Name:        "下地",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1491_91": Observation{
-		ID:          ObservationID("1491"),
+	"1491_91": Station{
+		ID:          StationID("1491"),
 		GroupNumber: "91",
 		Name:        "仲筋",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1493_91": Observation{
-		ID:          ObservationID("1493"),
+	"1493_91": Station{
+		ID:          StationID("1493"),
 		GroupNumber: "91",
 		Name:        "所野",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1494_91": Observation{
-		ID:          ObservationID("1494"),
+	"1494_91": Station{
+		ID:          StationID("1494"),
 		GroupNumber: "91",
 		Name:        "志多阿原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1515_91": Observation{
-		ID:          ObservationID("1515"),
+	"1515_91": Station{
+		ID:          StationID("1515"),
 		GroupNumber: "91",
 		Name:        "粟国",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1516_91": Observation{
-		ID:          ObservationID("1516"),
+	"1516_91": Station{
+		ID:          StationID("1516"),
 		GroupNumber: "91",
 		Name:        "慶良間",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1517_91": Observation{
-		ID:          ObservationID("1517"),
+	"1517_91": Station{
+		ID:          StationID("1517"),
 		GroupNumber: "91",
 		Name:        "北大東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1518_91": Observation{
-		ID:          ObservationID("1518"),
+	"1518_91": Station{
+		ID:          StationID("1518"),
 		GroupNumber: "91",
 		Name:        "旧東",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1534_91": Observation{
-		ID:          ObservationID("1534"),
+	"1534_91": Station{
+		ID:          StationID("1534"),
 		GroupNumber: "91",
 		Name:        "北原",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1586_91": Observation{
-		ID:          ObservationID("1586"),
+	"1586_91": Station{
+		ID:          StationID("1586"),
 		GroupNumber: "91",
 		Name:        "国頭",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
-	"1596_91": Observation{
-		ID:          ObservationID("1596"),
+	"1596_91": Station{
+		ID:          StationID("1596"),
 		GroupNumber: "91",
 		Name:        "宮城島",
-		Type:        ObservatoryTypeA,
+		Type:        StationTypeA,
 	},
 }

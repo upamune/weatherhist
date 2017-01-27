@@ -77,7 +77,7 @@ func init() {
 	time.Local = loc
 }
 
-func (c *Client) GetDailyData(ob Observation, targetDate time.Time) (Daily, error) {
+func (c *Client) GetDailyData(ob Station, targetDate time.Time) (Daily, error) {
 	daily, err := c.getDailyDataFromPage(ob, targetDate)
 	if err != nil {
 		return daily, err
@@ -85,7 +85,7 @@ func (c *Client) GetDailyData(ob Observation, targetDate time.Time) (Daily, erro
 	return daily, nil
 }
 
-func (c *Client) getDailyDataFromPage(ob Observation, targetDate time.Time) (Daily, error) {
+func (c *Client) getDailyDataFromPage(ob Station, targetDate time.Time) (Daily, error) {
 	url := c.getFullURL(DailyPath, ob, targetDate)
 	daily := Daily{}
 	doc, err := goquery.NewDocument(url)

@@ -14,7 +14,7 @@ func main() {
 	dailies := []weatherhist.Daily{}
 
 	// 若松の気象データを2010年1月から30ヶ月後まで取得して tenki.json に保存する
-	ob, err := weatherhist.GetObservatory("47570", "36")
+	ob, err := weatherhist.GetStation("1044", "36")
 	if err != nil {
 		panic(err)
 	}

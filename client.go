@@ -47,7 +47,7 @@ func NewClient(urlStrp *string, logger *log.Logger) (*Client, error) {
 	}, nil
 }
 
-func (c *Client) getFullURL(spath string, ob Observation, targetDate time.Time) string {
+func (c *Client) getFullURL(spath string, ob Station, targetDate time.Time) string {
 	q := url.Values{}
 	q.Add("block_no", string(ob.ID))
 	q.Add("prec_no", ob.GroupNumber)
