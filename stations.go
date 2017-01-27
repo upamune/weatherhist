@@ -13,7 +13,7 @@ func GetStation(id string, groupNumber string) (Station, error) {
 	sid := StationID(id + "_" + groupNumber)
 	s, ok := allStations[sid]
 	if !ok {
-		return s, errors.New(fmt.Sprintf("failed to find observatory: %s:%s", id, groupNumber))
+		return s, errors.New(fmt.Sprintf("failed to find station: %s:%s", id, groupNumber))
 	}
 
 	return s, nil

@@ -7,59 +7,59 @@ import (
 	"github.com/pkg/errors"
 )
 
-type ObservationID string
+type StationID string
 
-func GetObservatory(id string, groupNumber string) (Observation, error) {
-	oid := ObservationID(id + "_" + groupNumber)
-	ob, ok := allObservatories[oid]
+func GetStation(id string, groupNumber string) (Station, error) {
+	sid := StationID(id + "_" + groupNumber)
+	s, ok := allStations[sid]
 	if !ok {
-		return ob, errors.New(fmt.Sprintf("failed to find observatory: %%s:%%s", id, groupNumber))
+		return s, errors.New(fmt.Sprintf("failed to find station: %%s:%%s", id, groupNumber))
 	}
 
-	return ob, nil
+	return s, nil
 }
 
-func GetAllObservatories() Observatries {
-	return allObservatories
+func GetAllStations() Stations {
+	return allStations
 }
 
 const (
-    ObservatoryTypeS = "s"
-    ObservatoryTypeA = "a"
+    StationTypeS = "s"
+    StationTypeA = "a"
 )
 
-type Observation struct {
-    ID ObservationID
+type Station struct {
+    ID StationID
     GroupNumber string
     Name string
     Type string
 }
 
 
-type Observatries map[ObservationID]Observation
+type Stations map[StationID]Station
 
-var allObservatories = Observatries{
+var allStations = Stations{
 %s
 }
 """
 
-ot = r""""%04d_%s" : Observation{
-ID: ObservationID("%04d"),
+ot = r""""%04d_%s" : Station{
+ID: StationID("%04d"),
 GroupNumber: "%s",
 Name: "%s",
-Type: ObservatoryType%s,
+Type: StationType%s,
 },"""
 
-f = open('observatories.json')
+f = open('stations.json')
 dict = json.load(f)
 f.close()
 
-observatories = dict['observatories']
+stations = dict['stations']
 
 o = []
 
-for ob in observatories:
-    ots = ot % (ob['observatory_id'], ob['group_id'], ob['observatory_id'], ob['group_id'], ob['observatory_name'], ob['observatory_type'])
+for s in stations:
+    ots = ot % (s['station_id'], s['group_id'], s['station_id'], s['group_id'], s['station_name'], s['station_type'])
     o.append(ots)
 
 gocode = t % ('\n'.join(o))
