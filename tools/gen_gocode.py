@@ -13,7 +13,7 @@ func GetObservatory(id string, groupNumber string) (Observation, error) {
 	oid := ObservationID(id + "_" + groupNumber)
 	ob, ok := allObservatories[oid]
 	if !ok {
-		return ob, errors.New(fmt.Sprintf("failed to find observatory: %s:%s", id, groupNumber))
+		return ob, errors.New(fmt.Sprintf("failed to find observatory: %%s:%%s", id, groupNumber))
 	}
 
 	return ob, nil
@@ -23,11 +23,20 @@ func GetAllObservatories() Observatries {
 	return allObservatories
 }
 
+type observatoryType int
+
+const (
+    S observatoryType = "s"
+    A observatoryType = "a"
+)
+
 type Observation struct {
     ID ObservationID
     GroupNumber string
     Name string
+    Type observatoryType
 }
+
 
 type Observatries map[ObservationID]Observation
 
@@ -40,6 +49,7 @@ ot = r""""%04d_%s" : Observation{
 ID: ObservationID("%04d"),
 GroupNumber: "%s",
 Name: "%s",
+Type: %s,
 },"""
 
 f = open('observatories.json')
@@ -51,7 +61,7 @@ observatories = dict['observatories']
 o = []
 
 for ob in observatories:
-    ots = ot % (ob['observatory_id'], ob['group_id'], ob['observatory_id'], ob['group_id'], ob['observatory_name'])
+    ots = ot % (ob['observatory_id'], ob['group_id'], ob['observatory_id'], ob['group_id'], ob['observatory_name'], ob['observatory_type'])
     o.append(ots)
 
 gocode = t % ('\n'.join(o))

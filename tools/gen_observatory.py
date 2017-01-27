@@ -1,32 +1,34 @@
-import urllib.request
-import lxml.html
+import xlrd
+import sys
+import os
 import json
 
-url = 'http://www.roy.hi-ho.ne.jp/ssai/mito_gis/report/gwoaddr.html'
+station_file_name = "obs_stations.xlsx"
 
-html = urllib.request.urlopen(url).read().decode('shift-jis')
-root = lxml.html.fromstring(html)
-
-group_nums =         [ lxml.html.tostring(x, method='text', encoding='utf-8').decode('utf-8') for x in root.xpath('//tr/td[1]')]
-observatory_ids =   [ lxml.html.tostring(x, method='text', encoding='utf-8').decode('utf-8') for x in  root.xpath('//tr/td[2]')]
-observatory_names = [ lxml.html.tostring(x, method='text', encoding='utf-8').decode('utf-8') for x in root.xpath('//tr/td[3]')]
-
-dict = {
-    "observatories": []
-}
-
-
-
-for arr in zip(group_nums, observatory_ids, observatory_names):
-    d = {
-        "group_id": arr[0],
-        "observatory_id": int(arr[1]),
-        "observatory_name": arr[2]
+if os.path.exists(station_file_name):
+    sheet = xlrd.open_workbook(station_file_name).sheet_by_index(0)
+    dict = {
+        "observatories": []
     }
-    dict["observatories"].append(d)
+    for r in range(sheet.nrows):
+        if r in [0,1]:
+            continue
+        observatory_id = int(sheet.cell(r, 0).value)
+        observatory_name = sheet.cell(r, 1).value
+        group_id = int(sheet.cell(r, 3).value)
+        observatory_type = sheet.cell(r, 4).value
+        d = {
+            "group_id": group_id,
+            "observatory_id": observatory_id,
+            "observatory_name": observatory_name,
+            "observatory_type": observatory_type
+        }
+        dict["observatories"].append(d)
 
-print(dict)
+    f = open('observatories.json', 'w')
+    json.dump(dict, f, indent=2, ensure_ascii=False)
+    f.close()
+else:
+    sys.exit(1)
 
-f = open('observatories.json', 'w')
-json.dump(dict, f, indent=2, ensure_ascii=False)
-f.close()
+sys.exit(0)
