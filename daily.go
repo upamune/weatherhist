@@ -19,41 +19,41 @@ type Day struct {
 	Precipitation   Precipitation
 	Temperature     Temperature
 	Aerovane        Aerovane
-	HoursOfSunlight string
+	HoursOfSunlight *float32
 	Snow            Snow
 }
 
 type Precipitation struct {
-	Total            string
+	Total            *float32
 	MaxPrecipitation MaxPrecipitation
 }
 
 type MaxPrecipitation struct {
-	Hourly          string
-	EveryTenMinutes string
+	Hourly          *float32
+	EveryTenMinutes *float32
 }
 
 type Temperature struct {
-	Average string
-	Highest string
-	Lowest  string
+	Average *float32
+	Highest *float32
+	Lowest  *float32
 }
 
 type Aerovane struct {
-	AverageWindSpeed          string
+	AverageWindSpeed          *float32
 	MaxWindSpeed              MaxWindSpeed
 	MaxInstantaneousSpeed     MaxInstantaneousSpeed
-	MostFrequentWindDirection string
+	MostFrequentWindDirection *string
 }
 
 type MaxWindSpeed struct {
-	Speed     string
-	Direction string
+	Speed     *float32
+	Direction *string
 }
 
 type MaxInstantaneousSpeed struct {
-	Speed     string
-	Direction string
+	Speed     *float32
+	Direction *string
 }
 
 type Snow struct {
@@ -62,11 +62,11 @@ type Snow struct {
 }
 
 type SnowFall struct {
-	Total string
+	Total *float32
 }
 
 type DeepestSnow struct {
-	Value string
+	Value *float32
 }
 
 func init() {
@@ -104,35 +104,35 @@ func (c *Client) getDailyDataFromPage(ob Observation, targetDate time.Time) (Dai
 				t := time.Date(targetDate.Year(), targetDate.Month(), date, 0, 0, 0, 0, time.Local)
 				day.Date = t
 			case 1:
-				day.Precipitation.Total = s.Text()
+				day.Precipitation.Total = getFloatValue(s.Text())
 			case 2:
-				day.Precipitation.MaxPrecipitation.Hourly = s.Text()
+				day.Precipitation.MaxPrecipitation.Hourly = getFloatValue(s.Text())
 			case 3:
-				day.Precipitation.MaxPrecipitation.EveryTenMinutes = s.Text()
+				day.Precipitation.MaxPrecipitation.EveryTenMinutes = getFloatValue(s.Text())
 			case 4:
-				day.Temperature.Average = s.Text()
+				day.Temperature.Average = getFloatValue(s.Text())
 			case 5:
-				day.Temperature.Highest = s.Text()
+				day.Temperature.Highest = getFloatValue(s.Text())
 			case 6:
-				day.Temperature.Lowest = s.Text()
+				day.Temperature.Lowest = getFloatValue(s.Text())
 			case 7:
-				day.Aerovane.AverageWindSpeed = s.Text()
+				day.Aerovane.AverageWindSpeed = getFloatValue(s.Text())
 			case 8:
-				day.Aerovane.MaxWindSpeed.Speed = s.Text()
+				day.Aerovane.MaxWindSpeed.Speed = getFloatValue(s.Text())
 			case 9:
-				day.Aerovane.MaxWindSpeed.Direction = s.Text()
+				day.Aerovane.MaxWindSpeed.Direction = getStringValue(s.Text())
 			case 10:
-				day.Aerovane.MaxInstantaneousSpeed.Speed = s.Text()
+				day.Aerovane.MaxInstantaneousSpeed.Speed = getFloatValue(s.Text())
 			case 11:
-				day.Aerovane.MaxInstantaneousSpeed.Direction = s.Text()
+				day.Aerovane.MaxInstantaneousSpeed.Direction = getStringValue(s.Text())
 			case 12:
-				day.Aerovane.MostFrequentWindDirection = s.Text()
+				day.Aerovane.MostFrequentWindDirection = getStringValue(s.Text())
 			case 13:
-				day.HoursOfSunlight = s.Text()
+				day.HoursOfSunlight = getFloatValue(s.Text())
 			case 14:
-				day.Snow.SnowFall.Total = s.Text()
+				day.Snow.SnowFall.Total = getFloatValue(s.Text())
 			case 15:
-				day.Snow.DeepestSnow.Value = s.Text()
+				day.Snow.DeepestSnow.Value = getFloatValue(s.Text())
 				daily.Days = append(daily.Days, day)
 			default:
 				return

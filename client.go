@@ -10,8 +10,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pkg/errors"
 	"fmt"
+	"strings"
+
+	"github.com/pkg/errors"
 )
 
 type Client struct {
@@ -63,4 +65,29 @@ func (c *Client) getFullURL(spath string, ob Observation, targetDate time.Time) 
 	}
 	u.Path = path.Join(c.URL.Path, spath)
 	return u.String()
+}
+
+func getFloatValue(value string) *float32 {
+	f, err := strconv.ParseFloat(value, 32)
+	if err != nil {
+		// "2.5 ]" とかをパースやってみる
+		v := strings.TrimRight(value, " )]")
+		f, err = strconv.ParseFloat(v, 32)
+		if err != nil {
+			return nil
+		}
+	}
+	f32 := float32(f)
+
+	return &f32
+}
+
+const NilValue = "///"
+
+func getStringValue(value string) *string {
+	value = strings.TrimRight(value, " )]")
+	if value == NilValue || value == "×" || value == "#" {
+		return nil
+	}
+	return &value
 }
