@@ -23,18 +23,16 @@ func GetAllObservatories() Observatries {
 	return allObservatories
 }
 
-type observatoryType int
-
 const (
-    S observatoryType = "s"
-    A observatoryType = "a"
+    ObservatoryTypeS = "s"
+    ObservatoryTypeA = "a"
 )
 
 type Observation struct {
     ID ObservationID
     GroupNumber string
     Name string
-    Type observatoryType
+    Type string
 }
 
 
@@ -49,7 +47,7 @@ ot = r""""%04d_%s" : Observation{
 ID: ObservationID("%04d"),
 GroupNumber: "%s",
 Name: "%s",
-Type: %s,
+Type: ObservatoryType%s,
 },"""
 
 f = open('observatories.json')
