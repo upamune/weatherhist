@@ -1,21 +1,46 @@
 package main
 
 import (
+	"encoding/json"
+	"os"
 	"time"
 
-	"github.com/k0kubun/pp"
 	"github.com/upamune/weatherhist"
 )
 
 func main() {
 	client, _ := weatherhist.NewClient(nil, nil)
-	observation, err := weatherhist.GetObservatory("1519", "69")
+
+	dailies := []weatherhist.Daily{}
+
+	// 若松の気象データを2010年1月から30ヶ月後まで取得して tenki.json に保存する
+	ob, err := weatherhist.GetObservatory("47570", "36")
 	if err != nil {
 		panic(err)
 	}
-	daily, err := client.GetDailyData(observation, time.Now())
+
+	loc, err := time.LoadLocation("Asia/Tokyo")
 	if err != nil {
 		panic(err)
 	}
-	pp.Println(daily)
+	t := time.Date(2010, time.Month(1), 1, 0, 0, 0, 0, loc)
+	for i := 0; i < 30; i++ {
+		daily, err := client.GetDailyData(ob, t)
+		if err != nil {
+			panic(err)
+		}
+		dailies = append(dailies, daily)
+		t = t.AddDate(0, 1, 0)
+	}
+
+	fileName := "tenki.json"
+	f, err := os.Create(fileName)
+	if err != nil {
+		panic(err)
+	}
+	enc := json.NewEncoder(f)
+	err = enc.Encode(dailies)
+	if err != nil {
+		panic(err)
+	}
 }
