@@ -4,16 +4,31 @@ package weatherhist
 import (
 	"fmt"
 
+	"strings"
+
 	"github.com/pkg/errors"
+	"strconv"
 )
 
 type StationID string
 
 func GetStation(id string, groupNumber string) (Station, error) {
+	id = strings.TrimSpace(id)
+	groupNumber = strings.TrimSpace(groupNumber)
 	sid := StationID(id + "_" + groupNumber)
 	s, ok := allStations[sid]
 	if !ok {
-		return s, errors.New(fmt.Sprintf("failed to find station: %s:%s", id, groupNumber))
+		// idを4桁の0埋めでやってみる
+		i, err := strconv.Atoi(id)
+		if err != nil {
+			return s, errors.New(fmt.Sprintf("failed to find station: %s:%s", id, groupNumber))
+		}
+
+		sid = StationID(fmt.Sprintf("%04d_%s", i, groupNumber))
+		s, ok = allStations[sid]
+		if !ok {
+			return s, errors.New(fmt.Sprintf("failed to find station: %s:%s", id, groupNumber))
+		}
 	}
 
 	return s, nil
