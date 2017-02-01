@@ -12,82 +12,82 @@ import (
 const DailyPath = "daily_%s1.php"
 
 type Daily struct {
-	Days []Day
+	Days []Day `json:"days"`
 }
 
 type Day struct {
-	Date            time.Time
-	Precipitation   Precipitation
-	Temperature     Temperature
-	Aerovane        Aerovane
-	HoursOfSunlight *float32
-	Snow            Snow
-	AirPressure     AirPressure
-	Humidity        Humidity
+	Date            time.Time     `json:"date"`
+	Precipitation   Precipitation `json:"precipitation"`
+	Temperature     Temperature   `json:"temperature"`
+	Aerovane        Aerovane      `json:"aerovane"`
+	HoursOfSunlight *float32      `json:"hoursOfSunlight"`
+	Snow            Snow          `json:"snow"`
+	AirPressure     AirPressure   `json:"airPressure"`
+	Humidity        Humidity      `json:"humidity"`
 }
 
 type Precipitation struct {
-	Total            *float32
-	MaxPrecipitation MaxPrecipitation
+	Total            *float32         `json:"total"`
+	MaxPrecipitation MaxPrecipitation `json:"maxPrecipitation"`
 }
 
 type MaxPrecipitation struct {
-	Hourly          *float32
-	EveryTenMinutes *float32
+	Hourly          *float32 `json:"hourly"`
+	EveryTenMinutes *float32 `json:"everyTenMinutes"`
 }
 
 type Temperature struct {
-	Average *float32
-	Highest *float32
-	Lowest  *float32
+	Average *float32 `json:"average"`
+	Highest *float32 `json:"highest"`
+	Lowest  *float32 `json:"lowest"`
 }
 
 type Aerovane struct {
-	AverageWindSpeed          *float32
-	MaxWindSpeed              MaxWindSpeed
-	MaxInstantaneousSpeed     MaxInstantaneousSpeed
-	MostFrequentWindDirection *string
+	AverageWindSpeed          *float32              `json:"averageWindSpeed"`
+	MaxWindSpeed              MaxWindSpeed          `json:"maxWindSpeed"`
+	MaxInstantaneousSpeed     MaxInstantaneousSpeed `json:"maxInstantaneousSpeed"`
+	MostFrequentWindDirection *string               `json:"mostFrequentWindDirection"`
 }
 
 type MaxWindSpeed struct {
-	Speed     *float32
-	Direction *string
+	Speed     *float32 `json:"speed"`
+	Direction *string  `json:"direction"`
 }
 
 type MaxInstantaneousSpeed struct {
-	Speed     *float32
-	Direction *string
+	Speed     *float32 `json:"speed"`
+	Direction *string  `json:"direction"`
 }
 
 type Snow struct {
-	SnowFall    SnowFall
-	DeepestSnow DeepestSnow
+	SnowFall    SnowFall    `json:"snowFall"`
+	DeepestSnow DeepestSnow `json:"deepestSnow"`
 }
 
 type SnowFall struct {
-	Total *float32
+	Total *float32 `json:"total"`
 }
 
 type DeepestSnow struct {
-	Value *float32
+	Value *float32 `json:"value"`
 }
 
 type AirPressure struct {
-	FieldPressure      FieldPressure
-	SeaSurfacePressure SeaSurfacePressure
+	FieldPressure      FieldPressure      `json:"fieldPressure"`
+	SeaSurfacePressure SeaSurfacePressure `json:"seaSurfacePressure"`
 }
 
 type FieldPressure struct {
-	Average *float32
+	Average *float32 `json:"average"`
 }
 
 type SeaSurfacePressure struct {
-	Average *float32
+	Average *float32 `json:"average"`
 }
 
 type Humidity struct {
-	Average *float32
-	Lowest  *float32
+	Average *float32 `json:"average"`
+	Lowest  *float32 `json:"lowest"`
 }
 
 func init() {
@@ -98,8 +98,8 @@ func init() {
 	time.Local = loc
 }
 
-func (c *Client) GetDailyData(ob Station, targetDate time.Time) (Daily, error) {
-	daily, err := c.getDailyDataFromPage(ob, targetDate)
+func (c *Client) GetDailyData(s Station, targetDate time.Time) (Daily, error) {
+	daily, err := c.getDailyDataFromPage(s, targetDate)
 	if err != nil {
 		return daily, err
 	}
