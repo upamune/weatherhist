@@ -1,4 +1,5 @@
 import json
+import subprocess
 t = r"""package weatherhist
 // auto generated code
 import (
@@ -63,4 +64,12 @@ for s in stations:
     o.append(ots)
 
 gocode = t % ('\n'.join(o))
-print(gocode)
+
+go_code_file_name = 'stations.go'
+
+with open(go_code_file_name, 'w') as o:
+    o.write(gocode)
+
+cmd = "gofmt -w %s" % go_code_file_name
+
+subprocess.call(cmd.strip().split(" "))
