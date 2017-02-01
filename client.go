@@ -47,10 +47,10 @@ func NewClient(urlStrp *string, logger *log.Logger) (*Client, error) {
 	}, nil
 }
 
-func (c *Client) getFullURL(spath string, ob Station, targetDate time.Time) string {
+func (c *Client) getFullURL(spath string, s Station, targetDate time.Time) string {
 	q := url.Values{}
-	q.Add("block_no", string(ob.ID))
-	q.Add("prec_no", ob.GroupNumber)
+	q.Add("block_no", string(s.ID))
+	q.Add("prec_no", s.GroupNumber)
 	q.Add("year", strconv.Itoa(targetDate.Year()))
 	q.Add("month", strconv.Itoa(int(targetDate.Month())))
 	q.Add("day", strconv.Itoa(targetDate.Day()))
@@ -61,7 +61,7 @@ func (c *Client) getFullURL(spath string, ob Station, targetDate time.Time) stri
 
 	switch spath {
 	case DailyPath:
-		spath = fmt.Sprintf(DailyPath, ob.Type)
+		spath = fmt.Sprintf(DailyPath, s.Type)
 	}
 	u.Path = path.Join(c.URL.Path, spath)
 	return u.String()
