@@ -146,47 +146,62 @@ func TestGetFullURL(t *testing.T) {
 func getFloat32PointerAddress(f32 float32) *float32 {
 	return &f32
 }
-func TestGetFloatValue(t *testing.T) {
+func TestGetFloatValueWithQuality(t *testing.T) {
 	cases := []struct {
-		Case   string
-		Expect *float32
+		Case          string
+		ExpectValue   *float32
+		ExpectQuality bool
 	}{
 		{
 			"12.5",
 			getFloat32PointerAddress(12.5),
+			false,
 		},
 		{
 			"10",
 			getFloat32PointerAddress(10),
+			false,
 		},
 		{
 			"1.5]",
 			getFloat32PointerAddress(1.5),
+			true,
 		},
 		{
 			"1.5)",
 			getFloat32PointerAddress(1.5),
+			true,
 		},
 		{
 			"1.5 ",
 			getFloat32PointerAddress(1.5),
+			false,
 		},
 		{
 			"///",
 			nil,
+			true,
 		},
 	}
 
 	for _, c := range cases {
-		f32 := getFloatValue(c.Case)
-		if f32 == nil || c.Expect == nil {
-			if f32 != c.Expect {
-				t.Errorf("Expect: %v, Actual: %v", c.Expect, f32)
+		f32 := getFloatValueWithQuality(c.Case)
+		if f32.Value == nil || c.ExpectValue == nil {
+			if f32.Value != c.ExpectValue {
+				t.Errorf("Expect: %v, Actual: %v", c, f32)
+			}
+
+			if f32.IsBadQuality != c.ExpectQuality {
+				t.Errorf("Expect: %v, Actual: %v", c, f32)
 			}
 			continue
 		}
-		if *f32 != *c.Expect {
-			t.Errorf("Expect: %v, Actual: %v", *c.Expect, *f32)
+		if *f32.Value != *c.ExpectValue {
+			t.Errorf("Expect: %v, Actual: %v", c, f32)
+		}
+
+		if f32.IsBadQuality != c.ExpectQuality {
+			t.Errorf("Expect: %v, Actual: %v", c, f32)
 		}
 	}
 }
@@ -197,51 +212,63 @@ func getStringPointerAddress(s string) *string {
 
 func TestGetStringValue(t *testing.T) {
 	cases := []struct {
-		Case   string
-		Expect *string
+		Case          string
+		ExpectValue   *string
+		ExpectQuality bool
 	}{
 		{
 			"南南西",
 			getStringPointerAddress("南南西"),
+			false,
 		},
 		{
 			"南南西 ",
 			getStringPointerAddress("南南西"),
+			false,
 		},
 		{
 			"南南西)",
 			getStringPointerAddress("南南西"),
+			true,
 		},
 		{
 			"南南西]",
 			getStringPointerAddress("南南西"),
+			true,
 		},
 		{
 			NilValue,
 			nil,
+			true,
 		},
 		{
 			"×",
 			nil,
+			true,
 		},
 		{
 			"#",
 			nil,
+			true,
 		},
 	}
 
 	for _, c := range cases {
-		str := getStringValue(c.Case)
-		if str == nil || c.Expect == nil {
-			if str != c.Expect {
-				pp.Println(str)
-				t.Errorf("Expect: %v, Actual: %v", c.Expect, str)
+		swq := getStringValueWithQuality(c.Case)
+		if swq.Value == nil || c.ExpectValue == nil {
+			if swq.Value != c.ExpectValue {
+				pp.Println(swq)
+				t.Errorf("Expect: %v, Actual: %v", c, swq)
 			}
 			continue
 		}
 
-		if *str != *c.Expect {
-			t.Errorf("Expect: %v, Actual: %v", *c.Expect, *str)
+		if *swq.Value != *c.ExpectValue {
+			t.Errorf("Expect: %v, Actual: %v", c, swq)
+		}
+
+		if swq.IsBadQuality != c.ExpectQuality {
+			t.Errorf("Expect: %v, Actual: %v", c, swq)
 		}
 	}
 

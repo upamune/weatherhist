@@ -67,27 +67,45 @@ func (c *Client) getFullURL(spath string, s Station, targetDate time.Time) strin
 	return u.String()
 }
 
-func getFloatValue(value string) *float32 {
+func getFloatValueWithQuality(value string) FloatWithQuality {
+	fwq := FloatWithQuality{}
+	value = strings.TrimRight(value, " ")
 	f, err := strconv.ParseFloat(value, 32)
 	if err != nil {
+		fwq.IsBadQuality = true
 		// "2.5 ]" とかをパースやってみる
-		v := strings.TrimRight(value, " )]")
+		v := strings.TrimRight(value, ")]")
 		f, err = strconv.ParseFloat(v, 32)
 		if err != nil {
-			return nil
+			return FloatWithQuality{
+				Value: nil,
+				IsBadQuality: true,
+			}
 		}
 	}
 	f32 := float32(f)
+	fwq.Value = &f32
 
-	return &f32
+	return fwq
 }
 
 const NilValue = "///"
 
-func getStringValue(value string) *string {
-	value = strings.TrimRight(value, " )]")
-	if value == NilValue || value == "×" || value == "#" {
-		return nil
+func getStringValueWithQuality(value string) StringWithQuality {
+	swq := StringWithQuality{}
+	value = strings.TrimRight(value, " ")
+
+	if strings.ContainsAny(value, ")]") {
+		swq.IsBadQuality = true
 	}
-	return &value
+
+	value = strings.TrimRight(value, ")]")
+	swq.Value = &value
+
+	if value == NilValue || value == "×" || value == "#" {
+		swq.Value = nil
+		swq.IsBadQuality = true
+	}
+
+	return swq
 }
