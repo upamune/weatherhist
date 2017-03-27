@@ -67,24 +67,42 @@ func (c *Client) getFullURL(spath string, s Station, targetDate time.Time) strin
 	return u.String()
 }
 
+func parseFloatFromString(value string) (*float32, bool) {
+	f, err := strconv.ParseFloat(value, 32)
+	if err == nil {
+		f32 := float32(f)
+		return &f32, true
+	}
+	value = strings.TrimRight(value, " )")
+	f, err = strconv.ParseFloat(value, 32)
+	if err == nil {
+		f32 := float32(f)
+		return &f32, true
+	}
+
+	// "2.5 ]" とかをパースやってみる
+	v := strings.TrimRight(value, " ]")
+	f, err = strconv.ParseFloat(v, 32)
+	if err == nil {
+		f32 := float32(f)
+		return &f32, false
+	}
+
+	return nil, false
+}
+
 func getFloatValueWithQuality(value string) FloatWithQuality {
 	fwq := FloatWithQuality{}
 	value = strings.TrimRight(value, " ")
-	f, err := strconv.ParseFloat(value, 32)
-	if err != nil {
-		fwq.IsBadQuality = true
-		// "2.5 ]" とかをパースやってみる
-		v := strings.TrimRight(value, ")]")
-		f, err = strconv.ParseFloat(v, 32)
-		if err != nil {
-			return FloatWithQuality{
-				Value: nil,
-				IsBadQuality: true,
-			}
+	f, ok := parseFloatFromString(value)
+	if !ok {
+		return FloatWithQuality{
+			Value:        f,
+			IsBadQuality: true,
 		}
 	}
-	f32 := float32(f)
-	fwq.Value = &f32
+	fwq.Value = f
+	fwq.IsBadQuality = false
 
 	return fwq
 }
